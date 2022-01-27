@@ -36,7 +36,7 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
-> 人最大的痛苦就是说一些自己都不相信的话。——燕京学堂鹿会
+> 以斗争求团结则团结存，以妥协求团结则团结亡。——教员
 
 * [在线阅读](https://{domain}.apachecn.org)
 * [在线阅读（Gitee）](https://apachecn.gitee.io/doc-template/)
