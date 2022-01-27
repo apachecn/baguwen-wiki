@@ -36,7 +36,7 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
-> 以斗争求团结则团结存，以妥协求团结则团结亡。——教员
+> 危机只有发展到最困难的阶段，才有可能倒逼出有效的解决方案。——《两次全球大危机的比较研究》
 
 * [在线阅读](https://{domain}.apachecn.org)
 * [在线阅读（Gitee）](https://apachecn.gitee.io/doc-template/)
