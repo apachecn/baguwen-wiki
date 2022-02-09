@@ -88,7 +88,7 @@ npm install -g {npmName}
 
 ## 其它协议
 
-思源黑体采用 [SIL 开放字体协议 1.1](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt)。
+霞鹜文楷采用 [SIL 开放字体协议 1.1](https://github.com/lxgw/LxgwWenKai/blob/main/SIL_Open_Font_License_1.1.txt)。
 
 ## 赞助我们
 
