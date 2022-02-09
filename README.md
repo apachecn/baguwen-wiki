@@ -86,6 +86,10 @@ npm install -g {npmName}
 # 访问 http://localhost:{port} 查看文档
 ```
 
+## 其它协议
+
+思源黑体采用 [SIL 开放字体协议 1.1](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt)。
+
 ## 赞助我们
 
 ![](http://data.apachecn.org/img/about/donate.jpg)
