@@ -36,7 +36,7 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
-> 敢同恶鬼争高下，不向霸王让寸分。——《七律·庆祝第二次核试验成功》
+> 利欲驱人万火牛，江湖浪迹一沙鸥。——陆游《秋思》
 
 * [在线阅读](https://{domain}.apachecn.org)
 * [在线阅读（Gitee）](https://apachecn.gitee.io/doc-template/)
