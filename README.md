@@ -36,7 +36,7 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
-> 利欲驱人万火牛，江湖浪迹一沙鸥。——陆游《秋思》
+> 收割 SB 的人会被 SB 们封神，试图唤醒 SB 的人是 SB 眼中的 SB。——SB 第三定律
 
 * [在线阅读](https://{domain}.apachecn.org)
 * [在线阅读（Gitee）](https://apachecn.gitee.io/doc-template/)
