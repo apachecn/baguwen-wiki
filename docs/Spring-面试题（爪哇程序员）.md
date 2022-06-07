@@ -596,7 +596,7 @@ singleton：单例模式，Spring IoC 容器中只会存在一个共享的 Bean 
 
 ```
 <bean id="userDao" class="com.ioc.UserDaoImpl" scope="singleton"/>
-```*
+```
 
 
 # 235.prototype:原型模式每次使用时创建
@@ -614,7 +614,7 @@ request：**在一次 Http 请求中，容器会返回该 Bean 的同一实例**
 
 ```
 <bean id="loginAction" class="com.cnblogs.Login" scope="request"/>
-```*
+```
 
 
 # 237.session
@@ -625,7 +625,7 @@ session：在一次 Http Session 中，容器会返回该 Bean 的同一实例�
 
 ```
 <bean id="userPreference" class="com.ioc.UserPreference" scope="session"/>
-```*
+```
 
 
 # 238.global Session
@@ -715,7 +715,7 @@ bean 标签有两个重要的属性（init-method 和 destroy-method）。用它
 
 ```
 <bean id="" class="" init-method="初始化方法" destroy-method="销毁方法">
-```*
+```
 
 
 # 250.Spring 依赖注入-构造器注入
@@ -736,7 +736,7 @@ bean 标签有两个重要的属性（init-method 和 destroy-method）。用它
  public void setId(int id) { this.id = id; } 
 } 
 <bean id="id" class="com.id "> <property name="id" value="123"></property> </bean> 
-```*
+```
 
 
 # 251.静态工厂注入
@@ -766,7 +766,7 @@ public class SpringAction {
  <!--此处获取对象的方式是从工厂类中获取静态方法--> 
 <bean name="staticFactoryDao" class="DaoFactory" 
 factory-method="getStaticFactoryDaoImpl"></bean>
-```*
+```
 
 
 # 252.实例工厂
@@ -795,7 +795,7 @@ public class SpringAction {
 <bean name="daoFactory" class="com.DaoFactory"></bean> 
 <bean name="factoryDao" factory-bean="daoFactory"
 factory-method="getFactoryDaoImpl"></bean> 
-```*
+```
 
 
 # 253.setter 方法注入
@@ -809,7 +809,7 @@ factory-method="getFactoryDaoImpl"></bean>
  public void setId(int id) { this.id = id; }
 } 
 <bean id="id" class="com.id "> <property name="id" value="123"></property> </bean>
-```*
+```
 
 
 # 254.5 种不同方式的自动装配
@@ -910,7 +910,7 @@ public class TransactionDemo {
  System.out.println("transaction commit");
  }
 }
-```*
+```
 
 
 # 261.Spring MVC 原理
@@ -1007,7 +1007,7 @@ stmt.execute("update t_account set amount = amount + 500 where account_id = 'B'"
  conn.close(); 
 } 
 }
-```*
+```
 
 
 # 267.分布式事务
@@ -1039,7 +1039,7 @@ userTx.commit();// 提交事务
  userTx.rollback();// 事务回滚：数据库 A 和数据库 B 中的数据更新被同时撤销
 } catch(Exception ne){ } 
 }
-```*
+```
 
 
 # 268.两阶段提交

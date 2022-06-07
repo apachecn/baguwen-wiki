@@ -110,7 +110,7 @@ sequnceHandlerType = 2
 
 ```
 /*!mycat:catlet=io.mycat.catlets.ShareJoin */
-```*
+```
 
 
 # 配置文件不会变多，配置的节点主机会变多？

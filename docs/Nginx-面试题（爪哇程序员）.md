@@ -60,7 +60,7 @@ server { # 第一个Server区块开始，表示一个独立的虚拟主机站点
         index index.html; # 默认的首页文件，多个用空格分开
     }
 }
-```*
+```
 
 
 # Nginx的优缺点？
@@ -206,7 +206,7 @@ listen 80; # 监听端口
 server_name rrc.test.jiedaibao.com; # 允许域名 
 root /data/release/rrc/web; # 项目根目录
 index index.php index.html index.htm; # 访问根文件
-```*
+```
 
 
 # 请陈述stub_status和sub_filter指令的作用是什么?
@@ -336,7 +336,7 @@ Sub_filter 指令：它用于搜索和替换响应中的内容，并快速修复
 
 ```
 Proxy_set_header THE-TIME $date_gmt;
-```*
+```
 
 
 # 1217.用 Nginx 服务器解释-s 的目的是什么?

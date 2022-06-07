@@ -103,7 +103,7 @@ Docker cp命令用于穷奇与主机之间的数据拷贝
 
 ```
 Docker run -d -p --name nginx2 -v /home/nginx:/usr/share/nginx/html nginx
-```*
+```
 
 
 # 如何使用 Docker 技术创建与环境无关的容器系统？

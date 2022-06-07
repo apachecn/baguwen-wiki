@@ -18,7 +18,7 @@ date: 0001-01-01 00:00:00
 <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1"
  redirectPort="8443" uriEncoding="utf-8"/>
 port="8080"改成你想要的端口
-```*
+```
 
 
 # tomcat 有哪几种Connector 运行模式(优化)？
@@ -310,7 +310,7 @@ Dcom.sun.management.jmxremote.authenticate=false
 -Dcom.sun.management.jmxremote.port=1090 设置JVM的JMS监控的端口
 -Dcom.sun.management.jmxremote.ssl=false 设置JVM的JMS监控不实用SSL
 -Dcom.sun.management.jmxremote.authenticate=false 设置JVM的JMS监控不需要认证
-```*
+```
 
 
 # Tomcat一个请求的完整过程

@@ -656,7 +656,7 @@ MongoDB 分片是基于区域(range)的。所以一个集合(collection)中的�
 
 ```
 db._adminCommand("connPoolStats");
-```*
+```
 
 
 # 1077.如果块移动操作(moveChunk)失败了，我需要手动清除部分转移的文档吗

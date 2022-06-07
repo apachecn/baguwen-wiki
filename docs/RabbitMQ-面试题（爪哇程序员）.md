@@ -271,7 +271,7 @@ for (int i = 1; i <= 5; i++) {
 }
 channel.close();
 connection.close();
-```*
+```
 
 
 # 372.RabbitMQ概念

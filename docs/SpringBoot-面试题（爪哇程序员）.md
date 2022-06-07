@@ -97,7 +97,7 @@ Spring 框架提供多种特性使得 web 应用开发变得更简便，包括�
   <artifactId>spring-boot-devtools</artifactId>
   <optional>true</optional>
 </dependency>
-```*
+```
 
 
 # Spring Boot 中的监视器是什么？
@@ -148,7 +148,7 @@ Spring boot actuator 是 spring 启动框架中的重要功能之一。Spring bo
     </dependency>
   </dependencies>
 </dependencyManagement>
-```*
+```
 
 
 # Spring Initializr 是创建 Spring Boot Projects 的唯一方法吗？
@@ -366,7 +366,7 @@ public class CorsConfig {
       return new CorsFilter(urlBasedCorsConfigurationSource);
     }
 }
-```*
+```
 
 
 # Spring Boot的核心注解是哪些？他由哪几个注解组成的？

@@ -41,7 +41,7 @@ public class ServletName extends HttpServlet {
 
     }
 }
-```*
+```
 
 
 # 什么情况下调用doGet()和doPost()？

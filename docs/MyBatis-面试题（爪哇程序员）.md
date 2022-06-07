@@ -91,7 +91,7 @@ Mybatis在处理{}时，就是把时，就是把{}替换成变量的值。
 <insert id=”insertname” usegeneratedkeys=”true” keyproperty=”id”>
         insert into names (name) values (#{name}) 
 </insert>
-```*
+```
 
 
 # Mybatis的Xml映射文件中，不同的Xml映射文件，id是否可以重复？
@@ -282,7 +282,7 @@ select * from orders where order_id=#{id}
 <result property = “orderno” column =”order_no”/>
 <result property=”price” column=”order_price” />
 </reslutMap>
-```*
+```
 
 
 # 模糊查询 like 语句该怎么写
@@ -306,7 +306,7 @@ select * from orders where order_id=#{id}
     <select id=”selectlike”> 
     select * from foo where bar like "%"#{value}"%" 
     </select>
-    ```*
+    ```
 
 
 # 通常一个 Xml 映射文件，都会写一个 Dao 接口与之对应，请问，这个 Dao 接口的工作原理是什么？Dao 接口里的方法，参数不同时，方法能重载吗？
@@ -367,7 +367,7 @@ Mybatis 使用 RowBounds 对象进行分页，它是针对 ResultSet 结果集�
     catch (Exception e) {
     e.printStackTrace(); sqlSession.rollback(); throw e;
     } finally { sqlsession.close(); }
-    ```*
+    ```
 
 
 # 如何获取自动生成的(主)键值
@@ -388,7 +388,7 @@ int rows = mapper.insertname(name);
 // 完成后,id 已经被设置到对象中
 system.out.println(“rows inserted = ” + rows);
 system.out.println(“generated key value = ” + name.getid());
-```*
+```
 
 
 # 在 mapper 中如何传递多个参数
@@ -433,7 +433,7 @@ system.out.println(“generated key value = ” + name.getid());
     } finally {
     MybatisUtil.closeSqlSession();
     }
-    ```*
+    ```
 
 
 # Mybatis 动态 sql 有什么用？执行原理？有哪些动态 sql？
@@ -501,7 +501,7 @@ select * from class c,teacher t,student s where c.teacher_id=t.t_id and c.c_id=s
 </collection> 
 </resultMap> 
 </mapper>
-```*
+```
 
 
 # MyBatis 实现一对一有几种方式
@@ -699,7 +699,7 @@ MyBatis 的缓存分为一级缓存和二级缓存,一级缓存放在 session �
 
     ```
     select * from student，拦截 sql 后重写为：select t.* from （select * from student）t limit 0，10
-    ```*
+    ```
 
 
 # 1087.简述 Mybatis 的插件运行原理，以及如何编写一个插件？

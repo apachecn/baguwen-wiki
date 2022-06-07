@@ -422,7 +422,7 @@ Naming.bind("rmi://10.108.1.138:1098/GreetService", new GreetServiceImpl());
 GreetService greetService = (GreetService) 
 Naming.lookup("rmi://10.108.1.138:1098/GreetService");
 System.out.println(greetService.sayHello("Jobs"));~~~
-```*
+```
 
 
 # 316.Protoclol Buffer

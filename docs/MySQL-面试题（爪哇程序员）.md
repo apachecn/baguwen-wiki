@@ -546,7 +546,7 @@ ENUM 是一个字符串对象，用于指定一组预定义的值，并可在创
 
 ```
 Create table size(name ENUM('Smail,'Medium','Large');
-```*
+```
 
 # 1129.如何定义 REGEXP？
 
@@ -704,7 +704,7 @@ FROM_UNIXTIME 是从 Unix 时间戳转换为 Mysql 时间戳的命令*
 
 ```
 SELECT COUNT(user_id)FROM users;
-```*
+```
 
 # 1150.Mysql 查询是否区分大小写？
 
@@ -725,7 +725,7 @@ LIKE 和 REGEXP 运算符用于表示^和％。
 ```
 SELECT * FROM employee WHERE emp_name REGEXP "^b";
 SELECT * FROM employee WHERE emp_name LIKE "%b";
-```*
+```
 
 # 1152.BLOB 和 TEXT 有什么区别？
 
@@ -762,7 +762,7 @@ mysql_fetch_object – 从数据库返回结果行作为对象。*
 ```
 mysql;
 mysql mysql.out
-```*
+```
 
 # 1155.MyISAM 表格将在哪里存储，并且还提供其存储格式？
 
@@ -809,7 +809,7 @@ DISTINCT 在所有列上转换为 GROUP BY，并与 ORDER BY 子句结合使用�
 ```
 1
 SELECT DISTINCT t1.a FROM t1,t2 where t1.a=t2.a;
-```*
+```
 
 # 1160.如何输入字符为十六进制数字？
 
@@ -827,7 +827,7 @@ SELECT DISTINCT t1.a FROM t1,t2 where t1.a=t2.a;
 ```
 SELECT*FROM
 LIMIT 0,50;
-```*
+```
 
 # 1162.可以使用多少列创建索引？
 
@@ -913,7 +913,7 @@ START TRANSACTION;
 SELECT @A:=SUM(salary) FROM table1 WHERE type=1;
 UPDATE table2 SET summmary=@A WHERE type=1;
 COMMIT;
-```*
+```
 
 # 1170.mysql 里记录货币用什么字段类型好
 
@@ -1126,7 +1126,7 @@ InnoDB 行锁是通过给索引上的索引项加锁来实现的，这一点 MyS
 
 ```
 INSERT INTO table (a,b,c) VALUES (1,2,3) ON DUPLICATE KEY UPDATE c=c+1;
-```*
+```
 
 # 1191.MySQL 的 insert 和 update 的 select 语句语法
 
@@ -1137,4 +1137,4 @@ SQL insert into student (stuid,stuname,deptid) select 10,'xzm',3
 from student where stuid > 8;
 update student a inner join student b on b.stuID=10 set
 a.stuname=concat(b.stuname, b.stuID) where a.stuID=10 ;
-```*
+```
