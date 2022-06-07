@@ -1,7 +1,9 @@
 <!--yml
-category: 未分类
+category: Cassandra
 date: 0001-01-01 00:00:00
 -->
+
+# Cassandra 面试题（爪哇程序员）
 
 # 412.Cassandra概念
 
