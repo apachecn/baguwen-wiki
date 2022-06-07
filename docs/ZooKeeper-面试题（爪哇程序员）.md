@@ -1,5 +1,5 @@
 <!--yml
-category: ZooKeeper
+category: 分布式
 date: 0001-01-01 00:00:00
 -->
 
