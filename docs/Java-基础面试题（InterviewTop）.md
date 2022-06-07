@@ -1,4 +1,9 @@
-# Java 基础
+<!--yml
+category: Java
+date: 0001-01-01 00:00:00
+-->
+
+# Java 基础面试题（InterviewTop）
 
 ## Java语言具有哪些特点？
 1. Java为纯面向对象的语言。它能够直接反应现实生活中的对象。

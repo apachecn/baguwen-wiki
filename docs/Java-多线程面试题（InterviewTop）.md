@@ -1,4 +1,9 @@
-# Java 多线程
+<!--yml
+category: Java
+date: 0001-01-01 00:00:00
+-->
+
+# Java 多线程面试题（InterviewTop）
 
 小牛和同学开发的八股文网站http://interviewtop.top 持续更新BAT面试题。
 
