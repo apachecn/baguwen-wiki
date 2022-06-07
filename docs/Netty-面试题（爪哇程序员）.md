@@ -1,7 +1,9 @@
 <!--yml
-category: 未分类
+category: Netty
 date: 0001-01-01 00:00:00
 -->
+
+# Netty 面试题（爪哇程序员）
 
 # 什么是Reactor模型？Reactor的3种版本都知道吗？
 

@@ -1,7 +1,9 @@
 <!--yml
-category: 未分类
+category: Mycat
 date: 0001-01-01 00:00:00
 -->
+
+# Mycat 面试题（爪哇程序员）
 
 # Mycat是什么？
 

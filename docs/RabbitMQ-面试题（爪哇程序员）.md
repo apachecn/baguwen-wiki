@@ -1,7 +1,9 @@
 <!--yml
-category: 未分类
+category: RabbitMQ
 date: 0001-01-01 00:00:00
 -->
+
+# RabbitMQ 面试题（爪哇程序员）
 
 # 什么是RabbitMQ？为什么使用RabbitMQ？
 

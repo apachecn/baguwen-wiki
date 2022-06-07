@@ -1,7 +1,9 @@
 <!--yml
-category: 未分类
+category: Redis
 date: 0001-01-01 00:00:00
 -->
+
+# Redis 面试题（爪哇程序员）
 
 # 什么是Redis？简述它的优缺点？
 

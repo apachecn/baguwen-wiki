@@ -1,7 +1,9 @@
 <!--yml
-category: 未分类
+category: RocketMQ
 date: 0001-01-01 00:00:00
 -->
+
+# RocketMQ 面试题（爪哇程序员）
 
 # RocketMQ中的Topic和JMS的queue有什么区别？
 
