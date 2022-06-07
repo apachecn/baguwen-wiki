@@ -8,10 +8,7 @@ date: 0001-01-01 00:00:00
 > 原文：[https://zwmst.com/1219.html](https://zwmst.com/1219.html)
 
 Jenkins是一个用Java编写的开源持续集成工具。它跟踪版本控制系统, 并在发生更改时启动和 监视构建系统。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Maven, Ant和Jenkins有什么区别？
 
@@ -20,20 +17,14 @@ date: 0001-01-01 00:00:00
 最基本的区别是：
 
 Maven和Ant是Build Technologies, 而Jenkins是持续集成工具。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 在Jenkins中, 什么是持续集成？
 
 > 原文：[https://zwmst.com/1225.html](https://zwmst.com/1225.html)
 
 在软件开发中, 多个开发人员或团队在同一个Web应用程序的不同部分上工作, 因此你必须通过 集成所有模块来执行集成测试。为了做到这一点, 每天都要对每段代码进行自动化处理, 以便对 所有代码进行测试。此过程称为连续集成。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Jenkins的优势是什么？
 
@@ -49,10 +40,7 @@ Jenkins的优势包括：
 *   为了将构建报告的成功或失败通知开发人员, 它与LDAP邮件服务器集成在一起。
 *   实现持续集成的敏捷开发和测试驱动的开发。
 *   通过简单的步骤, 即可自动完成maven发布项目。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 可以使用哪些命令手动启动Jenkins？
 
@@ -62,30 +50,21 @@ date: 0001-01-01 00:00:00
 
 *   (Jenkins_url)/ restart：强制重启, 而无需等待构建完成。
 *   (Jenkin_url)/ safeRestart：允许所有正在运行的构建完成。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何在Jenkins中创建备份和复制文件？
 
 > 原文：[https://zwmst.com/1231.html](https://zwmst.com/1231.html)
 
 如果要创建Jenkins设置的备份, 只需复制将Jenkins的所有设置, 构建工件和日志保存在其主目 录中的目录。你还可以复制作业目录以克隆或复制作业或重命名目录。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何通过Jenkins克隆Git存储库？
 
 > 原文：[https://zwmst.com/1233.html](https://zwmst.com/1233.html)
 
 如果要通过Jenkins克隆Git存储库, 则必须输入Jenkins系统的电子邮件和用户名。切换到作业 目录并为此执行” git config”命令。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 什么是jenkinsfile?为什么使用jenkinsfile
 
@@ -98,10 +77,7 @@ Jenkinsfile是一个文本文件，其中包含Jenkins Pipeline的定义，并�
 管道上的代码审查/迭代
 
 审核追踪管道*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 什么是Blue Ocean
 

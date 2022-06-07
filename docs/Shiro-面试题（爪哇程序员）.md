@@ -8,10 +8,7 @@ date: 0001-01-01 00:00:00
 > 原文：[https://zwmst.com/1406.html](https://zwmst.com/1406.html)
 
 Shiro是一个强大易用的java安全框架，提供了认证、授权、加密、会话管理、与web集成、 缓存等功能，对于任何一个应用程序，都可以提供全面的安全服务，相比其他安全框架，shiro要简单的多。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 解释下Shiro的核心概念：Subject、SecurityManager、Realm
 
@@ -22,10 +19,7 @@ Subject：主体，代表了当前“用户”，这个用户不一定是一个�
 SecurityManager：安全管理器；即所有与安全有关的操作都会与SecurityManager交互；且它管理着所有Subject；可以看出它是shiro的核心, SecurityManager相当于spring mvc中 的dispatcherServlet前端控制器。
 
 Realm：域，shiro从Realm获取安全数据(如用户、角色、权限)，就是说SecurityManager 要验证用户身份，那么它需要从Realm获取相应的用户进行比较以确定用户身份是否合法；也 需要从Realm得到用户相应的角色/权限进行验证用户是否能进行操作；可以把Realm看成 DataSource，即安全数据源。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Shiro的优点
 
@@ -42,10 +36,7 @@ date: 0001-01-01 00:00:00
 5、非常简单的API加密
 
 6、不跟任何框架绑定，可以独立运行*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Shiro有哪些组件？
 
@@ -72,10 +63,7 @@ Run As：允许一个用户假装为另一个用户（如果他们允许）的�
 Remember Me：记住我，这个是非常常见的功能，即一次登录后，下次再来的话不用登录 了。
 
 记住一点，Shiro不会去维护用户、维护权限；这些需要我们自己去设计/提供；然后通过相应 的接口注入给Shiro即可。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 说下Authentication 身份验证的流程
 
@@ -106,10 +94,7 @@ credentials：证明/凭证，即只有主体知道的安全值，如密码/数�
 2> AtLeastOneSuccessfulStrategy：只要有一个Realm验证成功即可，和 FirstSuccessfulStrategy不同，返回所有Realm身份验证成功的认证信息；
 
 3> AllSuccessfulStrategy：所有Realm验证成功才算成功，且返回所有Realm身份验证成功 的认证信息，如果有一个失败就失败了。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Authorization 授权的方式和流程是怎样的？
 
@@ -140,10 +125,7 @@ credentials：证明/凭证，即只有主体知道的安全值，如密码/数�
 2> AtLeastOneSuccessfulStrategy：只要有一个Realm验证成功即可，和 FirstSuccessfulStrategy不同，返回所有Realm身份验证成功的认证信息；
 
 3> AllSuccessfulStrategy：所有Realm验证成功才算成功，且返回所有Realm身份验证成功 的认证信息，如果有一个失败就失败了。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Cryptography 加密的过程是这样的？
 
@@ -198,10 +180,7 @@ HashedCredentialsMatcher实现密码验证服务
 Shiro提供了CredentialsMatcher的散列实现HashedCredentialsMatcher,和
 
 PasswordMatcher不同的是，它只是用于密码验证，且可以提供自己的盐，而不是随机生成 盐，且生成密码散列值的算法需要自己写，因为能提供自己的盐*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Realm 域如何使用？
 
@@ -220,10 +199,7 @@ AuthenticationInfo的两个作用
 1）如果Realm是AuthenticatingRealm子类，则提供给AuthenticatingRealm内部使用的 CredentialsMatcher进行凭据验证；（如果没有继承它需要在自己的Realm中实现验证）；
 
 2）提供给SecurityManager来创建Subject（提供身份信息）；*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # shiro拦截器的执行流程
 
@@ -272,10 +248,7 @@ rest rest风格拦截器 /users=rest[user]，会自动拼接出
 “user:read,user:create,user:update,user:delete”
 
 ssl ssl拦截器，只有请求协议是https才能通过*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Session Manager 会话管理介绍一下
 

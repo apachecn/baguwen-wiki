@@ -14,20 +14,14 @@ date: 0001-01-01 00:00:00
 —服务器关闭，或者Servlet长时间没有使用，Servlet 通过调用 destroy() 方法终止（结 束）。
 
 —最后，Servlet 是由 JVM 的垃圾回收器进行垃圾回收的。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Servlet和JSP的区别？
 
 > 原文：[https://zwmst.com/1430.html](https://zwmst.com/1430.html)
 
 Servlet是服务器端的程序，动态生成html页面发送到客户端，但是这样程序里会有很多 out.println(),java与html语言混在一起很乱，造成编写逻辑控制的后台工程师和设计前端网 页的前端工程师彼此很难独立开展工作，所以后来sun公司推出了JSP，其实JSP就是Servlet， 每次运行的时候JSP都首先被编译成servlet文件，然后再被编译成.class文件运行。有了jsp，在MVC项目中servlet不再负责动态生成页面，转而去负责控制程序逻辑的作用，控制jsp与 javabean之间的流转。其实对jsp也有封装的模板工具velocity和freemarker。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Servlet的基本架构
 
@@ -46,30 +40,21 @@ public class ServletName extends HttpServlet {
     }
 }
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 什么情况下调用doGet()和doPost()？
 
 > 原文：[https://zwmst.com/1434.html](https://zwmst.com/1434.html)
 
 JSP页面中的form标签里的method属性为get时调用doGet()，为post时调用doPost()；超链接跳转页面时调用doGet()*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 页面间对象传递的方法
 
 > 原文：[https://zwmst.com/1436.html](https://zwmst.com/1436.html)
 
 request，session，application，cookie等*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 四种会话跟踪技术
 
@@ -84,10 +69,7 @@ date: 0001-01-01 00:00:00
 3）session是是代表与用于某个 Web 客户机的一个用户体验相关的对象和属性。一个 Web 会 话可以也经常会跨越多个客户机请求
 
 4）application是是代表与整个 Web 应用程序相关的对象和属性。这实质上是跨越整个 Web 应用程序，包括多个页面、请求和会话的一个全局作用域*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Request对象的主要方法
 
@@ -140,10 +122,7 @@ getServletPath()：获取客户端所请求的脚本文件的路径
 getServerPort()：获取服务器的端口号
 
 removeAttribute(String name)：删除请求中的一个属性*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何配置Servlet的初始化参数？
 
@@ -169,10 +148,7 @@ date: 0001-01-01 00:00:00
 ```
 
 配置了两个初始化参数user和blog它们的值分别为**username**和http://。。。， 这样以后要修改用户名和博客的地址不需要修改Servlet代码，只需修改配置文件即可。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何读取Servlet的初始化参数？
 
@@ -183,20 +159,14 @@ ServletConfig中定义了如下的方法用来读取初始化参数的信息： 
 参数：初始化参数的名称。
 
 返回：初始化参数的值，如果没有配置，返回null。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # init(ServletConfig)方法执行次数
 
 > 原文：[https://zwmst.com/1446.html](https://zwmst.com/1446.html)
 
 该方法执行在单线程的环境下，因此开发者不用考虑线程安全的问题。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # init(ServletConfig)方法与异常
 

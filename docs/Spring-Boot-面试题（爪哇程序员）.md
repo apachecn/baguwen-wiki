@@ -18,10 +18,7 @@ date: 0001-01-01 00:00:00
 自动配置spring添加对应功能starter自动化配置
 
 spring boot来简化spring应用开发，约定大于配置，去繁从简，just run就能创建一个独立的，产品级别的应用*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Spring Boot 有哪些优点？
 
@@ -44,10 +41,7 @@ Spring Boot 的优点有：
 7、需要更少的配置 因为没有 web.xml 文件。只需添加用@ Configuration 注释的类，然后 添加用@Bean 注释的方法，Spring 将自动加载对象并像以前一样对其进行管理。您甚至可以 将@Autowired 添加到 bean 方法中，以使 Spring 自动装入需要的依赖关系中。
 
 8、基于环境的配置 使用这些属性，您可以将您正在使用的环境传递到应用程序：Dspring.profiles.active = {enviornment}。在加载主应用程序属性文件后，Spring 将在 （application{environment} .properties）中加载后续的应用程序属性文件。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 创建一个 Spring Boot Project 的最简单的方法是什么？
 
@@ -70,10 +64,7 @@ Spring Initializr是启动 Spring Boot Projects 的一个很好的工具。
 点击生 GenerateProject
 
 将项目导入 Eclipse。文件 – 导入 – 现有的 Maven 项目*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Spring 和 SpringBoot 有什么不同？
 
@@ -90,10 +81,7 @@ Spring 框架提供多种特性使得 web 应用开发变得更简便，包括�
 *   根据 classpath 中的 artifacts 的自动化配置应用程序
 
 *   提供非功能性特性例如安全和健康检查给到生产环境中的应用程序*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何重新加载 Spring Boot 上的更改，而无需重新启动服务器？
 
@@ -108,30 +96,21 @@ date: 0001-01-01 00:00:00
   <optional>true</optional>
 </dependency>
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Spring Boot 中的监视器是什么？
 
 > 原文：[https://zwmst.com/1904.html](https://zwmst.com/1904.html)
 
 Spring boot actuator 是 spring 启动框架中的重要功能之一。Spring boot 监视器可帮助您 访问生产环境中正在运行的应用程序的当前状态。有几个指标必须在生产环境中进行检查和监 控。即使一些外部应用程序可能正在使用这些服务来向相关人员触发警报消息。监视器模块公 开了一组可直接作为 HTTP URL 访问的REST 端点来检查状态。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何在 Spring Boot 中禁用 Actuator 端点安全性？
 
 > 原文：[https://zwmst.com/1906.html](https://zwmst.com/1906.html)
 
 默认情况下，所有敏感的 HTTP 端点都是安全的，只有具有 ACTUATOR 角色的用户才能访问 它们。安全性是使用标准的 HttpServletRequest.isUserInRole 方法实施的。 我们可以使用 来禁用安全性。只有在执行机构端点在防火墙后访问时，才建议禁用安全性。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 怎么使用 Maven 来构建一个 SpringBoot 程序？
 
@@ -168,10 +147,7 @@ date: 0001-01-01 00:00:00
   </dependencies>
 </dependencyManagement>
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Spring Initializr 是创建 Spring Boot Projects 的唯一方法吗？
 
@@ -200,10 +176,7 @@ Spring Initiatlizr 让创建 Spring Boot 项目变的很容易，但是，你也
 *   添加 Spring Boot 应用程序类。
 
 到这里，准备工作已经做好！*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 为什么我们需要 spring-boot-maven-plugin?
 
@@ -215,10 +188,7 @@ spring-boot-maven-plugin 提供了一些像 jar 一样打包或者运行应用�
 *   spring-boot：repackage 重新打包你的 jar 包或者是 war 包使其可执行
 *   spring-boot：start 和 spring-boot：stop 管理 Spring Boot 应用程序的生命周期 （也可以说是为了集成测试）。
 *   spring-boot:build-info 生成执行器可以使用的构造信息。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 什么是嵌入式服务器？我们为什么要使用嵌入式服务器呢?
 
@@ -245,10 +215,7 @@ date: 0001-01-01 00:00:00
 例如，对于一个 Spring Boot 应用程序来说，你可以生成一个包含 Embedded Tomcat 的应 用程序 jar。你就可以想运行正常 Java 应用程序一样来运行 web 应用程序了。
 
 嵌入式服务器就是我们的可执行单元包含服务器的二进制文件（例如，tomcat.jar）。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何在 Spring Boot 中添加通用的 JS 代码？
 
@@ -275,10 +242,7 @@ management.security.enabled:FALSE
 ```
 
 方法二：在日志中搜索密码并传递至请求标头中*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何使用 Spring Boot 部署到不同的服务器？
 
@@ -294,10 +258,7 @@ date: 0001-01-01 00:00:00
 [https://spring.io/guides/gs/convert-jar-to-war/](https://spring.io/guides/gs/convert-jar-to-war/)
 
 第二步：取决于你的服务器。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何使用配置文件通过 Spring Boot 配置特定环境的配置？
 
@@ -334,30 +295,21 @@ basic.message: Dynamic Message in DEV
 
 *   在 VM 参数中使用 Dspring.profiles.active=prod
 *   在 application.properties 中使用 spring.profiles.active=prod*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 什么是Swagger？你用Spring Boot实现了吗？
 
 > 原文：[https://zwmst.com/1922.html](https://zwmst.com/1922.html)
 
 Swagger 广泛用于可视化 API，使用 Swagger UI 为前端开发人员提供在线沙箱。Swagger 是用于生成 RESTful Web 服务的可视化表示的工具，规范和完整框架实现。它使文档能够以 与服务器相同的速度更新。当通过 Swagger 正确定义时，消费者可以使用最少量的实现逻辑 来理解远程服务并与其进行交互。因此，Swagger消除了调用服务时的猜测。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何实现Spring Boot应用程序的安全性？
 
 > 原文：[https://zwmst.com/1924.html](https://zwmst.com/1924.html)
 
 为了实现Spring Boot的安全性，使用spring-boot-starter-security依赖项，并且必须添加 安全配置。它只需要很少代码。配置类将必须扩展WebSecurityConfigurerAdapter并覆盖其 方法。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 比较一下Spring Security和Shiro各自的优缺点？
 
@@ -368,10 +320,7 @@ date: 0001-01-01 00:00:00
 Shiro和Spring Security相比，主要有如下特点：
 
 Spring Security是一个重量级的安全管理框架；Shiro则是一个轻量级的安全管理框架； Spring Security概念复杂，配置繁琐；Shiro概念简单、配置简单； Spring Security功能强大；Shiro功能简单*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Spring Boot中如何解决跨域问题？
 
@@ -416,10 +365,7 @@ public class CorsConfig {
     }
 }
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Spring Boot的核心注解是哪些？他由哪几个注解组成的？
 
@@ -432,10 +378,7 @@ date: 0001-01-01 00:00:00
 @EnableAutoConfiguration：打开自动配置的功能，也可以关闭某个自动配置的选项，如 关闭数据源自动配置的功能：@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})；
 
 @ComponentScan：Spring组件扫描。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 保护SpringBoot应用有哪些方法？
 
@@ -450,10 +393,7 @@ date: 0001-01-01 00:00:00
 启用CSRF保护
 
 使用内容安全策略防止XSS攻击*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # SpringBoot 2.X有哪些新特性？与1.X有什么区别？
 

@@ -17,10 +17,7 @@ date: 0001-01-01 00:00:00
  redirectPort="8443" uriEncoding="utf-8"/>
 port="8080"改成你想要的端口
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # tomcat 有哪几种Connector 运行模式(优化)？
 
@@ -87,10 +84,7 @@ compressionMinSize="10240" 启用压缩的输出内容大小，默认为2KB
 noCompressionUserAgents="gozilla, traviata" 对于以下的浏览器，不启用压缩
 
 compressableMimeType="text/html,text/xml,text/javascript,text/css,text/plain" 哪些资源类型需要压缩*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Tomcat有几种部署方式？
 
@@ -103,10 +97,7 @@ date: 0001-01-01 00:00:00
 3）通过Catalina来进行配置:进入到conf\Catalina\localhost文件下，创建一个xml文件，该 文件的名字就是站点的名字。
 
 编写XML的方式来进行设置。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # tomcat容器是如何创建servlet类实例？用到了什么原理？
 
@@ -115,10 +106,7 @@ date: 0001-01-01 00:00:00
 当容器启动时，会读取在webapps目录下所有的web应用中的web.xml文件，然后对xml文件 进行解析，并读取servlet注册信息。然后，将每个应用中注册的servlet类都进行加载，并通过反射的方式实例化。
 
 （有时候也是在第一次请求时实例化）在servlet注册时加上如果为正数，则在一开始就实例化，如果不写或为负数，则第一次请求实例化。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # tomcat 如何优化？
 
@@ -212,10 +200,7 @@ HTTP 压缩可以大大提高浏览网站的速度，它的原理是，在客户
 ```
 
 好了，所有的Tomcat优化的地方都加上了。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # tomcat内存调优了解过吗？
 
@@ -240,10 +225,7 @@ JAVA_OPTS="$JAVA_OPTS -Xmx3550m -Xms3550m -Xss128k -XX:NewRatio=4 -XX:SurvivorRa
 -XX:MaxPermSize=16m:设置持久代大小为16m。
 
 -XX:MaxTenuringThreshold=0：设置垃圾最大年龄。如果设置为0的话，则年轻代对象不经过 Survivor区，直接进入年老代。对于年老代比较多的应用，可以提高效率。如果将此值设置为一 个较大值，则年轻代对象会在Survivor区进行多次复制，这样可以增加对象再年轻代的存活时 间，增加在年轻代即被回收的概论。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # tomcat垃圾回收策略调优了解吗？
 
@@ -286,10 +268,7 @@ java -Xmx3550m -Xms3550m -Xmn2g -Xss128k -XX:+UseParallelGC XX:MaxGCPauseMillis=
 -XX:CMSFullGCsBeforeCompaction：由于并发收集器不对内存空间进行压缩、整理，所以运 行一段时间以后会产生“碎片”，使得运行效率降低。此值设置运行多少次GC以后对内存空间进行压 缩、整理。
 
 -XX:+UseCMSCompactAtFullCollection：打开对年老代的压缩。可能会影响性能，但是可以 消除碎片*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # tomcat共享session如何处理？
 
@@ -314,10 +293,7 @@ date: 0001-01-01 00:00:00
 nginx默认不包含session sticky模块，需要重新编译才行（windows下我也不知道怎么重新编译）
 
 优点是处理效率高多了，缺点是强会话要求的场合不合适*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 如何添加JMS远程监控
 
@@ -333,10 +309,7 @@ Dcom.sun.management.jmxremote.authenticate=false
 -Dcom.sun.management.jmxremote.ssl=false 设置JVM的JMS监控不实用SSL
 -Dcom.sun.management.jmxremote.authenticate=false 设置JVM的JMS监控不需要认证
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # Tomcat一个请求的完整过程
 
@@ -373,10 +346,7 @@ date: 0001-01-01 00:00:00
 12.  Engine把HttpServletResponse对象返回给Connector
 
 13.  Connector把HttpServletResponse对象返回给客户browser*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 272.Tomcat 架构
 

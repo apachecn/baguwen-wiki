@@ -9,10 +9,7 @@ date: 0001-01-01 00:00:00
 
 Apache Cassandra 是高度可扩展的，高性能的分布式 NoSQL 数据库。 Cassandra 旨在处理许多商品服务器上的大量数据，提供高可用性而无需担心单点故障。
 Cassandra 具有能够处理大量数据的分布式架构。 数据放置在具有多个复制因子的不同机器上，以获得高可用性，而无需担心单点故障。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 413.数据模型
 
@@ -41,20 +38,14 @@ date: 0001-01-01 00:00:00
 ### Super Column Family（SQL 数据库不支持）
 
 6.  每个 SCF 由一系列 row 组成，每个 row 包含一个 key 以及其对应的若干 super column。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 414.一致性 Hash（多米诺 down 机）
 
 > 原文：[https://zwmst.com/3877.html](https://zwmst.com/3877.html)
 
 为每个节点分配一个 token，根据这个 token 值来决定节点在集群中的位置以及这个节点所存储的数据范围。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 415.虚拟节点（down 机多节点托管）
 
@@ -64,20 +55,14 @@ date: 0001-01-01 00:00:00
 如图所示，上面部分是标准一致性哈希，每个节点负责圆环中连续的一段，如果 Node2 突然down 掉，Node2 负责的数据托管给 Node1，即 Node1 负责 EFAB 四段，如果 Node1 里面有很多热点用户产生的数据导致 Node1 已经有点撑不住了，恰巧 B 也是热点用户产生的数据，这样一来 Node1 可能会接着 down 机，Node1down 机，Node6 还 hold 住吗？
 
 **下面部分是虚拟节点实现，每个节点不再负责连续部分，且圆环被分为更多的部分。如果 Node2突然 down 掉，Node2 负责的数据不全是托管给 Node1，而是托管给多个节点。而且也保持了一致性哈希的特点。***
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 416.Gossip 协议
 
 > 原文：[https://zwmst.com/3883.html](https://zwmst.com/3883.html)
 
 Gossip 算法如其名，灵感来自办公室八卦，只要一个人八卦一下，在有限的时间内所有的人都会知道该八卦的信息，这种方式也与病毒传播类似，因此 Gossip 有众多的别名“闲话算法”、“疫情传播算法”、“病毒感染算法”、“谣言传播算法”。 Gossip 的特点：在一个有界网络中，每个节点都随机地与其他节点通信，经过一番杂乱无章的通信，最终所有节点的状态都会达成一致。因为 Gossip 不要求节点知道所有其他节点，因此又具有去中心化的特点，节点之间完全对等，不需要任何的中心节点。实际上 Gossip 可以用于众多能接受“最终一致性”的领域：失败检测、路由同步、Pub/Sub、动态负载均衡。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 417.Gossip 两个节点（A、B）之间存在三种通信方式（push、pull、push&pull）
 
@@ -88,30 +73,21 @@ date: 0001-01-01 00:00:00
 3.  push/pull：与 pull 类似，只是多了一步，A 再将本地比 B 新的数据推送给 B，B 更新本地。
 
 如果把两个节点数据同步一次定义为一个周期，则在一个周期内，push 需通信 1 次，pull 需 2 次，push/pull 则需 3 次，从效果上来讲，push/pull 最好，理论上一个周期内可以使两个节点完全一致。直观上也感觉，push/pull 的收敛速度是最快的。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 418.gossip 的协议和 seed list（防止集群分列）
 
 > 原文：[https://zwmst.com/3887.html](https://zwmst.com/3887.html)
 
 cassandra 使用称为 gossip 的协议来发现加入 C 集群中的其他节点的位置和状态信息。**gossip 进程每秒都在进行，并与至多三个节点交换状态信息**。节点交换他们自己和所知道的信息，于是所有的节点很快就能学习到整个集群中的其他节点的信息。gossip 信息有一个相关的版本号，于是在一次 gossip 信息交换中，旧的信息会被新的信息覆盖重写。要阻止分区进行 gossip 交流，那么在集群中的所有节点中使用相同的 seed list，种子节点的指定除了启动起 gossip 进程外，没有其他的目的。种子节点不是一个单点故障，他们在集群操作中也没有其他的特殊目的，除了引导节点以外*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 419.Partitioners（计算 primary key token 的 hash 函数）
 
 > 原文：[https://zwmst.com/3889.html](https://zwmst.com/3889.html)
 
 在 Cassandra 中，table 的每行由唯一的 primarykey 标识，partitioner 实际上为一 hash 函数用以计算 primary key 的 token。Cassandra 依据这个 token 值在集群中放置对应的行*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 420.两种可用的复制策略
 
@@ -131,10 +107,7 @@ CREATE KEYSPACE Excelsior WITH REPLICATION = { 'class' :
 CREATE KEYSPACE Excalibur WITH REPLICATION = {'class' :'NetworkTopologyStrategy',
 'dc1' : 3, 'dc2' : 2};
 ```*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 421.协调者(coordinator)
 
@@ -142,10 +115,7 @@ date: 0001-01-01 00:00:00
 
 **协调者(coordinator)将 write 请求发送到拥有对应 row 的所有 replica 节点**，只要节点可用便获取并执行写请求。**写一致性级别(write consistency level)确定要有多少个 replica 节点必须返回成功的确认信息。成功意味着数据被正确写入了 commit log 和 memtable**。![](img/03476a950b6af1d92f66eba25b7171c4.png)
 其中 dc1、dc2 这些数据中心名称要与 snitch 中配置的名称一致.上面的拓扑策略表示在 dc1 配置3 个副本,在 dc2 配置 2 个副本*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 422.数据读请求和后台修复
 
@@ -154,10 +124,7 @@ date: 0001-01-01 00:00:00
 1.  协调者首先与一致性级别确定的所有 replica 联系，被联系的节点返回请求的数据。
 2.  若多个节点被联系，则来自各 replica 的 row 会在内存中作比较，若不一致，则协调者使用含最新数据的 replica 向 client 返回结果。那么比较操作过程中只需要传递时间戳就可以,因为要比较的只是哪个副本数据是最新的。
 3.  协调者在后台联系和比较来自其余拥有对应 row 的 replica 的数据，若不一致，会向过时的replica 发写请求用最新的数据进行更新 read repair。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 423.数据存储（CommitLog、MemTable、SSTable）
 
@@ -165,20 +132,14 @@ date: 0001-01-01 00:00:00
 
 写请求分别到 CommitLog 和 MemTable, 并且 MemTable 的数据会刷写到磁盘 SSTable 上. 除了写数据,还有索引也会保存到磁盘上.
 先将数据写到磁盘中的 commitlog，同时追加到中内存中的数据结构 memtable 。这个时候就会返回客户端状态 ， memtable 内 容 超 出 指 定 容 量 后 会 被 放 进 将 被 刷 入 磁 盘 的 队 列(memtable_flush_queue_size 配置队列长度)。若将被刷入磁盘的数据超出了队列长度，将内存数据刷进磁盘中的 SSTable,之后 commit log 被清空。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 424.SSTable 文件构成（BloomFilter、index、data、static）
 
 > 原文：[https://zwmst.com/3902.html](https://zwmst.com/3902.html)
 
 SSTable 文件有 fileer（判断数据 key 是否存在，这里使用了 BloomFilter 提高效率），index（寻找对应 column 值所在 data 文件位置）文件，data（存储真实数据）文件，static（存储和统计column 和 row 大小）文件。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 425.二级索引（对要索引的 value 摘要，生成 RowKey）
 
@@ -191,10 +152,7 @@ KeysIndex 所创建的二级索引也被保存在一张 ColumnFamily 中。在�
 如果有相同的 value 被索引了，则会在索引 ColumnFamily 中相同的 RowKey 后再添加新的Column。如果有新的 value 被索引，则会在索引 ColumnFamily 中添加新的 RowKey 以及对应新的 Column。
 
 当对 value 进行查询时，只需计算该 value 的 RowKey，在索引 ColumnFamily 中的查找该RowKey，对其 Columns 进行遍历就能得到该 value 所有数据的 RowKey。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 426.数据写入和更新（数据追加）
 
@@ -213,10 +171,7 @@ Cassandra 的设计思路与这些系统不同，无论是 insert 还是 remove 
 ### 读的复杂度高
 
 3.  但是，Log structured 的存储系统也引入了一个重要的问题：读的复杂度和性能。理论上说，读操作需要从后往前扫描数据，以找到某个记录的最新版本。相比传统的存储系统，这是比较耗时的。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 427.数据删除（column 的墓碑）
 
@@ -224,30 +179,21 @@ date: 0001-01-01 00:00:00
 
 如果一次删除操作在一个节点上失败了（总共 3 个节点，副本为 3， RF=3).整个删除操作仍然被认为成功的（因为有两个节点应答成功，使用 CL.QUORUM 一致性）。接下来如果读发生在该节点上就会变的不明确，因为结果返回是空，还是返回数据，没有办法确定哪一种是正确的。
 Cassandra 总是认为返回数据是对的，那就会发生删除的数据又出现了的事情，这些数据可以叫”僵尸”，并且他们的表现是不可预见的。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 428.墓碑
 
 > 原文：[https://zwmst.com/3910.html](https://zwmst.com/3910.html)
 
 **删除一个 column 其实只是插入一个关于这个 column 的墓碑（tombstone），并不直接删除原有的 column。**该墓碑被作为对该 CF 的一次修改记录在 Memtable 和 SSTable 中。墓碑的内容是删除请求被执行的时间，该时间是接受客户端请求的存储节点在执行该请求时的本地时间（local delete time），称为本地删除时间。需要注意区分本地删除时间和时间戳，每个 CF 修改记录都有一个时间戳，这个时间戳可以理解为该 column 的修改时间，是由客户端给定的。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 429.垃圾回收 compaction
 
 > 原文：[https://zwmst.com/3912.html](https://zwmst.com/3912.html)
 
 由于被删除的 column 并不会立即被从磁盘中删除，所以系统占用的磁盘空间会越来越大，这就需要有一种垃圾回收的机制，定期删除被标记了墓碑的 column。垃圾回收是在 compaction 的过程中完成的。*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 430.数据读取（memtable+SStables）
 
@@ -262,10 +208,7 @@ date: 0001-01-01 00:00:00
 5.  如果在 partition key 缓存中找到了 partition key,直接去 compression offset 命中，如果没有，检查partition summary
 6.  根据 compression offset map 找到数据位置
 7.  从磁盘的 SSTable 中取出数据*
-<!--yml
-category: 未分类
-date: 0001-01-01 00:00:00
--->
+
 
 # 431.行缓存和键缓存请求流程图
 
