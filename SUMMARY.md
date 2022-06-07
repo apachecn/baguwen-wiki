@@ -49,9 +49,8 @@
     +   [Spring 面试题（爪哇程序员）](docs/Spring-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [SpringBoot 面试题（爪哇程序员）](docs/SpringBoot-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [SpringCloud 面试题（爪哇程序员）](docs/SpringCloud-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
-+   多线程
++   并发
     +   [多线程面试题（爪哇程序员）](docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
-+   并发编程
     +   [并发编程面试题（爪哇程序员）](docs/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
 +   数据结构与算法
     +   [数据结构与算法面试题（InterviewTop）](docs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88InterviewTop%EF%BC%89.md)
