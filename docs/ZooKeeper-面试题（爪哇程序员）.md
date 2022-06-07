@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1937.html](https://zwmst.com/1937.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:54:54+08:00"> 2021-08-15 </time> ](https://zwmst.com/1937.html)  PERSISTENT-持久节点
+PERSISTENT-持久节点
 
 除非手动删除，否则节点一直存在于Zookeeper上
 
@@ -31,7 +31,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1940.html](https://zwmst.com/1940.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:55:26+08:00"> 2021-08-15 </time> ](https://zwmst.com/1940.html)  ZAB协议是为分布式协调服务Zookeeper专门设计的一种支持崩溃恢复的原子广播协议。
+ZAB协议是为分布式协调服务Zookeeper专门设计的一种支持崩溃恢复的原子广播协议。
 
 ZAB协议包括两种基本的模式：崩溃恢复和消息广播。
 
@@ -45,7 +45,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1943.html](https://zwmst.com/1943.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:56:06+08:00"> 2021-08-15 </time> ](https://zwmst.com/1943.html)  有了zookeeper的一致性文件系统，锁的问题变得容易。锁服务可以分为两类，一个是保持独 占，另一个是控制时序。
+有了zookeeper的一致性文件系统，锁的问题变得容易。锁服务可以分为两类，一个是保持独 占，另一个是控制时序。
 
 对于第一类，我们将zookeeper上的一个znode看作是一把锁，通过createznode的方式来实 现。所有客户端都去创建 /distribute_lock 节点，最终成功创建的那个客户端也即拥有了这 把锁。用完删除掉自己创建的distribute_lock 节点就释放出锁。
 
@@ -59,7 +59,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1945.html](https://zwmst.com/1945.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:56:20+08:00"> 2021-08-15 </time> ](https://zwmst.com/1945.html)  ZooKeeper是一个开放源码的分布式协调服务，它是集群的管理者，监视着集群中各个节点的 状态根据节点提交的反馈进行下一步合理操作。最终，将简单易用的接口和性能高效、功能稳 定的系统提供给用户。
+ZooKeeper是一个开放源码的分布式协调服务，它是集群的管理者，监视着集群中各个节点的 状态根据节点提交的反馈进行下一步合理操作。最终，将简单易用的接口和性能高效、功能稳 定的系统提供给用户。
 
 分布式应用程序可以基于Zookeeper实现诸如数据发布/订阅、负载均衡、命名服务、分布式 协调/通知、集群管理、Master选举、分布式锁和分布式队列等功能。
 
@@ -87,7 +87,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1947.html](https://zwmst.com/1947.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:56:39+08:00"> 2021-08-15 </time> ](https://zwmst.com/1947.html)  1、文件系统
+1、文件系统
 
 2、通知机制*
 <!--yml
@@ -99,7 +99,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1949.html](https://zwmst.com/1949.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:57:26+08:00"> 2021-08-15 </time> ](https://zwmst.com/1949.html)  Zookeeper提供一个多层级的节点命名空间（节点称为znode）。与文件系统不同的是，这些 节点都可以设置关联的数据，而文件系统中只有文件节点可以存放数据而目录节点不行。 Zookeeper为了保证高吞吐和低延迟，在内存中维护了这个树状的目录结构，这种特性使得 Zookeeper不能用于存放大量的数据，每个节点的存放数据上限为1M。*
+Zookeeper提供一个多层级的节点命名空间（节点称为znode）。与文件系统不同的是，这些 节点都可以设置关联的数据，而文件系统中只有文件节点可以存放数据而目录节点不行。 Zookeeper为了保证高吞吐和低延迟，在内存中维护了这个树状的目录结构，这种特性使得 Zookeeper不能用于存放大量的数据，每个节点的存放数据上限为1M。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -109,7 +109,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1951.html](https://zwmst.com/1951.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:57:39+08:00"> 2021-08-15 </time> ](https://zwmst.com/1951.html)  ZooKeeper是一个开放源码的分布式协调服务，它是集群的管理者，监视着集群中各个节点的状态根据节点提交的反馈进行下一步合理操作。最终，将简单易用的接口和性能高效、功能稳定的系统提供给用户。
+ZooKeeper是一个开放源码的分布式协调服务，它是集群的管理者，监视着集群中各个节点的状态根据节点提交的反馈进行下一步合理操作。最终，将简单易用的接口和性能高效、功能稳定的系统提供给用户。
 
 分布式应用程序可以基于Zookeeper实现诸如数据发布/订阅、负载均衡、命名服务、分布式 协调/通知、集群管理、Master选举、分布式锁和分布式队列等功能。
 
@@ -127,7 +127,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1953.html](https://zwmst.com/1953.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:57:51+08:00"> 2021-08-15 </time> ](https://zwmst.com/1953.html)  1、文件系统
+1、文件系统
 
 2、通知机制*
 <!--yml
@@ -139,7 +139,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1955.html](https://zwmst.com/1955.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:58:02+08:00"> 2021-08-15 </time> ](https://zwmst.com/1955.html)  Zookeeper提供一个多层级的节点命名空间（节点称为znode）。与文件系统不同的是，这些 节点都可以设置关联的数据，而文件系统中只有文件节点可以存放数据而目录节点不行。 Zookeeper为了保证高吞吐和低延迟，在内存中维护了这个树状的目录结构，这种特性使得 Zookeeper不能用于存放大量的数据，每个节点的存放数据上限为1M。*
+Zookeeper提供一个多层级的节点命名空间（节点称为znode）。与文件系统不同的是，这些 节点都可以设置关联的数据，而文件系统中只有文件节点可以存放数据而目录节点不行。 Zookeeper为了保证高吞吐和低延迟，在内存中维护了这个树状的目录结构，这种特性使得 Zookeeper不能用于存放大量的数据，每个节点的存放数据上限为1M。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -149,7 +149,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1957.html](https://zwmst.com/1957.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:58:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1957.html)  Zookeeper允许客户端向服务端的某个Znode注册一个Watcher监听，当服务端的一些指定事 件触发了这个Watcher，服务端会向指定客户端发送一个事件通知来实现分布式的通知功能， 然后客户端根据Watcher通知状态和事件类型做出业务上的改变。
+Zookeeper允许客户端向服务端的某个Znode注册一个Watcher监听，当服务端的一些指定事 件触发了这个Watcher，服务端会向指定客户端发送一个事件通知来实现分布式的通知功能， 然后客户端根据Watcher通知状态和事件类型做出业务上的改变。
 
 工作机制：
 
@@ -187,7 +187,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1959.html](https://zwmst.com/1959.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:58:28+08:00"> 2021-08-15 </time> ](https://zwmst.com/1959.html)  调用getData()/getChildren()/exist()三个API，传入Watcher对象
+调用getData()/getChildren()/exist()三个API，传入Watcher对象
 
 标记请求request，封装Watcher到WatchRegistration
 
@@ -205,7 +205,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1961.html](https://zwmst.com/1961.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:58:44+08:00"> 2021-08-15 </time> ](https://zwmst.com/1961.html)  1）服务端接收Watcher并存储
+1）服务端接收Watcher并存储
 
 接收到客户端请求，处理请求判断是否需要注册Watcher，需要的话将数据节点的节点路径和 ServerCnxn（ServerCnxn代表一个客户端和服务端的连接，实现了Watcher的process接 口，此时可以看成一个Watcher对象）存储在WatcherManager的WatchTable和 watch2Paths中去。
 
@@ -237,7 +237,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1963.html](https://zwmst.com/1963.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:58:56+08:00"> 2021-08-15 </time> ](https://zwmst.com/1963.html)  1）UGO（User/Group/Others）
+1）UGO（User/Group/Others）
 
 目前在Linux/Unix文件系统中使用，也是使用最广泛的权限控制方式。是一种粗粒度的文件 系统权限控制模式。
 
@@ -279,7 +279,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1965.html](https://zwmst.com/1965.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:59:30+08:00"> 2021-08-15 </time> ](https://zwmst.com/1965.html)  *   Leader
+*   Leader
 
 事务请求的唯一调度和处理者，保证集群事务处理的顺序性 集群内部各服务的调度者
 
@@ -307,7 +307,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1968.html](https://zwmst.com/1968.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:59:44+08:00"> 2021-08-15 </time> ](https://zwmst.com/1968.html)  服务器具有四种状态，分别是LOOKING、FOLLOWING、LEADING、OBSERVING。
+服务器具有四种状态，分别是LOOKING、FOLLOWING、LEADING、OBSERVING。
 
 LOOKING：寻找Leader状态。当服务器处于该状态时，它会认为当前集群中没有Leader，因 此需要进入Leader选举状态。
 
@@ -325,7 +325,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1970.html](https://zwmst.com/1970.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T16:59:55+08:00"> 2021-08-15 </time> ](https://zwmst.com/1970.html)  整个集群完成Leader选举之后，Learner（Follower和Observer的统称）回向Leader服务器 进行注册。当Learner服务器想Leader服务器完成注册后，进入数据同步环节。
+整个集群完成Leader选举之后，Learner（Follower和Observer的统称）回向Leader服务器 进行注册。当Learner服务器想Leader服务器完成注册后，进入数据同步环节。
 
 数据同步流程：（均以消息传递的方式进行）
 
@@ -377,7 +377,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1972.html](https://zwmst.com/1972.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:00:09+08:00"> 2021-08-15 </time> ](https://zwmst.com/1972.html)  zookeeper采用了全局递增的事务Id来标识，所有的proposal（提议）都在被提出的时候加上 了zxid，zxid实际上是一个64位的数字，高32位是epoch（时期; 纪元; 世; 新时代）用来标识 leader周期，如果有新的leader产生出来，epoch会自增，低32位用来递增计数。当新产生 proposal的时候，会依据数据库的两阶段过程，首先会向其他的server发出事务执行请求，如 果超过半数的机器都能执行并且能够成功，那么就会开始执行。*
+zookeeper采用了全局递增的事务Id来标识，所有的proposal（提议）都在被提出的时候加上 了zxid，zxid实际上是一个64位的数字，高32位是epoch（时期; 纪元; 世; 新时代）用来标识 leader周期，如果有新的leader产生出来，epoch会自增，低32位用来递增计数。当新产生 proposal的时候，会依据数据库的两阶段过程，首先会向其他的server发出事务执行请求，如 果超过半数的机器都能执行并且能够成功，那么就会开始执行。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -387,7 +387,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1974.html](https://zwmst.com/1974.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:00:20+08:00"> 2021-08-15 </time> ](https://zwmst.com/1974.html)  在分布式环境中，有些业务逻辑只需要集群中的某一台机器进行执行，其他的机器可以共享这 个结果，这样可以大大减少重复计算，提高性能，于是就需要进行leader选举。*
+在分布式环境中，有些业务逻辑只需要集群中的某一台机器进行执行，其他的机器可以共享这 个结果，这样可以大大减少重复计算，提高性能，于是就需要进行leader选举。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -397,7 +397,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1976.html](https://zwmst.com/1976.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:00:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1976.html)  Zookeeper本身也是集群，推荐配置不少于3个服务器。Zookeeper自身也要保证当一个节点 宕机时，其他节点会继续提供服务。 如果是一个Follower宕机，还有2台服务器提供访问，因为Zookeeper上的数据是有多个副本 的，数据并不会丢失； 如果是一个Leader宕机，Zookeeper会选举出新的Leader。 ZK集群的机制是只要超过半数的节点正常，集群就能正常提供服务。只有在ZK节点挂得太 多，只剩一半或不到一半节点能工作，集群才失效。
+Zookeeper本身也是集群，推荐配置不少于3个服务器。Zookeeper自身也要保证当一个节点 宕机时，其他节点会继续提供服务。 如果是一个Follower宕机，还有2台服务器提供访问，因为Zookeeper上的数据是有多个副本 的，数据并不会丢失； 如果是一个Leader宕机，Zookeeper会选举出新的Leader。 ZK集群的机制是只要超过半数的节点正常，集群就能正常提供服务。只有在ZK节点挂得太 多，只剩一半或不到一半节点能工作，集群才失效。
 
 所以 3个节点的cluster可以挂掉1个节点(leader可以得到2票>1.5) 2个节点的cluster就不能挂掉任何1个节点了(leader可以得到1票<=1)*
 <!--yml
@@ -409,7 +409,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1978.html](https://zwmst.com/1978.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:00:44+08:00"> 2021-08-15 </time> ](https://zwmst.com/1978.html)  单机模式、伪集群模式、集群模式。*
+单机模式、伪集群模式、集群模式。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -419,7 +419,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1980.html](https://zwmst.com/1980.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:00:56+08:00"> 2021-08-15 </time> ](https://zwmst.com/1980.html)  集群规则为2N+1台，N>0，即3台。*
+集群规则为2N+1台，N>0，即3台。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -429,7 +429,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1982.html](https://zwmst.com/1982.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:01:07+08:00"> 2021-08-15 </time> ](https://zwmst.com/1982.html)  其实就是水平扩容了，Zookeeper在这方面不太好。
+其实就是水平扩容了，Zookeeper在这方面不太好。
 
 两种方式：
 
@@ -447,7 +447,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1984.html](https://zwmst.com/1984.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:01:22+08:00"> 2021-08-15 </time> ](https://zwmst.com/1984.html)  不是。官方声明：一个Watch事件是一个一次性的触发器，当被设置了Watch的数据发生了改 变的时候，则服务器将这个改变发送给设置了Watch的客户端，以便通知它们。
+不是。官方声明：一个Watch事件是一个一次性的触发器，当被设置了Watch的数据发生了改 变的时候，则服务器将这个改变发送给设置了Watch的客户端，以便通知它们。
 
 为什么不是永久的，举个例子，如果服务端变动频繁，而监听的客户端很多情况下，每次变动 都要通知到所有的客户端，给网络和服务器造成很大压力。 一般是客户端执行getData(“/节点A”,true)，如果节点A发生了变更或删除，客户端会得到它 的watch事件，但是在之后节点A又发生了变更，而客户端又没有设置watch事件，就不再给 客户端发送。
 
@@ -461,7 +461,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1986.html](https://zwmst.com/1986.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:01:34+08:00"> 2021-08-15 </time> ](https://zwmst.com/1986.html)  相同点：
+相同点：
 
 两者都存在一个类似于Leader进程的角色，由其负责协调多个Follower进程的运行 Leader进程都会等待超过半数的Follower做出正确的反馈后，才会将一个提案进行提交 ZAB协议中，每个Proposal中都包含一个 epoch 值来代表当前的Leader周期，Paxos中名字 为Ballot
 
@@ -477,7 +477,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1988.html](https://zwmst.com/1988.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:01:46+08:00"> 2021-08-15 </time> ](https://zwmst.com/1988.html)  数据发布/订阅
+数据发布/订阅
 
 负载均衡
 
@@ -501,7 +501,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1990.html](https://zwmst.com/1990.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:01:58+08:00"> 2021-08-15 </time> ](https://zwmst.com/1990.html)  Zookeeper的作用：
+Zookeeper的作用：
 
 zookeeper用来注册服务和进行负载均衡，哪一个服务由哪一个机器来提供必需让调用者知 道，简单来说就是ip地址和服务名称的对应关系。当然也可以通过硬编码的方式把这种对应关 系在调用方业务代码中实现，但是如果提供服务的机器挂掉调用者无法知晓，如果不更改代码 会继续请求挂掉的机器提供服务。zookeeper通过心跳机制可以检测挂掉的机器并将挂掉机器 的ip和服务对应关系从列表中删除。至于支持高并发，简单来说就是横向扩展，在不更改代码 的情况通过添加机器来提高运算能力。通过添加新的机器向zookeeper注册服务，服务的提供 者多了能服务的客户就多了。
 
@@ -525,7 +525,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1992.html](https://zwmst.com/1992.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-15T17:02:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1992.html)  zookeeper
+zookeeper
 
 不存在单点问题，zab机制保证单点故障可重新选举一个leader 只负责服务的注册与发现，不负责转发，减少一次数据交换（消费方与服务方直接通信） 需要自己实现相应的负载均衡算法
 
@@ -541,7 +541,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1999.html](https://zwmst.com/1999.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-16T17:22:28+08:00"> 2021-08-16 </time> ](https://zwmst.com/1999.html)  **ZooKeeper**是一个开放源码的分布式协调服务，它是集群的管理者，监视着集群
+**ZooKeeper**是一个开放源码的分布式协调服务，它是集群的管理者，监视着集群
 中各个节点的状态根据节点提交的反馈进行下一步合理操作。最终，将简单易用的接口和性能高效、功能稳定的系统提供给用户。
 分布式应用程序可以基于**Zookeeper**实现诸如数据发布/订阅、负载均衡、命名服
 务、分布式协调/通知、集群管理、Master 选举、分布式锁和分布式队列等功能。
@@ -564,7 +564,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2001.html](https://zwmst.com/2001.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-16T17:26:18+08:00"> 2021-08-16 </time> ](https://zwmst.com/2001.html)  *   （1） 文件系统
+*   （1） 文件系统
 *   （2） 通知机制*
 <!--yml
 category: 未分类
@@ -575,7 +575,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2003.html](https://zwmst.com/2003.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-16T17:26:44+08:00"> 2021-08-16 </time> ](https://zwmst.com/2003.html)  **Zookeeper**提供一个多层级的节点命名空间（节点称为 znode）。与文件系统不同的是，这些节点都可以设置关联的数据，而文件系统中只有文件节点可以存放数据而目录节点不行。
+**Zookeeper**提供一个多层级的节点命名空间（节点称为 znode）。与文件系统不同的是，这些节点都可以设置关联的数据，而文件系统中只有文件节点可以存放数据而目录节点不行。
 **Zookeeper**为了保证高吞吐和低延迟，在内存中维护了这个树状的目录结构， 这种特性使得**Zookeeper**不能用于存放大量的数据，每个节点的存放数据上限为 1M。*
 <!--yml
 category: 未分类
@@ -586,7 +586,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2031.html](https://zwmst.com/2031.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T10:52:12+08:00"> 2021-08-17 </time> ](https://zwmst.com/2031.html)  **ZAB**协议是为分布式协调服务**Zookeeper**专门设计的一种支持崩溃恢复的原子广播协议。
+**ZAB**协议是为分布式协调服务**Zookeeper**专门设计的一种支持崩溃恢复的原子广播协议。
 **ZAB**协议包括两种基本的模式：崩溃恢复和消息广播。
 当整个**zookeeper**集群刚刚启动或者 Leader 服务器宕机、重启或者网络故障导致不存在过半的服务器与 Leader 服务器保持正常通信时，所有进程（服务器）进入崩溃恢复模式，首先选举产生新的 Leader 服务器，然后集群中Follower 服务器开始与新的 Leader 服务器进行数据同步，当集群中超过半数机器与该 Leader 服务器完成数据同步之后，退出恢复模式进入消息广播模
 式，Leader服务器开始接收客户端的事务请求生成事物提案来进行事务请求处理。*
@@ -599,7 +599,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2035.html](https://zwmst.com/2035.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:17:27+08:00"> 2021-08-17 </time> ](https://zwmst.com/2035.html)  *   （1） PERSISTENT-持久节点
+*   （1） PERSISTENT-持久节点
     除非手动删除，否则节点一直存在于 Zookeeper 上
 *   （2） EPHEMERAL-临时节点
     临时节点的生命周期与客户端会话绑定，一旦客户端会话失效（客户端与
@@ -617,7 +617,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2037.html](https://zwmst.com/2037.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:17:55+08:00"> 2021-08-17 </time> ](https://zwmst.com/2037.html)  **Zookeeper**允许客户端向服务端的某个 Znode 注册一个 Watcher 监听，当服务端的一些指定事件触发了这个Watcher，服务端会向指定客户端发送一个事件通知来实现分布式的通知功能，然后客户端根据 Watcher 通知状态和事件类型做出业务上的改变。
+**Zookeeper**允许客户端向服务端的某个 Znode 注册一个 Watcher 监听，当服务端的一些指定事件触发了这个Watcher，服务端会向指定客户端发送一个事件通知来实现分布式的通知功能，然后客户端根据 Watcher 通知状态和事件类型做出业务上的改变。
 工作机制：
 
 *   （1） 客户端注册 watcher
@@ -645,7 +645,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2039.html](https://zwmst.com/2039.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:18:10+08:00"> 2021-08-17 </time> ](https://zwmst.com/2039.html)  *   （1） 调用getData()/getChildren()/exist()三个 API，传入 Watcher 对象
+*   （1） 调用getData()/getChildren()/exist()三个 API，传入 Watcher 对象
 *   （2） 标记请求 request，封装 Watcher 到 WatchRegistration
 *   （3） 封装成 Packet 对象，发服务端发送 request
 *   （4） 收到服务端响应后，将 Watcher 注册到 ZKWatcherManager 中进行管理
@@ -659,7 +659,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2041.html](https://zwmst.com/2041.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:18:20+08:00"> 2021-08-17 </time> ](https://zwmst.com/2041.html)  ## （1） 服务端接收 Watcher 并存储
+## （1） 服务端接收 Watcher 并存储
 
 接收到客户端请求，处理请求判断是否需要注册Watcher，需要的话将数据节点的节点路径和 ServerCnxn（ServerCnxn 代表一个客户端和服务端的连接，实现了 Watcher 的 process 接口，此时可以看成一个 Watcher 对象）存储在WatcherManager 的 WatchTable 和 watch2Paths 中 去 。
 
@@ -684,7 +684,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2043.html](https://zwmst.com/2043.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:18:30+08:00"> 2021-08-17 </time> ](https://zwmst.com/2043.html)  客户端 SendThread 线程接收事件通知，交由 EventThread 线程回调Watcher。
+客户端 SendThread 线程接收事件通知，交由 EventThread 线程回调Watcher。
 客户端的 Watcher 机制同样是一次性的，一旦被触发后，该 Watcher 就失效了。*
 <!--yml
 category: 未分类
@@ -695,7 +695,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2045.html](https://zwmst.com/2045.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:18:40+08:00"> 2021-08-17 </time> ](https://zwmst.com/2045.html)  ## UGO（User/Group/Others）
+## UGO（User/Group/Others）
 
 目前在 Linux/Unix 文件系统中使用，也是使用最广泛的权限控制方式。是一
 种粗粒度的文件系统权限控制模式。
@@ -726,7 +726,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2047.html](https://zwmst.com/2047.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:18:50+08:00"> 2021-08-17 </time> ](https://zwmst.com/2047.html)  3.2.0 版本后，添加了 Chroot 特性，该特性允许每个客户端为自己设置一个命名空间。如果一个客户端设置了 Chroot，那么该客户端对服务器的任何操作，都将会被限制在其自己的命名空间下。
+3.2.0 版本后，添加了 Chroot 特性，该特性允许每个客户端为自己设置一个命名空间。如果一个客户端设置了 Chroot，那么该客户端对服务器的任何操作，都将会被限制在其自己的命名空间下。
 通过设置 Chroot，能够将一个客户端应用于 Zookeeper 服务端的一颗子树相对应，在那些多个应用公用一个 Zookeeper 进群的场景下，对实现不同应用间的相互隔离非常有帮助。*
 <!--yml
 category: 未分类
@@ -737,7 +737,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2049.html](https://zwmst.com/2049.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:18:59+08:00"> 2021-08-17 </time> ](https://zwmst.com/2049.html)  **分桶策略**：将类似的会话放在同一区块中进行管理，以便于 Zookeeper 对会话进行不同区块的隔离处理以及同一区块的统一处理。
+**分桶策略**：将类似的会话放在同一区块中进行管理，以便于 Zookeeper 对会话进行不同区块的隔离处理以及同一区块的统一处理。
 **分配原则**：每个会话的“下次超时时间点”（ExpirationTime）
 **计算公式**：
 ExpirationTime *= currentTime + sessionTimeout
@@ -752,7 +752,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2051.html](https://zwmst.com/2051.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:19:08+08:00"> 2021-08-17 </time> ](https://zwmst.com/2051.html)  ## Leader
+## Leader
 
 *   （1） 事务请求的唯一调度和处理者，保证集群事务处理的顺序性
 *   （2） 集群内部各服务的调度者
@@ -777,7 +777,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2053.html](https://zwmst.com/2053.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:20:24+08:00"> 2021-08-17 </time> ](https://zwmst.com/2053.html)  服务器具有四种状态，分别是**LOOKING**、**FOLLOWING**、**LEADING**、**OBSERVING**。
+服务器具有四种状态，分别是**LOOKING**、**FOLLOWING**、**LEADING**、**OBSERVING**。
 
 *   （1） **LOOKING**：寻 找 Leader 状态。当服务器处于该状态时，它会认为当前集群中没有 Leader，因此需要进入 Leader 选举状态。
 *   （2） **FOLLOWING**：跟随者状态。表明当前服务器角色是 Follower。
@@ -792,7 +792,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2055.html](https://zwmst.com/2055.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:20:39+08:00"> 2021-08-17 </time> ](https://zwmst.com/2055.html)  整个集群完成 Leader 选举之后，Learner（Follower 和 Observer 的统称）回向 Leader 服务器进行注册。当 Learner 服务器想 Leader 服务器完成注册后，进入数据同步环节。
+整个集群完成 Leader 选举之后，Learner（Follower 和 Observer 的统称）回向 Leader 服务器进行注册。当 Learner 服务器想 Leader 服务器完成注册后，进入数据同步环节。
 
 ### 数据同步流程：（均以消息传递的方式进行）
 
@@ -828,7 +828,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2057.html](https://zwmst.com/2057.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:20:50+08:00"> 2021-08-17 </time> ](https://zwmst.com/2057.html)  zookeeper 采用了全局递增的事务 Id 来标识，所有的 proposal（提议）都在被提出的时候加上了 zxid，zxid 实际上是一个 64 位的数字，高 32 位是epoch（ 时期; 纪元; 世; 新时代）用来标识 leader 周期，如果有新的leader 产生出来，epoch 会自增，低 32 位用来递增计数。当新产生 proposal 的时候，会依据数据库的两阶段过程，首先会向其他的 server 发出事务执行请求，如果超过半数的机器都能执行并且能够成功，那么就会开始执行。*
+zookeeper 采用了全局递增的事务 Id 来标识，所有的 proposal（提议）都在被提出的时候加上了 zxid，zxid 实际上是一个 64 位的数字，高 32 位是epoch（ 时期; 纪元; 世; 新时代）用来标识 leader 周期，如果有新的leader 产生出来，epoch 会自增，低 32 位用来递增计数。当新产生 proposal 的时候，会依据数据库的两阶段过程，首先会向其他的 server 发出事务执行请求，如果超过半数的机器都能执行并且能够成功，那么就会开始执行。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -838,7 +838,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2059.html](https://zwmst.com/2059.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:21:02+08:00"> 2021-08-17 </time> ](https://zwmst.com/2059.html)  在分布式环境中，有些业务逻辑只需要集群中的某一台机器进行执行，其他的机器可以共享这个结果，这样可以大大减少重复计算，提高性能，于是就需要进行 leader 选举。*
+在分布式环境中，有些业务逻辑只需要集群中的某一台机器进行执行，其他的机器可以共享这个结果，这样可以大大减少重复计算，提高性能，于是就需要进行 leader 选举。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -848,7 +848,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2061.html](https://zwmst.com/2061.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:21:15+08:00"> 2021-08-17 </time> ](https://zwmst.com/2061.html)  Zookeeper 本身也是集群，推荐配置不少于 3 个服务器。Zookeeper 自身也要保证当一个节点宕机时，其他节点会继续提供服务。
+Zookeeper 本身也是集群，推荐配置不少于 3 个服务器。Zookeeper 自身也要保证当一个节点宕机时，其他节点会继续提供服务。
 如果是一个 Follower 宕机，还有 2 台服务器提供访问，因为 Zookeeper 上的数据是有多个副本的，数据并不会丢失 ；
 如果是一个 Leader 宕机，Zookeeper 会选举出新的 Leader。
 ZK 集群的机制是只要超过半数的节点正常，集群就能正常提供服务。只有在
@@ -865,7 +865,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2063.html](https://zwmst.com/2063.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:21:26+08:00"> 2021-08-17 </time> ](https://zwmst.com/2063.html)  zk 的负载均衡是可以调控，nginx 只是能调权重，其他需要可控的都需要自己写插件；但是 nginx 的吞吐量比 zk 大很多，应该说按业务选择用哪种方式。*
+zk 的负载均衡是可以调控，nginx 只是能调权重，其他需要可控的都需要自己写插件；但是 nginx 的吞吐量比 zk 大很多，应该说按业务选择用哪种方式。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -875,7 +875,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2065.html](https://zwmst.com/2065.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:21:37+08:00"> 2021-08-17 </time> ](https://zwmst.com/2065.html)  **部署模式**：单机模式、伪集群模式、集群模式。*
+**部署模式**：单机模式、伪集群模式、集群模式。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -885,7 +885,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2067.html](https://zwmst.com/2067.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:21:50+08:00"> 2021-08-17 </time> ](https://zwmst.com/2067.html)  集群规则为 2N+1 台，N>0，即 3 台。*
+集群规则为 2N+1 台，N>0，即 3 台。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -895,7 +895,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2069.html](https://zwmst.com/2069.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:22:01+08:00"> 2021-08-17 </time> ](https://zwmst.com/2069.html)  其实就是水平扩容了，Zookeeper 在这方面不太好。两种方式：全部重启：关闭所有 Zookeeper 服务，修改配置之后启动。不影响之前客户端的会话。
+其实就是水平扩容了，Zookeeper 在这方面不太好。两种方式：全部重启：关闭所有 Zookeeper 服务，修改配置之后启动。不影响之前客户端的会话。
 逐个重启：在过半存活即可用的原则下，一台机器重启不影响整个集群对外提供服务。这是比较常用的方式。
 3.5 版本开始支持动态扩容*
 <!--yml
@@ -907,7 +907,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2071.html](https://zwmst.com/2071.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:22:12+08:00"> 2021-08-17 </time> ](https://zwmst.com/2071.html)  **不是**。官方声明：一个 Watch 事件是一个一次性的触发器，当被设置了 Watch 的数据发生了改变的时候，则服务器将这个改变发送给设置了 Watch 的客户端，以便通知它们。
+**不是**。官方声明：一个 Watch 事件是一个一次性的触发器，当被设置了 Watch 的数据发生了改变的时候，则服务器将这个改变发送给设置了 Watch 的客户端，以便通知它们。
 **为什么不是永久的**，举个例子，如果服务端变动频繁，而监听的客户端很多情况下，每次变动都要通知到所有的客户端，给网络和服务器造成很大压力。
 一般是客户端执行 getData(“/节点 A”,true)，如果节点 A 发生了变更或删除，客户端会得到它的 watch 事件，但是在之后节点 A 又发生了变更，而客户端又没有设置 watch 事件，就不再给客户端发送。
 在实际应用中，很多情况下，我们的客户端不需要知道服务端的每一次变动，我只要最新的数据即可。*
@@ -920,7 +920,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2073.html](https://zwmst.com/2073.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:22:22+08:00"> 2021-08-17 </time> ](https://zwmst.com/2073.html)  **java 客户端**：zk 自带的 zkclient 及 Apache 开源的 Curator。*
+**java 客户端**：zk 自带的 zkclient 及 Apache 开源的 Curator。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -930,7 +930,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2075.html](https://zwmst.com/2075.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:22:33+08:00"> 2021-08-17 </time> ](https://zwmst.com/2075.html)  chubby 是 google 的，完全实现 paxos 算法，不开源。zookeeper 是 chubby 的开源实现，使用 zab 协议，paxos 算法的变种。*
+chubby 是 google 的，完全实现 paxos 算法，不开源。zookeeper 是 chubby 的开源实现，使用 zab 协议，paxos 算法的变种。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -940,7 +940,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2077.html](https://zwmst.com/2077.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:22:44+08:00"> 2021-08-17 </time> ](https://zwmst.com/2077.html)  常用命令：ls get set create delete 等。*
+常用命令：ls get set create delete 等。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -950,7 +950,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2079.html](https://zwmst.com/2079.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:22:56+08:00"> 2021-08-17 </time> ](https://zwmst.com/2079.html)  ## 相同点：
+## 相同点：
 
 *   （1） 两者都存在一个类似于 Leader 进程的角色，由其负责协调多个
     Follower 进程的运行
@@ -970,7 +970,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2081.html](https://zwmst.com/2081.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-08-17T11:23:05+08:00"> 2021-08-17 </time> ](https://zwmst.com/2081.html)  **Zookeeper**是一个典型的发布/订阅模式的分布式数据管理与协调框架，开发人员可以使用它来进行分布式数据的发布和订阅。
+**Zookeeper**是一个典型的发布/订阅模式的分布式数据管理与协调框架，开发人员可以使用它来进行分布式数据的发布和订阅。
 通过对**Zookeeper**中丰富的数据节点进行交叉使用，配合 Watcher 事件通知机制，可以非常方便的构建一系列分布式应用中年都会涉及的核心功能，如：
 
 *   （1） 数据发布/订阅
@@ -1062,7 +1062,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3730.html](https://zwmst.com/3730.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T07:23:51+08:00"> 2021-09-21 </time> ](https://zwmst.com/3730.html)  Zookeeper 是一个分布式协调服务，可用于服务发现，分布式锁，分布式领导选举，配置管理等。
+Zookeeper 是一个分布式协调服务，可用于服务发现，分布式锁，分布式领导选举，配置管理等。
 
 Zookeeper 提供了一个类似于 Linux 文件系统的树形结构（可认为是轻量级的内存文件系统，但只适合存少量信息，完全不适合存储大量文件或者大文件），同时提供了对于每个节点的监控与通知机制。*
 <!--yml
@@ -1074,7 +1074,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3733.html](https://zwmst.com/3733.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T07:24:56+08:00"> 2021-09-21 </time> ](https://zwmst.com/3733.html)  Zookeeper 集群是一个基于主从复制的高可用集群，每个服务器承担如下三种角色中的一种*
+Zookeeper 集群是一个基于主从复制的高可用集群，每个服务器承担如下三种角色中的一种*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1084,7 +1084,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3735.html](https://zwmst.com/3735.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T07:25:46+08:00"> 2021-09-21 </time> ](https://zwmst.com/3735.html)  1.  一个 Zookeeper 集群同一时间只会有一个实际工作的 Leader，它会发起并维护与各 Follwer及 Observer 间的心跳。
+1.  一个 Zookeeper 集群同一时间只会有一个实际工作的 Leader，它会发起并维护与各 Follwer及 Observer 间的心跳。
 2.  所有的写操作必须要通过 Leader 完成再由 Leader 将写操作广播给其它服务器。只要有超过半数节点（不包括 observeer 节点）写入成功，该写请求就会被提交（类 2PC 协议）。*
 <!--yml
 category: 未分类
@@ -1095,7 +1095,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3737.html](https://zwmst.com/3737.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T07:26:26+08:00"> 2021-09-21 </time> ](https://zwmst.com/3737.html)  1.  一个 Zookeeper 集群可能同时存在多个 Follower，它会响应 Leader 的心跳，
+1.  一个 Zookeeper 集群可能同时存在多个 Follower，它会响应 Leader 的心跳，
 2.  Follower 可直接处理并返回客户端的读请求，同时会将写请求转发给 Leader 处理，
 3.  并且负责在 Leader 处理写请求时对请求进行投票。*
 <!--yml
@@ -1107,7 +1107,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3739.html](https://zwmst.com/3739.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T07:27:34+08:00"> 2021-09-21 </time> ](https://zwmst.com/3739.html)  角色与 Follower 类似，但是无投票权。Zookeeper 需保证高可用和强一致性，为了支持更多的客户端，需要增加更多 Server；**Server 增多，投票阶段延迟增大，影响性能；引入 Observer，Observer 不参与投票； Observers 接受客户端的连接，并将写请求转发给 leader 节点**； 加入更多 Observer 节点，提高伸缩性，同时不影响吞吐率。*
+角色与 Follower 类似，但是无投票权。Zookeeper 需保证高可用和强一致性，为了支持更多的客户端，需要增加更多 Server；**Server 增多，投票阶段延迟增大，影响性能；引入 Observer，Observer 不参与投票； Observers 接受客户端的连接，并将写请求转发给 leader 节点**； 加入更多 Observer 节点，提高伸缩性，同时不影响吞吐率。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1117,7 +1117,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3741.html](https://zwmst.com/3741.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T07:28:39+08:00"> 2021-09-21 </time> ](https://zwmst.com/3741.html)  在 ZAB ( ZooKeeper Atomic Broadcast , ZooKeeper 原子消息广播协议） 协议的事务编号 Zxid 设计中，Zxid 是一个 64 位的数字，其中低 32 位是一个简单的单调递增的计数器，针对客户端每一个事务请求，计数器加 1；而高 32 位则代表 Leader 周期 epoch 的编号，每个当选产生一个新的 Leader 服务器，就会从这个 Leader 服务器上取出其本地日志中最大事务的 ZXID，并从中读取epoch 值，然后加 1，以此作为新的 epoch，并将低 32 位从 0 开始计数。
+在 ZAB ( ZooKeeper Atomic Broadcast , ZooKeeper 原子消息广播协议） 协议的事务编号 Zxid 设计中，Zxid 是一个 64 位的数字，其中低 32 位是一个简单的单调递增的计数器，针对客户端每一个事务请求，计数器加 1；而高 32 位则代表 Leader 周期 epoch 的编号，每个当选产生一个新的 Leader 服务器，就会从这个 Leader 服务器上取出其本地日志中最大事务的 ZXID，并从中读取epoch 值，然后加 1，以此作为新的 epoch，并将低 32 位从 0 开始计数。
 
 Zxid（Transaction id）类似于 RDBMS 中的事务 ID，用于标识一次更新操作的 Proposal（提议）ID。为了保证顺序性，该 zkid 必须单调递增。*
 <!--yml
@@ -1129,7 +1129,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3744.html](https://zwmst.com/3744.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:24:05+08:00"> 2021-09-22 </time> ](https://zwmst.com/3744.html)  epoch：可以理解为当前集群所处的年代或者周期，每个 leader 就像皇帝，都有自己的年号，所以每次改朝换代，leader 变更之后，都会在前一个年代的基础上加 1。这样就算旧的 leader 崩溃恢复之后，也没有人听他的了，因为follower 只听从当前年代的 leader 的命令。*
+epoch：可以理解为当前集群所处的年代或者周期，每个 leader 就像皇帝，都有自己的年号，所以每次改朝换代，leader 变更之后，都会在前一个年代的基础上加 1。这样就算旧的 leader 崩溃恢复之后，也没有人听他的了，因为follower 只听从当前年代的 leader 的命令。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1139,7 +1139,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3746.html](https://zwmst.com/3746.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:30:27+08:00"> 2021-09-22 </time> ](https://zwmst.com/3746.html)  Zab 协议有两种模式，它们分别是恢复模式（选主）和广播模式（同步）。当服务启动或者在领导者崩溃后，Zab 就进入了恢复模式，当领导者被选举出来，且大多数 Server 完成了和 leader 的状态同步以后，恢复模式就结束了。状态同步保证了 leader 和 Server 具有相同的系统状态。*
+Zab 协议有两种模式，它们分别是恢复模式（选主）和广播模式（同步）。当服务启动或者在领导者崩溃后，Zab 就进入了恢复模式，当领导者被选举出来，且大多数 Server 完成了和 leader 的状态同步以后，恢复模式就结束了。状态同步保证了 leader 和 Server 具有相同的系统状态。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1149,7 +1149,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3748.html](https://zwmst.com/3748.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:33:33+08:00"> 2021-09-22 </time> ](https://zwmst.com/3748.html)  ### Leader election（选举阶段-选出准 Leader）
+### Leader election（选举阶段-选出准 Leader）
 
 1.  Leader election（选举阶段）：节点在一开始都处于选举阶段，只要有一个节点得到超半数节点的票数，它就可以当选准 leader。只有到达 广播阶段（broadcast） 准 leader 才会成为真正的 leader。这一阶段的目的是就是为了选出一个准 leader，然后进入下一个阶段。
 
@@ -1173,7 +1173,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3750.html](https://zwmst.com/3750.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:35:04+08:00"> 2021-09-22 </time> ](https://zwmst.com/3750.html)  协议的 Java 版本实现跟上面的定义有些不同，选举阶段使用的是 Fast Leader Election（FLE），它包含了 选举的发现职责。因为 FLE 会选举拥有最新提议历史的节点作为 leader，这样就省去了发现最新提议的步骤。实际的实现将 发现阶段 和 同步合并为 Recovery Phase（恢复阶段）。所以，ZAB 的实现只有三个阶段：Fast Leader Election；Recovery Phase；Broadcast Phase。*
+协议的 Java 版本实现跟上面的定义有些不同，选举阶段使用的是 Fast Leader Election（FLE），它包含了 选举的发现职责。因为 FLE 会选举拥有最新提议历史的节点作为 leader，这样就省去了发现最新提议的步骤。实际的实现将 发现阶段 和 同步合并为 Recovery Phase（恢复阶段）。所以，ZAB 的实现只有三个阶段：Fast Leader Election；Recovery Phase；Broadcast Phase。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1183,7 +1183,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3753.html](https://zwmst.com/3753.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:56:34+08:00"> 2021-09-22 </time> ](https://zwmst.com/3753.html)  **每个 sever 首先给自己投票，然后用自己的选票和其他 sever 选票对比，权重大的胜出，使用权重较大的更新自身选票箱**。具体选举过程如下：
+**每个 sever 首先给自己投票，然后用自己的选票和其他 sever 选票对比，权重大的胜出，使用权重较大的更新自身选票箱**。具体选举过程如下：
 
 1.  每个 Server 启动以后都询问其它的 Server 它要投票给谁。对于其他 server 的询问，server 每次根据自己的状态都回复自己推荐的 leader 的 id 和上一次处理事务的 zxid（系统启动时每个 server 都会推荐自己）
 2.  收到所有 Server 回复以后，就计算出 zxid 最大的哪个 Server，并将这个 Server 相关信息设置成下一次要投票的 Server。
@@ -1210,7 +1210,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3755.html](https://zwmst.com/3755.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:57:39+08:00"> 2021-09-22 </time> ](https://zwmst.com/3755.html)  1.  Zookeeper 的核心是原子广播，这个机制保证了各个 server 之间的同步。实现这个机制的协议叫做 Zab 协议。Zab 协议有两种模式，它们分别是恢复模式和广播模式。
+1.  Zookeeper 的核心是原子广播，这个机制保证了各个 server 之间的同步。实现这个机制的协议叫做 Zab 协议。Zab 协议有两种模式，它们分别是恢复模式和广播模式。
 2.  当服务启动或者在领导者崩溃后，Zab 就进入了恢复模式，当领导者被选举出来，且大多数 server 的完成了和 leader 的状态同步以后，恢复模式就结束了。
 3.  状态同步保证了 leader 和 server 具有相同的系统状态
 4.  一旦 leader 已经和多数的 follower 进行了状态同步后，他就可以开始广播消息了，即进入广播状态。这时候当一个 server 加入 zookeeper 服务中，它会在恢复模式下启动，发现 leader，并和 leader 进行状态同步。待到同步结束，它也参与消息广播。Zookeeper服务一直维持在 Broadcast 状态，直到 leader 崩溃了或者 leader 失去了大部分的followers 支持。
@@ -1226,7 +1226,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3757.html](https://zwmst.com/3757.html)
 
-   [ *ZooKeeper* ](https://zwmst.com/zookeeper)*[ <time datetime="2021-09-22T23:58:40+08:00"> 2021-09-22 </time> ](https://zwmst.com/3757.html)  1.  PERSISTENT：持久的节点。
+1.  PERSISTENT：持久的节点。
 2.  EPHEMERAL：暂时的节点。
 3.  PERSISTENT_SEQUENTIAL：持久化顺序编号目录节点。
 4.  EPHEMERAL_SEQUENTIAL：暂时化顺序编号目录节点。*

@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1513.html](https://zwmst.com/1513.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:50:43+08:00"> 2021-08-15 </time> ](https://zwmst.com/1513.html)  Mycat是基于MySQL的数据库中间件，目的是为了降低数据库的压力。*
+Mycat是基于MySQL的数据库中间件，目的是为了降低数据库的压力。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -17,7 +17,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1515.html](https://zwmst.com/1515.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:50:56+08:00"> 2021-08-15 </time> ](https://zwmst.com/1515.html)  项目组中如果有水平切分，那项目组里的开发方式就叫混合切分。或者项目组里就是单纯的垂直切分。*
+项目组中如果有水平切分，那项目组里的开发方式就叫混合切分。或者项目组里就是单纯的垂直切分。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -27,7 +27,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1517.html](https://zwmst.com/1517.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:51:08+08:00"> 2021-08-15 </time> ](https://zwmst.com/1517.html)  在开发中是基于原有库创建出来，并且原有库和切分后的库是数据表的设计是保持一致的。 dm_order1,dm_order2,dm_order3这些库是需要和dm_order的设计保持一致 的！！！！
+在开发中是基于原有库创建出来，并且原有库和切分后的库是数据表的设计是保持一致的。 dm_order1,dm_order2,dm_order3这些库是需要和dm_order的设计保持一致 的！！！！
 
 附注：所以，切分后的库例如dm_order1,dm_order2,dm_order3这些都是有数据库维护 团队创建出来的。*
 <!--yml
@@ -39,7 +39,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1519.html](https://zwmst.com/1519.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:51:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1519.html)  schem.xml 配置参数：逻辑库，逻辑表，数据节点。节点主机
+schem.xml 配置参数：逻辑库，逻辑表，数据节点。节点主机
 
 rule.xml：分片规则
 
@@ -55,7 +55,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1521.html](https://zwmst.com/1521.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:51:48+08:00"> 2021-08-15 </time> ](https://zwmst.com/1521.html)  我们目前项目组分的是3个库，我们说一般数据量大的话我们使用的是mycat中间件进行分片 处理，如果更大的话，我们可以使用oracle数据库，如果更大的话可以使用hadoop或是云存 储数据，不需要mycat作为工具手段。衡量的标准是项目有没有对应的硬件设备。 如果没有， 基本就是使用mysql 因为搭建一套云环境或者大数据的环境基本都是超大型的公司。比如大数 据中的所有的技术，例如hbase 或者是一大堆的服务器一大堆的网络路由设备或是私有云。 或者是一大堆的数据库运维实施人员都是成本*
+我们目前项目组分的是3个库，我们说一般数据量大的话我们使用的是mycat中间件进行分片 处理，如果更大的话，我们可以使用oracle数据库，如果更大的话可以使用hadoop或是云存 储数据，不需要mycat作为工具手段。衡量的标准是项目有没有对应的硬件设备。 如果没有， 基本就是使用mysql 因为搭建一套云环境或者大数据的环境基本都是超大型的公司。比如大数 据中的所有的技术，例如hbase 或者是一大堆的服务器一大堆的网络路由设备或是私有云。 或者是一大堆的数据库运维实施人员都是成本*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -65,7 +65,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1523.html](https://zwmst.com/1523.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:52:00+08:00"> 2021-08-15 </time> ](https://zwmst.com/1523.html)  1.不存在热点数据时，则使用连续分片
+1.不存在热点数据时，则使用连续分片
 
 2.存在热点数据时，使用离散分片或者是综合分片
 
@@ -79,7 +79,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1525.html](https://zwmst.com/1525.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:52:11+08:00"> 2021-08-15 </time> ](https://zwmst.com/1525.html)  1.  mycat的全局id方案
+1.  mycat的全局id方案
 
 （1）本地文件方式
 
@@ -121,7 +121,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1527.html](https://zwmst.com/1527.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:52:24+08:00"> 2021-08-15 </time> ](https://zwmst.com/1527.html)  使用好ER表
+使用好ER表
 
 善用全局表
 
@@ -139,7 +139,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1529.html](https://zwmst.com/1529.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:52:36+08:00"> 2021-08-15 </time> ](https://zwmst.com/1529.html)  不会*
+不会*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -149,4 +149,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1531.html](https://zwmst.com/1531.html)
 
-   [ *Mycat* ](https://zwmst.com/mycat)*[ <time datetime="2021-08-15T11:52:56+08:00"> 2021-08-15 </time> ](https://zwmst.com/1531.html)  在rule.xml中配置PartitionByMod*
+在rule.xml中配置PartitionByMod*

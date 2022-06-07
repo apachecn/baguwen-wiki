@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1428.html](https://zwmst.com/1428.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:22:03+08:00"> 2021-08-15 </time> ](https://zwmst.com/1428.html)  —根据Servlet的配置参数1来决定实例化时机，没有配置该参数项或者为负数，则第一次访 问的时候才会被实例化并调用init () 函数，如果为0或者正整数，则服务器启动的时候就会被 加载，加载顺序由小到达。Servlet 通过调用 init () 方法进行初始化。
+—根据Servlet的配置参数1来决定实例化时机，没有配置该参数项或者为负数，则第一次访 问的时候才会被实例化并调用init () 函数，如果为0或者正整数，则服务器启动的时候就会被 加载，加载顺序由小到达。Servlet 通过调用 init () 方法进行初始化。
 
 —客户端请求到达后，Servlet 调用 service() 方法来处理客户端的请求。
 
@@ -23,7 +23,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1430.html](https://zwmst.com/1430.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:22:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1430.html)  Servlet是服务器端的程序，动态生成html页面发送到客户端，但是这样程序里会有很多 out.println(),java与html语言混在一起很乱，造成编写逻辑控制的后台工程师和设计前端网 页的前端工程师彼此很难独立开展工作，所以后来sun公司推出了JSP，其实JSP就是Servlet， 每次运行的时候JSP都首先被编译成servlet文件，然后再被编译成.class文件运行。有了jsp，在MVC项目中servlet不再负责动态生成页面，转而去负责控制程序逻辑的作用，控制jsp与 javabean之间的流转。其实对jsp也有封装的模板工具velocity和freemarker。*
+Servlet是服务器端的程序，动态生成html页面发送到客户端，但是这样程序里会有很多 out.println(),java与html语言混在一起很乱，造成编写逻辑控制的后台工程师和设计前端网 页的前端工程师彼此很难独立开展工作，所以后来sun公司推出了JSP，其实JSP就是Servlet， 每次运行的时候JSP都首先被编译成servlet文件，然后再被编译成.class文件运行。有了jsp，在MVC项目中servlet不再负责动态生成页面，转而去负责控制程序逻辑的作用，控制jsp与 javabean之间的流转。其实对jsp也有封装的模板工具velocity和freemarker。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -33,7 +33,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1432.html](https://zwmst.com/1432.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:22:28+08:00"> 2021-08-15 </time> ](https://zwmst.com/1432.html)  ```
+```
 public class ServletName extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) 
         throws ServletException, IOException {
@@ -55,7 +55,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1434.html](https://zwmst.com/1434.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:22:40+08:00"> 2021-08-15 </time> ](https://zwmst.com/1434.html)  JSP页面中的form标签里的method属性为get时调用doGet()，为post时调用doPost()；超链接跳转页面时调用doGet()*
+JSP页面中的form标签里的method属性为get时调用doGet()，为post时调用doPost()；超链接跳转页面时调用doGet()*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -65,7 +65,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1436.html](https://zwmst.com/1436.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:22:51+08:00"> 2021-08-15 </time> ](https://zwmst.com/1436.html)  request，session，application，cookie等*
+request，session，application，cookie等*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -75,7 +75,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1438.html](https://zwmst.com/1438.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:32:16+08:00"> 2021-08-15 </time> ](https://zwmst.com/1438.html)  会话作用域ServletsJSP 页面描述
+会话作用域ServletsJSP 页面描述
 
 1）page否是代表与一个页面相关的对象和属性。一个页面由一个编译好的 Java servlet 类 （可以带有任何的 include 指令，但是没有 include 动作）表示。这既包括 servlet 又包括被 编译成 servlet 的 JSP 页面
 
@@ -93,7 +93,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1440.html](https://zwmst.com/1440.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:32:26+08:00"> 2021-08-15 </time> ](https://zwmst.com/1440.html)  setAttribute(String name,Object)：设置名字为name的request的参数值
+setAttribute(String name,Object)：设置名字为name的request的参数值
 
 getAttribute(String name)：返回由name指定的属性值
 
@@ -149,7 +149,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1442.html](https://zwmst.com/1442.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:32:37+08:00"> 2021-08-15 </time> ](https://zwmst.com/1442.html)  在web.xml中该Servlet的定义标记中，比如：
+在web.xml中该Servlet的定义标记中，比如：
 
 ```
  <servlet>
@@ -178,7 +178,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1444.html](https://zwmst.com/1444.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:32:51+08:00"> 2021-08-15 </time> ](https://zwmst.com/1444.html)  ServletConfig中定义了如下的方法用来读取初始化参数的信息： public String getInitParameter(String name)
+ServletConfig中定义了如下的方法用来读取初始化参数的信息： public String getInitParameter(String name)
 
 参数：初始化参数的名称。
 
@@ -192,7 +192,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1446.html](https://zwmst.com/1446.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:33:03+08:00"> 2021-08-15 </time> ](https://zwmst.com/1446.html)  该方法执行在单线程的环境下，因此开发者不用考虑线程安全的问题。*
+该方法执行在单线程的环境下，因此开发者不用考虑线程安全的问题。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -202,4 +202,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1448.html](https://zwmst.com/1448.html)
 
-   [ *Servlet* ](https://zwmst.com/servlet)*[ <time datetime="2021-08-15T11:33:15+08:00"> 2021-08-15 </time> ](https://zwmst.com/1448.html)  该方法在执行过程中可以抛出ServletException来通知Web服务器Servlet实例初始化失败。 一旦ServletException抛出，Web服务器不会将客户端请求交给该Servlet实例来处理，而是 报告初始化失败异常信息给客户端，该Servlet实例将被从内存中销毁。如果在来新的请求， Web服务器会创建新的Servlet实例，并执行新实例的初始化操作*
+该方法在执行过程中可以抛出ServletException来通知Web服务器Servlet实例初始化失败。 一旦ServletException抛出，Web服务器不会将客户端请求交给该Servlet实例来处理，而是 报告初始化失败异常信息给客户端，该Servlet实例将被从内存中销毁。如果在来新的请求， Web服务器会创建新的Servlet实例，并执行新实例的初始化操作*

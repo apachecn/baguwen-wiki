@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1406.html](https://zwmst.com/1406.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:19:19+08:00"> 2021-08-15 </time> ](https://zwmst.com/1406.html)  Shiro是一个强大易用的java安全框架，提供了认证、授权、加密、会话管理、与web集成、 缓存等功能，对于任何一个应用程序，都可以提供全面的安全服务，相比其他安全框架，shiro要简单的多。*
+Shiro是一个强大易用的java安全框架，提供了认证、授权、加密、会话管理、与web集成、 缓存等功能，对于任何一个应用程序，都可以提供全面的安全服务，相比其他安全框架，shiro要简单的多。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -17,7 +17,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1408.html](https://zwmst.com/1408.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:19:30+08:00"> 2021-08-15 </time> ](https://zwmst.com/1408.html)  Subject：主体，代表了当前“用户”，这个用户不一定是一个具体的人，与当前应用交互的任 何东西都是Subject，如爬虫、机器人等；即一个抽象概念；所有Subject都绑定到 SecurityManager，与Subject的所有交互都会委托给SecurityManager；可以把Subject认为是一个门面；SecurityManager才是实际的执行者。
+Subject：主体，代表了当前“用户”，这个用户不一定是一个具体的人，与当前应用交互的任 何东西都是Subject，如爬虫、机器人等；即一个抽象概念；所有Subject都绑定到 SecurityManager，与Subject的所有交互都会委托给SecurityManager；可以把Subject认为是一个门面；SecurityManager才是实际的执行者。
 
 SecurityManager：安全管理器；即所有与安全有关的操作都会与SecurityManager交互；且它管理着所有Subject；可以看出它是shiro的核心, SecurityManager相当于spring mvc中 的dispatcherServlet前端控制器。
 
@@ -31,7 +31,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1410.html](https://zwmst.com/1410.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:19:43+08:00"> 2021-08-15 </time> ](https://zwmst.com/1410.html)  1、 简单的身份验证，支持多种数据源
+1、 简单的身份验证，支持多种数据源
 
 2、对角色的简单授权，支持细粒度的授权（方法）
 
@@ -51,7 +51,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1412.html](https://zwmst.com/1412.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:19:54+08:00"> 2021-08-15 </time> ](https://zwmst.com/1412.html)  Authentication：身份认证/登录，验证用户是不是拥有相应的身份；
+Authentication：身份认证/登录，验证用户是不是拥有相应的身份；
 
 Authorization：授权，即权限验证，验证某个已认证的用户是否拥有某个权限；即判断用户 是否能做事情，常见的如：验证某个用户是否拥有某个角色。或者细粒度的验证某个用户对某 个资源是否具有某个权限；
 
@@ -81,7 +81,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1414.html](https://zwmst.com/1414.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:20:04+08:00"> 2021-08-15 </time> ](https://zwmst.com/1414.html)  principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。
+principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。
 
 credentials：证明/凭证，即只有主体知道的安全值，如密码/数字证书等。
 
@@ -115,7 +115,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1416.html](https://zwmst.com/1416.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:20:16+08:00"> 2021-08-15 </time> ](https://zwmst.com/1416.html)  principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。
+principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。
 
 credentials：证明/凭证，即只有主体知道的安全值，如密码/数字证书等。
 
@@ -149,7 +149,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1418.html](https://zwmst.com/1418.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:20:27+08:00"> 2021-08-15 </time> ](https://zwmst.com/1418.html)  编码/解码
+编码/解码
 
 Shiro提供了base64和16进制字符串编码/解码的API支持,方便一些编码解码操作 Base64.encodeToString(str.getBytes())编码
 
@@ -207,7 +207,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1420.html](https://zwmst.com/1420.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:20:37+08:00"> 2021-08-15 </time> ](https://zwmst.com/1420.html)  定义Realm（自定义Realm继承AuthorizingRealm即可）
+定义Realm（自定义Realm继承AuthorizingRealm即可）
 
 1）UserRealm父类AuthorizingRealm将获取Subject相关信息分成两步：获取身份验证信息 （doGetAuthenticationInfo）及授权信息（doGetAuthorizationInfo）
 
@@ -229,7 +229,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1422.html](https://zwmst.com/1422.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:20:47+08:00"> 2021-08-15 </time> ](https://zwmst.com/1422.html)  **基于表单登录拦截器**
+**基于表单登录拦截器**
 
 onPreHandle主要流程：
 
@@ -281,7 +281,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1424.html](https://zwmst.com/1424.html)
 
-   [ *Shiro* ](https://zwmst.com/shiro)*[ <time datetime="2021-08-15T11:20:56+08:00"> 2021-08-15 </time> ](https://zwmst.com/1424.html)  *   Session
+*   Session
 
 所谓session，即用户访问应用时保持的连接关系，在多次交互中应用能够识别出当前访问的 用户是谁，且可以在多次交互中保存一些数据。
 

@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1626.html](https://zwmst.com/1626.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:57:37+08:00"> 2021-08-15 </time> ](https://zwmst.com/1626.html)  因为在我们的数据，将来会非常多，所以采用以往的模糊查询，模糊查询前置配置，会放弃索 引，导致商品查询是全表扫面，在百万级别的数据库中，效率非常低下，而我们使用ES做一个 全文索引，我们将经常查询的商品的某些字段，比如说商品名，描述、价格还有id这些字段我 们放入我们索引库里，可以提高查询速度。*
+因为在我们的数据，将来会非常多，所以采用以往的模糊查询，模糊查询前置配置，会放弃索 引，导致商品查询是全表扫面，在百万级别的数据库中，效率非常低下，而我们使用ES做一个 全文索引，我们将经常查询的商品的某些字段，比如说商品名，描述、价格还有id这些字段我 们放入我们索引库里，可以提高查询速度。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -17,7 +17,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1628.html](https://zwmst.com/1628.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:58:06+08:00"> 2021-08-15 </time> ](https://zwmst.com/1628.html)  Elasticsearch的选主是ZenDiscovery模块负责的，主要包含Ping（节点之间通过这个RPC来 发现彼此）和Unicast（单播模块包含一个主机列表以控制哪些节点需要ping通）这两部分； 对所有可以成为master的节点（node.master: true）根据nodeId字典排序，每次选举每个 节点都把自己所知道节点排一次序，然后选出第一个（第0位）节点，暂且认为它是master节点。
+Elasticsearch的选主是ZenDiscovery模块负责的，主要包含Ping（节点之间通过这个RPC来 发现彼此）和Unicast（单播模块包含一个主机列表以控制哪些节点需要ping通）这两部分； 对所有可以成为master的节点（node.master: true）根据nodeId字典排序，每次选举每个 节点都把自己所知道节点排一次序，然后选出第一个（第0位）节点，暂且认为它是master节点。
 
 如果对某个节点的投票数达到一定的值（可以成为master节点数n/2+1）并且该节点自己也选 举自己，那这个节点就是master。否则重新选举一直到满足上述条件。
 
@@ -31,7 +31,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1630.html](https://zwmst.com/1630.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:58:22+08:00"> 2021-08-15 </time> ](https://zwmst.com/1630.html)  当集群master候选数量不小于3个时，可以通过设置最少投票通过数量 （discovery.zen.minimum_master_nodes）超过所有候选节点一半以上来解决脑裂问 题；
+当集群master候选数量不小于3个时，可以通过设置最少投票通过数量 （discovery.zen.minimum_master_nodes）超过所有候选节点一半以上来解决脑裂问 题；
 
 当候选数量为两个时，只能修改为唯一的一个master候选，其他作为data节点，避免脑裂问 题。*
 <!--yml
@@ -43,7 +43,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1632.html](https://zwmst.com/1632.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:58:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1632.html)  协调节点默认使用文档ID参与计算（也支持通过routing），以便为路由提供合适的分片。 shard = hash(document_id) % (num_of_primary_shards)
+协调节点默认使用文档ID参与计算（也支持通过routing），以便为路由提供合适的分片。 shard = hash(document_id) % (num_of_primary_shards)
 
 当分片所在的节点接收到来自协调节点的请求后，会将请求写入到Memory Buffer，然后定时 （默认是每隔1秒）写入到Filesystem Cache，这个从Momery Buffer到Filesystem
 
@@ -65,7 +65,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1634.html](https://zwmst.com/1634.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:58:49+08:00"> 2021-08-15 </time> ](https://zwmst.com/1634.html)  删除和更新也都是写操作，但是Elasticsearch中的文档是不可变的，因此不能被删除或者改 动以展示其变更；
+删除和更新也都是写操作，但是Elasticsearch中的文档是不可变的，因此不能被删除或者改 动以展示其变更；
 
 磁盘上的每个段都有一个相应的.del文件。当删除请求发送后，文档并没有真的被删除，而是 在.del文件中被标记为删除。该文档依然能匹配查询，但是会在结果中被过滤掉。当段合并
 
@@ -81,7 +81,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1636.html](https://zwmst.com/1636.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:59:06+08:00"> 2021-08-15 </time> ](https://zwmst.com/1636.html)  搜索被执行成一个两阶段过程，我们称之为 Query Then Fetch；
+搜索被执行成一个两阶段过程，我们称之为 Query Then Fetch；
 
 在初始查询阶段时，查询会广播到索引中每一个分片拷贝（主分片或者副本分片）。 每个分片 在本地执行搜索并构建一个匹配文档的大小为 from + size 的优先队列。PS：在搜索的时候是 会查询Filesystem Cache的，但是有部分数据还在Memory Buffer，所以搜索是近实时的。 每个分片返回各自优先队列中 所有文档的 ID 和排序值 给协调节点，它合并这些值到自己的优 先队列中来产生一个全局排序后的结果列表。
 
@@ -99,7 +99,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1638.html](https://zwmst.com/1638.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T15:59:18+08:00"> 2021-08-15 </time> ](https://zwmst.com/1638.html)  Elasticsearch 提供的首个近似聚合是cardinality 度量。它提供一个字段的基数，即该字段的 distinct或者unique值的数目。它是基于HLL算法的。HLL 会先对我们的输入作哈希运算，
+Elasticsearch 提供的首个近似聚合是cardinality 度量。它提供一个字段的基数，即该字段的 distinct或者unique值的数目。它是基于HLL算法的。HLL 会先对我们的输入作哈希运算，
 
 然后根据哈希运算的结果中的 bits 做概率估算从而得到基数。其特点是：可配置的精度，用来 控制内存的使用（更精确 ＝ 更多内存）；小的数据集精度是非常高的；我们可以通过配置参数，来设置去重需要的固定内存使用量。无论数千还是数十亿的唯一值，内存使用量只与你配 置的精确度相关 。*
 <!--yml
@@ -111,7 +111,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1640.html](https://zwmst.com/1640.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:00:15+08:00"> 2021-08-15 </time> ](https://zwmst.com/1640.html)  可以通过版本号使用乐观并发控制，以确保新版本不会被旧版本覆盖，由应用层来处理具体的 冲突；
+可以通过版本号使用乐观并发控制，以确保新版本不会被旧版本覆盖，由应用层来处理具体的 冲突；
 
 另外对于写操作，一致性级别支持quorum/one/all，默认为quorum，即只有当大多数分片
 
@@ -127,7 +127,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1643.html](https://zwmst.com/1643.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:00:37+08:00"> 2021-08-15 </time> ](https://zwmst.com/1643.html)  群集是一个或多个节点（服务器）的集合，它们共同保存您的整个数据，并提供跨所有节点的 联合索引和搜索功能。群集由唯一名称标识，默认情况下为“elasticsearch”。此名称很重 要，因为如果节点设置为按名称加入群集，则该节点只能是群集的一部分。
+群集是一个或多个节点（服务器）的集合，它们共同保存您的整个数据，并提供跨所有节点的 联合索引和搜索功能。群集由唯一名称标识，默认情况下为“elasticsearch”。此名称很重 要，因为如果节点设置为按名称加入群集，则该节点只能是群集的一部分。
 
 节点是属于集群一部分的单个服务器。它存储数据并参与群集索引和搜索功能。
 
@@ -145,7 +145,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1645.html](https://zwmst.com/1645.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:01:02+08:00"> 2021-08-15 </time> ](https://zwmst.com/1645.html)  在大多数环境中，每个节点都在单独的盒子或虚拟机上运行。
+在大多数环境中，每个节点都在单独的盒子或虚拟机上运行。
 
 索引 – 在Elasticsearch中，索引是文档的集合。
 
@@ -159,7 +159,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1647.html](https://zwmst.com/1647.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:01:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1647.html)  Elasticsearch是一个基于Lucene的搜索引擎。它提供了具有HTTP Web界面和无架构JSON 文档的分布式，多租户能力的全文搜索引擎。Elasticsearch是用Java开发的，根据Apache许 可条款作为开源发布。*
+Elasticsearch是一个基于Lucene的搜索引擎。它提供了具有HTTP Web界面和无架构JSON 文档的分布式，多租户能力的全文搜索引擎。Elasticsearch是用Java开发的，根据Apache许 可条款作为开源发布。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -169,7 +169,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1649.html](https://zwmst.com/1649.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:01:28+08:00"> 2021-08-15 </time> ](https://zwmst.com/1649.html)  倒排索引是搜索引擎的核心。搜索引擎的主要目标是在查找发生搜索条件的文档时提供快速搜 索。倒排索引是一种像数据结构一样的散列图，可将用户从单词导向文档或网页。它是搜索引 擎的核心。其主要目标是快速搜索从数百万文件中查找数据。*
+倒排索引是搜索引擎的核心。搜索引擎的主要目标是在查找发生搜索条件的文档时提供快速搜 索。倒排索引是一种像数据结构一样的散列图，可将用户从单词导向文档或网页。它是搜索引 擎的核心。其主要目标是快速搜索从数百万文件中查找数据。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -179,7 +179,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1651.html](https://zwmst.com/1651.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:01:47+08:00"> 2021-08-15 </time> ](https://zwmst.com/1651.html)  在ElasticSearch中索引数据时，数据由为索引定义的Analyzer在内部进行转换。 分析器由一 个Tokenizer和零个或多个TokenFilter组成。编译器可以在一个或多个CharFilter之前。分 析模块允许您在逻辑名称下注册分析器，然后可以在映射定义或某些API中引用它们。
+在ElasticSearch中索引数据时，数据由为索引定义的Analyzer在内部进行转换。 分析器由一 个Tokenizer和零个或多个TokenFilter组成。编译器可以在一个或多个CharFilter之前。分 析模块允许您在逻辑名称下注册分析器，然后可以在映射定义或某些API中引用它们。
 
 Elasticsearch附带了许多可以随时使用的预建分析器。或者，您可以组合内置的字符过滤 器，编译器和过滤器器来创建自定义分析器。*
 <!--yml
@@ -191,7 +191,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1653.html](https://zwmst.com/1653.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:02:01+08:00"> 2021-08-15 </time> ](https://zwmst.com/1653.html)  设计阶段调优
+设计阶段调优
 
 （1）根据业务增量需求，采取基于日期模板创建索引，通过 roll over API 滚动索引；
 
@@ -243,7 +243,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1655.html](https://zwmst.com/1655.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:02:52+08:00"> 2021-08-15 </time> ](https://zwmst.com/1655.html)  （1）64 GB 内存的机器是非常理想的， 但是 32 GB 和 16 GB 机器也是很常见的。少于 8 GB 会适得其反。
+（1）64 GB 内存的机器是非常理想的， 但是 32 GB 和 16 GB 机器也是很常见的。少于 8 GB 会适得其反。
 
 （2）如果你要在更快的 CPUs 和更多的核心之间选择，选择更多的核心更好。多个内核提供
 
@@ -283,7 +283,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1658.html](https://zwmst.com/1658.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:03:09+08:00"> 2021-08-15 </time> ](https://zwmst.com/1658.html)  TransportClient 利用 transport 模块远程连接一个 elasticsearch 集群。它并不加入到集群 中，只是简单的获得一个或者多个初始化的 transport 地址，并以 轮询 的方式与这些地址进 行通信。*
+TransportClient 利用 transport 模块远程连接一个 elasticsearch 集群。它并不加入到集群 中，只是简单的获得一个或者多个初始化的 transport 地址，并以 轮询 的方式与这些地址进 行通信。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -293,7 +293,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1660.html](https://zwmst.com/1660.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:03:26+08:00"> 2021-08-15 </time> ](https://zwmst.com/1660.html)  （1）Lucene的索引过程，就是按照全文检索的基本过程，将倒排表写成此文件格式的过程。
+（1）Lucene的索引过程，就是按照全文检索的基本过程，将倒排表写成此文件格式的过程。
 
 （2）Lucene的搜索过程，就是按照此文件格式将索引进去的信息读出来，然后计算每篇文档 打分(score)的过程。*
 <!--yml
@@ -305,7 +305,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1662.html](https://zwmst.com/1662.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:03:38+08:00"> 2021-08-15 </time> ](https://zwmst.com/1662.html)  （1）倒排词典的索引需要常驻内存，无法 GC，需要监控 data node 上 segmentmemory 增 长趋势。
+（1）倒排词典的索引需要常驻内存，无法 GC，需要监控 data node 上 segmentmemory 增 长趋势。
 
 （2）各类缓存，field cache, filter cache, indexing cache, bulk queue 等等，要设置合理 的大小，并且要应该根据最坏的情况来看 heap 是否够用，也就是各类缓存全部占满的时候， 还有 heap 空间可以分配给其他任务吗？避免采用 clear cache等“自欺欺人”的方式来释放内 存。
 
@@ -325,7 +325,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1664.html](https://zwmst.com/1664.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:03:49+08:00"> 2021-08-15 </time> ](https://zwmst.com/1664.html)  （1）可以通过版本号使用乐观并发控制，以确保新版本不会被旧版本覆盖，由应用层来处理具 体的冲突；
+（1）可以通过版本号使用乐观并发控制，以确保新版本不会被旧版本覆盖，由应用层来处理具 体的冲突；
 
 （2）另外对于写操作，一致性级别支持 quorum/one/all，默认为 quorum，即只有当大多数分片可用时才允许写操作。但即使大多数可用，也可能存在因为网络等原因导致写入副本失 败，这样该副本被认为故障，分片将会在一个不同的节点上重建。
 
@@ -339,4 +339,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1666.html](https://zwmst.com/1666.html)
 
-   [ *Elasticsearch* ](https://zwmst.com/elasticsearch)*[ <time datetime="2021-08-15T16:04:40+08:00"> 2021-08-15 </time> ](https://zwmst.com/1666.html)  Marvel 让你可以很简单的通过 Kibana 监控 Elasticsearch。你可以实时查看你的集群健康状 态和性能，也可以分析过去的集群、索引和节点指标。*
+Marvel 让你可以很简单的通过 Kibana 监控 Elasticsearch。你可以实时查看你的集群健康状 态和性能，也可以分析过去的集群、索引和节点指标。*

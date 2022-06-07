@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/738.html](https://zwmst.com/738.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:01:47+08:00"> 2021-08-14 </time> ](https://zwmst.com/738.html)  Reactor模式究竟是个什么东西呢？这要从事件驱动的开发方式说起。我们知道，对于应用服 务器，一个主要规律就是，CPU的处理速度是要远远快于IO速度的，如果CPU为了IO操作（例 如从Socket读取一段数据）而阻塞显然是不划算的。好一点的方法是分为多进程或者线程去进 行处理，但是这样会带来一些进程切换的开销，试想一个进程一个数据读了500ms，期间进程 切换到它3次，但是CPU却什么都不能干，就这么切换走了，是不是也不划算？
+Reactor模式究竟是个什么东西呢？这要从事件驱动的开发方式说起。我们知道，对于应用服 务器，一个主要规律就是，CPU的处理速度是要远远快于IO速度的，如果CPU为了IO操作（例 如从Socket读取一段数据）而阻塞显然是不划算的。好一点的方法是分为多进程或者线程去进 行处理，但是这样会带来一些进程切换的开销，试想一个进程一个数据读了500ms，期间进程 切换到它3次，但是CPU却什么都不能干，就这么切换走了，是不是也不划算？
 
 这时先驱们找到了事件驱动，或者叫回调的方式，来完成这件事情。这种方式就是，应用业务 向一个中间人注册一个回调（event handler），当IO就绪后，就这个中间人产生一个事件， 并通知此handler进行处理。这种回调的方式，也体现了“好莱坞原则”（Hollywood principle）-“Don’t call us, we’ll call you”，在我们熟悉的IoC中也有用到。看来软件开发 真是互通的！
 
@@ -23,7 +23,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/740.html](https://zwmst.com/740.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:01:59+08:00"> 2021-08-14 </time> ](https://zwmst.com/740.html)  粘包的主要原因：发送方写入数据套接字缓冲区大小；发送方发送的数据大于协议的 MTU（最大传输单元），不得已必须拆包。
+粘包的主要原因：发送方写入数据套接字缓冲区大小；发送方发送的数据大于协议的 MTU（最大传输单元），不得已必须拆包。
 
 如何处理：1、消息长度固定；2、消息之间用分隔符分隔；3、在消息头保留一个字段，用于 描述消息的长度。*
 <!--yml
@@ -35,7 +35,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/742.html](https://zwmst.com/742.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:02:11+08:00"> 2021-08-14 </time> ](https://zwmst.com/742.html)  UDP不会有这个问题。
+UDP不会有这个问题。
 
 因为TCP是“数据流”协议，UDP是“数据报”协议。
 
@@ -49,7 +49,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/744.html](https://zwmst.com/744.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:02:23+08:00"> 2021-08-14 </time> ](https://zwmst.com/744.html)  Netty 是一个 基于 NIO 的 client-server(客户端服务器)框架，使用它可以快速简单地开发网 络应用程序。
+Netty 是一个 基于 NIO 的 client-server(客户端服务器)框架，使用它可以快速简单地开发网 络应用程序。
 
 它极大地简化并优化了 TCP 和 UDP 套接字服务器等网络编程,并且性能以及安全性等很多方面 甚至都要更好。
 
@@ -63,7 +63,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/746.html](https://zwmst.com/746.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:02:33+08:00"> 2021-08-14 </time> ](https://zwmst.com/746.html)  统一的 API，支持多种传输类型，阻塞和非阻塞的。
+统一的 API，支持多种传输类型，阻塞和非阻塞的。
 
 简单而强大的线程模型。
 
@@ -87,7 +87,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/748.html](https://zwmst.com/748.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:02:44+08:00"> 2021-08-14 </time> ](https://zwmst.com/748.html)  Netty 主要用来做网络通信 :
+Netty 主要用来做网络通信 :
 
 作为 RPC 框架的网络通信工具 ：我们在分布式系统中，不同服务节点之间经常需要相互调 用，这个时候就需要 RPC 框架了。不同服务节点之间的通信是如何做的呢？可以使用 Netty 来做。比如我调用另外一个节点的方法的话，至少是要让对方知道我调用的是哪个类中的哪个方法以及相关参数吧！
 
@@ -103,7 +103,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/750.html](https://zwmst.com/750.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:02:57+08:00"> 2021-08-14 </time> ](https://zwmst.com/750.html)  维基百科是这样介绍零拷贝的：“零复制（英语：Zero-copy；也译零拷贝）技术是指计算机 执行操作时，CPU 不需要先将数据从某处内存复制到另一个特定区域。这种技术通常用于通过 网络传输文件时节省 CPU 周期和内存带宽。
+维基百科是这样介绍零拷贝的：“零复制（英语：Zero-copy；也译零拷贝）技术是指计算机 执行操作时，CPU 不需要先将数据从某处内存复制到另一个特定区域。这种技术通常用于通过 网络传输文件时节省 CPU 周期和内存带宽。
 
 在 OS 层面上的 Zero-copy 通常指避免在 用户态(User-space) 与 内核态(Kernel-space) 之 间来回拷贝数据。而在 Netty 层面 ，零拷贝主要体现在对于数据操作的优化。
 
@@ -121,7 +121,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/752.html](https://zwmst.com/752.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:03:07+08:00"> 2021-08-14 </time> ](https://zwmst.com/752.html)  在 TCP 保持长连接的过程中，可能会出现断网等网络异常出现，异常发生的时候， client 与 server 之间如果没有交互的话，它们是无法发现对方已经掉线的。为了解决这个问题, 我们就 需要引入 心跳机制。
+在 TCP 保持长连接的过程中，可能会出现断网等网络异常出现，异常发生的时候， client 与 server 之间如果没有交互的话，它们是无法发现对方已经掉线的。为了解决这个问题, 我们就 需要引入 心跳机制。
 
 心跳机制的工作原理是: 在 client 与 server 之间在一定时间内没有数据交互时, 即处于 idle 状 态时, 客户端或服务器就会发送一个特殊的数据包给对方, 当接收方收到这个数据报文后, 也立 即发送一个特殊的数据报文, 回应发送方, 此即一个 PING-PONG 交互。所以, 当某一端收到心 跳消息后, 就知道了对方仍然在线, 这就确保 TCP 连接的有效性.
 
@@ -135,7 +135,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/754.html](https://zwmst.com/754.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:03:19+08:00"> 2021-08-14 </time> ](https://zwmst.com/754.html)  Channel：Netty 网络操作抽象类，它除了包括基本的 I/O 操作，如 bind、connect、 read、write 等。
+Channel：Netty 网络操作抽象类，它除了包括基本的 I/O 操作，如 bind、connect、 read、write 等。
 
 EventLoop：主要是配合 Channel 处理 I/O 操作，用来处理连接的生命周期中所发生的事 情。
 
@@ -153,7 +153,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/756.html](https://zwmst.com/756.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:03:29+08:00"> 2021-08-14 </time> ](https://zwmst.com/756.html)  Netty 有两种发送消息的方式：
+Netty 有两种发送消息的方式：
 
 直接写入 Channel 中，消息从 ChannelPipeline 当中尾部开始移动； 写入和 ChannelHandler 绑定的 ChannelHandlerContext 中，消息从 ChannelPipeline 中 的下一个 ChannelHandler 中移动。*
 <!--yml
@@ -165,7 +165,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/758.html](https://zwmst.com/758.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:03:39+08:00"> 2021-08-14 </time> ](https://zwmst.com/758.html)  readerIdleTime：为读超时时间（即测试端一定时间内未接受到被测试端消息）。writerIdleTime：为写超时时间（即测试端一定时间内向被测试端发送消息）。allIdleTime：所有类型的超时时间。*
+readerIdleTime：为读超时时间（即测试端一定时间内未接受到被测试端消息）。writerIdleTime：为写超时时间（即测试端一定时间内向被测试端发送消息）。allIdleTime：所有类型的超时时间。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -175,7 +175,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/760.html](https://zwmst.com/760.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:03:50+08:00"> 2021-08-14 </time> ](https://zwmst.com/760.html)  创建ServerBootStrap实例
+创建ServerBootStrap实例
 
 设置并绑定Reactor线程池：EventLoopGroup，EventLoop就是处理所有注册到本线程的 Selector上面的Channel
 
@@ -195,7 +195,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/762.html](https://zwmst.com/762.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-08-14T08:03:59+08:00"> 2021-08-14 </time> ](https://zwmst.com/762.html)  1）传输：IO模型在很大程度上决定了框架的性能，相比于bio，netty建议采用异步通信模 式，因为nio一个线程可以并发处理N个客户端连接和读写操作，这从根本上解决了传统同步阻 塞IO一连接一线程模型，架构的性能、弹性伸缩能力和可靠性都得到了极大的提升。正如代码 中所示，使用的是NioEventLoopGroup和NioSocketChannel来提升传输效率。
+1）传输：IO模型在很大程度上决定了框架的性能，相比于bio，netty建议采用异步通信模 式，因为nio一个线程可以并发处理N个客户端连接和读写操作，这从根本上解决了传统同步阻 塞IO一连接一线程模型，架构的性能、弹性伸缩能力和可靠性都得到了极大的提升。正如代码 中所示，使用的是NioEventLoopGroup和NioSocketChannel来提升传输效率。
 
 2）协议：采用什么样的通信协议，对系统的性能极其重要，netty默认提供了对Google Protobuf的支持，也可以通过扩展Netty的编解码接口，用户可以实现其它的高性能序列化框 架。
 
@@ -213,7 +213,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3583.html](https://zwmst.com/3583.html)
 
-   [ *Netty* ](https://zwmst.com/netty)* [ *微服务* ](https://zwmst.com/%e5%be%ae%e6%9c%8d%e5%8a%a1)***[ <time datetime="2021-09-21T02:24:58+08:00"> 2021-09-20 </time> ](https://zwmst.com/3583.html)  Netty 是一个高性能、异步事件驱动的 NIO 框架，基于 JAVA NIO 提供的 API 实现。它提供了对TCP、UDP 和文件传输的支持，作为一个异步 NIO 框架，Netty 的所有 IO 操作都是异步非阻塞的，通过 Future-Listener 机制，用户可以方便的主动获取或者通过通知机制获得 IO 操作结果。**
+   * ***[  ](https://zwmst.com/3583.html)  Netty 是一个高性能、异步事件驱动的 NIO 框架，基于 JAVA NIO 提供的 API 实现。它提供了对TCP、UDP 和文件传输的支持，作为一个异步 NIO 框架，Netty 的所有 IO 操作都是异步非阻塞的，通过 Future-Listener 机制，用户可以方便的主动获取或者通过通知机制获得 IO 操作结果。**
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -223,7 +223,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3586.html](https://zwmst.com/3586.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T03:26:44+08:00"> 2021-09-20 </time> ](https://zwmst.com/3586.html)  在 IO 编程过程中，当需要同时处理多个客户端接入请求时，可以利用多线程或者 IO 多路复用技术进行处理。IO 多路复用技术通过把多个 IO 的阻塞复用到同一个 select 的阻塞上，从而使得系统在单线程的情况下可以同时处理多个客户端请求。与传统的多线程/多进程模型比，I/O 多路复用的最大优势是系统开销小，系统不需要创建新的额外进程或者线程，也不需要维护这些进程和线程的运行，降低了系统的维护工作量，节省了系统资源。
+在 IO 编程过程中，当需要同时处理多个客户端接入请求时，可以利用多线程或者 IO 多路复用技术进行处理。IO 多路复用技术通过把多个 IO 的阻塞复用到同一个 select 的阻塞上，从而使得系统在单线程的情况下可以同时处理多个客户端请求。与传统的多线程/多进程模型比，I/O 多路复用的最大优势是系统开销小，系统不需要创建新的额外进程或者线程，也不需要维护这些进程和线程的运行，降低了系统的维护工作量，节省了系统资源。
 
 与 Socket 类和 ServerSocket 类相对应，NIO 也提供了SocketChannel 和 ServerSocketChannel两种不同的套接字通道实现。*
 <!--yml
@@ -235,7 +235,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3590.html](https://zwmst.com/3590.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:10:01+08:00"> 2021-09-20 </time> ](https://zwmst.com/3590.html)  Netty 架构按照 Reactor 模式设计和实现，它的服务端通信序列图如下：![](img/9e4163f2bf7aded4cd32a06997f4e572.png)
+Netty 架构按照 Reactor 模式设计和实现，它的服务端通信序列图如下：![](img/9e4163f2bf7aded4cd32a06997f4e572.png)
 
 客户端通信序列图如下：
 ![](img/fa14d35d459f9a4b98d64b31b70142b4.png)
@@ -250,7 +250,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3594.html](https://zwmst.com/3594.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:11:05+08:00"> 2021-09-20 </time> ](https://zwmst.com/3594.html)  **由于 Netty 采用了异步通信模式，一个 IO 线程可以并发处理 N 个客户端连接和读写操作**，这从根本上解决了传统同步阻塞 IO 一连接一线程模型，架构的性能、弹性伸缩能力和可靠性都得到了极
+**由于 Netty 采用了异步通信模式，一个 IO 线程可以并发处理 N 个客户端连接和读写操作**，这从根本上解决了传统同步阻塞 IO 一连接一线程模型，架构的性能、弹性伸缩能力和可靠性都得到了极
 大的提升。*
 <!--yml
 category: 未分类
@@ -261,7 +261,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3596.html](https://zwmst.com/3596.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:11:49+08:00"> 2021-09-20 </time> ](https://zwmst.com/3596.html)  1.  Netty 的接收和发送 ByteBuffer 采用 DIRECT BUFFERS，使用堆外直接内存进行 Socket 读写，不需要进行字节缓冲区的二次拷贝。如果使用传统的堆内存（HEAP BUFFERS）进行 Socket 读写，JVM 会将堆内存 Buffer 拷贝一份到直接内存中，然后才写入 Socket 中。相比于堆外直接内存，消息在发送过程中多了一次缓冲区的内存拷贝。
+1.  Netty 的接收和发送 ByteBuffer 采用 DIRECT BUFFERS，使用堆外直接内存进行 Socket 读写，不需要进行字节缓冲区的二次拷贝。如果使用传统的堆内存（HEAP BUFFERS）进行 Socket 读写，JVM 会将堆内存 Buffer 拷贝一份到直接内存中，然后才写入 Socket 中。相比于堆外直接内存，消息在发送过程中多了一次缓冲区的内存拷贝。
 2.  Netty 提供了组合 Buffer 对象，可以聚合多个 ByteBuffer 对象，用户可以像操作一个 Buffer 那样方便的对组合 Buffer 进行操作，避免了传统通过内存拷贝的方式将几个小 Buffer 合并成一个大的Buffer。
 3.  Netty的文件传输采用了transferTo方法，它可以直接将文件缓冲区的数据发送到目标Channel，避免了传统通过循环 write 方式导致的内存拷贝问题*
 <!--yml
@@ -273,7 +273,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3598.html](https://zwmst.com/3598.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:12:32+08:00"> 2021-09-20 </time> ](https://zwmst.com/3598.html)  随着 JVM 虚拟机和 JIT 即时编译技术的发展，对象的分配和回收是个非常轻量级的工作。但是对于缓冲区 Buffer，情况却稍有不同，特别是对于堆外直接内存的分配和回收，是一件耗时的操作。为了尽量重用缓冲区，Netty 提供了基于内存池的缓冲区重用机制。*
+随着 JVM 虚拟机和 JIT 即时编译技术的发展，对象的分配和回收是个非常轻量级的工作。但是对于缓冲区 Buffer，情况却稍有不同，特别是对于堆外直接内存的分配和回收，是一件耗时的操作。为了尽量重用缓冲区，Netty 提供了基于内存池的缓冲区重用机制。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -283,7 +283,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3600.html](https://zwmst.com/3600.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:13:15+08:00"> 2021-09-20 </time> ](https://zwmst.com/3600.html)  常用的 Reactor 线程模型有三种，Reactor 单线程模型, Reactor 多线程模型, 主从 Reactor 多线程模型。*
+常用的 Reactor 线程模型有三种，Reactor 单线程模型, Reactor 多线程模型, 主从 Reactor 多线程模型。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -293,7 +293,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3602.html](https://zwmst.com/3602.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:14:17+08:00"> 2021-09-20 </time> ](https://zwmst.com/3602.html)  Reactor 单线程模型，指的是所有的 IO 操作都在同一个 NIO 线程上面完成，NIO 线程的职责如下：
+Reactor 单线程模型，指的是所有的 IO 操作都在同一个 NIO 线程上面完成，NIO 线程的职责如下：
 
 1.  作为 NIO 服务端，接收客户端的 TCP 连接；
 2.  作为 NIO 客户端，向服务端发起 TCP 连接；
@@ -310,7 +310,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3607.html](https://zwmst.com/3607.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:16:14+08:00"> 2021-09-20 </time> ](https://zwmst.com/3607.html)  Rector 多线程模型与单线程模型最大的区别就是有一组 NIO 线程处理 IO 操作。 有专门一个NIO 线程-Acceptor 线程用于监听服务端，接收客户端的 TCP 连接请求； 网络 IO 操作-读、写等由一个 NIO 线程池负责，线程池可以采用标准的 JDK 线程池实现，它包含一个任务队列和 N个可用的线程，由这些 NIO 线程负责消息的读取、解码、编码和发送；*
+Rector 多线程模型与单线程模型最大的区别就是有一组 NIO 线程处理 IO 操作。 有专门一个NIO 线程-Acceptor 线程用于监听服务端，接收客户端的 TCP 连接请求； 网络 IO 操作-读、写等由一个 NIO 线程池负责，线程池可以采用标准的 JDK 线程池实现，它包含一个任务队列和 N个可用的线程，由这些 NIO 线程负责消息的读取、解码、编码和发送；*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -320,7 +320,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3611.html](https://zwmst.com/3611.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:21:53+08:00"> 2021-09-20 </time> ](https://zwmst.com/3611.html)  Netty 采用了串行无锁化设计，在 IO 线程内部进行串行操作，避免多线程竞争导致的性能下降。表面上看，串行化设计似乎 CPU 利用率不高，并发程度不够。但是，通过调整 NIO 线程池的线程参数，可以同时启动多个串行化的线程并行运行，这种局部无锁化的串行线程设计相比一个队列-多个工作线程模型性能更优。
+Netty 采用了串行无锁化设计，在 IO 线程内部进行串行操作，避免多线程竞争导致的性能下降。表面上看，串行化设计似乎 CPU 利用率不高，并发程度不够。但是，通过调整 NIO 线程池的线程参数，可以同时启动多个串行化的线程并行运行，这种局部无锁化的串行线程设计相比一个队列-多个工作线程模型性能更优。
 
 Netty 的 NioEventLoop 读取到消息之后，直接调用ChannelPipeline 的fireChannelRead(Object msg)，只要用户不主动切换线程，一直会由 NioEventLoop 调用到用户的 Handler，期间不进行线程切换，这种串行化处理方式避免了多线程操作导致的锁的竞争，从性能角度看是最优的。*
 <!--yml
@@ -332,7 +332,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3613.html](https://zwmst.com/3613.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:24:28+08:00"> 2021-09-20 </time> ](https://zwmst.com/3613.html)  Netty 默认提供了对 Google Protobuf 的支持，通过扩展 Netty 的编解码接口，用户可以实现其它的高性能序列化框架，例如 Thrift 的压缩二进制编解码框架。
+Netty 默认提供了对 Google Protobuf 的支持，通过扩展 Netty 的编解码接口，用户可以实现其它的高性能序列化框架，例如 Thrift 的压缩二进制编解码框架。
 
 1.  SO_RCVBUF 和 SO_SNDBUF：通常建议值为 128K 或者 256K。
 
@@ -352,7 +352,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3615.html](https://zwmst.com/3615.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:26:31+08:00"> 2021-09-20 </time> ](https://zwmst.com/3615.html)  RPC，即 Remote Procedure Call（远程过程调用），调用远程计算机上的服务，就像调用本地服务一样。RPC 可以很好的解耦系统，如 WebService 就是一种基于 Http 协议的 RPC。这个 RPC 整体框架如下：![](img/2b859664dc59dc4ed4a1a7dbb89310df.png)*
+RPC，即 Remote Procedure Call（远程过程调用），调用远程计算机上的服务，就像调用本地服务一样。RPC 可以很好的解耦系统，如 WebService 就是一种基于 Http 协议的 RPC。这个 RPC 整体框架如下：![](img/2b859664dc59dc4ed4a1a7dbb89310df.png)*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -362,7 +362,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3618.html](https://zwmst.com/3618.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:27:30+08:00"> 2021-09-20 </time> ](https://zwmst.com/3618.html)  1.  服务发布与订阅：服务端使用 Zookeeper 注册服务地址，客户端从 Zookeeper 获取可用的服务地址。
+1.  服务发布与订阅：服务端使用 Zookeeper 注册服务地址，客户端从 Zookeeper 获取可用的服务地址。
 2.  通信：使用 Netty 作为通信框架。
 3.  Spring：使用 Spring 配置服务，加载 Bean，扫描注解。
 4.  动态代理：客户端使用代理模式透明化服务调用。
@@ -376,7 +376,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3620.html](https://zwmst.com/3620.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:29:02+08:00"> 2021-09-20 </time> ](https://zwmst.com/3620.html)  1.  服务消费方（client）调用以本地调用方式调用服务；
+1.  服务消费方（client）调用以本地调用方式调用服务；
 2.  client stub 接收到调用后负责将方法、参数等组装成能够进行网络传输的消息体；
 3.  client stub 找到服务地址，并将消息发送到服务端；
 4.  server stub 收到消息后进行解码；
@@ -396,7 +396,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3622.html](https://zwmst.com/3622.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:30:32+08:00"> 2021-09-20 </time> ](https://zwmst.com/3622.html)  ### 息数据结构（接口名称+方法名+参数类型和参数值+超时时间+ requestID）
+### 息数据结构（接口名称+方法名+参数类型和参数值+超时时间+ requestID）
 
 客户端的请求消息结构一般需要包括以下内容：
 
@@ -415,7 +415,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3625.html](https://zwmst.com/3625.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:31:38+08:00"> 2021-09-20 </time> ](https://zwmst.com/3625.html)  目前互联网公司广泛使用 Protobuf、Thrift、Avro 等成熟的序列化解决方案来搭建 RPC 框架，这些都是久经考验的解决方案。*
+目前互联网公司广泛使用 Protobuf、Thrift、Avro 等成熟的序列化解决方案来搭建 RPC 框架，这些都是久经考验的解决方案。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -425,7 +425,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3628.html](https://zwmst.com/3628.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:33:37+08:00"> 2021-09-20 </time> ](https://zwmst.com/3628.html)  ### 核心问题(线程暂停、消息乱序)
+### 核心问题(线程暂停、消息乱序)
 
 如果使用 netty 的话，一般会用 channel.writeAndFlush()方法来发送消息二进制串，这个方法调用后对于整个远程调用(从发出请求到接收到结果)来说是一个异步的，即对于当前线程来说，将请求发送出来后，线程就可以往后执行了，至于服务端的结果，是服务端处理完成后，再以消息的形式发送给客户端的。于是这里出现以下两个问题：
 
@@ -440,7 +440,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3630.html](https://zwmst.com/3630.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:34:47+08:00"> 2021-09-20 </time> ](https://zwmst.com/3630.html)  ### requestID 生成-AtomicLong
+### requestID 生成-AtomicLong
 
 1.  client 线程每次通过 socket 调用一次远程接口前，生成一个唯一的 ID，即 requestID（requestID 必需保证在一个 Socket 连接里面是唯一的），一般常常使用 AtomicLong从 0 开始累计数字生成唯一 ID；*
 <!--yml
@@ -452,7 +452,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3632.html](https://zwmst.com/3632.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:35:40+08:00"> 2021-09-20 </time> ](https://zwmst.com/3632.html)  2.  将 处 理 结 果 的 回 调 对 象 callback ， 存 放 到 全 局 ConcurrentHashMap 里 面put(requestID, callback)；*
+2.  将 处 理 结 果 的 回 调 对 象 callback ， 存 放 到 全 局 ConcurrentHashMap 里 面put(requestID, callback)；*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -462,7 +462,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3635.html](https://zwmst.com/3635.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:36:59+08:00"> 2021-09-20 </time> ](https://zwmst.com/3635.html)  3.  当线程调用 channel.writeAndFlush()发送消息后，紧接着执行 callback 的 get()方法试图获取远程返回的结果。在 get()内部，则使用 synchronized 获取回调对象 callback 的锁，再先检测是否已经获取到结果，如果没有，然后调用 callback 的 wait()方法，释放callback 上的锁，让当前线程处于等待状态。*
+3.  当线程调用 channel.writeAndFlush()发送消息后，紧接着执行 callback 的 get()方法试图获取远程返回的结果。在 get()内部，则使用 synchronized 获取回调对象 callback 的锁，再先检测是否已经获取到结果，如果没有，然后调用 callback 的 wait()方法，释放callback 上的锁，让当前线程处于等待状态。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -472,7 +472,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3637.html](https://zwmst.com/3637.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:37:50+08:00"> 2021-09-20 </time> ](https://zwmst.com/3637.html)  4.  服务端接收到请求并处理后，将 response 结果（此结果中包含了前面的 requestID）发送给客户端，客户端 socket 连接上专门监听消息的线程收到消息，分析结果，取到requestID ， 再 从 前 面 的 ConcurrentHashMap 里 面 get(requestID) ， 从 而 找 到callback 对象，再用 synchronized 获取 callback 上的锁，将方法调用结果设置到callback 对象里，再调用 callback.notifyAll()唤醒前面处于等待状态的线程。*
+4.  服务端接收到请求并处理后，将 response 结果（此结果中包含了前面的 requestID）发送给客户端，客户端 socket 连接上专门监听消息的线程收到消息，分析结果，取到requestID ， 再 从 前 面 的 ConcurrentHashMap 里 面 get(requestID) ， 从 而 找 到callback 对象，再用 synchronized 获取 callback 上的锁，将方法调用结果设置到callback 对象里，再调用 callback.notifyAll()唤醒前面处于等待状态的线程。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -482,7 +482,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3641.html](https://zwmst.com/3641.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:39:47+08:00"> 2021-09-20 </time> ](https://zwmst.com/3641.html)  Java 远程方法调用，即 Java RMI（Java Remote Method Invocation）是 Java 编程语言里，一种用于实现远程过程调用的应用程序编程接口。它使客户机上运行的程序可以调用远程服务器上的对象。远程方法调用特性使 Java 编程人员能够在网络环境中分布操作。RMI 全部的宗旨就是尽可能简化远程接口对象的使用。*
+Java 远程方法调用，即 Java RMI（Java Remote Method Invocation）是 Java 编程语言里，一种用于实现远程过程调用的应用程序编程接口。它使客户机上运行的程序可以调用远程服务器上的对象。远程方法调用特性使 Java 编程人员能够在网络环境中分布操作。RMI 全部的宗旨就是尽可能简化远程接口对象的使用。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -492,7 +492,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3643.html](https://zwmst.com/3643.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-21T04:41:26+08:00"> 2021-09-20 </time> ](https://zwmst.com/3643.html)  1.  编写远程服务接口，该接口必须继承 java.rmi.Remote 接口，方法必须抛出java.rmi.RemoteException 异常；
+1.  编写远程服务接口，该接口必须继承 java.rmi.Remote 接口，方法必须抛出java.rmi.RemoteException 异常；
 2.  编写远程接口实现类，该实现类必须继承 java.rmi.server.UnicastRemoteObject 类；
 3.  运行 RMI 编译器（rmic），创建客户端 stub 类和服务端 skeleton 类;
 4.  启动一个 RMI 注册表，以便驻留这些服务;
@@ -535,7 +535,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3646.html](https://zwmst.com/3646.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-22T00:10:32+08:00"> 2021-09-21 </time> ](https://zwmst.com/3646.html)  protocol buffer 是 google 的一个开源项目,它是用于结构化数据串行化的灵活、高效、自动的方法，例如 XML，不过它比 xml 更小、更快、也更简单。你可以定义自己的数据结构，然后使用代码生成器生成的代码来读写这个数据结构。你甚至可以在无需重新部署程序的情况下更新数据结构。*
+protocol buffer 是 google 的一个开源项目,它是用于结构化数据串行化的灵活、高效、自动的方法，例如 XML，不过它比 xml 更小、更快、也更简单。你可以定义自己的数据结构，然后使用代码生成器生成的代码来读写这个数据结构。你甚至可以在无需重新部署程序的情况下更新数据结构。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -545,7 +545,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3648.html](https://zwmst.com/3648.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-22T00:11:53+08:00"> 2021-09-21 </time> ](https://zwmst.com/3648.html)  Protocol Buffer 的序列化 & 反序列化简单 & 速度快的原因是：
+Protocol Buffer 的序列化 & 反序列化简单 & 速度快的原因是：
 
 1.  编码 / 解码 方式简单（只需要简单的数学运算 = 位移等等）
 2.  采用 Protocol Buffer 自身的框架代码 和 编译器 共同完成
@@ -563,7 +563,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3650.html](https://zwmst.com/3650.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-22T00:17:19+08:00"> 2021-09-21 </time> ](https://zwmst.com/3650.html)  Apache Thrift 是 Facebook 实现的一种高效的、支持多种编程语言的远程服务调用的框架。本文将从Java 开发人员角度详细介绍 Apache Thrift 的架构、开发和部署，并且针对不同的传输协议和服务类型给出相应的 Java 实例，同时详细介绍 Thrift 异步客户端的实现，最后提出使用 Thrift 需要注意的事项。
+Apache Thrift 是 Facebook 实现的一种高效的、支持多种编程语言的远程服务调用的框架。本文将从Java 开发人员角度详细介绍 Apache Thrift 的架构、开发和部署，并且针对不同的传输协议和服务类型给出相应的 Java 实例，同时详细介绍 Thrift 异步客户端的实现，最后提出使用 Thrift 需要注意的事项。
 
 目前流行的服务调用方式有很多种，例如基于 SOAP 消息格式的 Web Service，基于 JSON 消息格式的 RESTful 服务等。其中所用到的数据传输方式包括 XML，JSON 等，然而 XML 相对体积太大，传输效率低，JSON 体积较小，新颖，但还不够完善。本文将介绍由 Facebook 开发的远程服务调用框架Apache Thrift，它采用接口描述语言定义并创建服务，支持可扩展的跨语言服务开发，所包含的代码生成引擎可以在多种语言中，如 C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, Smalltalk 等创建高效的、无缝的服务，其传输数据采用二进制格式，相对 XML 和 JSON 体积更小，对于高并发、大数据量和多语言的环境更有优势。
 
@@ -577,7 +577,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3652.html](https://zwmst.com/3652.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-09-22T00:28:20+08:00"> 2021-09-21 </time> ](https://zwmst.com/3652.html)  1.  多语言开发的需要
+1.  多语言开发的需要
 2.  性能问题*
 <!--yml
 category: 未分类
@@ -588,7 +588,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5686.html](https://zwmst.com/5686.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-28T23:47:28+08:00"> 2021-10-28 </time> ](https://zwmst.com/5686.html)  BIO：一个连接一个线程，客户端有连接请求时服务器端就需要启动一个线程进行处理。线程开销大。
+BIO：一个连接一个线程，客户端有连接请求时服务器端就需要启动一个线程进行处理。线程开销大。
 伪异步 IO：将请求连接放入线程池，一对多，但线程还是很宝贵的资源。
 
 NIO：一个请求一个线程，但客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有 I/O 请求时才启动个线程进行处理。
@@ -608,7 +608,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5688.html](https://zwmst.com/5688.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-28T23:51:30+08:00"> 2021-10-28 </time> ](https://zwmst.com/5688.html)  Buffer：与 Channel 进行交互，数据是从 Channel 读入缓冲区，从缓冲区写入 Channel 中的
+Buffer：与 Channel 进行交互，数据是从 Channel 读入缓冲区，从缓冲区写入 Channel 中的
 
 flip 方法 ： 反转此缓冲区，将 position 给 limit，然后将 position 置为 0，其实就是切换读写模式
 
@@ -636,7 +636,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5690.html](https://zwmst.com/5690.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-28T23:52:32+08:00"> 2021-10-28 </time> ](https://zwmst.com/5690.html)  一个高性能、异步事件驱动的 NIO 框架，它提供了对 TCP、UDP 和文件传输的支持使用更高效的 socket 底层，对 epoll 空轮询引起的 cpu 占用飙升在内部进行了处理，避免了直接使用 NIO 的陷阱，简化了 NIO 的处理方式。
+一个高性能、异步事件驱动的 NIO 框架，它提供了对 TCP、UDP 和文件传输的支持使用更高效的 socket 底层，对 epoll 空轮询引起的 cpu 占用飙升在内部进行了处理，避免了直接使用 NIO 的陷阱，简化了 NIO 的处理方式。
 采用多种 decoder/encoder 支持，对 TCP 粘包/分包进行自动化处理可使用接受/处理线程池，提高连接效率，对重连、心跳检测的简单支持可配置 IO 线程数、TCP 参数， TCP 接收和发送缓冲区使用直接内存代替堆内存，通过内存池的方式循环利用 ByteBuf通过引用计数器及时申请释放不再引用的对象，降低了 GC 频率使用单线程串行化的方式，高效的 Reactor 线程模型大量使用了 volitale、使用了 CAS 和原子类、线程安全类的使用、读写锁的使用*
 <!--yml
 category: 未分类
@@ -647,7 +647,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5692.html](https://zwmst.com/5692.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-28T23:53:39+08:00"> 2021-10-28 </time> ](https://zwmst.com/5692.html)  Netty 通过 Reactor 模型基于多路复用器接收并处理用户请求，内部实现了两个线程池，boss 线程池和 work 线程池，其中 boss 线程池的线程负责处理请求的 accept 事件，当接收到 accept 事件的请求时，把对应的 socket 封装到一个 NioSocketChannel 中，并交给 work线程池，其中 work 线程池负责请求的 read 和 write 事件，由对应的 Handler 处理。
+Netty 通过 Reactor 模型基于多路复用器接收并处理用户请求，内部实现了两个线程池，boss 线程池和 work 线程池，其中 boss 线程池的线程负责处理请求的 accept 事件，当接收到 accept 事件的请求时，把对应的 socket 封装到一个 NioSocketChannel 中，并交给 work线程池，其中 work 线程池负责请求的 read 和 write 事件，由对应的 Handler 处理。
 单线程模型：所有 I/O 操作都由一个线程完成，即多路复用、事件分发和处理都是在一个Reactor 线程上完成的。既要接收客户端的连接请求,向服务端发起连接，又要发送/读取请求或应答/响应消息。一个 NIO 线程同时处理成百上千的链路，性能上无法支撑，速度慢，若线程进入死循环，整个程序不可用，对于高负载、大并发的应用场景不合适。
 多线程模型：有一个 NIO 线程（Acceptor） 只负责监听服务端，接收客户端的 TCP 连接请求；NIO 线程池负责网络 IO 的操作，即消息的读取、解码、编码和发送；1 个 NIO 线程可以同时处理 N 条链路，但是 1 个链路只对应 1 个 NIO 线程，这是为了防止发生并发操作问题。但在并发百万客户端连接或需要安全认证时，一个 Acceptor 线程可能会存在性
 能不足问题。
@@ -661,7 +661,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5694.html](https://zwmst.com/5694.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-28T23:54:51+08:00"> 2021-10-28 </time> ](https://zwmst.com/5694.html)  TCP 是以流的方式来处理数据，一个完整的包可能会被 TCP 拆分成多个包进行发送，也可能把小的封装成一个大的数据包发送。
+TCP 是以流的方式来处理数据，一个完整的包可能会被 TCP 拆分成多个包进行发送，也可能把小的封装成一个大的数据包发送。
 TCP 粘包/分包的原因：
 应用程序写入的字节大小大于套接字发送缓冲区的大小，会发生拆包现象，而应用程序写入数据小于套接字缓冲区大小，网卡将应用多次写入的数据发送到网络上，这将会发生粘包现象；
 进行 MSS 大小的 TCP 分段，当 TCP 报文长度-TCP 头部长度>MSS 的时候将发生拆包以太网帧的 payload（净荷）大于 MTU（1500 字节）进行 ip 分片。
@@ -679,7 +679,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5696.html](https://zwmst.com/5696.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-28T23:57:25+08:00"> 2021-10-28 </time> ](https://zwmst.com/5696.html)  序列化（编码）是将对象序列化为二进制形式（字节数组），主要用于网络传输、数据持久化等；而反序列化（解码）则是将从网络、磁盘等读取的字节数组还原成原始对象，主要用于网络传输对象的解码，以便完成远程调用。
+序列化（编码）是将对象序列化为二进制形式（字节数组），主要用于网络传输、数据持久化等；而反序列化（解码）则是将从网络、磁盘等读取的字节数组还原成原始对象，主要用于网络传输对象的解码，以便完成远程调用。
 
 影响序列化性能的关键因素：序列化后的码流大小（网络带宽的占用）、序列化的性能（CPU 资源占用）；是否支持跨语言（异构系统的对接和开发语言切换）。
 
@@ -713,7 +713,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5698.html](https://zwmst.com/5698.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-29T00:00:02+08:00"> 2021-10-28 </time> ](https://zwmst.com/5698.html)  具体场景
+具体场景
 对于公司间的系统调用，如果性能要求在 100ms 以上的服务，基于 XML 的 SOAP 协议是一个值得考虑的方案。
 
 基于 Web browser 的 Ajax，以及 Mobile app 与服务端之间的通讯，JSON 协议是首选。对于性能要求不太高，或者以动态类型语言为主，或者传输数据载荷很小的的运用场景，JSON也是非常不错的选择。
@@ -754,7 +754,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5700.html](https://zwmst.com/5700.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-29T00:27:45+08:00"> 2021-10-28 </time> ](https://zwmst.com/5700.html)  Netty 的接收和发送 ByteBuffer 采用 DIRECT BUFFERS，使用堆外直接内存进行 Socket 读写，不需要进行字节缓冲区的二次拷贝。堆内存多了一次内存拷贝，JVM 会将堆内存Buffer 拷贝一份到直接内存中，然后才写入 Socket 中。ByteBuffer 由 ChannelConfig 分配，而 ChannelConfig 创建 ByteBufAllocator 默认使用 Direct Buffer
+Netty 的接收和发送 ByteBuffer 采用 DIRECT BUFFERS，使用堆外直接内存进行 Socket 读写，不需要进行字节缓冲区的二次拷贝。堆内存多了一次内存拷贝，JVM 会将堆内存Buffer 拷贝一份到直接内存中，然后才写入 Socket 中。ByteBuffer 由 ChannelConfig 分配，而 ChannelConfig 创建 ByteBufAllocator 默认使用 Direct Buffer
 
 CompositeByteBuf 类可以将多个 ByteBuf 合并为一个逻辑上的 ByteBuf, 避免了传统通过内存拷贝的方式将几个小 Buffer 合并成一个大的 Buffer。addComponents 方法将 header与 body 合并为一个逻辑上的 ByteBuf, 这两个 ByteBuf 在 CompositeByteBuf 内部都是单独存在的, CompositeByteBuf 只是逻辑上是一个整体
 
@@ -774,7 +774,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5702.html](https://zwmst.com/5702.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-29T00:29:24+08:00"> 2021-10-28 </time> ](https://zwmst.com/5702.html)  心跳，对服务端：会定时清除闲置会话 inactive(netty5)，对客户端:用来检测会话是否断开，是否重来，检测网络延迟，其中 idleStateHandler 类 用来检测会话状态串行无锁化设计，即消息的处理尽可能在同一个线程内完成，期间不进行线程切换，这样就避免了多线程竞争和同步锁。表面上看，串行化设计似乎 CPU 利用率不高，并发程度不够。但是，通过调整 NIO 线程池的线程参数，可以同时启动多个串行化的线程并行运行，这种局部无锁化的串行线程设计相比一个队列-多个工作线程模型性能更优。
+心跳，对服务端：会定时清除闲置会话 inactive(netty5)，对客户端:用来检测会话是否断开，是否重来，检测网络延迟，其中 idleStateHandler 类 用来检测会话状态串行无锁化设计，即消息的处理尽可能在同一个线程内完成，期间不进行线程切换，这样就避免了多线程竞争和同步锁。表面上看，串行化设计似乎 CPU 利用率不高，并发程度不够。但是，通过调整 NIO 线程池的线程参数，可以同时启动多个串行化的线程并行运行，这种局部无锁化的串行线程设计相比一个队列-多个工作线程模型性能更优。
 
 可靠性，链路有效性检测：链路空闲检测机制，读/写空闲超时机制；内存保护机制：通过内存池重用 ByteBuf;ByteBuf 的解码保护；优雅停机：不再接收新消息、退出前的预处理操作、资源的释放操作。
 
@@ -796,7 +796,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5704.html](https://zwmst.com/5704.html)
 
-   [ *Netty* ](https://zwmst.com/netty)*[ <time datetime="2021-10-29T00:31:20+08:00"> 2021-10-28 </time> ](https://zwmst.com/5704.html)  NioEventLoopGroup(其实是 MultithreadEventExecutorGroup) 内部维护一个类型为EventExecutor children [], 默认大小是处理器核数 * 2, 这样就构成了一个线程池，初始化EventExecutor 时 NioEventLoopGroup 重载 newChild 方法，所以 children 元素的实际类型为NioEventLoop。
+NioEventLoopGroup(其实是 MultithreadEventExecutorGroup) 内部维护一个类型为EventExecutor children [], 默认大小是处理器核数 * 2, 这样就构成了一个线程池，初始化EventExecutor 时 NioEventLoopGroup 重载 newChild 方法，所以 children 元素的实际类型为NioEventLoop。
 
 线程启动时调用 SingleThreadEventExecutor 的构造方法，执行 NioEventLoop 类的 run 方法，首先会调用 hasTasks()方法判断当前 taskQueue 是否有元素。如果 taskQueue 中有元素，执行 selectNow() 方法，最终执行 selector.selectNow()，该方法会立即返回。如果taskQueue 没有元素，执行 select(oldWakenUp) 方法select ( oldWakenUp) 方法解决了 Nio 中的 bug，selectCnt 用来记录 selector.select 方法的执行次数和标识是否执行过 selector.selectNow()，若触发了 epoll 的空轮询 bug，则会反复执行 selector.select(timeoutMillis)，变量 selectCnt 会逐渐变大，当 selectCnt 达到阈值（默认 512），则执行 rebuildSelector 方法，进行 selector 重建，解决 cpu 占用 100%的 bug。
 
@@ -824,4 +824,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5720.html](https://zwmst.com/5720.html)
 
-   [ *Netty* ](https://zwmst.com/netty)* [ *Nginx* ](https://zwmst.com/nginx)***[ <time datetime="2021-10-30T05:14:04+08:00"> 2021-10-29 </time> ](https://zwmst.com/5720.html)  Nginx 服务器的最佳用法是在网络上部署动态 HTTP 内容，使用 SCGI、WSGI 应用程序服务器、用于脚本的 FastCGI 处理程序。它还可以作为负载均衡器。**
+   * ***[  ](https://zwmst.com/5720.html)  Nginx 服务器的最佳用法是在网络上部署动态 HTTP 内容，使用 SCGI、WSGI 应用程序服务器、用于脚本的 FastCGI 处理程序。它还可以作为负载均衡器。**

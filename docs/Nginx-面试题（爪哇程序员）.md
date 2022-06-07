@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1482.html](https://zwmst.com/1482.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:39:52+08:00"> 2021-08-15 </time> ](https://zwmst.com/1482.html)  Nginx ，是一个 Web 服务器和反向代理服务器，用于 HTTP、HTTPS、SMTP、POP3 和 IMAP 协议。
+Nginx ，是一个 Web 服务器和反向代理服务器，用于 HTTP、HTTPS、SMTP、POP3 和 IMAP 协议。
 
 目前使用的最多的 Web 服务器或者代理服务器，像淘宝、新浪、网易、迅雷等都在使用。
 
@@ -31,7 +31,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1484.html](https://zwmst.com/1484.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:40:05+08:00"> 2021-08-15 </time> ](https://zwmst.com/1484.html)  跨平台、配置简单、方向代理、高并发连接：处理2-3万并发连接数，官方监测能支持5万并 发，内存消耗小：开启10个nginx才占150M内存 ，nginx处理静态文件好，耗费内存少，
+跨平台、配置简单、方向代理、高并发连接：处理2-3万并发连接数，官方监测能支持5万并 发，内存消耗小：开启10个nginx才占150M内存 ，nginx处理静态文件好，耗费内存少，
 
 而且Nginx内置的健康检查功能：如果有一个服务器宕机，会做一个健康检查，再发送的请求 就不会发送到宕机的服务器了。重新将请求提交到其他的节点上。
 
@@ -51,7 +51,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1486.html](https://zwmst.com/1486.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:40:25+08:00"> 2021-08-15 </time> ](https://zwmst.com/1486.html)  nginx接收一个请求后，首先由listen和server_name指令匹配server模块，再匹配 server模块里的location，location就是实际地址
+nginx接收一个请求后，首先由listen和server_name指令匹配server模块，再匹配 server模块里的location，location就是实际地址
 
 ```
 server { # 第一个Server区块开始，表示一个独立的虚拟主机站点
@@ -74,7 +74,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1488.html](https://zwmst.com/1488.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:40:36+08:00"> 2021-08-15 </time> ](https://zwmst.com/1488.html)  优点：
+优点：
 
 占内存小，可实现高并发连接，处理响应快
 
@@ -94,7 +94,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1490.html](https://zwmst.com/1490.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:40:46+08:00"> 2021-08-15 </time> ](https://zwmst.com/1490.html)  http服务器。Nginx是一个http服务可以独立提供http服务。可以做网页静态服务器。
+http服务器。Nginx是一个http服务可以独立提供http服务。可以做网页静态服务器。
 
 虚拟主机。可以实现在一台服务器虚拟出多个网站，例如个人网站使用的虚拟机。
 
@@ -110,7 +110,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1492.html](https://zwmst.com/1492.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:40:59+08:00"> 2021-08-15 </time> ](https://zwmst.com/1492.html)  反向代理服务器可以隐藏源服务器的存在和特征。它充当互联网云和web服务器之间的中间层。这对于安全方面来说是很好的，特别是当您使用web托管服务时。*
+反向代理服务器可以隐藏源服务器的存在和特征。它充当互联网云和web服务器之间的中间层。这对于安全方面来说是很好的，特别是当您使用web托管服务时。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -120,7 +120,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1494.html](https://zwmst.com/1494.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:41:10+08:00"> 2021-08-15 </time> ](https://zwmst.com/1494.html)  Nginx服务器的最佳用法是在网络上部署动态HTTP内容，使用SCGI、WSGI应用程序服务 器、用于脚本的FastCGI处理程序。它还可以作为负载均衡器。*
+Nginx服务器的最佳用法是在网络上部署动态HTTP内容，使用SCGI、WSGI应用程序服务 器、用于脚本的FastCGI处理程序。它还可以作为负载均衡器。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -130,7 +130,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1496.html](https://zwmst.com/1496.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:43:22+08:00"> 2021-08-15 </time> ](https://zwmst.com/1496.html)  Nginx使用反应器模式。主事件循环等待操作系统发出准备事件的信号，这样数据就可以从套 接字读取，在该实例中读取到缓冲区并进行处理。单个线程可以提供数万个并发连接。*
+Nginx使用反应器模式。主事件循环等待操作系统发出准备事件的信号，这样数据就可以从套 接字读取，在该实例中读取到缓冲区并进行处理。单个线程可以提供数万个并发连接。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -140,7 +140,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1498.html](https://zwmst.com/1498.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:44:01+08:00"> 2021-08-15 </time> ](https://zwmst.com/1498.html)  只需将请求删除的服务器就可以定义为：
+只需将请求删除的服务器就可以定义为：
 
 ```
 Server {
@@ -160,7 +160,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1500.html](https://zwmst.com/1500.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:44:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1500.html)  要在URL中保留双斜线，就必须使用merge_slashes_off；语法:merge_slashes [on/off] ； 默认值: merge_slashes on ；环境: http，server*
+要在URL中保留双斜线，就必须使用merge_slashes_off；语法:merge_slashes [on/off] ； 默认值: merge_slashes on ；环境: http，server*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -170,7 +170,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1502.html](https://zwmst.com/1502.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:44:28+08:00"> 2021-08-15 </time> ](https://zwmst.com/1502.html)  ngx_http_upstream_module用于定义可通过fastcgi传递、proxy传递、uwsgi传递、 memcached传递和scgi传递指令来引用的服务器组。*
+ngx_http_upstream_module用于定义可通过fastcgi传递、proxy传递、uwsgi传递、 memcached传递和scgi传递指令来引用的服务器组。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -180,7 +180,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1504.html](https://zwmst.com/1504.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:44:42+08:00"> 2021-08-15 </time> ](https://zwmst.com/1504.html)  1）cgi
+1）cgi
 
 web 服务器会根据请求的内容，然后会 fork 一个新进程来运行外部 c 程序（或 perl 脚 本…）， 这个进程会把处理完的数据返回给 web 服务器，最后 web 服务器把内容发送给用 户，刚才 fork 的进程也随之退出。
 
@@ -200,7 +200,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1506.html](https://zwmst.com/1506.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:44:54+08:00"> 2021-08-15 </time> ](https://zwmst.com/1506.html)  启动 nginx 。
+启动 nginx 。
 
 停止 nginx -s stop 或 nginx -s quit 。
 
@@ -222,7 +222,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1508.html](https://zwmst.com/1508.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:45:06+08:00"> 2021-08-15 </time> ](https://zwmst.com/1508.html)  ```
+```
 worker_processes 8; # 工作进程个数
 worker_connections 65535; # 每个工作进程能并发处理（发起）的最大连接数（包含所有 连接数）
 error_log /data/logs/nginx/error.log; # 错误日志打印地址
@@ -253,7 +253,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1510.html](https://zwmst.com/1510.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-08-15T11:45:17+08:00"> 2021-08-15 </time> ](https://zwmst.com/1510.html)  （1）Stub_status指令：该指令用于了解Nginx当前状态的当前状态，如当前的活动连接，接 受和处理当前读/写/等待连接的总数 ；
+（1）Stub_status指令：该指令用于了解Nginx当前状态的当前状态，如当前的活动连接，接 受和处理当前读/写/等待连接的总数 ；
 
 （2）Sub_filter指令：它用于搜索和替换响应中的内容，并快速修复陈旧的数据*
 <!--yml
@@ -265,7 +265,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3609.html](https://zwmst.com/3609.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-09-21T04:19:45+08:00"> 2021-09-20 </time> ](https://zwmst.com/3609.html)  服务端用于接收客户端连接的不再是个 1 个单独的 NIO 线程，而是一个独立的 NIO 线程池。Acceptor 接收到客户端 TCP 连接请求处理完成后（可能包含接入认证等），将新创建的SocketChannel 注册到 IO 线程池（sub reactor 线程池）的某个 IO 线程上，由它负责SocketChannel 的读写和编解码工作。Acceptor 线程池仅仅只用于客户端的登陆、握手和安全认证，一旦链路建立成功，就将链路注册到后端 subReactor 线程池的 IO 线程上，由 IO 线程负责后续的 IO 操作*
+服务端用于接收客户端连接的不再是个 1 个单独的 NIO 线程，而是一个独立的 NIO 线程池。Acceptor 接收到客户端 TCP 连接请求处理完成后（可能包含接入认证等），将新创建的SocketChannel 注册到 IO 线程池（sub reactor 线程池）的某个 IO 线程上，由它负责SocketChannel 的读写和编解码工作。Acceptor 线程池仅仅只用于客户端的登陆、握手和安全认证，一旦链路建立成功，就将链路注册到后端 subReactor 线程池的 IO 线程上，由 IO 线程负责后续的 IO 操作*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -275,7 +275,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5709.html](https://zwmst.com/5709.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T03:19:48+08:00"> 2021-10-29 </time> ](https://zwmst.com/5709.html)  Nginx 是一个 web 服务器和反向代理服务器，用于 HTTP、HTTPS、SMTP、POP3和 IMAP 协议。*
+Nginx 是一个 web 服务器和反向代理服务器，用于 HTTP、HTTPS、SMTP、POP3和 IMAP 协议。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -285,7 +285,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5712.html](https://zwmst.com/5712.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T03:20:40+08:00"> 2021-10-29 </time> ](https://zwmst.com/5712.html)  Nginx 服务器的特性包括：
+Nginx 服务器的特性包括：
 反向代理/L7 负载均衡器
 嵌入式 Perl 解释器
 动态二进制升级
@@ -299,7 +299,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5714.html](https://zwmst.com/5714.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T03:49:25+08:00"> 2021-10-29 </time> ](https://zwmst.com/5714.html)  Nginx 使用反应器模式。主事件循环等待操作系统发出准备事件的信号，这样数据就可以从套接字读取，在该实例中读取到缓冲区并进行处理。单个线程可以提供数万个并发连接。*
+Nginx 使用反应器模式。主事件循环等待操作系统发出准备事件的信号，这样数据就可以从套接字读取，在该实例中读取到缓冲区并进行处理。单个线程可以提供数万个并发连接。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -309,7 +309,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5716.html](https://zwmst.com/5716.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T03:50:47+08:00"> 2021-10-29 </time> ](https://zwmst.com/5716.html)  只需将请求删除的服务器就可以定义为：
+只需将请求删除的服务器就可以定义为：
 
 ```
 Server {listen 80;server_name “ “ ;return 444;}
@@ -326,7 +326,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5718.html](https://zwmst.com/5718.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T03:51:48+08:00"> 2021-10-29 </time> ](https://zwmst.com/5718.html)  反向代理服务器可以隐藏源服务器的存在和特征。它充当互联网云和 web 服务器之间的中间层。这对于安全方面来说是很好的，特别是当您使用 web 托管服务时。*
+反向代理服务器可以隐藏源服务器的存在和特征。它充当互联网云和 web 服务器之间的中间层。这对于安全方面来说是很好的，特别是当您使用 web 托管服务时。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -336,7 +336,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5722.html](https://zwmst.com/5722.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:14:51+08:00"> 2021-10-29 </time> ](https://zwmst.com/5722.html)  Master 进程：读取及评估配置和维持
+Master 进程：读取及评估配置和维持
 Worker 进程：处理请求*
 <!--yml
 category: 未分类
@@ -347,7 +347,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5724.html](https://zwmst.com/5724.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:16:28+08:00"> 2021-10-29 </time> ](https://zwmst.com/5724.html)  为了通过一个不同的端口开启 Nginx，你必须进入/etc/Nginx/sitesenabled/，如果这是默认文件，那么你必须打开名为“default”的文件。编辑文件，并放置在你想要的端口：Like server { listen 81; }*
+为了通过一个不同的端口开启 Nginx，你必须进入/etc/Nginx/sitesenabled/，如果这是默认文件，那么你必须打开名为“default”的文件。编辑文件，并放置在你想要的端口：Like server { listen 81; }*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -357,7 +357,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5726.html](https://zwmst.com/5726.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:17:39+08:00"> 2021-10-29 </time> ](https://zwmst.com/5726.html)  502 =错误网关
+502 =错误网关
 503 =服务器超载
 有可能，但是您可以确保 fastcgi_intercept_errors 被设置为 ON，并使用错误页面指令。
 Location / {fastcgi_pass 127.0.01:9001;fastcgi_intercept_errors on;error_page 502 =503/error_page.html;#…}*
@@ -370,7 +370,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5728.html](https://zwmst.com/5728.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:18:33+08:00"> 2021-10-29 </time> ](https://zwmst.com/5728.html)  要在 URL 中保留双斜线，就必须使用 merge_slashes_off;
+要在 URL 中保留双斜线，就必须使用 merge_slashes_off;
 语法:merge_slashes [on/off]
 默认值: merge_slashes on
 环境: http，server*
@@ -383,7 +383,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5730.html](https://zwmst.com/5730.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:19:28+08:00"> 2021-10-29 </time> ](https://zwmst.com/5730.html)  ngx_http_upstream_module 用于定义可通过 fastcgi 传递、proxy 传递、uwsgi传递、memcached 传递和 scgi 传递指令来引用的服务器组。*
+ngx_http_upstream_module 用于定义可通过 fastcgi 传递、proxy 传递、uwsgi传递、memcached 传递和 scgi 传递指令来引用的服务器组。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -393,7 +393,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5732.html](https://zwmst.com/5732.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:20:07+08:00"> 2021-10-29 </time> ](https://zwmst.com/5732.html)  C10K 问题是指无法同时处理大量客户端(10,000)的网络套接字。*
+C10K 问题是指无法同时处理大量客户端(10,000)的网络套接字。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -403,7 +403,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5734.html](https://zwmst.com/5734.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:20:45+08:00"> 2021-10-29 </time> ](https://zwmst.com/5734.html)  Stub_status 指令：该指令用于了解 Nginx 当前状态的当前状态，如当前的活动连接，接受和处理当前读/写/等待连接的总数
+Stub_status 指令：该指令用于了解 Nginx 当前状态的当前状态，如当前的活动连接，接受和处理当前读/写/等待连接的总数
 Sub_filter 指令：它用于搜索和替换响应中的内容，并快速修复陈旧的数据*
 <!--yml
 category: 未分类
@@ -414,7 +414,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5737.html](https://zwmst.com/5737.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:46:31+08:00"> 2021-10-29 </time> ](https://zwmst.com/5737.html)  要获得 Nginx 的当前时间，必须使用 SSI 模块、$date_gmt 和$date_local 的变量。
+要获得 Nginx 的当前时间，必须使用 SSI 模块、$date_gmt 和$date_local 的变量。
 
 ```
 Proxy_set_header THE-TIME $date_gmt;
@@ -428,7 +428,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5739.html](https://zwmst.com/5739.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:47:19+08:00"> 2021-10-29 </time> ](https://zwmst.com/5739.html)  用于运行 Nginx -s 参数的可执行文件。*
+用于运行 Nginx -s 参数的可执行文件。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -438,4 +438,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5741.html](https://zwmst.com/5741.html)
 
-   [ *Nginx* ](https://zwmst.com/nginx)*[ <time datetime="2021-10-30T05:48:59+08:00"> 2021-10-29 </time> ](https://zwmst.com/5741.html)  在编译过程中，必须选择 Nginx 模块，因为 Nginx 不支持模块的运行时间选择*
+在编译过程中，必须选择 Nginx 模块，因为 Nginx 不支持模块的运行时间选择*

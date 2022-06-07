@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1451.html](https://zwmst.com/1451.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:34:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1451.html)  queue就是来源于数据结构的FIFO队列。而Topic是个抽象的概念，每个Topic底层对应N个 queue，而数据也真实存在queue上的。*
+queue就是来源于数据结构的FIFO队列。而Topic是个抽象的概念，每个Topic底层对应N个 queue，而数据也真实存在queue上的。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -17,7 +17,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1453.html](https://zwmst.com/1453.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:34:44+08:00"> 2021-08-15 </time> ](https://zwmst.com/1453.html)  不会，每条消息都会持久化到CommitLog中，每个Consumer连接到Broker后会维持消费进 度信息，当有消息消费后只是当前Consumer的消费进度（CommitLog的offset）更新了。*
+不会，每条消息都会持久化到CommitLog中，每个Consumer连接到Broker后会维持消费进 度信息，当有消息消费后只是当前Consumer的消费进度（CommitLog的offset）更新了。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -27,7 +27,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1455.html](https://zwmst.com/1455.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:34:59+08:00"> 2021-08-15 </time> ](https://zwmst.com/1455.html)  集群消费
+集群消费
 
 一条消息只会被同Group中的一个Consumer消费
 
@@ -45,7 +45,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1457.html](https://zwmst.com/1457.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:35:11+08:00"> 2021-08-15 </time> ](https://zwmst.com/1457.html)  RocketMQ没有真正意义的push，都是pull，虽然有push类，但实际底层实现采用的是长轮 询机制，即拉取方式。
+RocketMQ没有真正意义的push，都是pull，虽然有push类，但实际底层实现采用的是长轮 询机制，即拉取方式。
 
 broker端属性 longPollingEnable 标记是否开启长轮询。默认开启。*
 <!--yml
@@ -57,7 +57,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1459.html](https://zwmst.com/1459.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:35:23+08:00"> 2021-08-15 </time> ](https://zwmst.com/1459.html)  Consumer首次请求Broker
+Consumer首次请求Broker
 
 Broker中是否有符合条件的消息 如果有
 
@@ -87,7 +87,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1461.html](https://zwmst.com/1461.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:35:34+08:00"> 2021-08-15 </time> ](https://zwmst.com/1461.html)  通过Topic在多Broker中分布式存储实现。
+通过Topic在多Broker中分布式存储实现。
 
 1）producer端
 
@@ -127,7 +127,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1463.html](https://zwmst.com/1463.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:35:46+08:00"> 2021-08-15 </time> ](https://zwmst.com/1463.html)  影响消息正常发送和消费的重要原因是网络的不确定性。
+影响消息正常发送和消费的重要原因是网络的不确定性。
 
 引起重复消费的原因
 
@@ -163,7 +163,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1465.html](https://zwmst.com/1465.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:36:32+08:00"> 2021-08-15 </time> ](https://zwmst.com/1465.html)  首先多个queue只能保证单个queue里的顺序，queue是典型的FIFO，天然顺序。多个queue 同时消费是无法绝对保证消息的有序性的。所以总结如下：
+首先多个queue只能保证单个queue里的顺序，queue是典型的FIFO，天然顺序。多个queue 同时消费是无法绝对保证消息的有序性的。所以总结如下：
 
 同一topic，同一个QUEUE，发消息的时候一个线程去发送消息，消费的时候 一个线程去消费 一个queue里的消息。*
 <!--yml
@@ -175,7 +175,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1467.html](https://zwmst.com/1467.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:36:41+08:00"> 2021-08-15 </time> ](https://zwmst.com/1467.html)  首先在如下三个部分都可能会出现丢失消息的情况：
+首先在如下三个部分都可能会出现丢失消息的情况：
 
 Producer端
 
@@ -211,7 +211,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1469.html](https://zwmst.com/1469.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:36:53+08:00"> 2021-08-15 </time> ](https://zwmst.com/1469.html)  首先要找到是什么原因导致的消息堆积，是Producer太多了，Consumer太少了导致的还是说 其他情况，总之先定位问题。
+首先要找到是什么原因导致的消息堆积，是Producer太多了，Consumer太少了导致的还是说 其他情况，总之先定位问题。
 
 然后看下消息消费速度是否正常，正常的话，可以通过上线更多consumer临时解决消息堆积 问题。*
 <!--yml
@@ -223,7 +223,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1471.html](https://zwmst.com/1471.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:37:10+08:00"> 2021-08-15 </time> ](https://zwmst.com/1471.html)  分布式系统中的事务可以使用TCC（Try、Confirm、Cancel）、2pc来解决分布式系统中的 消息原子性
+分布式系统中的事务可以使用TCC（Try、Confirm、Cancel）、2pc来解决分布式系统中的 消息原子性
 
 RocketMQ 4.3+提供分布事务功能，通过 RocketMQ 事务消息能达到分布式事务的最终一致
 
@@ -245,7 +245,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1473.html](https://zwmst.com/1473.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:37:22+08:00"> 2021-08-15 </time> ](https://zwmst.com/1473.html)  需要考虑能快速扩容、天然支持集群
+需要考虑能快速扩容、天然支持集群
 
 持久化的姿势
 
@@ -263,7 +263,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1475.html](https://zwmst.com/1475.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:37:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1475.html)  1）开发
+1）开发
 
 同一group下，多机部署，并行消费
 
@@ -287,7 +287,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1477.html](https://zwmst.com/1477.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:37:44+08:00"> 2021-08-15 </time> ](https://zwmst.com/1477.html)  在不开启容错的情况下，轮询队列进行发送，如果失败了，重试的时候过滤失败的Broker
+在不开启容错的情况下，轮询队列进行发送，如果失败了，重试的时候过滤失败的Broker
 
 如果开启了容错策略，会通过RocketMQ的预测机制来预测一个Broker是否可用
 
@@ -305,4 +305,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1479.html](https://zwmst.com/1479.html)
 
-   [ *RocketMQ* ](https://zwmst.com/rocketmq)*[ <time datetime="2021-08-15T11:37:57+08:00"> 2021-08-15 </time> ](https://zwmst.com/1479.html)  Broker主从架构以及多副本策略。Master收到消息后会同步给Slave，这样一条消息就不止一 份了，Master宕机了还有slave中的消息可用，保证了MQ的可靠性和高可用性。而且Rocket MQ4.5.0开始就支持了Dlegder模式，基于raft的，做到了真正意义的HA。*
+Broker主从架构以及多副本策略。Master收到消息后会同步给Slave，这样一条消息就不止一 份了，Master宕机了还有slave中的消息可用，保证了MQ的可靠性和高可用性。而且Rocket MQ4.5.0开始就支持了Dlegder模式，基于raft的，做到了真正意义的HA。*

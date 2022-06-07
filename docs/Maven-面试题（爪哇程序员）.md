@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1286.html](https://zwmst.com/1286.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:57:23+08:00"> 2021-08-15 </time> ](https://zwmst.com/1286.html)  Apache Maven是一个软件项目管理和理解工具。基于项目对象模型（POM）的概念， Maven可以从一个中心信息管理项目的构建，报告和文档。
+Apache Maven是一个软件项目管理和理解工具。基于项目对象模型（POM）的概念， Maven可以从一个中心信息管理项目的构建，报告和文档。
 
 项目构建
 
@@ -27,7 +27,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1288.html](https://zwmst.com/1288.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:57:34+08:00"> 2021-08-15 </time> ](https://zwmst.com/1288.html)  Maven能提供一种项目的配置，配置好的项目，只需要运行一条简单的命令，就能完成重复 的，繁琐的构建动作.
+Maven能提供一种项目的配置，配置好的项目，只需要运行一条简单的命令，就能完成重复 的，繁琐的构建动作.
 
 Maven能提供一种项目的依赖配置.可以自动的导入项目依赖的jar,并且自动导入这些jar包依赖的第三方的jar包.
 
@@ -55,7 +55,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1290.html](https://zwmst.com/1290.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:57:55+08:00"> 2021-08-15 </time> ](https://zwmst.com/1290.html)  maven的坐标组成部分
+maven的坐标组成部分
 
 groupId: 组织机构id，org.aptech.hdax， org.springframework
 
@@ -101,7 +101,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1292.html](https://zwmst.com/1292.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:58:06+08:00"> 2021-08-15 </time> ](https://zwmst.com/1292.html)  一个项目的构建过成通常包括清理、编译、测试、打包、集成测试、验证、部署等。Maven从 中抽取了一套完善的、易扩展的生命周期。Maven的生命周期是抽象的，其中的具体任务都交 由插件来完成。Maven为大多数构建任务编写并绑定了默认的插件。
+一个项目的构建过成通常包括清理、编译、测试、打包、集成测试、验证、部署等。Maven从 中抽取了一套完善的、易扩展的生命周期。Maven的生命周期是抽象的，其中的具体任务都交 由插件来完成。Maven为大多数构建任务编写并绑定了默认的插件。
 
 Maven定义了三套生命周期：clean、default、site，每个生命周期都包含了一些阶段（phase）。三套生命周期相互独立，但各个生命周期中的阶段却是有顺序的，且后面的夹断 依赖于前面的阶段。执行某个阶段时，其前面的阶段会依顺序执行，但不会触发另外两套生命 周期中的任何阶段。*
 <!--yml
@@ -113,7 +113,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1294.html](https://zwmst.com/1294.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:58:29+08:00"> 2021-08-15 </time> ](https://zwmst.com/1294.html)  首先，Maven 是一个优秀的项目构建工具。使用maven，可以很方便的对项目进行分模 块构建，这样在开发和测试打包部署时，效率会提高很多。
+首先，Maven 是一个优秀的项目构建工具。使用maven，可以很方便的对项目进行分模 块构建，这样在开发和测试打包部署时，效率会提高很多。
 
 其次，Maven 可以进行依赖的管理。使用 Maven ，可以将不同系统的依赖进行统一管 理，并且可以进行依赖之间的传递和继承。*
 <!--yml
@@ -125,7 +125,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1296.html](https://zwmst.com/1296.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:58:40+08:00"> 2021-08-15 </time> ](https://zwmst.com/1296.html)  /src/main/java/ ：Java 源码。
+/src/main/java/ ：Java 源码。
 
 /src/main/resource ：Java 配置文件，资源文件。
 
@@ -149,7 +149,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1298.html](https://zwmst.com/1298.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:59:03+08:00"> 2021-08-15 </time> ](https://zwmst.com/1298.html)  *   mvn archetype：create ：创建 Maven 项目。 mvn compile ：编译源代码。
+*   mvn archetype：create ：创建 Maven 项目。 mvn compile ：编译源代码。
 
 *   mvn deploy ：发布项目。
 
@@ -185,7 +185,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1300.html](https://zwmst.com/1300.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:59:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1300.html)  1）优点
+1）优点
 
 简化了项目依赖管理。
 
@@ -225,7 +225,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1302.html](https://zwmst.com/1302.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:59:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1302.html)  Maven 主要是这样定义版本规则的：.. 。比如说 1.2.3 ，主 版本是 1 ，次版本是 2 ，增量版本是 3 。
+Maven 主要是这样定义版本规则的：.. 。比如说 1.2.3 ，主 版本是 1 ，次版本是 2 ，增量版本是 3 。
 
 *   主版本，一般来说代表了项目的重大的架构变更，比如说 Maven 1 和 Maven 2 ，在架构上已经两样了，将来的 Maven 3 和 Maven 2 也会有很大的变化。
 *   次版本，一般代表了一些功能的增加或变化，但没有架构的变化，比如说Nexus 1.3 较之 于 Nexus 1.2 来说，增加了一系列新的或者改进的功能（仓库镜像支持，改进的仓库管理界面等等），但从大的架构上来说，1.3 和 1.2 没什么区别。
@@ -241,7 +241,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1304.html](https://zwmst.com/1304.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:59:45+08:00"> 2021-08-15 </time> ](https://zwmst.com/1304.html)  方式一，通过在父模块中声明 和， 然后让子模块通过元素指定父模块，这样子模块在定义依 赖是就可以只定义 groupId 和 artifactId，自动使用父模块的 version ，这样统一 整个项目的依赖的版本。继承的方式。
+方式一，通过在父模块中声明 和， 然后让子模块通过元素指定父模块，这样子模块在定义依 赖是就可以只定义 groupId 和 artifactId，自动使用父模块的 version ，这样统一 整个项目的依赖的版本。继承的方式。
 
 方式二，使用 声明 为 import 的依赖，从而引入一个 pom 的 的。具体的，可以看看 [《Maven Spring BOM (bill of materials)》](https://www.cnblogs.com/YLsY/p/5711103.html)文章。组合的方式。*
 <!--yml
@@ -253,7 +253,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1306.html](https://zwmst.com/1306.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T10:59:55+08:00"> 2021-08-15 </time> ](https://zwmst.com/1306.html)  1、赖路径最短优先原则。
+1、赖路径最短优先原则。
 
 一个项目 Demo 依赖了两个 jar 包，其中 A-B-C-X(1.0) ， A-D-X(2.0) 。由于 X(2.0) 路径最短，所以项目使用的是 X(2.0) 。
 
@@ -273,7 +273,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1308.html](https://zwmst.com/1308.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T11:00:07+08:00"> 2021-08-15 </time> ](https://zwmst.com/1308.html)  遇到冲突的时候第一步，要找到 Maven 加载的到时是什么版本的 jar 包，通过们 mvn dependency:tree 查看依赖树，或者使用 IDEA Maven Helper 插件。
+遇到冲突的时候第一步，要找到 Maven 加载的到时是什么版本的 jar 包，通过们 mvn dependency:tree 查看依赖树，或者使用 IDEA Maven Helper 插件。
 
 然后，通过 Maven 的依赖原则来调整坐标在 pom 文件的申明顺序是最好的办法，或者使用将 冲突中不想要的 jar 引入的 jar 进行 掉。*
 <!--yml
@@ -285,7 +285,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1310.html](https://zwmst.com/1310.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T11:00:21+08:00"> 2021-08-15 </time> ](https://zwmst.com/1310.html)  Maven 生命周期的每一个阶段的具体实现都是由 Maven 插件实现的。插件通常提供了一个目 标的集合，并且可以使用下面的语法执行：mvn [plugin-name]:[goal-name]
+Maven 生命周期的每一个阶段的具体实现都是由 Maven 插件实现的。插件通常提供了一个目 标的集合，并且可以使用下面的语法执行：mvn [plugin-name]:[goal-name]
 
 Maven 提供了下面两种类型的插件：
 
@@ -317,7 +317,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1312.html](https://zwmst.com/1312.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T11:00:31+08:00"> 2021-08-15 </time> ](https://zwmst.com/1312.html)  每个显式声明的类包都会依赖于一些其它的隐式类包，这些隐式的类包会被maven间接引入进 来，因而可能造成一个我们不想要的类包的载入，严重的甚至会引起类包之间的冲突。
+每个显式声明的类包都会依赖于一些其它的隐式类包，这些隐式的类包会被maven间接引入进 来，因而可能造成一个我们不想要的类包的载入，严重的甚至会引起类包之间的冲突。
 
 要解决这个问题，首先就是要查看pom.xml显式和隐式的依赖类包，然后通过这个类包树找出 我们不想要的依赖类包，手工将其排除在外就可以了。 例如：
 
@@ -338,7 +338,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1314.html](https://zwmst.com/1314.html)
 
-   [ *Maven* ](https://zwmst.com/maven)*[ <time datetime="2021-08-15T11:00:42+08:00"> 2021-08-15 </time> ](https://zwmst.com/1314.html)  当依赖的范围是 system 的时候，Maven 直接从本地文件系统中解析构件。
+当依赖的范围是 system 的时候，Maven 直接从本地文件系统中解析构件。
 
 根据依赖坐标计算仓库路径，尝试直接从本地仓库寻找构件，如果发现对应的构件，就解析成 功。
 

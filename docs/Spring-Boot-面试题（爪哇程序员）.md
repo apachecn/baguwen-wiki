@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1894.html](https://zwmst.com/1894.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:48:24+08:00"> 2021-08-15 </time> ](https://zwmst.com/1894.html)  用来简化spring应用的初始搭建以及开发过程 使用特定的方式来进行配置（properties或yml 文件）
+用来简化spring应用的初始搭建以及开发过程 使用特定的方式来进行配置（properties或yml 文件）
 
 创建独立的spring引用程序 main方法运行
 
@@ -27,7 +27,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1896.html](https://zwmst.com/1896.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:48:34+08:00"> 2021-08-15 </time> ](https://zwmst.com/1896.html)  Spring Boot 的优点有：
+Spring Boot 的优点有：
 
 1、减少开发，测试时间和努力。
 
@@ -53,7 +53,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1898.html](https://zwmst.com/1898.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:48:46+08:00"> 2021-08-15 </time> ](https://zwmst.com/1898.html)  Spring Initializr是启动 Spring Boot Projects 的一个很好的工具。
+Spring Initializr是启动 Spring Boot Projects 的一个很好的工具。
 
 ![image-20210813203406199](img/48715026902ef4c96fcfe3de62489b09.png)
 
@@ -79,7 +79,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1900.html](https://zwmst.com/1900.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:48:57+08:00"> 2021-08-15 </time> ](https://zwmst.com/1900.html)  Spring 框架提供多种特性使得 web 应用开发变得更简便，包括依赖注入、数据绑定、切面编 程、数据存取等等。
+Spring 框架提供多种特性使得 web 应用开发变得更简便，包括依赖注入、数据绑定、切面编 程、数据存取等等。
 
 随着时间推移，Spring 生态变得越来越复杂了，并且应用程序所必须的配置文件也令人觉得 可怕。这就是 Spirng Boot 派上用场的地方了 – 它使得 Spring 的配置变得更轻而易举。
 
@@ -99,7 +99,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1902.html](https://zwmst.com/1902.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:49:09+08:00"> 2021-08-15 </time> ](https://zwmst.com/1902.html)  这可以使用 DEV 工具来实现。通过这种依赖关系，您可以节省任何更改，嵌入式tomcat 将重 新启动。Spring Boot 有一个开发工具（DevTools）模块，它有助于提高开发人员的生产 力。Java 开发人员面临的一个主要挑战是将文件更改自动部署到服务器并自动重启服务器。开 发人员可以重新加载 Spring Boot 上的更改，而无需重新启动服务器。这将消除每次手动部署 更改的需要。Spring Boot 在发布它的第一个版本时没有这个功能。这是开发人员最需要的功 能。DevTools 模块完全满足开发人员的需求。该模块将在生产环境中被禁用。它还提供 H2 数据库控制台以更好地测试应用程序。
+这可以使用 DEV 工具来实现。通过这种依赖关系，您可以节省任何更改，嵌入式tomcat 将重 新启动。Spring Boot 有一个开发工具（DevTools）模块，它有助于提高开发人员的生产 力。Java 开发人员面临的一个主要挑战是将文件更改自动部署到服务器并自动重启服务器。开 发人员可以重新加载 Spring Boot 上的更改，而无需重新启动服务器。这将消除每次手动部署 更改的需要。Spring Boot 在发布它的第一个版本时没有这个功能。这是开发人员最需要的功 能。DevTools 模块完全满足开发人员的需求。该模块将在生产环境中被禁用。它还提供 H2 数据库控制台以更好地测试应用程序。
 
 ```
 <dependency>
@@ -117,7 +117,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1904.html](https://zwmst.com/1904.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:49:20+08:00"> 2021-08-15 </time> ](https://zwmst.com/1904.html)  Spring boot actuator 是 spring 启动框架中的重要功能之一。Spring boot 监视器可帮助您 访问生产环境中正在运行的应用程序的当前状态。有几个指标必须在生产环境中进行检查和监 控。即使一些外部应用程序可能正在使用这些服务来向相关人员触发警报消息。监视器模块公 开了一组可直接作为 HTTP URL 访问的REST 端点来检查状态。*
+Spring boot actuator 是 spring 启动框架中的重要功能之一。Spring boot 监视器可帮助您 访问生产环境中正在运行的应用程序的当前状态。有几个指标必须在生产环境中进行检查和监 控。即使一些外部应用程序可能正在使用这些服务来向相关人员触发警报消息。监视器模块公 开了一组可直接作为 HTTP URL 访问的REST 端点来检查状态。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -127,7 +127,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1906.html](https://zwmst.com/1906.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:49:37+08:00"> 2021-08-15 </time> ](https://zwmst.com/1906.html)  默认情况下，所有敏感的 HTTP 端点都是安全的，只有具有 ACTUATOR 角色的用户才能访问 它们。安全性是使用标准的 HttpServletRequest.isUserInRole 方法实施的。 我们可以使用 来禁用安全性。只有在执行机构端点在防火墙后访问时，才建议禁用安全性。*
+默认情况下，所有敏感的 HTTP 端点都是安全的，只有具有 ACTUATOR 角色的用户才能访问 它们。安全性是使用标准的 HttpServletRequest.isUserInRole 方法实施的。 我们可以使用 来禁用安全性。只有在执行机构端点在防火墙后访问时，才建议禁用安全性。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -137,7 +137,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1908.html](https://zwmst.com/1908.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:49:48+08:00"> 2021-08-15 </time> ](https://zwmst.com/1908.html)  就像引入其他库一样，我们可以在 Maven 工程中加入 SpringBoot 依赖。然而，最好是从 spring-boot-starter-parent 项目中继承以及声明依赖到 Spring Boot starters。这样做可以 使我们的项目可以重用 SpringBoot 的默认配置。
+就像引入其他库一样，我们可以在 Maven 工程中加入 SpringBoot 依赖。然而，最好是从 spring-boot-starter-parent 项目中继承以及声明依赖到 Spring Boot starters。这样做可以 使我们的项目可以重用 SpringBoot 的默认配置。
 
 继承 spring-boot-starter-parent 项目依赖很简单 – 我们只需要在 pom.xml 中定义一个 parent 节点：
 
@@ -177,7 +177,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1910.html](https://zwmst.com/1910.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:50:02+08:00"> 2021-08-15 </time> ](https://zwmst.com/1910.html)  不是的。
+不是的。
 
 Spring Initiatlizr 让创建 Spring Boot 项目变的很容易，但是，你也可以通过设置一个 maven 项目并添加正确的依赖项来开始一个项目。
 
@@ -209,7 +209,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1912.html](https://zwmst.com/1912.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:50:19+08:00"> 2021-08-15 </time> ](https://zwmst.com/1912.html)  spring-boot-maven-plugin 提供了一些像 jar 一样打包或者运行应用程序的命令。
+spring-boot-maven-plugin 提供了一些像 jar 一样打包或者运行应用程序的命令。
 
 *   spring-boot:run 运行你的 SpringBooty 应用程序。
 *   spring-boot：repackage 重新打包你的 jar 包或者是 war 包使其可执行
@@ -224,7 +224,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1914.html](https://zwmst.com/1914.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:50:30+08:00"> 2021-08-15 </time> ](https://zwmst.com/1914.html)  思考一下在你的虚拟机上部署应用程序需要些什么。
+思考一下在你的虚拟机上部署应用程序需要些什么。
 
 第一步： 安装 Java
 
@@ -254,7 +254,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1916.html](https://zwmst.com/1916.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:50:42+08:00"> 2021-08-15 </time> ](https://zwmst.com/1916.html)  在源文件夹下，创建一个名为 static 的文件夹。然后，你可以把你的静态的内容放在这里面。 例如，myapp.js 的路径是 resources\static\js\myapp.js
+在源文件夹下，创建一个名为 static 的文件夹。然后，你可以把你的静态的内容放在这里面。 例如，myapp.js 的路径是 resources\static\js\myapp.js
 
 你可以参考它在 jsp 中的使用方法：
 
@@ -284,7 +284,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1918.html](https://zwmst.com/1918.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:50:55+08:00"> 2021-08-15 </time> ](https://zwmst.com/1918.html)  你需要做下面两个步骤：
+你需要做下面两个步骤：
 
 *   在一个项目中生成一个 war 文件。
 *   将它部署到你最喜欢的服务器（websphere 或者 Weblogic 或者 Tomcat and so on）。
@@ -303,7 +303,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1920.html](https://zwmst.com/1920.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:51:07+08:00"> 2021-08-15 </time> ](https://zwmst.com/1920.html)  配置文件不是设别环境的关键。
+配置文件不是设别环境的关键。
 
 在下面的例子中，我们将会用到两个配置文件
 
@@ -343,7 +343,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1922.html](https://zwmst.com/1922.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:51:18+08:00"> 2021-08-15 </time> ](https://zwmst.com/1922.html)  Swagger 广泛用于可视化 API，使用 Swagger UI 为前端开发人员提供在线沙箱。Swagger 是用于生成 RESTful Web 服务的可视化表示的工具，规范和完整框架实现。它使文档能够以 与服务器相同的速度更新。当通过 Swagger 正确定义时，消费者可以使用最少量的实现逻辑 来理解远程服务并与其进行交互。因此，Swagger消除了调用服务时的猜测。*
+Swagger 广泛用于可视化 API，使用 Swagger UI 为前端开发人员提供在线沙箱。Swagger 是用于生成 RESTful Web 服务的可视化表示的工具，规范和完整框架实现。它使文档能够以 与服务器相同的速度更新。当通过 Swagger 正确定义时，消费者可以使用最少量的实现逻辑 来理解远程服务并与其进行交互。因此，Swagger消除了调用服务时的猜测。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -353,7 +353,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1924.html](https://zwmst.com/1924.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:51:29+08:00"> 2021-08-15 </time> ](https://zwmst.com/1924.html)  为了实现Spring Boot的安全性，使用spring-boot-starter-security依赖项，并且必须添加 安全配置。它只需要很少代码。配置类将必须扩展WebSecurityConfigurerAdapter并覆盖其 方法。*
+为了实现Spring Boot的安全性，使用spring-boot-starter-security依赖项，并且必须添加 安全配置。它只需要很少代码。配置类将必须扩展WebSecurityConfigurerAdapter并覆盖其 方法。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -363,7 +363,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1926.html](https://zwmst.com/1926.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:51:39+08:00"> 2021-08-15 </time> ](https://zwmst.com/1926.html)  由于Spring Boot官方提供了大量的非常方便的开箱即用的Starter，包括Spring Security的 Starter，使得在SpringBoot中使用Spring Security变得更加容易，甚至只需要添加一个一来 就可以保护所有接口，所以如果是SpringBoot项目，一般选择Spring Security。当然这只是 一个建议的组合，单纯从技术上来说，无论怎么组合，都是没有问题的。
+由于Spring Boot官方提供了大量的非常方便的开箱即用的Starter，包括Spring Security的 Starter，使得在SpringBoot中使用Spring Security变得更加容易，甚至只需要添加一个一来 就可以保护所有接口，所以如果是SpringBoot项目，一般选择Spring Security。当然这只是 一个建议的组合，单纯从技术上来说，无论怎么组合，都是没有问题的。
 
 Shiro和Spring Security相比，主要有如下特点：
 
@@ -377,7 +377,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1928.html](https://zwmst.com/1928.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:51:50+08:00"> 2021-08-15 </time> ](https://zwmst.com/1928.html)  跨域可以在前端通过JSONP来解决，但是JSONP只可以发送GET请求，无法发送其他类型的请 求，在RESTful风格的应用中，就显得非常鸡肋，因此推荐在后端通过（CORS，Crossorigin resource sharing）来解决跨域问题。这种解决方案并非Spring Boot特有的，在传统 的SSM框架中，就可以通过CORS来解决跨域问题，只不过之前我们是在XML文件中配置 CORS，现在可以通过实现WebMvcConfigurer接口然后重addCorsMappings方法解决跨 域问题。
+跨域可以在前端通过JSONP来解决，但是JSONP只可以发送GET请求，无法发送其他类型的请 求，在RESTful风格的应用中，就显得非常鸡肋，因此推荐在后端通过（CORS，Crossorigin resource sharing）来解决跨域问题。这种解决方案并非Spring Boot特有的，在传统 的SSM框架中，就可以通过CORS来解决跨域问题，只不过之前我们是在XML文件中配置 CORS，现在可以通过实现WebMvcConfigurer接口然后重addCorsMappings方法解决跨 域问题。
 
 ```
 @Configuration
@@ -425,7 +425,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1930.html](https://zwmst.com/1930.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:52:02+08:00"> 2021-08-15 </time> ](https://zwmst.com/1930.html)  启动类上面的注解是@SpringBootApplication，他也是SpringBoot的核心注解，主要组合 包含了以下3个注解：
+启动类上面的注解是@SpringBootApplication，他也是SpringBoot的核心注解，主要组合 包含了以下3个注解：
 
 @SpringBootConfiguration：组合了@Configuration注解，实现配置文件的功能；
 
@@ -441,7 +441,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1932.html](https://zwmst.com/1932.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:52:13+08:00"> 2021-08-15 </time> ](https://zwmst.com/1932.html)  在生产中使用HTTPS
+在生产中使用HTTPS
 
 使用Snyk检查你的依赖关系
 
@@ -459,7 +459,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1934.html](https://zwmst.com/1934.html)
 
-   [ *Spring Boot* ](https://zwmst.com/spring-boot)*[ <time datetime="2021-08-15T16:52:28+08:00"> 2021-08-15 </time> ](https://zwmst.com/1934.html)  配置变更
+配置变更
 
 JDK版本升级
 

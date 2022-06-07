@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/765.html](https://zwmst.com/765.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:05:36+08:00"> 2021-08-14 </time> ](https://zwmst.com/765.html)  Redis本质上是一个Key-Value类型的内存数据库，很像memcached，整个数据库统统加载 在内存当中进行操作，定期通过异步操作把数据库数据flush到硬盘上进行保存。
+Redis本质上是一个Key-Value类型的内存数据库，很像memcached，整个数据库统统加载 在内存当中进行操作，定期通过异步操作把数据库数据flush到硬盘上进行保存。
 
 因为是纯内存操作，Redis的性能非常出色，每秒可以处理超过 10万次读写操作，是已知性能 最快的Key-Value DB。
 
@@ -25,7 +25,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/767.html](https://zwmst.com/767.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:05:58+08:00"> 2021-08-14 </time> ](https://zwmst.com/767.html)  (1) memcached所有的值均是简单的字符串，redis作为其替代者，支持更为丰富的数据类型
+(1) memcached所有的值均是简单的字符串，redis作为其替代者，支持更为丰富的数据类型
 
 (2) redis的速度比memcached快很多
 
@@ -39,7 +39,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/769.html](https://zwmst.com/769.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:06:08+08:00"> 2021-08-14 </time> ](https://zwmst.com/769.html)  Redis 有 5 种基础数据结构，它们分别是：string(字符串)、list(列表)、hash(字典)、set(集 合) 和 zset(有序集合)。
+Redis 有 5 种基础数据结构，它们分别是：string(字符串)、list(列表)、hash(字典)、set(集 合) 和 zset(有序集合)。
 
 这 5 种是 Redis 相关知识中最基础、最重要的部分。*
 <!--yml
@@ -51,7 +51,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/771.html](https://zwmst.com/771.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:06:38+08:00"> 2021-08-14 </time> ](https://zwmst.com/771.html)  内存。*
+内存。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -61,7 +61,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/773.html](https://zwmst.com/773.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:06:49+08:00"> 2021-08-14 </time> ](https://zwmst.com/773.html)  Remote Dictionary Server。*
+Remote Dictionary Server。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -71,7 +71,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/775.html](https://zwmst.com/775.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:07:01+08:00"> 2021-08-14 </time> ](https://zwmst.com/775.html)  512M*
+512M*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -81,7 +81,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/777.html](https://zwmst.com/777.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:08:05+08:00"> 2021-08-14 </time> ](https://zwmst.com/777.html)  1、内存操作；
+1、内存操作；
 
 2、单线程，省去线程切换、锁竞争的开销；
 
@@ -95,7 +95,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/780.html](https://zwmst.com/780.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:09:04+08:00"> 2021-08-14 </time> ](https://zwmst.com/780.html)  Redis6.0采用多线程IO，不过命令的执行还是单线程的。
+Redis6.0采用多线程IO，不过命令的执行还是单线程的。
 
 Redis6.0之前，IO线程和执行线程都是单线程的。*
 <!--yml
@@ -107,7 +107,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/782.html](https://zwmst.com/782.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:09:15+08:00"> 2021-08-14 </time> ](https://zwmst.com/782.html)  因为目前 Linux 版本已经相当稳定，而且用户量很大，无需开发 windows 版本，反而会带来 兼容性等问题。*
+因为目前 Linux 版本已经相当稳定，而且用户量很大，无需开发 windows 版本，反而会带来 兼容性等问题。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -117,7 +117,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/784.html](https://zwmst.com/784.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:09:27+08:00"> 2021-08-14 </time> ](https://zwmst.com/784.html)  Redis 为了达到最快的读写速度将数据都读到内存中，并通过异步的方式将数据写入磁盘。
+Redis 为了达到最快的读写速度将数据都读到内存中，并通过异步的方式将数据写入磁盘。
 
 所以 redis 具有快速和数据持久化的特征，如果不将数据放在内存中，磁盘 I/O 速度为严重影 响 redis 的性能。
 
@@ -131,7 +131,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/786.html](https://zwmst.com/786.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:09:38+08:00"> 2021-08-14 </time> ](https://zwmst.com/786.html)  设置密码：config set requirepass 123456
+设置密码：config set requirepass 123456
 
 授权密码：auth 123456*
 <!--yml
@@ -143,7 +143,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/788.html](https://zwmst.com/788.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:09:58+08:00"> 2021-08-14 </time> ](https://zwmst.com/788.html)  Redis集群目前无法做数据库选择，默认在0数据库。*
+Redis集群目前无法做数据库选择，默认在0数据库。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -153,7 +153,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/790.html](https://zwmst.com/790.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:10:11+08:00"> 2021-08-14 </time> ](https://zwmst.com/790.html)  1.  缓存失效 缓存失效指的是大量的缓存在同一时间失效，到时DB的瞬间压力飙升。造成这种现象的 原因是，key的过期时间都设置成一样了。解决方案是，key的过期时间引入随机因素， 比如5分钟+随机秒这种方式。
+1.  缓存失效 缓存失效指的是大量的缓存在同一时间失效，到时DB的瞬间压力飙升。造成这种现象的 原因是，key的过期时间都设置成一样了。解决方案是，key的过期时间引入随机因素， 比如5分钟+随机秒这种方式。
 
 2.  缓存穿透 缓存穿透是指查询一条数据库和缓存都没有的一条数据，就会一直查询数据库，对数据 库的访问压力就会增大，缓存穿透的解决方案，有以下2种： 缓存空对象：代码维护较简单，但是效果不好。 布隆过滤器：代码维护复杂，效果很好。
 
@@ -175,7 +175,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/792.html](https://zwmst.com/792.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:10:23+08:00"> 2021-08-14 </time> ](https://zwmst.com/792.html)  1、对热key进行分散处理。比如：在key上加上不同的前后缀，缓存多个key，使得各个key分 散到不同的节点上。
+1、对热key进行分散处理。比如：在key上加上不同的前后缀，缓存多个key，使得各个key分 散到不同的节点上。
 
 2、采用多级缓存。*
 <!--yml
@@ -187,7 +187,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/794.html](https://zwmst.com/794.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:10:54+08:00"> 2021-08-14 </time> ](https://zwmst.com/794.html)  大key指的是value特别大的key。比如很长的字符串，或者很大的set等等。 大key会造成2个问题：
+大key指的是value特别大的key。比如很长的字符串，或者很大的set等等。 大key会造成2个问题：
 
 1、数据倾斜，比如某些节点内存占用过高。
 
@@ -203,7 +203,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/796.html](https://zwmst.com/796.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:11:09+08:00"> 2021-08-14 </time> ](https://zwmst.com/796.html)  UV与PV不同，UV需要去重。一般有2种方案：
+UV与PV不同，UV需要去重。一般有2种方案：
 
 1、用BitMap。存的是用户的uid，计算UV的时候，做下bitcount就行了。
 
@@ -217,7 +217,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/798.html](https://zwmst.com/798.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:11:23+08:00"> 2021-08-14 </time> ](https://zwmst.com/798.html)  Redis事务的概念：
+Redis事务的概念：
 
 Redis 事务的本质是一组命令的集合。事务支持一次执行多个命令，一个事务中所有命令都会 被序列化。在事务执行过程，会按照顺序串行化执行队列中的命令，其他客户端提交的命令请 求不会插入到事务执行命令序列中。
 
@@ -259,7 +259,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/800.html](https://zwmst.com/800.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:11:38+08:00"> 2021-08-14 </time> ](https://zwmst.com/800.html)  8种：noeviction，volatile-lru，volatile-lfu，volatile-ttl，volatile-random，allkeylru，allkeys-lfu，allkeys-random*
+8种：noeviction，volatile-lru，volatile-lfu，volatile-ttl，volatile-random，allkeylru，allkeys-lfu，allkeys-random*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -269,7 +269,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/802.html](https://zwmst.com/802.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:11:49+08:00"> 2021-08-14 </time> ](https://zwmst.com/802.html)  2种情况：1、定时（抽样）清理；2、执行命令时，判断内存是否超过maxmemory。*
+2种情况：1、定时（抽样）清理；2、执行命令时，判断内存是否超过maxmemory。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -279,7 +279,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/804.html](https://zwmst.com/804.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:11:59+08:00"> 2021-08-14 </time> ](https://zwmst.com/804.html)  Redis持久化有RDB和AOF这2种方式。
+Redis持久化有RDB和AOF这2种方式。
 
 RDB：将数据库快照以二进制的方式保存到磁盘中。
 
@@ -293,7 +293,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/806.html](https://zwmst.com/806.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:12:12+08:00"> 2021-08-14 </time> ](https://zwmst.com/806.html)  使用crc16算法对key进行hash 将hash值对16384取模，得到具体的槽位根据节点和槽位的映射信息（与集群建立连接后，客户端可以取得槽位映射信息），找到具体的节点地址 去具体的节点找key如果key不在这个节点上，则redis集群会返回moved指令，加上新的节点地址给客户端，同时，客户端会刷新本地的节点槽位映射关系如果槽位正在迁移中，那么redis集群会返回asking指令给客户端，这是临时纠正，客户端不会刷新本地的节点槽位映射关系*
+使用crc16算法对key进行hash 将hash值对16384取模，得到具体的槽位根据节点和槽位的映射信息（与集群建立连接后，客户端可以取得槽位映射信息），找到具体的节点地址 去具体的节点找key如果key不在这个节点上，则redis集群会返回moved指令，加上新的节点地址给客户端，同时，客户端会刷新本地的节点槽位映射关系如果槽位正在迁移中，那么redis集群会返回asking指令给客户端，这是临时纠正，客户端不会刷新本地的节点槽位映射关系*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -303,7 +303,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/808.html](https://zwmst.com/808.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:12:24+08:00"> 2021-08-14 </time> ](https://zwmst.com/808.html)  可以使用Zset实现。member是任务描述，score是执行时间，然后用定时器定时去扫描，一 旦有执行时间小于或等于当前时间的任务，就立即执行。*
+可以使用Zset实现。member是任务描述，score是执行时间，然后用定时器定时去扫描，一 旦有执行时间小于或等于当前时间的任务，就立即执行。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -313,7 +313,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/810.html](https://zwmst.com/810.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:12:34+08:00"> 2021-08-14 </time> ](https://zwmst.com/810.html)  int、embstr、raw
+int、embstr、raw
 
 10000以下的整数会使用缓存里的int常量。
 
@@ -329,7 +329,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/812.html](https://zwmst.com/812.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:12:45+08:00"> 2021-08-14 </time> ](https://zwmst.com/812.html)  codis
+codis
 
 目前用的最多的集群方案，基本和 twemproxy 一致的效果，但它支持在节点数量改变情况下，旧节点数据可恢复到新 hash 节点。
 
@@ -345,7 +345,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/814.html](https://zwmst.com/814.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:12:57+08:00"> 2021-08-14 </time> ](https://zwmst.com/814.html)  有 A，B，C 三个节点的集群,在没有复制模型的情况下,如果节点 B 失败了，那么整个集群就会 以为缺少5501-11000 这个范围的槽而不可用。*
+有 A，B，C 三个节点的集群,在没有复制模型的情况下,如果节点 B 失败了，那么整个集群就会 以为缺少5501-11000 这个范围的槽而不可用。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -355,7 +355,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/816.html](https://zwmst.com/816.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:13:09+08:00"> 2021-08-14 </time> ](https://zwmst.com/816.html)  redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略。
+redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略。
 
 其实面试除了考察 Redis，不少公司都很重视高并发高可用的技术，特别是一线互联网公司， 分布式、
 
@@ -369,7 +369,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/818.html](https://zwmst.com/818.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:13:19+08:00"> 2021-08-14 </time> ](https://zwmst.com/818.html)  （1）会话缓存（Session Cache）
+（1）会话缓存（Session Cache）
 
 最常用的一种使用Redis的情景是会话缓存（session cache）。用Redis缓存会话比其他存储 （如Memcached）的优势在于：Redis提供持久化。当维护一个不是严格要求一致性的缓存 时，如果用户的购物车信息全部丢失，大部分人都会不高兴的，现在，他们还会这样吗？
 
@@ -411,7 +411,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/820.html](https://zwmst.com/820.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:13:31+08:00"> 2021-08-14 </time> ](https://zwmst.com/820.html)  Redisson是一个高级的分布式协调Redis客服端，能帮助用户在分布式环境中轻松实现一些 Java的对象 (Bloom filter, BitSet, Set, SetMultimap, ScoredSortedSet, SortedSet, Map, ConcurrentMap, List, ListMultimap, Queue, BlockingQueue, Deque, BlockingDeque, Semaphore, Lock, ReadWriteLock, AtomicLong, CountDownLatch, Publish / Subscribe, HyperLogLog)。*
+Redisson是一个高级的分布式协调Redis客服端，能帮助用户在分布式环境中轻松实现一些 Java的对象 (Bloom filter, BitSet, Set, SetMultimap, ScoredSortedSet, SortedSet, Map, ConcurrentMap, List, ListMultimap, Queue, BlockingQueue, Deque, BlockingDeque, Semaphore, Lock, ReadWriteLock, AtomicLong, CountDownLatch, Publish / Subscribe, HyperLogLog)。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -421,7 +421,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/822.html](https://zwmst.com/822.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:13:44+08:00"> 2021-08-14 </time> ](https://zwmst.com/822.html)  一次请求/响应服务器能实现处理新的请求即使旧的请求还未被响应。这样就可以将多个命令发 送到服务器，而不用等待回复，最后在一个步骤中读取该答复。
+一次请求/响应服务器能实现处理新的请求即使旧的请求还未被响应。这样就可以将多个命令发 送到服务器，而不用等待回复，最后在一个步骤中读取该答复。
 
 这就是管道（pipelining），是一种几十年来广泛使用的技术。例如许多POP3协议已经实现 支持这个功能，大大加快了从服务器下载新邮件的过程。*
 <!--yml
@@ -433,7 +433,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/824.html](https://zwmst.com/824.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-14T08:13:56+08:00"> 2021-08-14 </time> ](https://zwmst.com/824.html)  尽可能使用散列表（hashes），散列表（是说散列表里面存储的数少）使用的内存非常小，所 以你应该尽可能的将你的数据模型抽象到一个散列表里面。
+尽可能使用散列表（hashes），散列表（是说散列表里面存储的数少）使用的内存非常小，所 以你应该尽可能的将你的数据模型抽象到一个散列表里面。
 
 比如你的web系统中有一个用户对象，不要为这个用户的名称，姓氏，邮箱，密码设置单独的 key,而是应该把这个用户的所有信息存储到一张散列表里面。*
 <!--yml
@@ -445,7 +445,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2299.html](https://zwmst.com/2299.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-22T11:42:09+08:00"> 2021-08-22 </time> ](https://zwmst.com/2299.html)  **Redis 是完全开源免费的，遵守 BSD 协议，是一个高性能的 key-value 数据库**。
+**Redis 是完全开源免费的，遵守 BSD 协议，是一个高性能的 key-value 数据库**。
 
 ## Redis 与其他 key – value 缓存产品有以下三个特点：
 
@@ -473,7 +473,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2301.html](https://zwmst.com/2301.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-22T11:43:13+08:00"> 2021-08-22 </time> ](https://zwmst.com/2301.html)  答：Redis 支持五种数据类型：**string（字符串），hash（哈希），list（列表），set（集合）及 zsetsorted set：有序集合)。**
+答：Redis 支持五种数据类型：**string（字符串），hash（哈希），list（列表），set（集合）及 zsetsorted set：有序集合)。**
 我们实际项目中比较常用的是 string，hash 如果你是 Redis 中高级用户，还需要加上下面几种数据结构 HyperLogLog、Geo、Pub/Sub。
 如果你说还玩过 Redis Module，像 BloomFilter，RedisSearch，Redis-ML，面试官得眼睛就开始发亮了。*
 <!--yml
@@ -485,7 +485,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2303.html](https://zwmst.com/2303.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-22T11:44:02+08:00"> 2021-08-22 </time> ](https://zwmst.com/2303.html)  *   （1） 速度快，因为数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度都是 O1)
+*   （1） 速度快，因为数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度都是 O1)
 *   （2） 支持丰富数据类型，支持 string，list，set，Zset，hash 等
 *   （3） 支持事务，操作都是原子性，所谓的原子性就是对数据的更改要么全部执行，要么全部不执行
 *   （4） 丰富的特性：可用于缓存，消息，按 key 设置过期时间，过期后将会自动删除*
@@ -498,7 +498,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2305.html](https://zwmst.com/2305.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-22T11:44:13+08:00"> 2021-08-22 </time> ](https://zwmst.com/2305.html)  *   （1） Memcached 所有的值均是简单的字符串，redis 作为其替代者，支持更为丰富的数据类
+*   （1） Memcached 所有的值均是简单的字符串，redis 作为其替代者，支持更为丰富的数据类
 *   （2） Redis 的速度比 Memcached 快很
 *   （3） Redis 可以持久化其数据*
 <!--yml
@@ -510,7 +510,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2307.html](https://zwmst.com/2307.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-22T11:44:25+08:00"> 2021-08-22 </time> ](https://zwmst.com/2307.html)  *   （1） 存储方式 Memecache 把数据全部存在内存之中，断电后会挂掉，数据不能超过内存大小。 Redis 有部份存在硬盘上，这样能保证数据的持久性。
+*   （1） 存储方式 Memecache 把数据全部存在内存之中，断电后会挂掉，数据不能超过内存大小。 Redis 有部份存在硬盘上，这样能保证数据的持久性。
 *   （2） 数据支持类型 Memcache 对数据类型支持相对简单。 Redis 有复杂的数据类型。
 *   （3） 使用底层模型不同 它们之间底层实现方式 以及与客户端之间通信的应用协议不一样。 Redis 直接自己构建了 VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求。*
 <!--yml
@@ -522,7 +522,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2309.html](https://zwmst.com/2309.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-22T11:44:36+08:00"> 2021-08-22 </time> ](https://zwmst.com/2309.html)  答：Redis 是单进程单线程的，redis 利用队列技术将并发访问变为串行访问，消除了传统数据库串行控制的开销。*
+答：Redis 是单进程单线程的，redis 利用队列技术将并发访问变为串行访问，消除了传统数据库串行控制的开销。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -532,7 +532,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2314.html](https://zwmst.com/2314.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:45:30+08:00"> 2021-08-23 </time> ](https://zwmst.com/2314.html)  答：512M*
+答：512M*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -542,7 +542,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2320.html](https://zwmst.com/2320.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:46:25+08:00"> 2021-08-23 </time> ](https://zwmst.com/2320.html)  **Redis 提供两种持久化机制 RDB 和 AOF 机制:**
+**Redis 提供两种持久化机制 RDB 和 AOF 机制:**
 
 ## 1、RDBRedis DataBase)持久化方式：
 
@@ -577,7 +577,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2323.html](https://zwmst.com/2323.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:47:35+08:00"> 2021-08-23 </time> ](https://zwmst.com/2323.html)  *   （1） Master 最好不要写内存快照，如果 Master 写内存快照，save 命令调度rdbSave 函数，会阻塞主线程的工作，当快照比较大时对性能影响是非常大的，会间断性暂停服务
+*   （1） Master 最好不要写内存快照，如果 Master 写内存快照，save 命令调度rdbSave 函数，会阻塞主线程的工作，当快照比较大时对性能影响是非常大的，会间断性暂停服务
 *   （2） 如果数据比较重要，某个 Slave 开启 AOF 备份数据，策略设置为每秒同步一
 *   （3） 为了主从复制的速度和连接的稳定性，Master 和 Slave 最好在同一个局域网
 *   （4） 尽量避免在压力很大的主库上增加从
@@ -591,7 +591,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2325.html](https://zwmst.com/2325.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:47:56+08:00"> 2021-08-23 </time> ](https://zwmst.com/2325.html)  *   （1） 定时删除:在设置键的过期时间的同时，创建一个定时器 timer). 让定时器在键的过期时间来临时，立即执行对键的删除操作。
+*   （1） 定时删除:在设置键的过期时间的同时，创建一个定时器 timer). 让定时器在键的过期时间来临时，立即执行对键的删除操作。
 *   （2） 惰性删除:放任键过期不管，但是每次从键空间中获取键时，都检查取得的键是否过期，如果过期的话，就删除该键;如果没有过期，就返回该键。
 *   （3） 定期删除:每隔一段时间程序就对数据库进行一次检查，删除里面的过期键。至于要删除多少过期键，以及要检查多少个数据库，则由算法决定。*
 <!--yml
@@ -603,7 +603,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2327.html](https://zwmst.com/2327.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:48:11+08:00"> 2021-08-23 </time> ](https://zwmst.com/2327.html)  *   volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰
+*   volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰
 *   volatile-ttl：从已设置过期时间的数据集（server.db[i].expires）中挑选将要过期的数据淘汰
 *   volatile-random：从已设置过期时间的数据集（server.db[i].expires）中任意选择数据淘汰
 *   allkeys-lru：从数据集（server.db[i].dict）中挑选最近最少使用的数据淘汰
@@ -622,7 +622,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2329.html](https://zwmst.com/2329.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:48:30+08:00"> 2021-08-23 </time> ](https://zwmst.com/2329.html)  答 ：Redis 为了达到最快的读写速度将数据都读到内存中，并通过异步的方式将数据写入磁盘。所以 redis 具有快速和数据持久化的特征。
+答 ：Redis 为了达到最快的读写速度将数据都读到内存中，并通过异步的方式将数据写入磁盘。所以 redis 具有快速和数据持久化的特征。
 如果不将数据放在内存中，磁盘 I/O 速度为严重影响 redis 的性能。在内存越来越便宜的今天，redis 将会越来越受欢迎。如果设置了最大使用的内存，则数据已有记录数达到内存限值后不能继续插入新值。*
 <!--yml
 category: 未分类
@@ -633,7 +633,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2331.html](https://zwmst.com/2331.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:48:55+08:00"> 2021-08-23 </time> ](https://zwmst.com/2331.html)  答：Redis 可以使用主从同步，从从同步。
+答：Redis 可以使用主从同步，从从同步。
 第一次同步时，主节点做一次bgsave，并同时将后续修改操作记录到内存 buffer，待完成后将 rdb 文件全量同步到复制节点，复制节点接受完成后将 rdb 镜像加载到内存。加载完成后，再通知主节点将期间修改的操作记录同步到复制节点进行重放就完成了同步过程。*
 <!--yml
 category: 未分类
@@ -644,7 +644,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2333.html](https://zwmst.com/2333.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:49:05+08:00"> 2021-08-23 </time> ](https://zwmst.com/2333.html)  答：可以将多次 IO 往返的时间缩减为一次，前提是 pipeline 执行的指令之间没有因果相关性。
+答：可以将多次 IO 往返的时间缩减为一次，前提是 pipeline 执行的指令之间没有因果相关性。
 使用 redis-benchmark 进行压测的时候可以发现影响 redis 的 QPS 峰值的一个重要因素是 pipeline 批次指令的数目。*
 <!--yml
 category: 未分类
@@ -655,7 +655,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2335.html](https://zwmst.com/2335.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:49:20+08:00"> 2021-08-23 </time> ](https://zwmst.com/2335.html)  *   （1） Redis Sentinal 着眼于高可用，在 master 宕机时会自动将 slave 提升为 master，继续提供服务。
+*   （1） Redis Sentinal 着眼于高可用，在 master 宕机时会自动将 slave 提升为 master，继续提供服务。
 *   （2） Redis Cluster 着眼于扩展性，在单个 redis 内存不足时，使用Cluster 进行分片存储。*
 <!--yml
 category: 未分类
@@ -666,7 +666,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2337.html](https://zwmst.com/2337.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:49:30+08:00"> 2021-08-23 </time> ](https://zwmst.com/2337.html)  答：有 A，B，C 三个节点的集群,在没有复制模型的情况下,如果节点 B 失败了，那么整个集群就会以为缺少 5501-11000 这个范围的槽而不可用。*
+答：有 A，B，C 三个节点的集群,在没有复制模型的情况下,如果节点 B 失败了，那么整个集群就会以为缺少 5501-11000 这个范围的槽而不可用。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -676,7 +676,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2339.html](https://zwmst.com/2339.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:49:40+08:00"> 2021-08-23 </time> ](https://zwmst.com/2339.html)  答：**Redisson、Jedis、lettuce** 等等，官方推荐使用 Redisson。*
+答：**Redisson、Jedis、lettuce** 等等，官方推荐使用 Redisson。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -686,7 +686,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2341.html](https://zwmst.com/2341.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:49:51+08:00"> 2021-08-23 </time> ](https://zwmst.com/2341.html)  答：Jedis 是 Redis 的 Java 实现的客户端，其 API 提供了比较全面的Redis 命令的支持；
+答：Jedis 是 Redis 的 Java 实现的客户端，其 API 提供了比较全面的Redis 命令的支持；
 Redisson 实现了分布式和可扩展的 Java 数据结构，和 Jedis 相比，功能较为简单，不支持字符串操作，不支持排序、事务、管道、分区等 Redis 特性。
 Redisson 的宗旨是促进使用者对 Redis 的关注分离，从而让使用者能够将精力更集中地放在处理业务逻辑上。*
 <!--yml
@@ -698,7 +698,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2343.html](https://zwmst.com/2343.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:50:11+08:00"> 2021-08-23 </time> ](https://zwmst.com/2343.html)  设置密码：config set requirepass 123456 授权密码：auth 123456*
+设置密码：config set requirepass 123456 授权密码：auth 123456*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -708,7 +708,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2345.html](https://zwmst.com/2345.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:50:22+08:00"> 2021-08-23 </time> ](https://zwmst.com/2345.html)  答：Redis 集群没有使用一致性 hash,而是引入了哈希槽的概念，Redis 集群有 16384 个哈希槽，每个 key 通过 CRC16 校验后对 16384 取模来决定放置哪个槽，集群的每个节点负责一部分 hash 槽。*
+答：Redis 集群没有使用一致性 hash,而是引入了哈希槽的概念，Redis 集群有 16384 个哈希槽，每个 key 通过 CRC16 校验后对 16384 取模来决定放置哪个槽，集群的每个节点负责一部分 hash 槽。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -718,7 +718,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2347.html](https://zwmst.com/2347.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:50:34+08:00"> 2021-08-23 </time> ](https://zwmst.com/2347.html)  答：为了使在部分节点失败或者大部分节点无法通信的情况下集群仍然可用，所以集群使用了主从复制模型,每个节点都会有 N-1 个复制品.*
+答：为了使在部分节点失败或者大部分节点无法通信的情况下集群仍然可用，所以集群使用了主从复制模型,每个节点都会有 N-1 个复制品.*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -728,7 +728,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2349.html](https://zwmst.com/2349.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:50:44+08:00"> 2021-08-23 </time> ](https://zwmst.com/2349.html)  答 ：Redis 并不能保证数据的强一致性，这意味这在实际中集群在特定的条件下可能会丢失写操作。*
+答 ：Redis 并不能保证数据的强一致性，这意味这在实际中集群在特定的条件下可能会丢失写操作。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -738,7 +738,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2351.html](https://zwmst.com/2351.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:50:54+08:00"> 2021-08-23 </time> ](https://zwmst.com/2351.html)  答：异步复制*
+答：异步复制*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -748,7 +748,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2353.html](https://zwmst.com/2353.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:52:04+08:00"> 2021-08-23 </time> ](https://zwmst.com/2353.html)  答：16384 个。*
+答：16384 个。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -758,7 +758,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2355.html](https://zwmst.com/2355.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:52:15+08:00"> 2021-08-23 </time> ](https://zwmst.com/2355.html)  答：Redis 集群目前无法做数据库选择，默认在 0 数据库。*
+答：Redis 集群目前无法做数据库选择，默认在 0 数据库。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -768,7 +768,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2357.html](https://zwmst.com/2357.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-23T09:52:25+08:00"> 2021-08-23 </time> ](https://zwmst.com/2357.html)  答：使用 ping 命令。*
+答：使用 ping 命令。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -778,7 +778,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2361.html](https://zwmst.com/2361.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:16:14+08:00"> 2021-08-24 </time> ](https://zwmst.com/2361.html)  答：
+答：
 
 *   （1） 事务是一个单独的隔离操作：事务中的所有命令都会序列化、按顺序地执行。事务在执行的过程中，不会被其他客户端发送来的命令请求所打断。
 *   （2） 事务是一个原子操作：事务中的命令要么全部被执行，要么全部都不执行。*
@@ -791,7 +791,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2363.html](https://zwmst.com/2363.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:16:39+08:00"> 2021-08-24 </time> ](https://zwmst.com/2363.html)  答：**MULTI、EXEC、DISCARD、WATCH***
+答：**MULTI、EXEC、DISCARD、WATCH***
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -801,7 +801,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2365.html](https://zwmst.com/2365.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:16:52+08:00"> 2021-08-24 </time> ](https://zwmst.com/2365.html)  答：**EXPIRE 和 PERSIST** 命令。*
+答：**EXPIRE 和 PERSIST** 命令。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -811,7 +811,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2367.html](https://zwmst.com/2367.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:17:03+08:00"> 2021-08-24 </time> ](https://zwmst.com/2367.html)  答：尽可能使用**散列表（hashes）**，散列表（是说散列表里面存储的数少）使用的内存非常小，所以你应该尽可能的将你的数据模型抽象到一个散列表里面。
+答：尽可能使用**散列表（hashes）**，散列表（是说散列表里面存储的数少）使用的内存非常小，所以你应该尽可能的将你的数据模型抽象到一个散列表里面。
 比如你的 web 系统中有一个用户对象，不要为这个用户的名称，姓氏，邮箱，密码设置单独的 key,而是应该把这个用户的所有信息存储到一张散列表里面。*
 <!--yml
 category: 未分类
@@ -822,7 +822,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2369.html](https://zwmst.com/2369.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:17:23+08:00"> 2021-08-24 </time> ](https://zwmst.com/2369.html)  答：
+答：
 一个客户端运行了新的命令，添加了新的数据。
 Redi 检查内存使用情况,如果大于 maxmemory 的限制, 则根据设定好的策略进行回收。
 一个新的命令被执行，等等。
@@ -837,7 +837,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2371.html](https://zwmst.com/2371.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:17:43+08:00"> 2021-08-24 </time> ](https://zwmst.com/2371.html)  答：如果你使用的是 32 位的 Redis 实例，可以好好利用 Hash,list,sorted set,set 等集合类型数据，因为通常情况下很多小的 Key-Value 可以用更紧凑的方式存放到一起。*
+答：如果你使用的是 32 位的 Redis 实例，可以好好利用 Hash,list,sorted set,set 等集合类型数据，因为通常情况下很多小的 Key-Value 可以用更紧凑的方式存放到一起。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -847,7 +847,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2373.html](https://zwmst.com/2373.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:17:57+08:00"> 2021-08-24 </time> ](https://zwmst.com/2373.html)  答：如果达到设置的上限，Redis 的写命令会返回错误信息（但是读命令还可以正常返回。）或者你可以将 Redis 当缓存来使用配置淘汰机制，当 Redis 达到内存上限时会冲刷掉旧的内容。*
+答：如果达到设置的上限，Redis 的写命令会返回错误信息（但是读命令还可以正常返回。）或者你可以将 Redis 当缓存来使用配置淘汰机制，当 Redis 达到内存上限时会冲刷掉旧的内容。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -857,7 +857,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2375.html](https://zwmst.com/2375.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:18:07+08:00"> 2021-08-24 </time> ](https://zwmst.com/2375.html)  答：理论上 Redis 可以处理多达 2的32次方 的 keys，并且在实际中进行了测试，每个实例至少存放了 2 亿 5 千万的 keys。我们正在测试一些较大的值。
+答：理论上 Redis 可以处理多达 2的32次方 的 keys，并且在实际中进行了测试，每个实例至少存放了 2 亿 5 千万的 keys。我们正在测试一些较大的值。
 任何list、set、和 sorted set 都可以放 232 个元素。换句话说，Redis 的存储极限是系统中的可用内存值。*
 <!--yml
 category: 未分类
@@ -868,7 +868,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2377.html](https://zwmst.com/2377.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:18:21+08:00"> 2021-08-24 </time> ](https://zwmst.com/2377.html)  答：Redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略。
+答：Redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略。
 相关知识：Redis 提供 6 种数据淘汰策略：
 
 *   volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰
@@ -886,7 +886,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2379.html](https://zwmst.com/2379.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:18:34+08:00"> 2021-08-24 </time> ](https://zwmst.com/2379.html)  ## 1、 会话缓存（Session Cache）
+## 1、 会话缓存（Session Cache）
 
 最常用的一种使用 Redis 的情景是会话缓存（session cache）。用 Redis 缓存会话比其他存储（如 Memcached）的优势在于：Redis 提供持久化。
 当维护一个不是严格要求一致性的缓存时，如果用户的购物车信息全部丢失，大部分人都会不高兴的，现在，他们还会这样吗？ 幸运的是，随着 Redis 这些年的改进，很容易找到怎么恰当的使用 Redis 来缓存会话的文档。甚至广为人知的商业平台 Magento 也提供 Redis 的插件。
@@ -920,7 +920,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2381.html](https://zwmst.com/2381.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:18:45+08:00"> 2021-08-24 </time> ](https://zwmst.com/2381.html)  答：使用 keys 指令可以扫出指定模式的 key 列表。
+答：使用 keys 指令可以扫出指定模式的 key 列表。
 对方接着追问：如果这个 redis 正在给线上的业务提供服务，那使用 keys 指令会有什么问题？
 这个时候你要回答 redis 关键的一个特性：**redis 的单线程的**。keys 指令会导致线程阻塞一段时间，线上服务会停顿，直到指令执行完毕，服务才能恢复。
 这个时候可以使用 scan 指令，scan 指令可以无阻塞的提取出指定模式的 key 列表，但是会有一定的重复概率，在客户端做一次去重就可以了，但是整体所花费的时间会比直接用 keys 指令长。*
@@ -933,7 +933,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2383.html](https://zwmst.com/2383.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:18:55+08:00"> 2021-08-24 </time> ](https://zwmst.com/2383.html)  答：如果大量的 key 过期时间设置的过于集中，到过期的那个时间点，redis 可能会出现短暂的卡顿现象。一般需要在时间上加一个随机值，使得过期时间分散一些。*
+答：如果大量的 key 过期时间设置的过于集中，到过期的那个时间点，redis 可能会出现短暂的卡顿现象。一般需要在时间上加一个随机值，使得过期时间分散一些。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -943,7 +943,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2385.html](https://zwmst.com/2385.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:21:57+08:00"> 2021-08-24 </time> ](https://zwmst.com/2385.html)  答：一般使用 list 结构作为队列，rpush 生产消息，lpop 消费消息。当 lpop 没有消息的时候，要适当 sleep 一会再重试。
+答：一般使用 list 结构作为队列，rpush 生产消息，lpop 消费消息。当 lpop 没有消息的时候，要适当 sleep 一会再重试。
 如果对方追问可不可以不用 sleep 呢？list 还有个指令叫 blpop，在没有消息的时候，它会阻塞住直到消息到来。如果对方追问能不能生产一次消费多次呢？使用 pub/sub 主题订阅者模式，可以实现 1:N 的消息队列。
 如果对方追问 pub/sub 有什么缺点？
 在消费者下线的情况下，生产的消息会丢失，得使用专业的消息队列如RabbitMQ 等。
@@ -959,7 +959,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/2387.html](https://zwmst.com/2387.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-08-24T08:22:09+08:00"> 2021-08-24 </time> ](https://zwmst.com/2387.html)  先拿 setnx 来争抢锁，抢到之后，再用 expire 给锁加一个过期时间防止锁忘记了释放。
+先拿 setnx 来争抢锁，抢到之后，再用 expire 给锁加一个过期时间防止锁忘记了释放。
 这时候对方会告诉你说你回答得不错，然后接着问如果在 setnx 之后执行expire 之前进程意外 crash 或者要重启维护了，那会怎么样？
 这时候你要给予惊讶的反馈：唉，是喔，这个锁就永远得不到释放了。
 紧接着你需要抓一抓自己得脑袋，故作思考片刻，好像接下来的结果是你主动思考出来的，然后回答：我记得 set 指令有非常复杂的参数，这个应该是可以同时把 setnx 和 expire 合成一条指令来用的！
@@ -973,7 +973,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5791.html](https://zwmst.com/5791.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:09:49+08:00"> 2021-10-31 </time> ](https://zwmst.com/5791.html)  ## 区别：
+## 区别：
 
 1.  mc 可缓存图片和视频。rd 支持除 k/v 更多的数据结构;
 2.  rd 可以使用虚拟内存，rd 可持久化和 aof 灾难恢复，rd 通过主从支持数据备份;
@@ -991,7 +991,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5793.html](https://zwmst.com/5793.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:12:03+08:00"> 2021-10-31 </time> ](https://zwmst.com/5793.html)  主从复制实现：主节点将自己内存中的数据做一份快照，将快照发给从节点，从节点将数据恢复到内存中。之后再每次增加新数据的时候，主节点以类似于 mysql 的二进制日志方式将语句发送给从节点，从节点拿到主节点发送过来的语句进行重放。
+主从复制实现：主节点将自己内存中的数据做一份快照，将快照发给从节点，从节点将数据恢复到内存中。之后再每次增加新数据的时候，主节点以类似于 mysql 的二进制日志方式将语句发送给从节点，从节点拿到主节点发送过来的语句进行重放。
 分片方式：
 
 1.  客户端分片
@@ -1009,7 +1009,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5795.html](https://zwmst.com/5795.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:13:26+08:00"> 2021-10-31 </time> ](https://zwmst.com/5795.html)  ## redis:
+## redis:
 
 1.  线程 A setnx(上锁的对象,超时时的时间戳 t1)，如果返回 true，获得锁。
 2.  线程 B 用 get 获取 t1,与当前时间戳比较,判断是是否超时,没超时 false,若超时执行第 3 步;
@@ -1035,7 +1035,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5797.html](https://zwmst.com/5797.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:14:22+08:00"> 2021-10-31 </time> ](https://zwmst.com/5797.html)  RDB(Redis DataBase:在不同的时间点将 redis 的数据生成的快照同步到磁盘等介质上):内存到硬盘的快照，定期更新。缺点：耗时，耗性能(fork+io 操作)，易丢失数据。
+RDB(Redis DataBase:在不同的时间点将 redis 的数据生成的快照同步到磁盘等介质上):内存到硬盘的快照，定期更新。缺点：耗时，耗性能(fork+io 操作)，易丢失数据。
 
 AOF(Append Only File：将 redis 所执行过的所有指令都记录下来，在下次 redis 重启时，只需要执行指令就可以了):写日志。缺点：体积大，恢复速度慢。
 
@@ -1049,7 +1049,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5799.html](https://zwmst.com/5799.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:29:40+08:00"> 2021-10-31 </time> ](https://zwmst.com/5799.html)  过期策略:
+过期策略:
 定时过期(一 key 一定时器)，惰性过期：只有使用 key 时才判断 key 是否已过期，过期则清除。定期过期：前两者折中。
 
 LRU:new LinkedHashMap<K, V>(capacity, DEFAULT_LOAD_FACTORY, true);
@@ -1068,7 +1068,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5801.html](https://zwmst.com/5801.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:33:58+08:00"> 2021-10-31 </time> ](https://zwmst.com/5801.html)  ## 缓存穿透：
+## 缓存穿透：
 
 指查询一个一定不存在的数据，如果从存储层查不到数据则不写入缓存，这将导致这个不存在的数据每次请求都要到 DB 去查询，可能导致 DB 挂掉。
 
@@ -1102,7 +1102,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5803.html](https://zwmst.com/5803.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:43:03+08:00"> 2021-10-31 </time> ](https://zwmst.com/5803.html)  选择 redis 的情况：
+选择 redis 的情况：
 
 1.  复杂数据结构，value 的数据是哈希，列表，集合，有序集合等这种情况下，会选择redis, 因为 memcache 无法满足这些数据结构，最典型的的使用场景是，用户订单列表，用户消息，帖子评论等。
 2.  需要进行数据的持久化功能，但是注意，不要把 redis 当成数据库使用，如果 redis挂了，内存能够快速恢复热数据，不会将压力瞬间压在数据库上，没有 cache 预热的过程。对于只读和数据一致性要求不高的场景可以采用持久化存储
@@ -1125,7 +1125,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5805.html](https://zwmst.com/5805.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:44:55+08:00"> 2021-10-31 </time> ](https://zwmst.com/5805.html)  假设采用的主存分离，读写分离的数据库，
+假设采用的主存分离，读写分离的数据库，
 
 如果一个线程 A 先删除缓存数据，然后将数据写入到主库当中，这个时候，主库和从库同步没有完成，线程 B 从缓存当中读取数据失败，从从库当中读取到旧数据，然后更新至缓存，这个时候，缓存当中的就是旧的数据。
 
@@ -1142,7 +1142,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5807.html](https://zwmst.com/5807.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:46:22+08:00"> 2021-10-31 </time> ](https://zwmst.com/5807.html)  场景描述，对于主从库，读写分离，如果主从库更新同步有时差，就会导致主从库数据的不一致
+场景描述，对于主从库，读写分离，如果主从库更新同步有时差，就会导致主从库数据的不一致
 
 1.  忽略这个数据不一致，在数据一致性要求不高的业务下，未必需要时时一致性
 2.  强制读主库，使用一个高可用的主库，数据库读写都在主库，添加一个缓存，提升数据读取的性能。
@@ -1156,7 +1156,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5811.html](https://zwmst.com/5811.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:48:48+08:00"> 2021-10-31 </time> ](https://zwmst.com/5811.html)  1.  master 最好不要做持久化工作，如 RDB 内存快照和 AOF 日志文件
+1.  master 最好不要做持久化工作，如 RDB 内存快照和 AOF 日志文件
 2.  如果数据比较重要，某个 slave 开启 AOF 备份，策略设置成每秒同步一次
 3.  为了主从复制的速度和连接的稳定性，master 和 Slave 最好在一个局域网内
 4.  尽量避免在压力大得主库上增加从库
@@ -1170,7 +1170,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5813.html](https://zwmst.com/5813.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:49:24+08:00"> 2021-10-31 </time> ](https://zwmst.com/5813.html)  voltile-lru 从已经设置过期时间的数据集中挑选最近最少使用的数据淘汰
+voltile-lru 从已经设置过期时间的数据集中挑选最近最少使用的数据淘汰
 voltile-ttl 从已经设置过期时间的数据库集当中挑选将要过期的数据
 voltile-random 从已经设置过期时间的数据集任意选择淘汰数据
 allkeys-lru 从数据集中挑选最近最少使用的数据淘汰
@@ -1185,7 +1185,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5815.html](https://zwmst.com/5815.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:50:05+08:00"> 2021-10-31 </time> ](https://zwmst.com/5815.html)  字符串 String、字典 Hash、列表 List、集合 Set、有序集合 SortedSet。如果是高级用户，那么还会有，如果你是 Redis 中高级用户，还需要加上下面几种数据结构 HyperLogLog、Geo、Pub/Sub。*
+字符串 String、字典 Hash、列表 List、集合 Set、有序集合 SortedSet。如果是高级用户，那么还会有，如果你是 Redis 中高级用户，还需要加上下面几种数据结构 HyperLogLog、Geo、Pub/Sub。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1195,7 +1195,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5817.html](https://zwmst.com/5817.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:51:09+08:00"> 2021-10-31 </time> ](https://zwmst.com/5817.html)  使用 keys 指令可以扫出指定模式的 key 列表。
+使用 keys 指令可以扫出指定模式的 key 列表。
 对方接着追问：如果这个 redis 正在给线上的业务提供服务，那使用 keys 指令会有什么问题？
 这个时候你要回答 redis 关键的一个特性：redis 的单线程的。keys 指令会导致线程阻塞一段时间，线上服务会停顿，直到指令执行完毕，服务才能恢复。这个时候可以使用 scan 指令，scan 指令可以无阻塞的提取出指定模式的 key 列表，但是会有一定的重复概率，在客户端做一次去重就可以了，但是整体所花费的时间会比直接用 keys 指令长。*
 <!--yml
@@ -1207,7 +1207,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5819.html](https://zwmst.com/5819.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:51:55+08:00"> 2021-10-31 </time> ](https://zwmst.com/5819.html)  使用 list 类型保存数据信息，rpush 生产消息，lpop 消费消息，当 lpop 没有消息时，可以 sleep 一段时间，然后再检查有没有信息，如果不想 sleep 的话，可以使用 blpop, 在没有信息的时候，会一直阻塞，直到信息的到来。redis 可以通过 pub/sub 主题订阅模式实现一个生产者，多个消费者，当然也存在一定的缺点，当消费者下线时，生产的消息会丢失。*
+使用 list 类型保存数据信息，rpush 生产消息，lpop 消费消息，当 lpop 没有消息时，可以 sleep 一段时间，然后再检查有没有信息，如果不想 sleep 的话，可以使用 blpop, 在没有信息的时候，会一直阻塞，直到信息的到来。redis 可以通过 pub/sub 主题订阅模式实现一个生产者，多个消费者，当然也存在一定的缺点，当消费者下线时，生产的消息会丢失。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1217,7 +1217,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5821.html](https://zwmst.com/5821.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:52:36+08:00"> 2021-10-31 </time> ](https://zwmst.com/5821.html)  使用 sortedset，使用时间戳做 score, 消息内容作为 key,调用 zadd 来生产消息，消费者使用 zrangbyscore 获取 n 秒之前的数据做轮询处理*
+使用 sortedset，使用时间戳做 score, 消息内容作为 key,调用 zadd 来生产消息，消费者使用 zrangbyscore 获取 n 秒之前的数据做轮询处理*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1227,7 +1227,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5823.html](https://zwmst.com/5823.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:53:51+08:00"> 2021-10-31 </time> ](https://zwmst.com/5823.html)  Redis 本质上是一个 Key-Value 类型的内存数据库，很像 memcached，整个数据库统统加载在内存当中进行操作，定期通过异步操作把数据库数据 flush 到硬盘上进行保存。
+Redis 本质上是一个 Key-Value 类型的内存数据库，很像 memcached，整个数据库统统加载在内存当中进行操作，定期通过异步操作把数据库数据 flush 到硬盘上进行保存。
 因为是纯内存操作，Redis 的性能非常出色，每秒可以处理超过 10 万次读写操作，是已知性能最快的 Key-Value DB。
 Redis 的出色之处不仅仅是性能，Redis 最大的魅力是支持保存多种数据结构，此外单个 value 的最大限制是 1GB，不像 memcached 只能保存 1MB 的数据，因此 Redis 可以用来实现很多有用的功能。
 比方说用他的 List 来做 FIFO 双向链表，实现一个轻量级的高性 能消息队列服务，用他的 Set 可以做高性能的 tag 系统等等。
@@ -1241,7 +1241,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5825.html](https://zwmst.com/5825.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:54:38+08:00"> 2021-10-31 </time> ](https://zwmst.com/5825.html)  1.  memcached 所有的值均是简单的字符串，redis 作为其替代者，支持更为丰富的数据类型
+1.  memcached 所有的值均是简单的字符串，redis 作为其替代者，支持更为丰富的数据类型
 2.  redis 的速度比 memcached 快很多
 3.  redis 可以持久化其数据*
 <!--yml
@@ -1253,7 +1253,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5827.html](https://zwmst.com/5827.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:55:15+08:00"> 2021-10-31 </time> ](https://zwmst.com/5827.html)  String、List、Set、Sorted Set、hashes*
+String、List、Set、Sorted Set、hashes*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1263,7 +1263,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5829.html](https://zwmst.com/5829.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:55:48+08:00"> 2021-10-31 </time> ](https://zwmst.com/5829.html)  内存。*
+内存。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1273,7 +1273,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5831.html](https://zwmst.com/5831.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:57:17+08:00"> 2021-10-31 </time> ](https://zwmst.com/5831.html)  Remote Dictionary Server。*
+Remote Dictionary Server。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1283,7 +1283,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5833.html](https://zwmst.com/5833.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:58:02+08:00"> 2021-10-31 </time> ](https://zwmst.com/5833.html)  noeviction:返回错误当内存限制达到并且客户端尝试执行会让更多内存被使用的命令（大部分的写入指令，但 DEL 和几个例外）
+noeviction:返回错误当内存限制达到并且客户端尝试执行会让更多内存被使用的命令（大部分的写入指令，但 DEL 和几个例外）
 allkeys-lru: 尝试回收最少使用的键（LRU），使得新添加的数据有空间存放。
 volatile-lru: 尝试回收最少使用的键（LRU），但仅限于在过期集合的键,使得新添加的数据有空间存放。
 allkeys-random: 回收随机的键使得新添加的数据有空间存放。
@@ -1298,7 +1298,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5835.html](https://zwmst.com/5835.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:58:39+08:00"> 2021-10-31 </time> ](https://zwmst.com/5835.html)  因为目前 Linux 版本已经相当稳定，而且用户量很大，无需开发 windows 版本，反而会带来兼容性等问题。*
+因为目前 Linux 版本已经相当稳定，而且用户量很大，无需开发 windows 版本，反而会带来兼容性等问题。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1308,7 +1308,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5837.html](https://zwmst.com/5837.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:59:16+08:00"> 2021-10-31 </time> ](https://zwmst.com/5837.html)  512M*
+512M*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1318,7 +1318,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5839.html](https://zwmst.com/5839.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T00:59:52+08:00"> 2021-10-31 </time> ](https://zwmst.com/5839.html)  Redis 为了达到最快的读写速度将数据都读到内存中，并通过异步的方式将数据写入磁盘。
+Redis 为了达到最快的读写速度将数据都读到内存中，并通过异步的方式将数据写入磁盘。
 所以 redis 具有快速和数据持久化的特征。如果不将数据放在内存中，磁盘 I/O 速度为严重影响 redis 的性能。
 在内存越来越便宜的今天，redis 将会越来越受欢迎。 如果设置了最大使用的内存，则数据已有记录数达到内存限值后不能继续插入新值。*
 <!--yml
@@ -1330,7 +1330,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5841.html](https://zwmst.com/5841.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:00:36+08:00"> 2021-10-31 </time> ](https://zwmst.com/5841.html)  1.  codis。
+1.  codis。
     目前用的最多的集群方案，基本和 twemproxy 一致的效果，但它支持在 节点数量改变情况下，旧节点数
     据可恢复到新 hash 节点。
 2.  redis cluster3.0 自带的集群，特点在于他的分布式算法不是一致性 hash，而是 hash 槽的概念，以及自身支持节点设置从节点。具体看官方文档介绍。
@@ -1344,7 +1344,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5843.html](https://zwmst.com/5843.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:01:15+08:00"> 2021-10-31 </time> ](https://zwmst.com/5843.html)  有 A，B，C 三个节点的集群,在没有复制模型的情况下,如果节点 B 失败了，那么整个集群就会以为缺少 5501-11000 这个范围的槽而不可用。*
+有 A，B，C 三个节点的集群,在没有复制模型的情况下,如果节点 B 失败了，那么整个集群就会以为缺少 5501-11000 这个范围的槽而不可用。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1354,7 +1354,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5845.html](https://zwmst.com/5845.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:01:55+08:00"> 2021-10-31 </time> ](https://zwmst.com/5845.html)  redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略。*
+redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1364,7 +1364,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5847.html](https://zwmst.com/5847.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:03:19+08:00"> 2021-10-31 </time> ](https://zwmst.com/5847.html)  1.  会话缓存（Session Cache）
+1.  会话缓存（Session Cache）
     最常用的一种使用 Redis 的情景是会话缓存（session cache）。用 Redis 缓存会话比其他存储（如 Memcached）的优势在于：Redis 提供持久化。当维护一个不是严格要求一致性的缓存时，如果用户的购物车信息全部丢失，大部分人都会不高兴的，现在，他们还会这样吗？幸运的是，随着 Redis 这些年的改进，很容易找到怎么恰当的使用 Redis 来缓存会话的文档。甚至广为人知的商业平台 Magento 也提供 Redis 的插件。
 2.  全页缓存（FPC）
     除基本的会话 token 之外，Redis 还提供很简便的 FPC 平台。回到一致性问题，即使重启了 Redis 实例，因为有磁盘的持久化，用户也不会看到页面加载速度的下降，这是一个极大改进，类似 PHP 本地 FPC。
@@ -1389,7 +1389,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5849.html](https://zwmst.com/5849.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:05:13+08:00"> 2021-10-31 </time> ](https://zwmst.com/5849.html)  Redisson、Jedis、lettuce 等等，官方推荐使用 Redisson。*
+Redisson、Jedis、lettuce 等等，官方推荐使用 Redisson。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1399,7 +1399,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5851.html](https://zwmst.com/5851.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:06:03+08:00"> 2021-10-31 </time> ](https://zwmst.com/5851.html)  Redisson 是一个高级的分布式协调 Redis 客服端，能帮助用户在分布式环境中轻松实现一些 Java 的对象
+Redisson 是一个高级的分布式协调 Redis 客服端，能帮助用户在分布式环境中轻松实现一些 Java 的对象
 (Bloom filter, BitSet, Set, SetMultimap, ScoredSortedSet, SortedSet, Map, ConcurrentMap, List, ListMultimap, Queue, BlockingQueue, Deque, BlockingDeque, Semaphore, Lock, ReadWriteLock, AtomicLong, CountDownLatch, Publish / Subscribe, HyperLogLog)。*
 <!--yml
 category: 未分类
@@ -1410,7 +1410,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5853.html](https://zwmst.com/5853.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:06:57+08:00"> 2021-10-31 </time> ](https://zwmst.com/5853.html)  Jedis 是 Redis 的 Java 实现的客户端，其 API 提供了比较全面的 Redis 命令的支持；
+Jedis 是 Redis 的 Java 实现的客户端，其 API 提供了比较全面的 Redis 命令的支持；
 Redisson 实现了分布式和可扩展的 Java 数据结构，和 Jedis 相比，功能较为简单，不支持字符串操作，不支持排序、事务、管道、分区等 Redis 特性。Redisson 的宗旨是促进使用者对 Redis 的关注分离，从而让使用者能够将精力更集中地放在处理业务逻辑上。*
 <!--yml
 category: 未分类
@@ -1421,7 +1421,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5855.html](https://zwmst.com/5855.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:07:31+08:00"> 2021-10-31 </time> ](https://zwmst.com/5855.html)  设置密码：config set requirepass 123456
+设置密码：config set requirepass 123456
 授权密码：auth 123456*
 <!--yml
 category: 未分类
@@ -1432,7 +1432,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5857.html](https://zwmst.com/5857.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:08:08+08:00"> 2021-10-31 </time> ](https://zwmst.com/5857.html)  Redis 集群没有使用一致性 hash,而是引入了哈希槽的概念，Redis 集群有 16384 个哈希槽，每个 key 通过 CRC16 校验后对 16384 取模来决定放置哪个槽，集群的每个节点负责一部分 hash 槽。*
+Redis 集群没有使用一致性 hash,而是引入了哈希槽的概念，Redis 集群有 16384 个哈希槽，每个 key 通过 CRC16 校验后对 16384 取模来决定放置哪个槽，集群的每个节点负责一部分 hash 槽。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1442,7 +1442,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5859.html](https://zwmst.com/5859.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:09:12+08:00"> 2021-10-31 </time> ](https://zwmst.com/5859.html)  为了使在部分节点失败或者大部分节点无法通信的情况下集群仍然可用，所以集群使用了主从复制模型,每个节点都会有 N-1 个复制品.*
+为了使在部分节点失败或者大部分节点无法通信的情况下集群仍然可用，所以集群使用了主从复制模型,每个节点都会有 N-1 个复制品.*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1452,7 +1452,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5861.html](https://zwmst.com/5861.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:09:49+08:00"> 2021-10-31 </time> ](https://zwmst.com/5861.html)  Redis 并不能保证数据的强一致性，这意味这在实际中集群在特定的条件下可能会丢失写操作。*
+Redis 并不能保证数据的强一致性，这意味这在实际中集群在特定的条件下可能会丢失写操作。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1462,7 +1462,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5863.html](https://zwmst.com/5863.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:10:25+08:00"> 2021-10-31 </time> ](https://zwmst.com/5863.html)  异步复制*
+异步复制*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1472,7 +1472,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5865.html](https://zwmst.com/5865.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:11:03+08:00"> 2021-10-31 </time> ](https://zwmst.com/5865.html)  16384 个。*
+16384 个。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1482,7 +1482,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5867.html](https://zwmst.com/5867.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:11:42+08:00"> 2021-10-31 </time> ](https://zwmst.com/5867.html)  Redis 集群目前无法做数据库选择，默认在 0 数据库。*
+Redis 集群目前无法做数据库选择，默认在 0 数据库。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1492,7 +1492,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5869.html](https://zwmst.com/5869.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:12:23+08:00"> 2021-10-31 </time> ](https://zwmst.com/5869.html)  ping*
+ping*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -1502,5 +1502,5 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5871.html](https://zwmst.com/5871.html)
 
-   [ *Redis* ](https://zwmst.com/redis)*[ <time datetime="2021-11-01T01:12:56+08:00"> 2021-10-31 </time> ](https://zwmst.com/5871.html)  一次请求/响应服务器能实现处理新的请求即使旧的请求还未被响应。这样就可以将多个命令发送到服务器，而不用等待回复，最后在一个步骤中读取该答复。
+一次请求/响应服务器能实现处理新的请求即使旧的请求还未被响应。这样就可以将多个命令发送到服务器，而不用等待回复，最后在一个步骤中读取该答复。
 这就是管道（pipelining），是一种几十年来广泛使用的技术。例如许多 POP3 协议已经实现支持这个功能，大大加快了从服务器下载新邮件的过程。*

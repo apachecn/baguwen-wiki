@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1141.html](https://zwmst.com/1141.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:35:20+08:00"> 2021-08-15 </time> ](https://zwmst.com/1141.html)  Dubbo是阿里巴巴开源的基于 Java 的高性能 RPC 分布式服务框架，现已成为 Apache 基金会 孵化项目。*
+Dubbo是阿里巴巴开源的基于 Java 的高性能 RPC 分布式服务框架，现已成为 Apache 基金会 孵化项目。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -17,7 +17,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1143.html](https://zwmst.com/1143.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:35:31+08:00"> 2021-08-15 </time> ](https://zwmst.com/1143.html)  因为是阿里开源项目，国内很多互联网公司都在用，已经经过很多线上考验。内部使用了 Netty、Zookeeper，保证了高性能高可用性。
+因为是阿里开源项目，国内很多互联网公司都在用，已经经过很多线上考验。内部使用了 Netty、Zookeeper，保证了高性能高可用性。
 
 使用 Dubbo 可以将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，可用于 提高业务复用灵活扩展，使前端应用能更快速的响应多变的市场需求。*
 <!--yml
@@ -29,7 +29,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1145.html](https://zwmst.com/1145.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:35:43+08:00"> 2021-08-15 </time> ](https://zwmst.com/1145.html)  Dubbox 是继 Dubbo 停止维护后，当当网基于 Dubbo 做的一个扩展项目，如加了服务可 Restful 调用，更新了开源组件等。*
+Dubbox 是继 Dubbo 停止维护后，当当网基于 Dubbo 做的一个扩展项目，如加了服务可 Restful 调用，更新了开源组件等。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -39,7 +39,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1147.html](https://zwmst.com/1147.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:35:56+08:00"> 2021-08-15 </time> ](https://zwmst.com/1147.html)  dubbo://（推荐）
+dubbo://（推荐）
 
 rmi://
 
@@ -65,7 +65,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1149.html](https://zwmst.com/1149.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:36:07+08:00"> 2021-08-15 </time> ](https://zwmst.com/1149.html)  不需要，如果硬要用 Web 容器，只会增加复杂性，也浪费资源。*
+不需要，如果硬要用 Web 容器，只会增加复杂性，也浪费资源。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -75,7 +75,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1151.html](https://zwmst.com/1151.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:36:19+08:00"> 2021-08-15 </time> ](https://zwmst.com/1151.html)  Spring Container
+Spring Container
 
 Jetty Container
 
@@ -89,7 +89,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1153.html](https://zwmst.com/1153.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:36:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1153.html)  推荐使用 Zookeeper 作为注册中心，还有 Redis、Multicast、Simple 注册中心，但不推 荐。*
+推荐使用 Zookeeper 作为注册中心，还有 Redis、Multicast、Simple 注册中心，但不推 荐。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -99,7 +99,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1155.html](https://zwmst.com/1155.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:37:09+08:00"> 2021-08-15 </time> ](https://zwmst.com/1155.html)  1）Spring 配置方式
+1）Spring 配置方式
 
 2）Java API 配置方式*
 <!--yml
@@ -111,7 +111,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1157.html](https://zwmst.com/1157.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:37:54+08:00"> 2021-08-15 </time> ](https://zwmst.com/1157.html)  1）timeout：方法调用超时
+1）timeout：方法调用超时
 
 2）retries：失败重试次数，默认重试 2 次
 
@@ -127,7 +127,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1159.html](https://zwmst.com/1159.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:38:08+08:00"> 2021-08-15 </time> ](https://zwmst.com/1159.html)  Dubbo 缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止 Spring 初始化 完成，默认 check="true"，可以通过 check="false" 关闭检查。*
+Dubbo 缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止 Spring 初始化 完成，默认 check="true"，可以通过 check="false" 关闭检查。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -137,7 +137,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1161.html](https://zwmst.com/1161.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:38:24+08:00"> 2021-08-15 </time> ](https://zwmst.com/1161.html)  推荐使用Hessian序列化，还有Duddo、FastJson、Java自带序列化。*
+推荐使用Hessian序列化，还有Duddo、FastJson、Java自带序列化。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -147,7 +147,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1163.html](https://zwmst.com/1163.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:38:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1163.html)  Dubbo 默认使用 Netty 框架，也是推荐的选择，另外内容还集成有Mina、Grizzly。*
+Dubbo 默认使用 Netty 框架，也是推荐的选择，另外内容还集成有Mina、Grizzly。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -157,7 +157,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1165.html](https://zwmst.com/1165.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:38:58+08:00"> 2021-08-15 </time> ](https://zwmst.com/1165.html)  可以配置环境点对点直连，绕过注册中心，将以服务接口为单位，忽略注册中心的提供者列 表。*
+可以配置环境点对点直连，绕过注册中心，将以服务接口为单位，忽略注册中心的提供者列 表。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -167,7 +167,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1167.html](https://zwmst.com/1167.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:39:10+08:00"> 2021-08-15 </time> ](https://zwmst.com/1167.html)  Dubbo 允许配置多协议，在不同服务上支持不同协议或者同一服务上同时支持多种协议。*
+Dubbo 允许配置多协议，在不同服务上支持不同协议或者同一服务上同时支持多种协议。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -177,7 +177,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1169.html](https://zwmst.com/1169.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:39:22+08:00"> 2021-08-15 </time> ](https://zwmst.com/1169.html)  当一个接口有多种实现时，可以用 group 属性来分组，服务提供方和消费方都指定同一个 group 即可。*
+当一个接口有多种实现时，可以用 group 属性来分组，服务提供方和消费方都指定同一个 group 即可。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -187,7 +187,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1171.html](https://zwmst.com/1171.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:39:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1171.html)  可以用版本号（version）过渡，多个不同版本的服务注册到注册中心，版本号不同的服务相 互间不引用。这个和服务分组的概念有一点类似。*
+可以用版本号（version）过渡，多个不同版本的服务注册到注册中心，版本号不同的服务相 互间不引用。这个和服务分组的概念有一点类似。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -197,7 +197,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1173.html](https://zwmst.com/1173.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:39:47+08:00"> 2021-08-15 </time> ](https://zwmst.com/1173.html)  可以，Dubbo 提供了声明式缓存，用于加速热门数据的访问速度，以减少用户加缓存的工作 量。*
+可以，Dubbo 提供了声明式缓存，用于加速热门数据的访问速度，以减少用户加缓存的工作 量。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -207,7 +207,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1175.html](https://zwmst.com/1175.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:39:58+08:00"> 2021-08-15 </time> ](https://zwmst.com/1175.html)  默认是同步等待结果阻塞的，支持异步调用。
+默认是同步等待结果阻塞的，支持异步调用。
 
 Dubbo 是基于 NIO 的非阻塞实现并行调用，客户端不需要启动多线程即可完成并行调用多个 远程服务，相对多线程开销较小，异步调用会返回一个 Future 对象。*
 <!--yml
@@ -219,7 +219,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1177.html](https://zwmst.com/1177.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:40:12+08:00"> 2021-08-15 </time> ](https://zwmst.com/1177.html)  目前暂时不支持，后续可能采用基于 JTA/XA 规范实现。*
+目前暂时不支持，后续可能采用基于 JTA/XA 规范实现。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -229,7 +229,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1179.html](https://zwmst.com/1179.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:40:23+08:00"> 2021-08-15 </time> ](https://zwmst.com/1179.html)  Dubbo 2.2.0 以上版本支持。*
+Dubbo 2.2.0 以上版本支持。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -239,7 +239,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1181.html](https://zwmst.com/1181.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:40:36+08:00"> 2021-08-15 </time> ](https://zwmst.com/1181.html)  Dubbo 是通过 JDK 的 ShutdownHook 来完成优雅停机的，所以如果使用 kill -9 PID 等强制 关闭指令，是不会执行优雅停机的，只有通过 kill PID 时，才会执行。*
+Dubbo 是通过 JDK 的 ShutdownHook 来完成优雅停机的，所以如果使用 kill -9 PID 等强制 关闭指令，是不会执行优雅停机的，只有通过 kill PID 时，才会执行。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -249,7 +249,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1183.html](https://zwmst.com/1183.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:40:49+08:00"> 2021-08-15 </time> ](https://zwmst.com/1183.html)  服务失效踢出基于 Zookeeper 的临时节点原理。*
+服务失效踢出基于 Zookeeper 的临时节点原理。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -259,7 +259,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1185.html](https://zwmst.com/1185.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:41:01+08:00"> 2021-08-15 </time> ](https://zwmst.com/1185.html)  Dubbo 可以使用 Pinpoint 和 Apache Skywalking(Incubator) 实现分布式服务追踪，当然 还有其他很多方案。*
+Dubbo 可以使用 Pinpoint 和 Apache Skywalking(Incubator) 实现分布式服务追踪，当然 还有其他很多方案。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -269,7 +269,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1187.html](https://zwmst.com/1187.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:41:13+08:00"> 2021-08-15 </time> ](https://zwmst.com/1187.html)  读操作建议使用 Failover 失败自动切换，默认重试两次其他服务器。
+读操作建议使用 Failover 失败自动切换，默认重试两次其他服务器。
 
 写操作建议使用 Failfast 快速失败，发一次调用失败就立即报错。*
 <!--yml
@@ -281,7 +281,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1189.html](https://zwmst.com/1189.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:41:24+08:00"> 2021-08-15 </time> ](https://zwmst.com/1189.html)  Dubbo 必须依赖 JDK，其他为可选。*
+Dubbo 必须依赖 JDK，其他为可选。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -291,7 +291,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1191.html](https://zwmst.com/1191.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:41:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1191.html)  管理控制台主要包含：路由规则，动态配置，服务降级，访问控制，权重调整，负载均衡，等 管理功能。*
+管理控制台主要包含：路由规则，动态配置，服务降级，访问控制，权重调整，负载均衡，等 管理功能。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -301,7 +301,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1193.html](https://zwmst.com/1193.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-08-15T10:41:45+08:00"> 2021-08-15 </time> ](https://zwmst.com/1193.html)  Dubbo 会在 Spring 实例化完 bean 之后，在刷新容器最后一步发布ContextRefreshEvent 事件的时候，通知实现了 ApplicationListener 的 ServiceBean 类进行回调 onApplicationEvent 事件方法，Dubbo 会在这个方法中调用 ServiceBean 父类 ServiceConfig 的 export 方法，而该方法真正实现了服务的（异步或者非异步）发布。*
+Dubbo 会在 Spring 实例化完 bean 之后，在刷新容器最后一步发布ContextRefreshEvent 事件的时候，通知实现了 ApplicationListener 的 ServiceBean 类进行回调 onApplicationEvent 事件方法，Dubbo 会在这个方法中调用 ServiceBean 父类 ServiceConfig 的 export 方法，而该方法真正实现了服务的（异步或者非异步）发布。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -311,7 +311,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5119.html](https://zwmst.com/5119.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)* [ *设计模式* ](https://zwmst.com/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f)***[ <time datetime="2021-10-19T00:42:12+08:00"> 2021-10-18 </time> ](https://zwmst.com/5119.html)  1.  dubbo： 单一长连接和 NIO 异步通讯，适合大并发小数据量的服务调用，以及消费者远大于提供者。传输协议 TCP，异步，Hessian 序列化；
+   * ***[  ](https://zwmst.com/5119.html)  1.  dubbo： 单一长连接和 NIO 异步通讯，适合大并发小数据量的服务调用，以及消费者远大于提供者。传输协议 TCP，异步，Hessian 序列化；
 2.  rmi： 采用 JDK 标准的 rmi 协议实现，传输参数和返回参数对象需要实现Serializable 接口，使用 java 标准序列化机制，使用阻塞式短连接，传输数据包大小混合，消费者和提供者个数差不多，可传文件，传输协议 TCP。多个短连接，TCP 协议传输，同步传输，适用常规的远程服务调用和 rmi 互操作。在依赖低版本的 Common-Collections 包，java 序列化存在安全漏洞；
 3.  webservice： 基于 WebService 的远程调用协议，集成 CXF 实现，提供和原生 WebService 的互操作。多个短连接，基于 HTTP 传输，同步传输，适用系统集成和跨语言调用；
 4.  http： 基于 Http 表单提交的远程调用协议，使用 Spring 的 HttpInvoke 实现。多个短连接，传输协议 HTTP，传入参数大小混合，提供者个数多于消费者，需要给应用程序和浏览器 JS 调用；
@@ -327,7 +327,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5121.html](https://zwmst.com/5121.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T00:50:14+08:00"> 2021-10-18 </time> ](https://zwmst.com/5121.html)  ## Dubbo 超时时间设置有两种方式：
+## Dubbo 超时时间设置有两种方式：
 
 1.  服务提供者端设置超时时间，在 Dubbo 的用户文档中，推荐如果能在服务端多配置就尽量多配置，因为服务提供者比消费者更清楚自己提供的服务特性。
 2.  服务消费者端设置超时时间，如果在消费者端设置了超时时间，以消费者端为主，即优先级更高。因为服务调用方设置超时时间控制性更灵活。如果消费方超时，服务端线程不会定制，会产生警告。*
@@ -340,7 +340,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5123.html](https://zwmst.com/5123.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T00:52:46+08:00"> 2021-10-18 </time> ](https://zwmst.com/5123.html)  1.  Multicast 注册中心： Multicast 注册中心不需要任何中心节点，只要广播地址，就能进行服务注册和发现。基于网络中组播传输实现；
+1.  Multicast 注册中心： Multicast 注册中心不需要任何中心节点，只要广播地址，就能进行服务注册和发现。基于网络中组播传输实现；
 2.  Zookeeper 注册中心： 基于分布式协调系统 Zookeeper 实现，采用Zookeeper 的 watch 机制实现数据变更；
 3.  redis 注册中心： 基于 redis 实现，采用 key/Map 存储，住 key 存储服务名和类型，Map 中 key 存储服务 URL，value 服务过期时间。基于 redis 的发布/订阅模式通知数据变更；
 4.  Simple 注册中心*
@@ -353,7 +353,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5127.html](https://zwmst.com/5127.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T00:55:39+08:00"> 2021-10-18 </time> ](https://zwmst.com/5127.html)  Dubbo 是一个分布式、高性能、透明化的 RPC 服务框架，提供服务自动注册、自动发现等高效服务治理方案， 可以和Spring 框架无缝集成。*
+Dubbo 是一个分布式、高性能、透明化的 RPC 服务框架，提供服务自动注册、自动发现等高效服务治理方案， 可以和Spring 框架无缝集成。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -363,7 +363,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5129.html](https://zwmst.com/5129.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T00:56:33+08:00"> 2021-10-18 </time> ](https://zwmst.com/5129.html)  透明化的远程方法调用，就像调用本地方法一样调用远程方法，只需简单配置，没有任何 API 侵入。
+透明化的远程方法调用，就像调用本地方法一样调用远程方法，只需简单配置，没有任何 API 侵入。
 
 1.  软负载均衡及容错机制，可在内网替代 F5 等硬件负载均衡器，降低成本，减少单点。
 2.  服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的 IP 地址，并且能够平滑添加或删除服务提供者。*
@@ -376,7 +376,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5131.html](https://zwmst.com/5131.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T00:57:31+08:00"> 2021-10-18 </time> ](https://zwmst.com/5131.html)  主要就是如下 3 个核心功能：
+主要就是如下 3 个核心功能：
 
 1.  Remoting：网络通信框架，提供对多种 NIO 框架抽象封装，包括“同步转异步”和“请求-响应”模式的信息交换方式。
 2.  Cluster：服务框架，提供基于接口方法的透明远程过程调用，包括多协议支持，以及软负载均衡，失败容错，地址路由，动态配置等集群支持。
@@ -390,7 +390,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5133.html](https://zwmst.com/5133.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T00:58:21+08:00"> 2021-10-18 </time> ](https://zwmst.com/5133.html)  ![](img/7e1397f23112b4ff11443515b2534b88.png)*
+![](img/7e1397f23112b4ff11443515b2534b88.png)*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -400,7 +400,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5136.html](https://zwmst.com/5136.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:01:08+08:00"> 2021-10-18 </time> ](https://zwmst.com/5136.html)  ![](img/e80fb316573f142d0c2a5f4d1f17516b.png)
+![](img/e80fb316573f142d0c2a5f4d1f17516b.png)
 
 ## 流程说明：
 
@@ -426,7 +426,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5139.html](https://zwmst.com/5139.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:03:04+08:00"> 2021-10-18 </time> ](https://zwmst.com/5139.html)  ![](img/79130e114c62f682c4d868e9b419f5c4.png)
+![](img/79130e114c62f682c4d868e9b419f5c4.png)
 
 ## Dubbo 框架设计一共划分了 10 个层：
 
@@ -448,7 +448,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5142.html](https://zwmst.com/5142.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:04:02+08:00"> 2021-10-18 </time> ](https://zwmst.com/5142.html)  ![](img/fb9f3cf26600d6bc6cc2eef766125e08.png)*
+![](img/fb9f3cf26600d6bc6cc2eef766125e08.png)*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -458,7 +458,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5145.html](https://zwmst.com/5145.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:06:31+08:00"> 2021-10-18 </time> ](https://zwmst.com/5145.html)  1.  dubbo： 单一长连接和 NIO 异步通讯，适合大并发小数据量的服务调用，以及消费者远大于提供者。传输协议 TCP，异步，Hessian 序列化；
+1.  dubbo： 单一长连接和 NIO 异步通讯，适合大并发小数据量的服务调用，以及消费者远大于提供者。传输协议 TCP，异步，Hessian 序列化；
 2.  rmi： 采用 JDK 标准的 rmi 协议实现，传输参数和返回参数对象需要实现 Serializable 接口，使用 java 标准序列化机制，使用阻塞式短连接，传输数据包大小混合，消费者和提供者个数差不多，可传文件，传输协议 TCP。 多个短连接，TCP 协议传输，同步传输，适用常规的远程服务调用和 rmi 互操作。在依赖低版本的 Common-Collections包，java 序列化存在安全漏洞；
 3.  webservice： 基于 WebService 的远程调用协议，集成 CXF 实现，提供和原生 WebService 的互操作。多个短连接，基于 HTTP 传输，同步传输，适用系统集成和跨语言调用；
 4.  http： 基于 Http 表单提交的远程调用协议，使用 Spring 的HttpInvoke 实现。多个短连接，传输协议 HTTP，传入参数大小混合，提供者个数多于消费者，需要给应用程序和浏览器 JS 调用；
@@ -474,7 +474,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5147.html](https://zwmst.com/5147.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:07:17+08:00"> 2021-10-18 </time> ](https://zwmst.com/5147.html)  默认使用 dubbo 协议*
+默认使用 dubbo 协议*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -484,7 +484,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5149.html](https://zwmst.com/5149.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:08:20+08:00"> 2021-10-18 </time> ](https://zwmst.com/5149.html)  1.  Multicast 注册中心： Multicast 注册中心不需要任何中心节点，只要广播地址，就能进行服务注册和发现。基于网络中组播传输实现；
+1.  Multicast 注册中心： Multicast 注册中心不需要任何中心节点，只要广播地址，就能进行服务注册和发现。基于网络中组播传输实现；
 2.  Zookeeper 注册中心： 基于分布式协调系统 Zookeeper 实现，采用Zookeeper 的 watch 机制实现数据变更；
 3.  redis 注册中心： 基于 redis 实现，采用 key/Map 存储，住 key 存储服务名和类型，Map 中 key 存储服务 URL，value 服务过期时间。基于 redis 的发布/订阅模式通知数据变更；
 4.  Simple 注册中心*
@@ -497,7 +497,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5151.html](https://zwmst.com/5151.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:08:53+08:00"> 2021-10-18 </time> ](https://zwmst.com/5151.html)  采用 Zookeeper*
+采用 Zookeeper*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -507,7 +507,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5153.html](https://zwmst.com/5153.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:09:46+08:00"> 2021-10-18 </time> ](https://zwmst.com/5153.html)  1.  过多的服务 URL 配置困难
+1.  过多的服务 URL 配置困难
 2.  负载均衡分配节点压力过大的情况下也需要部署集群
 3.  服务依赖混乱，启动顺序不清晰
 4.  过多服务导致性能指标分析难度较大，需要监控*
@@ -520,7 +520,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5155.html](https://zwmst.com/5155.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:10:25+08:00"> 2021-10-18 </time> ](https://zwmst.com/5155.html)  可以的，启动 dubbo 时，消费者会从 zookeeper 拉取注册的生产者的地址接口等数据，缓存在本地。
+可以的，启动 dubbo 时，消费者会从 zookeeper 拉取注册的生产者的地址接口等数据，缓存在本地。
 每次调用时，按照本地存储的地址进行调用。*
 <!--yml
 category: 未分类
@@ -531,7 +531,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5157.html](https://zwmst.com/5157.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:11:05+08:00"> 2021-10-18 </time> ](https://zwmst.com/5157.html)  Dubbo 采用全 Spring 配置方式，透明化接入应用，对应用没有任何API 侵入，只需用 Spring 加载 Dubbo 的配置即可，Dubbo 基于Spring 的 Schema 扩展进行加载。*
+Dubbo 采用全 Spring 配置方式，透明化接入应用，对应用没有任何API 侵入，只需用 Spring 加载 Dubbo 的配置即可，Dubbo 基于Spring 的 Schema 扩展进行加载。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -541,7 +541,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5159.html](https://zwmst.com/5159.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:11:44+08:00"> 2021-10-18 </time> ](https://zwmst.com/5159.html)  默认使用 NIO Netty 框架*
+默认使用 NIO Netty 框架*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -551,7 +551,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5161.html](https://zwmst.com/5161.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:17:32+08:00"> 2021-10-18 </time> ](https://zwmst.com/5161.html)  Random LoadBalance: 随机选取提供者策略，有利于动态调整提供者权重。截面碰撞率高，调用次数越多，分布越均匀；
+Random LoadBalance: 随机选取提供者策略，有利于动态调整提供者权重。截面碰撞率高，调用次数越多，分布越均匀；
 
 1.  RoundRobin LoadBalance: 轮循选取提供者策略，平均分布，但是存在请求累积的问题；
 2.  LeastActive LoadBalance: 最少活跃调用策略，解决慢提供者接收更少的请求；
@@ -565,7 +565,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5163.html](https://zwmst.com/5163.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:19:17+08:00"> 2021-10-18 </time> ](https://zwmst.com/5163.html)  ## Failover Cluster
+## Failover Cluster
 
 1.  失败自动切换，当出现失败，重试其它服务器。通常用于读操作，但重试会带来更长延迟。
 
@@ -597,7 +597,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5165.html](https://zwmst.com/5165.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:20:23+08:00"> 2021-10-18 </time> ](https://zwmst.com/5165.html)  Failover Cluster*
+Failover Cluster*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -607,7 +607,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5167.html](https://zwmst.com/5167.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:20:58+08:00"> 2021-10-18 </time> ](https://zwmst.com/5167.html)  默认使用 Hessian 序列化，还有 Duddo、FastJson、Java 自带序列化。*
+默认使用 Hessian 序列化，还有 Duddo、FastJson、Java 自带序列化。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -617,7 +617,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5169.html](https://zwmst.com/5169.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:21:53+08:00"> 2021-10-18 </time> ](https://zwmst.com/5169.html)  Dubbo 超时时间设置有两种方式：
+Dubbo 超时时间设置有两种方式：
 
 1.  服务提供者端设置超时时间，在 Dubbo 的用户文档中，推荐如果能在服务端多配置就尽量多配置，因为服务提供者比消费者更清楚自己提供的服务特性。
 2.  服务消费者端设置超时时间，如果在消费者端设置了超时时间，以消费者端为主，即优先级更高。因为服务调用方设置超时时间控制性更灵活。如果消费方超时，服务端线程不会定制，会产生警告。*
@@ -630,7 +630,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5171.html](https://zwmst.com/5171.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:22:50+08:00"> 2021-10-18 </time> ](https://zwmst.com/5171.html)  dubbo 在调用服务不成功时，默认是会重试两次的。*
+dubbo 在调用服务不成功时，默认是会重试两次的。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -640,7 +640,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5173.html](https://zwmst.com/5173.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:23:40+08:00"> 2021-10-18 </time> ](https://zwmst.com/5173.html)  Dubbo 通过 Token 令牌防止用户绕过注册中心直连，然后在注册中心上管理授权。Dubbo 还提供服务黑白名单，来控制服务所允许的调用方。*
+Dubbo 通过 Token 令牌防止用户绕过注册中心直连，然后在注册中心上管理授权。Dubbo 还提供服务黑白名单，来控制服务所允许的调用方。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -650,7 +650,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5175.html](https://zwmst.com/5175.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:24:20+08:00"> 2021-10-18 </time> ](https://zwmst.com/5175.html)  dubbox 基于 dubbo 上做了一些扩展，如加了服务可 restful 调用，更新了开源组件等。*
+dubbox 基于 dubbo 上做了一些扩展，如加了服务可 restful 调用，更新了开源组件等。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -660,4 +660,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5177.html](https://zwmst.com/5177.html)
 
-   [ *Dubbo* ](https://zwmst.com/dubbo)*[ <time datetime="2021-10-19T01:25:05+08:00"> 2021-10-18 </time> ](https://zwmst.com/5177.html)  Dubbo 是 SOA 时代的产物，它的关注点主要在于服务的调用，流量分发、流量监控和熔断。而 Spring Cloud 诞生于微服务架构时代，考虑的是微服务治理的方方面面，另外由于依托了 Spirng、Spirng Boot 的优势之上，两个框架在开始目标就不一致，Dubbo定位服务治理、Spirng Cloud 是一个生态。*
+Dubbo 是 SOA 时代的产物，它的关注点主要在于服务的调用，流量分发、流量监控和熔断。而 Spring Cloud 诞生于微服务架构时代，考虑的是微服务治理的方方面面，另外由于依托了 Spirng、Spirng Boot 的优势之上，两个框架在开始目标就不一致，Dubbo定位服务治理、Spirng Cloud 是一个生态。*

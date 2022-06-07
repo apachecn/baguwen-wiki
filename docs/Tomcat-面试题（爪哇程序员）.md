@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1385.html](https://zwmst.com/1385.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:15:28+08:00"> 2021-08-15 </time> ](https://zwmst.com/1385.html)  ```
+```
 1）找到Tomcat目录下的conf文件夹
 2）进入conf文件夹里面找到server.xml文件 
 3）打开server.xml文件
@@ -26,7 +26,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1387.html](https://zwmst.com/1387.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:16:05+08:00"> 2021-08-15 </time> ](https://zwmst.com/1387.html)  **bio：传统的Java I/O操作，同步且阻塞IO。**
+**bio：传统的Java I/O操作，同步且阻塞IO。**
 
 maxThreads="150"//Tomcat使用线程来处理接收的每个请求。这个值表示Tomcat可创建的最 大的线程数。默认值200。可以根据机器的时期性能和内存大小调整，一般可以在400-500。最大可以在800左右。
 
@@ -96,7 +96,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1389.html](https://zwmst.com/1389.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:16:18+08:00"> 2021-08-15 </time> ](https://zwmst.com/1389.html)  1）直接把Web项目放在webapps下，Tomcat会自动将其部署
+1）直接把Web项目放在webapps下，Tomcat会自动将其部署
 
 2）在server.xml文件上配置 Context 节点，设置相关的属性即可
 
@@ -112,7 +112,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1391.html](https://zwmst.com/1391.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:16:30+08:00"> 2021-08-15 </time> ](https://zwmst.com/1391.html)  当容器启动时，会读取在webapps目录下所有的web应用中的web.xml文件，然后对xml文件 进行解析，并读取servlet注册信息。然后，将每个应用中注册的servlet类都进行加载，并通过反射的方式实例化。
+当容器启动时，会读取在webapps目录下所有的web应用中的web.xml文件，然后对xml文件 进行解析，并读取servlet注册信息。然后，将每个应用中注册的servlet类都进行加载，并通过反射的方式实例化。
 
 （有时候也是在第一次请求时实例化）在servlet注册时加上如果为正数，则在一开始就实例化，如果不写或为负数，则第一次请求实例化。*
 <!--yml
@@ -124,7 +124,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1393.html](https://zwmst.com/1393.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:16:41+08:00"> 2021-08-15 </time> ](https://zwmst.com/1393.html)  1、优化连接配置.这里以tomcat7的参数配置为例，需要修改conf/server.xml文件，修改连接 数，关闭客户端dns查询。
+1、优化连接配置.这里以tomcat7的参数配置为例，需要修改conf/server.xml文件，修改连接 数，关闭客户端dns查询。
 
 参数解释：
 
@@ -221,7 +221,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1395.html](https://zwmst.com/1395.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:16:53+08:00"> 2021-08-15 </time> ](https://zwmst.com/1395.html)  内存方式的设置是在catalina.sh中，调整一下JAVA_OPTS变量即可，因为后面的启动参数会把 JAVA_OPTS作为JVM的启动参数来处理。 具体设置如下：
+内存方式的设置是在catalina.sh中，调整一下JAVA_OPTS变量即可，因为后面的启动参数会把 JAVA_OPTS作为JVM的启动参数来处理。 具体设置如下：
 
 JAVA_OPTS="$JAVA_OPTS -Xmx3550m -Xms3550m -Xss128k -XX:NewRatio=4 -XX:SurvivorRatio=4" 其各项参数如下：
 
@@ -249,7 +249,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1397.html](https://zwmst.com/1397.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:17:04+08:00"> 2021-08-15 </time> ](https://zwmst.com/1397.html)  垃圾回收的设置也是在catalina.sh中，调整JAVA_OPTS变量。 具体设置如下：
+垃圾回收的设置也是在catalina.sh中，调整JAVA_OPTS变量。 具体设置如下：
 
 JAVA_OPTS="$JAVA_OPTS -Xmx3550m -Xms3550m -Xss128k -XX:+UseParallelGC XX:MaxGCPauseMillis=100"
 
@@ -295,7 +295,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1399.html](https://zwmst.com/1399.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:17:15+08:00"> 2021-08-15 </time> ](https://zwmst.com/1399.html)  目前的处理方式有如下几种：
+目前的处理方式有如下几种：
 
 1).使用Tomcat本身的Session复制功能
 
@@ -323,7 +323,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1401.html](https://zwmst.com/1401.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:17:26+08:00"> 2021-08-15 </time> ](https://zwmst.com/1401.html)  对于部署在局域网内其它机器上的Tomcat，可以打开JMX监控端口，局域网其它机器就可以通过这 个端口查看一些常用的参数（但一些比较复杂的功能不支持），同样是在JVM启动参数中配置即 可，配置如下：
+对于部署在局域网内其它机器上的Tomcat，可以打开JMX监控端口，局域网其它机器就可以通过这 个端口查看一些常用的参数（但一些比较复杂的功能不支持），同样是在JVM启动参数中配置即 可，配置如下：
 
 ```
 -Dcom.sun.management.jmxremote.ssl=false -
@@ -342,7 +342,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1403.html](https://zwmst.com/1403.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-08-15T11:17:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1403.html)  首先 dns 解析 wo.de.tian机器，一般是ng服务器ip地址
+首先 dns 解析 wo.de.tian机器，一般是ng服务器ip地址
 
 然后 ng根据server的配置，寻找路径为 yy/的机器列表，ip和端口
 
@@ -382,4 +382,4 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3532.html](https://zwmst.com/3532.html)
 
-   [ *Tomcat* ](https://zwmst.com/tomcat)*[ <time datetime="2021-09-19T21:05:23+08:00"> 2021-09-19 </time> ](https://zwmst.com/3532.html)  [http://www.importnew.com/21112.htm](http://www.importnew.com/21112.htm)*
+[http://www.importnew.com/21112.htm](http://www.importnew.com/21112.htm)*

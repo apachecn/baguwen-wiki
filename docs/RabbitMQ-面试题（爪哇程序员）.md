@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1797.html](https://zwmst.com/1797.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:34:00+08:00"> 2021-08-15 </time> ](https://zwmst.com/1797.html)  RabbitMQ是一款开源的，Erlang编写的，基于AMQP协议的，消息中间件；
+RabbitMQ是一款开源的，Erlang编写的，基于AMQP协议的，消息中间件；
 
 可以用它来：解耦、异步、削峰。*
 <!--yml
@@ -19,7 +19,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1799.html](https://zwmst.com/1799.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:34:27+08:00"> 2021-08-15 </time> ](https://zwmst.com/1799.html)  优点：解耦、异步、削峰；
+优点：解耦、异步、削峰；
 
 缺点：降低了系统的稳定性：本来系统运行好好的，现在你非要加入个消息队列进去，那消息 队列挂了，你的系统不是呵呵了。因此，系统可用性会降低；
 
@@ -33,7 +33,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1801.html](https://zwmst.com/1801.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:34:40+08:00"> 2021-08-15 </time> ](https://zwmst.com/1801.html)  在非cluster模式下，元数据主要分为Queue元数据（queue名字和属性 等）、Exchange元数 据（exchange名字、类型和属性等）、Binding元数据 （存放路由关系的查找表）、Vhost 元数据（vhost范围内针对前三者的名字空 间约束和安全属性设置）。
+在非cluster模式下，元数据主要分为Queue元数据（queue名字和属性 等）、Exchange元数 据（exchange名字、类型和属性等）、Binding元数据 （存放路由关系的查找表）、Vhost 元数据（vhost范围内针对前三者的名字空 间约束和安全属性设置）。
 
 在cluster模式下，还包括cluster中node位置信息和node关系信息。元数据按照erlang node 的类型确定是仅保存于RAM中，还是同时保存在RAM和disk上。元数据在cluster中是全 node 分布的。*
 <!--yml
@@ -45,7 +45,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1803.html](https://zwmst.com/1803.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:34:52+08:00"> 2021-08-15 </time> ](https://zwmst.com/1803.html)  当你在单node上声明queue时，只要该node上相关元数据进行了变 更，你就会得到 Queue.Declare-ok回应；而在cluster上声明queue，则要 求cluster上的全部node都要进行 元数据成功更新，才会得到 Queue.Declare-ok回应。另外，若node类型为RAM node则变更 的数据 仅保存在内存中，若类型为disk node则还要变更保存在磁盘上的数据。*
+当你在单node上声明queue时，只要该node上相关元数据进行了变 更，你就会得到 Queue.Declare-ok回应；而在cluster上声明queue，则要 求cluster上的全部node都要进行 元数据成功更新，才会得到 Queue.Declare-ok回应。另外，若node类型为RAM node则变更 的数据 仅保存在内存中，若类型为disk node则还要变更保存在磁盘上的数据。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -55,7 +55,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1805.html](https://zwmst.com/1805.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:35:03+08:00"> 2021-08-15 </time> ](https://zwmst.com/1805.html)  是的。客户端感觉不到有何不同。*
+是的。客户端感觉不到有何不同。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -65,7 +65,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1807.html](https://zwmst.com/1807.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:35:14+08:00"> 2021-08-15 </time> ](https://zwmst.com/1807.html)  不能，在这种情况下，将得到404 NOT_FOUND错误。只能等queue所 属的node恢复后才能 使用该queue。但若该queue本身不具有durable 属性，则可在其他node上重新声明。*
+不能，在这种情况下，将得到404 NOT_FOUND错误。只能等queue所 属的node恢复后才能 使用该queue。但若该queue本身不具有durable 属性，则可在其他node上重新声明。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -75,7 +75,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1809.html](https://zwmst.com/1809.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:35:25+08:00"> 2021-08-15 </time> ](https://zwmst.com/1809.html)  首先客户端必须连接到 RabbitMQ 服务器才能发布和消费消息，客户端和 rabbit server 之间 会创建一个 tcp 连接，一旦 tcp 打开并通过了认证（认证就是你发送给 rabbit 服务器的用户名 和密码），你的客户端和 RabbitMQ 就创建了一条 amqp 信道（channel），信道是创建在 “真实” tcp 上的虚拟连接，amqp 命令都是通过信道发送出去的，每个信道都会有一个唯一的 id，不论是发布消息，订阅队列都是通过这个信道完成的。*
+首先客户端必须连接到 RabbitMQ 服务器才能发布和消费消息，客户端和 rabbit server 之间 会创建一个 tcp 连接，一旦 tcp 打开并通过了认证（认证就是你发送给 rabbit 服务器的用户名 和密码），你的客户端和 RabbitMQ 就创建了一条 amqp 信道（channel），信道是创建在 “真实” tcp 上的虚拟连接，amqp 命令都是通过信道发送出去的，每个信道都会有一个唯一的 id，不论是发布消息，订阅队列都是通过这个信道完成的。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -85,7 +85,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1811.html](https://zwmst.com/1811.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:35:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1811.html)  ①消息持久化;
+①消息持久化;
 
 ②ACK确认机制;
 
@@ -101,7 +101,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1813.html](https://zwmst.com/1813.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:35:48+08:00"> 2021-08-15 </time> ](https://zwmst.com/1813.html)  ①跨系统的异步通信，所有需要异步交互的地方都可以使用消息队列。就像我们除了打电话(同 步)以外，还需要发短信，发电子邮件(异步)的通讯方式。
+①跨系统的异步通信，所有需要异步交互的地方都可以使用消息队列。就像我们除了打电话(同 步)以外，还需要发短信，发电子邮件(异步)的通讯方式。
 
 ②多个应用之间的耦合，由于消息是平台无关和语言无关的，而且语义上也不再是函数调用， 因此更适合作为多个应用之间的松耦合的接口。基于消息队列的耦合，不需要发送方和接收方 同时在线。在企业应用集成(EAI)中，文件传输，共享数据库，消息队列，远程过程调用都可 以作为集成的方法。
 
@@ -121,7 +121,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1815.html](https://zwmst.com/1815.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:35:59+08:00"> 2021-08-15 </time> ](https://zwmst.com/1815.html)  RabbitMQ中重要的角色有：生产者、消费者和代理：
+RabbitMQ中重要的角色有：生产者、消费者和代理：
 
 ①生产者：消息的创建者，负责创建和推送数据到消息服务器;
 
@@ -137,7 +137,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1817.html](https://zwmst.com/1817.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:36:11+08:00"> 2021-08-15 </time> ](https://zwmst.com/1817.html)  1、发送方确认模式
+1、发送方确认模式
 
 ①将信道设置成confirm模式(发送方确认模式)，则所有在信道上发布的消息都会被指派一个 唯一的ID。
 
@@ -167,7 +167,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1819.html](https://zwmst.com/1819.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:36:22+08:00"> 2021-08-15 </time> ](https://zwmst.com/1819.html)  ①声明队列必须设置持久化durable设置为 true。
+①声明队列必须设置持久化durable设置为 true。
 
 ②消息推送投递模式必须设置持久化，deliveryMode设置为2(持久)。
 
@@ -185,7 +185,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1821.html](https://zwmst.com/1821.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:36:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1821.html)  三种广播模式：
+三种广播模式：
 
 ①fanout：所有bind到此exchange的queue都可以接收消息(纯广播，绑定到RabbitMQ的接 受者都能收到消息);
 
@@ -201,7 +201,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1823.html](https://zwmst.com/1823.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:36:43+08:00"> 2021-08-15 </time> ](https://zwmst.com/1823.html)  vhost 可以理解为虚拟 broker ，即 mini-RabbitMQ server。其内部均含有独立的 queue、 exchange 和 binding 等，但最最重要的是，其拥有独立的权限系统，可以做到 vhost 范围的 用户控制。当然，从 RabbitMQ 的全局角度，vhost 可以作为不同权限隔离的手段（一个典型 的例子就是不同的应用可以跑在不同的 vhost 中）。*
+vhost 可以理解为虚拟 broker ，即 mini-RabbitMQ server。其内部均含有独立的 queue、 exchange 和 binding 等，但最最重要的是，其拥有独立的权限系统，可以做到 vhost 范围的 用户控制。当然，从 RabbitMQ 的全局角度，vhost 可以作为不同权限隔离的手段（一个典型 的例子就是不同的应用可以跑在不同的 vhost 中）。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -211,7 +211,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1825.html](https://zwmst.com/1825.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:36:54+08:00"> 2021-08-15 </time> ](https://zwmst.com/1825.html)  由于TCP连接的创建和销毁开销较大，且并发数受系统资源限制，会造成性能瓶颈。 RabbitMQ使用信道的方式来传输数据。信道是建立在真实的TCP连接内的虚拟连接，且每条 TCP连接上的信道数量没有限制。*
+由于TCP连接的创建和销毁开销较大，且并发数受系统资源限制，会造成性能瓶颈。 RabbitMQ使用信道的方式来传输数据。信道是建立在真实的TCP连接内的虚拟连接，且每条 TCP连接上的信道数量没有限制。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -221,7 +221,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1827.html](https://zwmst.com/1827.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:37:04+08:00"> 2021-08-15 </time> ](https://zwmst.com/1827.html)  若该队列至少有一个消费者订阅，消息将以循环（round-robin）的方式发送给消费者。每条 消息只会分发给一个订阅的消费者（前提是消费者能够正常处理消息并进行确认）。*
+若该队列至少有一个消费者订阅，消息将以循环（round-robin）的方式发送给消费者。每条 消息只会分发给一个订阅的消费者（前提是消费者能够正常处理消息并进行确认）。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -231,7 +231,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1829.html](https://zwmst.com/1829.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:37:15+08:00"> 2021-08-15 </time> ](https://zwmst.com/1829.html)  从概念上来说，消息路由必须有三部分：交换器、路由、绑定。生产者把消息发布到交换器 上；绑定决定了消息如何从路由器路由到特定的队列；消息最终到达队列，并被消费者接收。 消息发布到交换器时，消息将拥有一个路由键（routing key），在消息创建时设定。 通过队列路由键，可以把队列绑定到交换器上。 消息到达交换器后，RabbitMQ会将消息的路由键与队列的路由键进行匹配（针对不同的交换 器有不同的路由规则）。如果能够匹配到队列，则消息会投递到相应队列中；如果不能匹配到 任何队列，消息将进入 “黑洞”。 常用的交换器主要分为一下三种：
+从概念上来说，消息路由必须有三部分：交换器、路由、绑定。生产者把消息发布到交换器 上；绑定决定了消息如何从路由器路由到特定的队列；消息最终到达队列，并被消费者接收。 消息发布到交换器时，消息将拥有一个路由键（routing key），在消息创建时设定。 通过队列路由键，可以把队列绑定到交换器上。 消息到达交换器后，RabbitMQ会将消息的路由键与队列的路由键进行匹配（针对不同的交换 器有不同的路由规则）。如果能够匹配到队列，则消息会投递到相应队列中；如果不能匹配到 任何队列，消息将进入 “黑洞”。 常用的交换器主要分为一下三种：
 
 direct：如果路由键完全匹配，消息就被投递到相应的队列 fanout：如果交换器收到消息，将会广播到所有绑定的队列上 topic：可以使来自不同源头的消息能够到达同一个队列。 使用topic交换器时，可以使用通配 符，比如：“*” 匹配特定位置的任意文本， “.” 把路由键分为了几部分，“#” 匹配所有规则 等。特别注意：发往topic交换器的消息不能随意的设置选择键（routing_key），必须是 由"."隔开的一系列的标识符组成。*
 <!--yml
@@ -243,7 +243,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1831.html](https://zwmst.com/1831.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:37:25+08:00"> 2021-08-15 </time> ](https://zwmst.com/1831.html)  接收方消息确认机制：消费者接收每一条消息后都必须进行确认（消息接收和消息确认是两个 不同操作）。只有消费者确认了消息，RabbitMQ才能安全地把消息从队列中删除。这里并没 有用到超时机制，RabbitMQ仅通过Consumer的连接中断来确认是否需要重新发送消息。也 就是说，只要连接不中断，RabbitMQ给了Consumer足够长的时间来处理消息。
+接收方消息确认机制：消费者接收每一条消息后都必须进行确认（消息接收和消息确认是两个 不同操作）。只有消费者确认了消息，RabbitMQ才能安全地把消息从队列中删除。这里并没 有用到超时机制，RabbitMQ仅通过Consumer的连接中断来确认是否需要重新发送消息。也 就是说，只要连接不中断，RabbitMQ给了Consumer足够长的时间来处理消息。
 
 下面罗列几种特殊情况：
 
@@ -257,7 +257,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1833.html](https://zwmst.com/1833.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:37:35+08:00"> 2021-08-15 </time> ](https://zwmst.com/1833.html)  在消息生产时，MQ内部针对每条生产者发送的消息生成一个inner-msg-id，作为去重和幂 等的依据（消息投递失败并重传），避免重复的消息进入队列；在消息消费时，要求消息体中 必须要有一个bizId（对于同一业务全局唯一，如支付ID、订单ID、帖子ID等）作为去重和幂 等的依据，避免同一条消息被重复消费。
+在消息生产时，MQ内部针对每条生产者发送的消息生成一个inner-msg-id，作为去重和幂 等的依据（消息投递失败并重传），避免重复的消息进入队列；在消息消费时，要求消息体中 必须要有一个bizId（对于同一业务全局唯一，如支付ID、订单ID、帖子ID等）作为去重和幂 等的依据，避免同一条消息被重复消费。
 
 这个问题针对业务场景来答分以下几点：
 
@@ -275,7 +275,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1835.html](https://zwmst.com/1835.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-08-15T16:37:45+08:00"> 2021-08-15 </time> ](https://zwmst.com/1835.html)  死信消息：
+死信消息：
 
 消息被拒绝（Basic.Reject或Basic.Nack）并且设置 requeue 参数的值为 false 消息过期了 队列达到最大的长度 过期消息：
 
@@ -336,7 +336,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3779.html](https://zwmst.com/3779.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:41:19+08:00"> 2021-09-22 </time> ](https://zwmst.com/3779.html)  RabbitMQ 是一个由 Erlang 语言开发的 AMQP 的开源实现。
+RabbitMQ 是一个由 Erlang 语言开发的 AMQP 的开源实现。
 AMQP ：Advanced Message Queue，高级消息队列协议。它是应用层协议的一个开放标准，为面向消息的中间件设计，基于此协议的客户端与消息中间件可传递消息，并不受产品、开发语言等条件的限制。
 RabbitMQ 最初起源于金融系统，用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗。具体特点包括：
 
@@ -358,7 +358,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3781.html](https://zwmst.com/3781.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:42:29+08:00"> 2021-09-22 </time> ](https://zwmst.com/3781.html)  ![](img/e608d1226b6307c24829ce6747798d86.png)*
+![](img/e608d1226b6307c24829ce6747798d86.png)*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -368,7 +368,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3784.html](https://zwmst.com/3784.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:43:20+08:00"> 2021-09-22 </time> ](https://zwmst.com/3784.html)  消息，消息是不具名的，它由消息头和消息体组成。消息体是不透明的，而消息头则由一系列的可选属性组成，这些属性包括 routing-key（路由键）、priority（相对于其他消息的优先权）、delivery-mode（指出该消息可能需要持久性存储）等。*
+消息，消息是不具名的，它由消息头和消息体组成。消息体是不透明的，而消息头则由一系列的可选属性组成，这些属性包括 routing-key（路由键）、priority（相对于其他消息的优先权）、delivery-mode（指出该消息可能需要持久性存储）等。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -378,7 +378,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3786.html](https://zwmst.com/3786.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:44:01+08:00"> 2021-09-22 </time> ](https://zwmst.com/3786.html)  消息的生产者，也是一个向交换器发布消息的客户端应用程序*
+消息的生产者，也是一个向交换器发布消息的客户端应用程序*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -388,7 +388,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3788.html](https://zwmst.com/3788.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:44:47+08:00"> 2021-09-22 </time> ](https://zwmst.com/3788.html)  交换器，用来接收生产者发送的消息并将这些消息路由给服务器中的队列。*
+交换器，用来接收生产者发送的消息并将这些消息路由给服务器中的队列。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -398,7 +398,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3790.html](https://zwmst.com/3790.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:45:31+08:00"> 2021-09-22 </time> ](https://zwmst.com/3790.html)  绑定，用于消息队列和交换器之间的关联。一个绑定就是基于路由键将交换器和消息队列连接起来的路由规则，所以可以将交换器理解成一个由绑定构成的路由表。*
+绑定，用于消息队列和交换器之间的关联。一个绑定就是基于路由键将交换器和消息队列连接起来的路由规则，所以可以将交换器理解成一个由绑定构成的路由表。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -408,7 +408,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3792.html](https://zwmst.com/3792.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:46:49+08:00"> 2021-09-22 </time> ](https://zwmst.com/3792.html)  消息队列，用来保存消息直到发送给消费者。它是消息的容器，也是消息的终点。一个消息可投入一个或多个队列。消息一直在队列里面，等待消费者连接到这个队列将其取走。*
+消息队列，用来保存消息直到发送给消费者。它是消息的容器，也是消息的终点。一个消息可投入一个或多个队列。消息一直在队列里面，等待消费者连接到这个队列将其取走。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -418,7 +418,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3794.html](https://zwmst.com/3794.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:51:57+08:00"> 2021-09-22 </time> ](https://zwmst.com/3794.html)  网络连接，比如一个 TCP 连接。*
+网络连接，比如一个 TCP 连接。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -428,7 +428,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3796.html](https://zwmst.com/3796.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:52:54+08:00"> 2021-09-22 </time> ](https://zwmst.com/3796.html)  信道，**多路复用连接中的一条独立的双向数据流通道**。信道是建立在真实的 TCP 连接内地虚拟连接，AMQP 命令都是通过信道发出去的，不管是发布消息、订阅队列还是接收消息，这些动作都是通过信道完成。因为对于操作系统来说建立和销毁 TCP 都是非常昂贵的开销，所以引入了信道的概念，以复用一条 TCP 连接。*
+信道，**多路复用连接中的一条独立的双向数据流通道**。信道是建立在真实的 TCP 连接内地虚拟连接，AMQP 命令都是通过信道发出去的，不管是发布消息、订阅队列还是接收消息，这些动作都是通过信道完成。因为对于操作系统来说建立和销毁 TCP 都是非常昂贵的开销，所以引入了信道的概念，以复用一条 TCP 连接。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -438,7 +438,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3798.html](https://zwmst.com/3798.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:53:34+08:00"> 2021-09-22 </time> ](https://zwmst.com/3798.html)  消息的消费者，表示一个从消息队列中取得消息的客户端应用程序。*
+消息的消费者，表示一个从消息队列中取得消息的客户端应用程序。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -448,7 +448,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3800.html](https://zwmst.com/3800.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:54:21+08:00"> 2021-09-22 </time> ](https://zwmst.com/3800.html)  虚拟主机，表示一批交换器、消息队列和相关对象。虚拟主机是共享相同的身份认证和加密环境的独立服务器域。*
+虚拟主机，表示一批交换器、消息队列和相关对象。虚拟主机是共享相同的身份认证和加密环境的独立服务器域。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -458,7 +458,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3802.html](https://zwmst.com/3802.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:57:56+08:00"> 2021-09-22 </time> ](https://zwmst.com/3802.html)  表示消息队列服务器实体。*
+表示消息队列服务器实体。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -468,7 +468,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3804.html](https://zwmst.com/3804.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:59:03+08:00"> 2021-09-22 </time> ](https://zwmst.com/3804.html)  Exchange 分发消息时根据类型的不同分发策略有区别，目前共四种类型：direct、fanout、topic、headers 。
+Exchange 分发消息时根据类型的不同分发策略有区别，目前共四种类型：direct、fanout、topic、headers 。
 
 headers 匹配 AMQP 消息的 header 而不是路由键，此外headers 交换器和direct 交换器完全一致，但性能差很多，目前几乎用不到了.*
 <!--yml
@@ -480,7 +480,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3806.html](https://zwmst.com/3806.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T00:59:51+08:00"> 2021-09-22 </time> ](https://zwmst.com/3806.html)  Direct：消息中的路由键（routing key）如果和 Binding 中的 binding key 一致，交换器就将消息发到对应的队列中。它是完全匹配、单播的模式。*
+Direct：消息中的路由键（routing key）如果和 Binding 中的 binding key 一致，交换器就将消息发到对应的队列中。它是完全匹配、单播的模式。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -490,7 +490,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3808.html](https://zwmst.com/3808.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T01:00:38+08:00"> 2021-09-22 </time> ](https://zwmst.com/3808.html)  Fanout：每个发到 fanout 类型交换器的消息都会分到所有绑定的队列上去。很像子网广播，每台子网内的主机都获得了一份复制的消息。fanout 类型转发消息是最快的。*
+Fanout：每个发到 fanout 类型交换器的消息都会分到所有绑定的队列上去。很像子网广播，每台子网内的主机都获得了一份复制的消息。fanout 类型转发消息是最快的。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -500,7 +500,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/3811.html](https://zwmst.com/3811.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-09-23T01:02:25+08:00"> 2021-09-22 </time> ](https://zwmst.com/3811.html)  topic 交换器：topic 交换器通过模式匹配分配消息的路由键属性，将路由键和某个模式进行匹配，此时队列需要绑定到一个模式上。它将路由键和绑定键的字符串切分成单词，这些单词之间用点隔开。它同样也会识别两个通配符：符号“#”和符号“”。#匹配 0 个或多个单词，匹配不多不少一个单词。*
+topic 交换器：topic 交换器通过模式匹配分配消息的路由键属性，将路由键和某个模式进行匹配，此时队列需要绑定到一个模式上。它将路由键和绑定键的字符串切分成单词，这些单词之间用点隔开。它同样也会识别两个通配符：符号“#”和符号“”。#匹配 0 个或多个单词，匹配不多不少一个单词。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -510,7 +510,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5743.html](https://zwmst.com/5743.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:34:40+08:00"> 2021-10-30 </time> ](https://zwmst.com/5743.html)  1.  先修复consumer的问题，确保其恢复消费速度，然后将现有consumer都停掉；
+1.  先修复consumer的问题，确保其恢复消费速度，然后将现有consumer都停掉；
 2.  新建⼀个topic，partition是原来的10倍，临时建⽴好原先10倍或者20倍的queue数量；
 3.  然后写⼀个临时的分发数据的consumer程序，这个程序部署上去消费积压的数据；消费之后不做耗时的处理，直接均匀轮询写⼊临时建⽴好的10倍数量的queue；
 4.  接着临时征⽤10倍的机器来部署consumer，每⼀批consumer消费⼀个临时queue的数据；
@@ -532,7 +532,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5746.html](https://zwmst.com/5746.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:35:48+08:00"> 2021-10-30 </time> ](https://zwmst.com/5746.html)  采取批量重导⽅法：将丢失的那批数据查询导⼊到mq⾥⾯。*
+采取批量重导⽅法：将丢失的那批数据查询导⼊到mq⾥⾯。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -542,7 +542,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5748.html](https://zwmst.com/5748.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:36:30+08:00"> 2021-10-30 </time> ](https://zwmst.com/5748.html)  可以认为是⽆限制，因为限制取决于机器的内存，但是消息过多会导致处理效率的下降。*
+可以认为是⽆限制，因为限制取决于机器的内存，但是消息过多会导致处理效率的下降。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -552,7 +552,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5750.html](https://zwmst.com/5750.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:37:31+08:00"> 2021-10-30 </time> ](https://zwmst.com/5750.html)  RabbitMQ⽆法容忍不同数据中⼼之间⽹络延迟，但是可以通过3种⽅式实现分布式部署：Federation和Shovel。*
+RabbitMQ⽆法容忍不同数据中⼼之间⽹络延迟，但是可以通过3种⽅式实现分布式部署：Federation和Shovel。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -562,7 +562,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5752.html](https://zwmst.com/5752.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:40:25+08:00"> 2021-10-30 </time> ](https://zwmst.com/5752.html)  RabbitMQ使⽤发送⽅确认模式，确保消息正确地发送到RabbitMQ。
+RabbitMQ使⽤发送⽅确认模式，确保消息正确地发送到RabbitMQ。
 发送⽅确认模式：将信道设置成confirm模式（发送⽅确认模式），则所有在信道上发布的消息都会被指派⼀个唯⼀的ID。⼀旦消息被投递到⽬的队列后，或者消息被写⼊磁盘后（可持久化的消息），信道会发送⼀个确认给⽣产者（包含消息唯⼀ID）。如果RabbitMQ发⽣内部错误从⽽导致消息丢失，会发送⼀条nack（not acknowledged，未确认）消息。
 
 发送⽅确认模式是异步的，⽣产者应⽤程序在等待确认的同时，可以继续发送消息。当确认消息到达⽣产者应⽤程序，⽣产者应⽤程序的回调⽅法就会被触发来处理确认消息*
@@ -575,7 +575,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5754.html](https://zwmst.com/5754.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:42:38+08:00"> 2021-10-30 </time> ](https://zwmst.com/5754.html)  接收⽅消息确认机制：消费者接收每⼀条消息后都必须进⾏确认（消息接收和消息确认是两个不同操作）。只有消费者确认了消息，RabbitMQ才能安全地把消息从队列中删除。
+接收⽅消息确认机制：消费者接收每⼀条消息后都必须进⾏确认（消息接收和消息确认是两个不同操作）。只有消费者确认了消息，RabbitMQ才能安全地把消息从队列中删除。
 
 这⾥并没有⽤到超时机制，RabbitMQ仅通过Consumer的连接中断来确认是否需要重新发送消息。也就是说，只要连接不中断，RabbitMQ给了Consumer⾜够⻓的时间来处理消息。
 
@@ -592,7 +592,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5756.html](https://zwmst.com/5756.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:43:34+08:00"> 2021-10-30 </time> ](https://zwmst.com/5756.html)  在消息⽣产时，MQ内部针对每条⽣产者发送的消息⽣成⼀个inner-msg-id，作为去重和幂等的依据（消息投递失败并重传），避免重复的消息进⼊队列；在消息消费时，要求消息体中必须要有⼀个bizId（对于同⼀业务全局唯⼀，如⽀付ID、订单ID、帖⼦ID等）作为去重和幂等的依据，避免同⼀条消息被重复消费。*
+在消息⽣产时，MQ内部针对每条⽣产者发送的消息⽣成⼀个inner-msg-id，作为去重和幂等的依据（消息投递失败并重传），避免重复的消息进⼊队列；在消息消费时，要求消息体中必须要有⼀个bizId（对于同⼀业务全局唯⼀，如⽀付ID、订单ID、帖⼦ID等）作为去重和幂等的依据，避免同⼀条消息被重复消费。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -602,7 +602,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5758.html](https://zwmst.com/5758.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:45:01+08:00"> 2021-10-30 </time> ](https://zwmst.com/5758.html)  由于TCP连接的创建和销毁开销较⼤，且并发数受系统资源限制，会造成性能瓶颈。RabbitMQ使⽤信道的⽅式来传输数据。信道是建⽴在真实的TCP连接内的虚拟连接，且每条TCP连接上的信道数量没有限制。
+由于TCP连接的创建和销毁开销较⼤，且并发数受系统资源限制，会造成性能瓶颈。RabbitMQ使⽤信道的⽅式来传输数据。信道是建⽴在真实的TCP连接内的虚拟连接，且每条TCP连接上的信道数量没有限制。
 
 1.  RabbitMQ采⽤类似NIO（Non-blocking I/O）做法，选择TCP连接复⽤，不仅可以减少性能开销，同时也便于管理。
 2.  每个线程把持⼀个信道，所以信道服⽤了Connection的TCP连接。同时RabbitMQ可以确保每个线程的私密性，就像拥有独⽴的连接⼀样。*
@@ -615,7 +615,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5760.html](https://zwmst.com/5760.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:47:30+08:00"> 2021-10-30 </time> ](https://zwmst.com/5760.html)  若该队列⾄少有⼀个消费者订阅，消息将以循环（round-robin）的⽅式发送给消费者。每条消息只会分发给⼀个订阅的消费者（前提是消费者能够正常处理消息并进⾏确认）。*
+若该队列⾄少有⼀个消费者订阅，消息将以循环（round-robin）的⽅式发送给消费者。每条消息只会分发给⼀个订阅的消费者（前提是消费者能够正常处理消息并进⾏确认）。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -625,7 +625,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5762.html](https://zwmst.com/5762.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:48:41+08:00"> 2021-10-30 </time> ](https://zwmst.com/5762.html)  从概念上来说，消息路由必须有三部分：交换器、路由、绑定。⽣产者把消息发布到交换器上；绑定决定了消息如何从交换器路由到特定的队列；消息最终到达队列，并被消费者接收。
+从概念上来说，消息路由必须有三部分：交换器、路由、绑定。⽣产者把消息发布到交换器上；绑定决定了消息如何从交换器路由到特定的队列；消息最终到达队列，并被消费者接收。
 
 1.  消息发布到交换器时，消息将拥有⼀个路由键（routing key），在消息创建时设定。
 2.  通过队列路由键，可以把队列绑定到交换器上。
@@ -640,7 +640,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5764.html](https://zwmst.com/5764.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:50:17+08:00"> 2021-10-30 </time> ](https://zwmst.com/5764.html)  消息持久化的前提是：将交换器/队列的durable属性设置为true，表示交换器/队列是持久交换器/队列，在服务器崩溃或重启之后不需要重新创建交换器/队列（交换器/队列会⾃动创建）。
+消息持久化的前提是：将交换器/队列的durable属性设置为true，表示交换器/队列是持久交换器/队列，在服务器崩溃或重启之后不需要重新创建交换器/队列（交换器/队列会⾃动创建）。
 如果消息想要从Rabbit崩溃中恢复，那么消息必须：
 
 1.  在消息发布前，通过把它的 “投递模式” 选项设置为2（持久）来把消息标记成持久化
@@ -657,7 +657,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5766.html](https://zwmst.com/5766.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:52:16+08:00"> 2021-10-30 </time> ](https://zwmst.com/5766.html)  1.  应⽤解耦（系统拆分）
+1.  应⽤解耦（系统拆分）
 2.  异步处理（预约挂号业务处理成功后，异步发送短信、推送消息、⽇志记录等，可以⼤⼤减⼩响应时间）
 3.  消息分发
 4.  流量削峰：将请求发送到队列中，短暂的⾼峰期积压是允许的。
@@ -672,7 +672,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5768.html](https://zwmst.com/5768.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T05:54:44+08:00"> 2021-10-30 </time> ](https://zwmst.com/5768.html)  1.  系统可⽤性降低：消息队列出问题影响业务；
+1.  系统可⽤性降低：消息队列出问题影响业务；
 2.  系统复杂性增加：加⼊消息队列，需要考虑很多⽅⾯的问题，⽐如：⼀致性问题、如何保证消息不被重复消费、如何保证消息可靠性传输等。*
 <!--yml
 category: 未分类
@@ -683,7 +683,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5770.html](https://zwmst.com/5770.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:00:57+08:00"> 2021-10-30 </time> ](https://zwmst.com/5770.html)  | 特性 | ActiveMQ | RabbitMQ | RocketMQ | kafka |
+| 特性 | ActiveMQ | RabbitMQ | RocketMQ | kafka |
 | --- | --- | --- | --- | --- |
 | 开发语⾔ | java | erlang | java | scala |
 | 单机吞吐量 | 万级 | 万级 | 10万级 | 10万级 |
@@ -703,7 +703,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5772.html](https://zwmst.com/5772.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:03:45+08:00"> 2021-10-30 </time> ](https://zwmst.com/5772.html)  1.  集群：
+1.  集群：
     集群可以扩展消息通信的吞吐量，但是不会备份消息，备份消息要通过镜像队列的⽅式解决。队列存储在单个节点、交换器存储在所有节点。
 2.  镜像队列：
     将需要消费的队列变为镜像队列，存在于多个节点，这样就可以实现RabbitMQ的HA⾼可⽤性。作⽤就是消息实体会主动在镜像节点之间实现同步，⽽不是像普通模式那样，在consumer消费数据时临时读取。缺点就是，集群内部的同步通讯会占⽤⼤量的⽹络带宽。*
@@ -716,7 +716,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5774.html](https://zwmst.com/5774.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:05:25+08:00"> 2021-10-30 </time> ](https://zwmst.com/5774.html)  1.  通过某种算法，将需要保持先后顺序的消息放到同⼀个消息队列中(kafka中就是partition,rabbitMq中就是queue)。然后只⽤⼀个消费者去消费该队列。
+1.  通过某种算法，将需要保持先后顺序的消息放到同⼀个消息队列中(kafka中就是partition,rabbitMq中就是queue)。然后只⽤⼀个消费者去消费该队列。
 2.  可以在消息体内添加全局有序标识来实现。*
 <!--yml
 category: 未分类
@@ -727,7 +727,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5776.html](https://zwmst.com/5776.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:06:22+08:00"> 2021-10-30 </time> ](https://zwmst.com/5776.html)  ![](img/7a29bad04fbb76c9cad765e6100817f5.png)*
+![](img/7a29bad04fbb76c9cad765e6100817f5.png)*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -737,7 +737,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5779.html](https://zwmst.com/5779.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:08:41+08:00"> 2021-10-30 </time> ](https://zwmst.com/5779.html)  1.  fanout交换器：它会把所有发送到该交换器的消息路由到所有与该交换器绑定的队列中；
+1.  fanout交换器：它会把所有发送到该交换器的消息路由到所有与该交换器绑定的队列中；
 2.  direct交换器：direct类型的交换器路由规则很简单，它会把消息路由到哪些BindingKey和RoutingKey完全匹配的队列中；
 3.  topic交换器：匹配规则⽐direct更灵活。
 4.  headers交换器：根据发送消息内容的headers属性进⾏匹配（由于性能很差，不实⽤）。
@@ -756,7 +756,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5781.html](https://zwmst.com/5781.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:09:23+08:00"> 2021-10-30 </time> ](https://zwmst.com/5781.html)  1.  ⽣产者确认机制：消息持久化后异步回调通知⽣产者，保证消息已经发出去；
+1.  ⽣产者确认机制：消息持久化后异步回调通知⽣产者，保证消息已经发出去；
 2.  消息持久化：设置消息持久化；
 3.  消费者确认机制：消费者成功消费消息之后，⼿动确认，保证消息已经消费。*
 <!--yml
@@ -768,7 +768,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5783.html](https://zwmst.com/5783.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:11:19+08:00"> 2021-10-30 </time> ](https://zwmst.com/5783.html)  SimpleMessageListenerContainer可根据RabbitMQ消息堆积情况⾃动扩展消费者数量。*
+SimpleMessageListenerContainer可根据RabbitMQ消息堆积情况⾃动扩展消费者数量。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -778,7 +778,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5785.html](https://zwmst.com/5785.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:21:15+08:00"> 2021-10-30 </time> ](https://zwmst.com/5785.html)  ![](img/a7fd3508147822c8cf3a89d403d601d7.png)
+![](img/a7fd3508147822c8cf3a89d403d601d7.png)
 
 1.  Broker：简单来说就是消息队列服务器实体。
 2.  Exchange：消息交换机，它指定消息按什么规则，路由到哪个队列。
@@ -798,6 +798,6 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/5788.html](https://zwmst.com/5788.html)
 
-   [ *RabbitMQ* ](https://zwmst.com/rabbitmq)*[ <time datetime="2021-10-31T06:24:07+08:00"> 2021-10-30 </time> ](https://zwmst.com/5788.html)  1.  ⼀个队列可以绑定多个消费者；
+1.  ⼀个队列可以绑定多个消费者；
 2.  消息默认以循环的⽅式发送给消费者；
 3.  消费者收到消息默认⾃动确认，也可以改成⼿动确认*

@@ -7,7 +7,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1219.html](https://zwmst.com/1219.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:46:41+08:00"> 2021-08-15 </time> ](https://zwmst.com/1219.html)  Jenkins是一个用Java编写的开源持续集成工具。它跟踪版本控制系统, 并在发生更改时启动和 监视构建系统。*
+Jenkins是一个用Java编写的开源持续集成工具。它跟踪版本控制系统, 并在发生更改时启动和 监视构建系统。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -17,7 +17,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1221.html](https://zwmst.com/1221.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:46:53+08:00"> 2021-08-15 </time> ](https://zwmst.com/1221.html)  最基本的区别是：
+最基本的区别是：
 
 Maven和Ant是Build Technologies, 而Jenkins是持续集成工具。*
 <!--yml
@@ -29,7 +29,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1225.html](https://zwmst.com/1225.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:47:20+08:00"> 2021-08-15 </time> ](https://zwmst.com/1225.html)  在软件开发中, 多个开发人员或团队在同一个Web应用程序的不同部分上工作, 因此你必须通过 集成所有模块来执行集成测试。为了做到这一点, 每天都要对每段代码进行自动化处理, 以便对 所有代码进行测试。此过程称为连续集成。*
+在软件开发中, 多个开发人员或团队在同一个Web应用程序的不同部分上工作, 因此你必须通过 集成所有模块来执行集成测试。为了做到这一点, 每天都要对每段代码进行自动化处理, 以便对 所有代码进行测试。此过程称为连续集成。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -39,7 +39,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1227.html](https://zwmst.com/1227.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:47:32+08:00"> 2021-08-15 </time> ](https://zwmst.com/1227.html)  Jenkins的优势包括：
+Jenkins的优势包括：
 
 *   在开发环境的早期阶段, 错误跟踪很容易。
 *   提供大量的插件支持。
@@ -58,7 +58,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1229.html](https://zwmst.com/1229.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:48:19+08:00"> 2021-08-15 </time> ](https://zwmst.com/1229.html)  你可以使用以下任何命令来手动启动Jenkins：
+你可以使用以下任何命令来手动启动Jenkins：
 
 *   (Jenkins_url)/ restart：强制重启, 而无需等待构建完成。
 *   (Jenkin_url)/ safeRestart：允许所有正在运行的构建完成。*
@@ -71,7 +71,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1231.html](https://zwmst.com/1231.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:48:38+08:00"> 2021-08-15 </time> ](https://zwmst.com/1231.html)  如果要创建Jenkins设置的备份, 只需复制将Jenkins的所有设置, 构建工件和日志保存在其主目 录中的目录。你还可以复制作业目录以克隆或复制作业或重命名目录。*
+如果要创建Jenkins设置的备份, 只需复制将Jenkins的所有设置, 构建工件和日志保存在其主目 录中的目录。你还可以复制作业目录以克隆或复制作业或重命名目录。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -81,7 +81,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1233.html](https://zwmst.com/1233.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:48:52+08:00"> 2021-08-15 </time> ](https://zwmst.com/1233.html)  如果要通过Jenkins克隆Git存储库, 则必须输入Jenkins系统的电子邮件和用户名。切换到作业 目录并为此执行” git config”命令。*
+如果要通过Jenkins克隆Git存储库, 则必须输入Jenkins系统的电子邮件和用户名。切换到作业 目录并为此执行” git config”命令。*
 <!--yml
 category: 未分类
 date: 0001-01-01 00:00:00
@@ -91,7 +91,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1235.html](https://zwmst.com/1235.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:49:23+08:00"> 2021-08-15 </time> ](https://zwmst.com/1235.html)  Jenkinsfile是一个文本文件，其中包含Jenkins Pipeline的定义，并已签入源代码管理 虽然用于定义管道的脚本语法和jenkinsfile类似，但通常认为在项目中定义管道Jenkinsfile并 检查源代码管理是最佳实践
+Jenkinsfile是一个文本文件，其中包含Jenkins Pipeline的定义，并已签入源代码管理 虽然用于定义管道的脚本语法和jenkinsfile类似，但通常认为在项目中定义管道Jenkinsfile并 检查源代码管理是最佳实践
 
 为所有分支和请求自动创建一个管道构建过程
 
@@ -107,7 +107,7 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1238.html](https://zwmst.com/1238.html)
 
-   [ *Jenkins* ](https://zwmst.com/jenkins)*[ <time datetime="2021-08-15T10:49:33+08:00"> 2021-08-15 </time> ](https://zwmst.com/1238.html)  Blue Ocean是pipeline的可视化UI。同时他兼容经典的自由模式的job。Jenkins Pipeline从 头开始设计，但仍与自由式作业兼容，Blue Ocean减少了经典模式下的混乱并为团队中的每个 成员增加了清晰度。Blue Ocean的主要特点包括：
+Blue Ocean是pipeline的可视化UI。同时他兼容经典的自由模式的job。Jenkins Pipeline从 头开始设计，但仍与自由式作业兼容，Blue Ocean减少了经典模式下的混乱并为团队中的每个 成员增加了清晰度。Blue Ocean的主要特点包括：
 
 连续交付（CD）管道的复杂可视化，可以让您快速直观地理解管道状态。 管道编辑器 – 通过引导用户通过直观和可视化的过程来创建管道，从而使管道的创建变得平易近人。
 
