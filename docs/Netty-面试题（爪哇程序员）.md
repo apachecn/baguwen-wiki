@@ -15,7 +15,7 @@ Reactor模式究竟是个什么东西呢？这要从事件驱动的开发方式�
 
 好了，我们现在来看Reactor模式。在前面事件驱动的例子里有个问题：我们如何知道IO就绪 这个事件，谁来充当这个中间人？Reactor模式的答案是：由一个不断等待和循环的单独进程 （线程）来做这件事，它接受所有handler的注册，并负责先操作系统查询IO是否就绪，在就 绪后就调用指定handler进行处理，这个角色的名字就叫做Reactor。
 
-Reactor的3种版本：单线程模式、多线程模式、主从多线程模式*
+Reactor的3种版本：单线程模式、多线程模式、主从多线程模式
 
 
 # 了解过粘包拆包吗？为什么会出现粘包拆包？怎么处理粘包拆包？
@@ -24,7 +24,7 @@ Reactor的3种版本：单线程模式、多线程模式、主从多线程模式
 
 粘包的主要原因：发送方写入数据套接字缓冲区大小；发送方发送的数据大于协议的 MTU（最大传输单元），不得已必须拆包。
 
-如何处理：1、消息长度固定；2、消息之间用分隔符分隔；3、在消息头保留一个字段，用于 描述消息的长度。*
+如何处理：1、消息长度固定；2、消息之间用分隔符分隔；3、在消息头保留一个字段，用于 描述消息的长度。
 
 
 # UDP协议会有粘包拆包的问题吗？为什么？
@@ -35,7 +35,7 @@ UDP不会有这个问题。
 
 因为TCP是“数据流”协议，UDP是“数据报”协议。
 
-UDP协议的数据包之间是没有联系，而且有明确边界的。*
+UDP协议的数据包之间是没有联系，而且有明确边界的。
 
 
 # Netty 是什么？
@@ -46,7 +46,7 @@ Netty 是一个 基于 NIO 的 client-server(客户端服务器)框架，使用�
 
 它极大地简化并优化了 TCP 和 UDP 套接字服务器等网络编程,并且性能以及安全性等很多方面 甚至都要更好。
 
-支持多种协议 如 FTP，SMTP，HTTP 以及各种二进制和基于文本的传统协议。 用官方的总结就是：Netty 成功地找到了一种在不妥协可维护性和性能的情况下实现易于开 发，性能，稳定性和灵活性的方法。*
+支持多种协议 如 FTP，SMTP，HTTP 以及各种二进制和基于文本的传统协议。 用官方的总结就是：Netty 成功地找到了一种在不妥协可维护性和性能的情况下实现易于开 发，性能，稳定性和灵活性的方法。
 
 
 # 为什么要用 Netty？
@@ -67,7 +67,7 @@ Netty 是一个 基于 NIO 的 client-server(客户端服务器)框架，使用�
 
 安全性不错，有完整的 SSL/TLS 以及 StartTLS 支持。
 
-社区活跃 成熟稳定，经历了大型项目的使用和考验，而且很多开源项目都使用到了 Netty， 比如我们经 常接触的 Dubbo、RocketMQ 等等。*
+社区活跃 成熟稳定，经历了大型项目的使用和考验，而且很多开源项目都使用到了 Netty， 比如我们经 常接触的 Dubbo、RocketMQ 等等。
 
 
 # Netty 的应用场景了解么？
@@ -80,7 +80,7 @@ Netty 主要用来做网络通信 :
 
 实现一个自己的 HTTP 服务器 ：通过 Netty 我们可以自己实现一个简单的 HTTP 服务器，这 个大家应该不陌生。说到 HTTP 服务器的话，作为 Java 后端开发，我们一般使用 Tomcat 比 较多。一个最基本的 HTTP 服务器可要以处理常见的 HTTP Method 的请求，比如 POST 请 求、GET 请求等等。
 
-实现一个即时通讯系统 ：使用 Netty 我们可以实现一个可以聊天类似微信的即时通讯系统，这 方面的开源项目还蛮多的，可以自行去 Github 找一找。 实现消息推送系统 ：市面上有很多消息推送系统都是基于 Netty 来做的。*
+实现一个即时通讯系统 ：使用 Netty 我们可以实现一个可以聊天类似微信的即时通讯系统，这 方面的开源项目还蛮多的，可以自行去 Github 找一找。 实现消息推送系统 ：市面上有很多消息推送系统都是基于 Netty 来做的。
 
 
 # Netty 的零拷贝了解么？
@@ -95,7 +95,7 @@ Netty 中的零拷贝体现在以下几个方面： 使用 Netty 提供的 Compo
 
 ByteBuf 支持 slice 操作, 因此可以将 ByteBuf 分解为多个共享同一个存储区域的 ByteBuf, 避免了内存的拷贝。
 
-通过 FileRegion 包装的FileChannel.tranferTo 实现文件传输, 可以直接将文件缓冲区的数据 发送到目标 Channel, 避免了传统通过循环 write 方式导致的内存拷贝问题。*
+通过 FileRegion 包装的FileChannel.tranferTo 实现文件传输, 可以直接将文件缓冲区的数据 发送到目标 Channel, 避免了传统通过循环 write 方式导致的内存拷贝问题。
 
 
 # Netty 的心跳机制了解么？
@@ -106,7 +106,7 @@ ByteBuf 支持 slice 操作, 因此可以将 ByteBuf 分解为多个共享同一
 
 心跳机制的工作原理是: 在 client 与 server 之间在一定时间内没有数据交互时, 即处于 idle 状 态时, 客户端或服务器就会发送一个特殊的数据包给对方, 当接收方收到这个数据报文后, 也立 即发送一个特殊的数据报文, 回应发送方, 此即一个 PING-PONG 交互。所以, 当某一端收到心 跳消息后, 就知道了对方仍然在线, 这就确保 TCP 连接的有效性.
 
-TCP 实际上自带的就有长连接选项，本身是也有心跳包机制，也就是 TCP 的选项： SO_KEEPALIVE。但是，TCP 协议层面的长连接灵活性不够。所以，一般情况下我们都是在 应用层协议上实现自定义心跳机制的，也就是在 Netty 层面通过编码实现。通过 Netty 实现心 跳机制的话，核心类是 IdleStateHandler 。*
+TCP 实际上自带的就有长连接选项，本身是也有心跳包机制，也就是 TCP 的选项： SO_KEEPALIVE。但是，TCP 协议层面的长连接灵活性不够。所以，一般情况下我们都是在 应用层协议上实现自定义心跳机制的，也就是在 Netty 层面通过编码实现。通过 Netty 实现心 跳机制的话，核心类是 IdleStateHandler 。
 
 
 # Netty 中有哪些重要组件？
@@ -121,7 +121,7 @@ ChannelFuture：Netty 框架中所有的 I/O 操作都为异步的，因此我�
 
 ChannelHandler：充当了所有处理入站和出站数据的逻辑容器。ChannelHandler 主要用来 处理各种事件，这里的事件很广泛，比如可以是连接、数据接收、异常、数据转换等。
 
-ChannelPipeline：为 ChannelHandler 链提供了容器，当 channel 创建时，就会被自动分 配到它专属的 ChannelPipeline，这个关联是永久性的。*
+ChannelPipeline：为 ChannelHandler 链提供了容器，当 channel 创建时，就会被自动分 配到它专属的 ChannelPipeline，这个关联是永久性的。
 
 
 # Netty 发送消息有几种方式？
@@ -130,14 +130,14 @@ ChannelPipeline：为 ChannelHandler 链提供了容器，当 channel 创建时�
 
 Netty 有两种发送消息的方式：
 
-直接写入 Channel 中，消息从 ChannelPipeline 当中尾部开始移动； 写入和 ChannelHandler 绑定的 ChannelHandlerContext 中，消息从 ChannelPipeline 中 的下一个 ChannelHandler 中移动。*
+直接写入 Channel 中，消息从 ChannelPipeline 当中尾部开始移动； 写入和 ChannelHandler 绑定的 ChannelHandlerContext 中，消息从 ChannelPipeline 中 的下一个 ChannelHandler 中移动。
 
 
 # Netty 支持哪些心跳类型设置？
 
 > 原文：[https://zwmst.com/758.html](https://zwmst.com/758.html)
 
-readerIdleTime：为读超时时间（即测试端一定时间内未接受到被测试端消息）。writerIdleTime：为写超时时间（即测试端一定时间内向被测试端发送消息）。allIdleTime：所有类型的超时时间。*
+readerIdleTime：为读超时时间（即测试端一定时间内未接受到被测试端消息）。writerIdleTime：为写超时时间（即测试端一定时间内向被测试端发送消息）。allIdleTime：所有类型的超时时间。
 
 
 # 说说Netty的执行流程？
@@ -154,7 +154,7 @@ readerIdleTime：为读超时时间（即测试端一定时间内未接受到被
 
 绑定并启动监听端口
 
-当轮训到准备就绪的channel后，由Reactor线程：NioEventLoop执行pipline中的方法，最 终调度并执行channelHandler*
+当轮训到准备就绪的channel后，由Reactor线程：NioEventLoop执行pipline中的方法，最 终调度并执行channelHandler
 
 
 # Netty高性能体现在哪些方面？
@@ -169,14 +169,14 @@ readerIdleTime：为读超时时间（即测试端一定时间内未接受到被
 
 Reactor单线程模型：单线程模型的线程即作为NIO服务端接收客户端的TCP连接，又作为 NIO客户端向服务端发起TCP连接，即读取通信对端的请求或者应答消息，又向通信对端发送 消息请求或者应答消息。理论上一个线程可以独立处理所有IO相关的操作，但一个NIO线程同时处理成百上千的链路，性能上无法支撑，即便NIO线程的CPU负荷达到100%，也无法满足 海量消息的编码、解码、读取和发送，又因为当NIO线程负载过重之后，处理速度将变慢，这 会导致大量客户端连接超时，超时之后往往会进行重发，这更加重了NIO线程的负载，最终会 导致大量消息积压和处理超时，NIO线程会成为系统的性能瓶颈。
 
-Reactor多线程模型：有专门一个NIO线程用于监听服务端，接收客户端的TCP连接请求；网 络IO操作(读写)由一个NIO线程池负责，线程池可以采用标准的JDK线程池实现。但百万客户 端并发连接时，一个nio线程用来监听和接受明显不够，因此有了主从多线程模型。 主从Reactor多线程模型：利用主从NIO线程模型，可以解决1个服务端监听线程无法有效处理 所有客户端连接的性能不足问题，即把监听服务端，接收客户端的TCP连接请求分给一个线程 池。因此，在代码中可以看到，我们在server端选择的就是这种方式，并且也推荐使用该线程 模型。在启动类中创建不同的EventLoopGroup实例并通过适当的参数配置，就可以支持上述 三种Reactor线程模型。*
+Reactor多线程模型：有专门一个NIO线程用于监听服务端，接收客户端的TCP连接请求；网 络IO操作(读写)由一个NIO线程池负责，线程池可以采用标准的JDK线程池实现。但百万客户 端并发连接时，一个nio线程用来监听和接受明显不够，因此有了主从多线程模型。 主从Reactor多线程模型：利用主从NIO线程模型，可以解决1个服务端监听线程无法有效处理 所有客户端连接的性能不足问题，即把监听服务端，接收客户端的TCP连接请求分给一个线程 池。因此，在代码中可以看到，我们在server端选择的就是这种方式，并且也推荐使用该线程 模型。在启动类中创建不同的EventLoopGroup实例并通过适当的参数配置，就可以支持上述 三种Reactor线程模型。
 
 
 # 292.Netty 原理
 
 > 原文：[https://zwmst.com/3583.html](https://zwmst.com/3583.html)
 
-   * ***[  ](https://zwmst.com/3583.html)  Netty 是一个高性能、异步事件驱动的 NIO 框架，基于 JAVA NIO 提供的 API 实现。它提供了对TCP、UDP 和文件传输的支持，作为一个异步 NIO 框架，Netty 的所有 IO 操作都是异步非阻塞的，通过 Future-Listener 机制，用户可以方便的主动获取或者通过通知机制获得 IO 操作结果。**
+   * ***[  ](https://zwmst.com/3583.html)  Netty 是一个高性能、异步事件驱动的 NIO 框架，基于 JAVA NIO 提供的 API 实现。它提供了对TCP、UDP 和文件传输的支持，作为一个异步 NIO 框架，Netty 的所有 IO 操作都是异步非阻塞的，通过 Future-Listener 机制，用户可以方便的主动获取或者通过通知机制获得 IO 操作结果。
 
 
 # 293.Netty 高性能
@@ -185,7 +185,7 @@ Reactor多线程模型：有专门一个NIO线程用于监听服务端，接收�
 
 在 IO 编程过程中，当需要同时处理多个客户端接入请求时，可以利用多线程或者 IO 多路复用技术进行处理。IO 多路复用技术通过把多个 IO 的阻塞复用到同一个 select 的阻塞上，从而使得系统在单线程的情况下可以同时处理多个客户端请求。与传统的多线程/多进程模型比，I/O 多路复用的最大优势是系统开销小，系统不需要创建新的额外进程或者线程，也不需要维护这些进程和线程的运行，降低了系统的维护工作量，节省了系统资源。
 
-与 Socket 类和 ServerSocket 类相对应，NIO 也提供了SocketChannel 和 ServerSocketChannel两种不同的套接字通道实现。*
+与 Socket 类和 ServerSocket 类相对应，NIO 也提供了SocketChannel 和 ServerSocketChannel两种不同的套接字通道实现。
 
 
 # 294.多路复用通讯方式
@@ -197,7 +197,7 @@ Netty 架构按照 Reactor 模式设计和实现，它的服务端通信序列�
 客户端通信序列图如下：
 ![](img/fa14d35d459f9a4b98d64b31b70142b4.png)
 
-Netty 的 IO 线程 NioEventLoop 由于聚合了多路复用器Selector，可以同时并发处理成百上千个客户端 Channel，由于读写操作都是非阻塞的，这就可以充分提升 IO 线程的运行效率，避免由于频繁 IO 阻塞导致的线程挂起。*
+Netty 的 IO 线程 NioEventLoop 由于聚合了多路复用器Selector，可以同时并发处理成百上千个客户端 Channel，由于读写操作都是非阻塞的，这就可以充分提升 IO 线程的运行效率，避免由于频繁 IO 阻塞导致的线程挂起。
 
 
 # 295.异步通讯 NIO
@@ -205,7 +205,7 @@ Netty 的 IO 线程 NioEventLoop 由于聚合了多路复用器Selector，可以
 > 原文：[https://zwmst.com/3594.html](https://zwmst.com/3594.html)
 
 **由于 Netty 采用了异步通信模式，一个 IO 线程可以并发处理 N 个客户端连接和读写操作**，这从根本上解决了传统同步阻塞 IO 一连接一线程模型，架构的性能、弹性伸缩能力和可靠性都得到了极
-大的提升。*
+大的提升。
 
 
 # 296.零拷贝（DIRECT BUFFERS 使用堆外直接内存）
@@ -214,21 +214,21 @@ Netty 的 IO 线程 NioEventLoop 由于聚合了多路复用器Selector，可以
 
 1.  Netty 的接收和发送 ByteBuffer 采用 DIRECT BUFFERS，使用堆外直接内存进行 Socket 读写，不需要进行字节缓冲区的二次拷贝。如果使用传统的堆内存（HEAP BUFFERS）进行 Socket 读写，JVM 会将堆内存 Buffer 拷贝一份到直接内存中，然后才写入 Socket 中。相比于堆外直接内存，消息在发送过程中多了一次缓冲区的内存拷贝。
 2.  Netty 提供了组合 Buffer 对象，可以聚合多个 ByteBuffer 对象，用户可以像操作一个 Buffer 那样方便的对组合 Buffer 进行操作，避免了传统通过内存拷贝的方式将几个小 Buffer 合并成一个大的Buffer。
-3.  Netty的文件传输采用了transferTo方法，它可以直接将文件缓冲区的数据发送到目标Channel，避免了传统通过循环 write 方式导致的内存拷贝问题*
+3.  Netty的文件传输采用了transferTo方法，它可以直接将文件缓冲区的数据发送到目标Channel，避免了传统通过循环 write 方式导致的内存拷贝问题
 
 
 # 297.内存池（基于内存池的缓冲区重用机制）
 
 > 原文：[https://zwmst.com/3598.html](https://zwmst.com/3598.html)
 
-随着 JVM 虚拟机和 JIT 即时编译技术的发展，对象的分配和回收是个非常轻量级的工作。但是对于缓冲区 Buffer，情况却稍有不同，特别是对于堆外直接内存的分配和回收，是一件耗时的操作。为了尽量重用缓冲区，Netty 提供了基于内存池的缓冲区重用机制。*
+随着 JVM 虚拟机和 JIT 即时编译技术的发展，对象的分配和回收是个非常轻量级的工作。但是对于缓冲区 Buffer，情况却稍有不同，特别是对于堆外直接内存的分配和回收，是一件耗时的操作。为了尽量重用缓冲区，Netty 提供了基于内存池的缓冲区重用机制。
 
 
 # 298.高效的 Reactor 线程模型
 
 > 原文：[https://zwmst.com/3600.html](https://zwmst.com/3600.html)
 
-常用的 Reactor 线程模型有三种，Reactor 单线程模型, Reactor 多线程模型, 主从 Reactor 多线程模型。*
+常用的 Reactor 线程模型有三种，Reactor 单线程模型, Reactor 多线程模型, 主从 Reactor 多线程模型。
 
 
 # 299.Reactor 单线程模
@@ -242,14 +242,14 @@ Reactor 单线程模型，指的是所有的 IO 操作都在同一个 NIO 线程
 3.  读取通信对端的请求或者应答消息；
 4.  向通信对端发送消息请求或者应答消息。
 
-由于 Reactor 模式使用的是异步非阻塞 IO，所有的 IO 操作都不会导致阻塞，理论上一个线程可以独立处理所有 IO 相关的操作。从架构层面看，一个 NIO 线程确实可以完成其承担的职责。例如，通过Acceptor 接收客户端的 TCP 连接请求消息，链路建立成功之后，通过 Dispatch 将对应的 ByteBuffer派发到指定的 Handler 上进行消息解码。用户 Handler 可以通过 NIO 线程将消息发送给客户端。*
+由于 Reactor 模式使用的是异步非阻塞 IO，所有的 IO 操作都不会导致阻塞，理论上一个线程可以独立处理所有 IO 相关的操作。从架构层面看，一个 NIO 线程确实可以完成其承担的职责。例如，通过Acceptor 接收客户端的 TCP 连接请求消息，链路建立成功之后，通过 Dispatch 将对应的 ByteBuffer派发到指定的 Handler 上进行消息解码。用户 Handler 可以通过 NIO 线程将消息发送给客户端。
 
 
 # 300.Reactor 多线程模型
 
 > 原文：[https://zwmst.com/3607.html](https://zwmst.com/3607.html)
 
-Rector 多线程模型与单线程模型最大的区别就是有一组 NIO 线程处理 IO 操作。 有专门一个NIO 线程-Acceptor 线程用于监听服务端，接收客户端的 TCP 连接请求； 网络 IO 操作-读、写等由一个 NIO 线程池负责，线程池可以采用标准的 JDK 线程池实现，它包含一个任务队列和 N个可用的线程，由这些 NIO 线程负责消息的读取、解码、编码和发送；*
+Rector 多线程模型与单线程模型最大的区别就是有一组 NIO 线程处理 IO 操作。 有专门一个NIO 线程-Acceptor 线程用于监听服务端，接收客户端的 TCP 连接请求； 网络 IO 操作-读、写等由一个 NIO 线程池负责，线程池可以采用标准的 JDK 线程池实现，它包含一个任务队列和 N个可用的线程，由这些 NIO 线程负责消息的读取、解码、编码和发送；
 
 
 # 302.无锁设计、线程绑定
@@ -258,7 +258,7 @@ Rector 多线程模型与单线程模型最大的区别就是有一组 NIO 线�
 
 Netty 采用了串行无锁化设计，在 IO 线程内部进行串行操作，避免多线程竞争导致的性能下降。表面上看，串行化设计似乎 CPU 利用率不高，并发程度不够。但是，通过调整 NIO 线程池的线程参数，可以同时启动多个串行化的线程并行运行，这种局部无锁化的串行线程设计相比一个队列-多个工作线程模型性能更优。
 
-Netty 的 NioEventLoop 读取到消息之后，直接调用ChannelPipeline 的fireChannelRead(Object msg)，只要用户不主动切换线程，一直会由 NioEventLoop 调用到用户的 Handler，期间不进行线程切换，这种串行化处理方式避免了多线程操作导致的锁的竞争，从性能角度看是最优的。*
+Netty 的 NioEventLoop 读取到消息之后，直接调用ChannelPipeline 的fireChannelRead(Object msg)，只要用户不主动切换线程，一直会由 NioEventLoop 调用到用户的 Handler，期间不进行线程切换，这种串行化处理方式避免了多线程操作导致的锁的竞争，从性能角度看是最优的。
 
 
 # 303.高性能的序列化框架
@@ -275,14 +275,14 @@ Netty 默认提供了对 Google Protobuf 的支持，通过扩展 Netty 的编�
 
 ### 软中断 Hash 值和 CPU 绑定
 
-3.  软中断：开启 RPS 后可以实现软中断，提升网络吞吐量。RPS 根据数据包的源地址，目的地址以及目的和源端口，计算出一个 hash 值，然后根据这个 hash 值来选择软中断运行的 cpu，从上层来看，也就是说将每个连接和 cpu 绑定，并通过这个 hash 值，来均衡软中断在多个 cpu 上，提升网络并行处理性能。*
+3.  软中断：开启 RPS 后可以实现软中断，提升网络吞吐量。RPS 根据数据包的源地址，目的地址以及目的和源端口，计算出一个 hash 值，然后根据这个 hash 值来选择软中断运行的 cpu，从上层来看，也就是说将每个连接和 cpu 绑定，并通过这个 hash 值，来均衡软中断在多个 cpu 上，提升网络并行处理性能。
 
 
 # 304.Netty RPC 实现
 
 > 原文：[https://zwmst.com/3615.html](https://zwmst.com/3615.html)
 
-RPC，即 Remote Procedure Call（远程过程调用），调用远程计算机上的服务，就像调用本地服务一样。RPC 可以很好的解耦系统，如 WebService 就是一种基于 Http 协议的 RPC。这个 RPC 整体框架如下：![](img/2b859664dc59dc4ed4a1a7dbb89310df.png)*
+RPC，即 Remote Procedure Call（远程过程调用），调用远程计算机上的服务，就像调用本地服务一样。RPC 可以很好的解耦系统，如 WebService 就是一种基于 Http 协议的 RPC。这个 RPC 整体框架如下：![](img/2b859664dc59dc4ed4a1a7dbb89310df.png)
 
 
 # 305.关键技术
@@ -293,7 +293,7 @@ RPC，即 Remote Procedure Call（远程过程调用），调用远程计算机�
 2.  通信：使用 Netty 作为通信框架。
 3.  Spring：使用 Spring 配置服务，加载 Bean，扫描注解。
 4.  动态代理：客户端使用代理模式透明化服务调用。
-5.  消息编解码：使用 Protostuff 序列化和反序列化消息。*
+5.  消息编解码：使用 Protostuff 序列化和反序列化消息。
 
 
 # 306.核心流程
@@ -310,7 +310,7 @@ RPC，即 Remote Procedure Call（远程过程调用），调用远程计算机�
 8.  client stub 接收到消息，并进行解码；
 9.  服务消费方得到最终结果。
 
-RPC 的目标就是要 2~8 这些步骤都封装起来，让用户对这些细节透明。JAVA 一般使用动态代理方式实现远程调用。*
+RPC 的目标就是要 2~8 这些步骤都封装起来，让用户对这些细节透明。JAVA 一般使用动态代理方式实现远程调用。
 
 
 # 307.消息编解码
@@ -326,14 +326,14 @@ RPC 的目标就是要 2~8 这些步骤都封装起来，让用户对这些细�
 3.  参数类型和参数值：参数类型有很多，比如有 bool、int、long、double、string、map、list，甚至如 struct（class）；以及相应的参数值；
 4.  超时时间：
 5.  requestID，标识唯一请求 id，在下面一节会详细描述 requestID 的用处。
-6.  服务端返回的消息 ： 一般包括以下内容。返回值+状态 code+requestID*
+6.  服务端返回的消息 ： 一般包括以下内容。返回值+状态 code+requestID
 
 
 # 308.序列化
 
 > 原文：[https://zwmst.com/3625.html](https://zwmst.com/3625.html)
 
-目前互联网公司广泛使用 Protobuf、Thrift、Avro 等成熟的序列化解决方案来搭建 RPC 框架，这些都是久经考验的解决方案。*
+目前互联网公司广泛使用 Protobuf、Thrift、Avro 等成熟的序列化解决方案来搭建 RPC 框架，这些都是久经考验的解决方案。
 
 
 # 309.通讯过程
@@ -345,7 +345,7 @@ RPC 的目标就是要 2~8 这些步骤都封装起来，让用户对这些细�
 如果使用 netty 的话，一般会用 channel.writeAndFlush()方法来发送消息二进制串，这个方法调用后对于整个远程调用(从发出请求到接收到结果)来说是一个异步的，即对于当前线程来说，将请求发送出来后，线程就可以往后执行了，至于服务端的结果，是服务端处理完成后，再以消息的形式发送给客户端的。于是这里出现以下两个问题：
 
 1.  怎么让当前线程“暂停”，等结果回来后，再向后执行？
-2.  如果有多个线程同时进行远程方法调用，这时建立在 client server 之间的 socket 连接上会有很多双方发送的消息传递，前后顺序也可能是随机的，server 处理完结果后，将结果消息发送给 client，client 收到很多消息，怎么知道哪个消息结果是原先哪个线程调用的？如下图所示，线程 A 和线程 B 同时向 client socket 发送请求 requestA 和 requestB，socket 先后将 requestB 和 requestA 发送至 server，而 server 可能将 responseB 先返回，尽管 requestB 请求到达时间更晚。我们需要一种机制保证 responseA 丢给ThreadA，responseB 丢给 ThreadB。*
+2.  如果有多个线程同时进行远程方法调用，这时建立在 client server 之间的 socket 连接上会有很多双方发送的消息传递，前后顺序也可能是随机的，server 处理完结果后，将结果消息发送给 client，client 收到很多消息，怎么知道哪个消息结果是原先哪个线程调用的？如下图所示，线程 A 和线程 B 同时向 client socket 发送请求 requestA 和 requestB，socket 先后将 requestB 和 requestA 发送至 server，而 server 可能将 responseB 先返回，尽管 requestB 请求到达时间更晚。我们需要一种机制保证 responseA 丢给ThreadA，responseB 丢给 ThreadB。
 
 
 # 310.通讯流程
@@ -354,35 +354,35 @@ RPC 的目标就是要 2~8 这些步骤都封装起来，让用户对这些细�
 
 ### requestID 生成-AtomicLong
 
-1.  client 线程每次通过 socket 调用一次远程接口前，生成一个唯一的 ID，即 requestID（requestID 必需保证在一个 Socket 连接里面是唯一的），一般常常使用 AtomicLong从 0 开始累计数字生成唯一 ID；*
+1.  client 线程每次通过 socket 调用一次远程接口前，生成一个唯一的 ID，即 requestID（requestID 必需保证在一个 Socket 连接里面是唯一的），一般常常使用 AtomicLong从 0 开始累计数字生成唯一 ID；
 
 
 # 311.存放回调对象 callback 到全局 ConcurrentHashMap
 
 > 原文：[https://zwmst.com/3632.html](https://zwmst.com/3632.html)
 
-2.  将 处 理 结 果 的 回 调 对 象 callback ， 存 放 到 全 局 ConcurrentHashMap 里 面put(requestID, callback)；*
+2.  将 处 理 结 果 的 回 调 对 象 callback ， 存 放 到 全 局 ConcurrentHashMap 里 面put(requestID, callback)；
 
 
 # 312.synchronized 获取回调对象 callback 的锁并自旋 wait
 
 > 原文：[https://zwmst.com/3635.html](https://zwmst.com/3635.html)
 
-3.  当线程调用 channel.writeAndFlush()发送消息后，紧接着执行 callback 的 get()方法试图获取远程返回的结果。在 get()内部，则使用 synchronized 获取回调对象 callback 的锁，再先检测是否已经获取到结果，如果没有，然后调用 callback 的 wait()方法，释放callback 上的锁，让当前线程处于等待状态。*
+3.  当线程调用 channel.writeAndFlush()发送消息后，紧接着执行 callback 的 get()方法试图获取远程返回的结果。在 get()内部，则使用 synchronized 获取回调对象 callback 的锁，再先检测是否已经获取到结果，如果没有，然后调用 callback 的 wait()方法，释放callback 上的锁，让当前线程处于等待状态。
 
 
 # 313.监听消息的线程收到消息，找到 callback 上的锁并唤醒
 
 > 原文：[https://zwmst.com/3637.html](https://zwmst.com/3637.html)
 
-4.  服务端接收到请求并处理后，将 response 结果（此结果中包含了前面的 requestID）发送给客户端，客户端 socket 连接上专门监听消息的线程收到消息，分析结果，取到requestID ， 再 从 前 面 的 ConcurrentHashMap 里 面 get(requestID) ， 从 而 找 到callback 对象，再用 synchronized 获取 callback 上的锁，将方法调用结果设置到callback 对象里，再调用 callback.notifyAll()唤醒前面处于等待状态的线程。*
+4.  服务端接收到请求并处理后，将 response 结果（此结果中包含了前面的 requestID）发送给客户端，客户端 socket 连接上专门监听消息的线程收到消息，分析结果，取到requestID ， 再 从 前 面 的 ConcurrentHashMap 里 面 get(requestID) ， 从 而 找 到callback 对象，再用 synchronized 获取 callback 上的锁，将方法调用结果设置到callback 对象里，再调用 callback.notifyAll()唤醒前面处于等待状态的线程。
 
 
 # 314.RMI 实现方式
 
 > 原文：[https://zwmst.com/3641.html](https://zwmst.com/3641.html)
 
-Java 远程方法调用，即 Java RMI（Java Remote Method Invocation）是 Java 编程语言里，一种用于实现远程过程调用的应用程序编程接口。它使客户机上运行的程序可以调用远程服务器上的对象。远程方法调用特性使 Java 编程人员能够在网络环境中分布操作。RMI 全部的宗旨就是尽可能简化远程接口对象的使用。*
+Java 远程方法调用，即 Java RMI（Java Remote Method Invocation）是 Java 编程语言里，一种用于实现远程过程调用的应用程序编程接口。它使客户机上运行的程序可以调用远程服务器上的对象。远程方法调用特性使 Java 编程人员能够在网络环境中分布操作。RMI 全部的宗旨就是尽可能简化远程接口对象的使用。
 
 
 # 315.实现步骤
@@ -429,7 +429,7 @@ System.out.println(greetService.sayHello("Jobs"));~~~
 
 > 原文：[https://zwmst.com/3646.html](https://zwmst.com/3646.html)
 
-protocol buffer 是 google 的一个开源项目,它是用于结构化数据串行化的灵活、高效、自动的方法，例如 XML，不过它比 xml 更小、更快、也更简单。你可以定义自己的数据结构，然后使用代码生成器生成的代码来读写这个数据结构。你甚至可以在无需重新部署程序的情况下更新数据结构。*
+protocol buffer 是 google 的一个开源项目,它是用于结构化数据串行化的灵活、高效、自动的方法，例如 XML，不过它比 xml 更小、更快、也更简单。你可以定义自己的数据结构，然后使用代码生成器生成的代码来读写这个数据结构。你甚至可以在无需重新部署程序的情况下更新数据结构。
 
 
 # 317.特点
@@ -444,7 +444,7 @@ Protocol Buffer 的序列化 & 反序列化简单 & 速度快的原因是：
 Protocol Buffer 的数据压缩效果好（即序列化后的数据量体积小）的原因是：
 
 1.  a. 采用了独特的编码方式，如 Varint、Zigzag 编码方式等等
-2.  b. 采用 T – L – V 的数据存储方式：减少了分隔符的使用 & 数据存储得紧凑*
+2.  b. 采用 T – L – V 的数据存储方式：减少了分隔符的使用 & 数据存储得紧凑
 
 
 # 318.Thrift
@@ -455,7 +455,7 @@ Apache Thrift 是 Facebook 实现的一种高效的、支持多种编程语言�
 
 目前流行的服务调用方式有很多种，例如基于 SOAP 消息格式的 Web Service，基于 JSON 消息格式的 RESTful 服务等。其中所用到的数据传输方式包括 XML，JSON 等，然而 XML 相对体积太大，传输效率低，JSON 体积较小，新颖，但还不够完善。本文将介绍由 Facebook 开发的远程服务调用框架Apache Thrift，它采用接口描述语言定义并创建服务，支持可扩展的跨语言服务开发，所包含的代码生成引擎可以在多种语言中，如 C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, Smalltalk 等创建高效的、无缝的服务，其传输数据采用二进制格式，相对 XML 和 JSON 体积更小，对于高并发、大数据量和多语言的环境更有优势。
 
-本文将详细介绍 Thrift 的使用，并且提供丰富的实例代码加以解释说明，帮助使用者快速构建服务。*
+本文将详细介绍 Thrift 的使用，并且提供丰富的实例代码加以解释说明，帮助使用者快速构建服务。
 
 
 # 319.为什么要 Thrift
@@ -463,7 +463,7 @@ Apache Thrift 是 Facebook 实现的一种高效的、支持多种编程语言�
 > 原文：[https://zwmst.com/3652.html](https://zwmst.com/3652.html)
 
 1.  多语言开发的需要
-2.  性能问题*
+2.  性能问题
 
 
 # 1192.BIO、NIO 和 AIO 的区别？
@@ -480,7 +480,7 @@ BIO 是面向流的，NIO 是面向缓冲区的；BIO 的各种流是阻塞的�
 
 NIO 的特点：事件驱动模型、单线程处理多任务、非阻塞 I/O，I/O 读写不再阻塞，而是返回 0、基于 block 的传输比基于流的传输更高效、更高级的 IO 函数 zero-copy、IO 多路复用大大提高了 Java 网络应用的可伸缩性和实用性。基于 Reactor 线程模型。
 
-在 Reactor 模式中，事件分发器等待某个事件或者可应用或个操作的状态发生，事件分发器就把这个事件传给事先注册的事件处理函数或者回调函数，由后者来做实际的读写操作。如在 Reactor 中实现读：注册读就绪事件和相应的事件处理器、事件分发器等待事件、事件到来，激活分发器，分发器调用事件对应的处理器、事件处理器完成实际的读操作，处理读到的数据，注册新的事件，然后返还控制权。*
+在 Reactor 模式中，事件分发器等待某个事件或者可应用或个操作的状态发生，事件分发器就把这个事件传给事先注册的事件处理函数或者回调函数，由后者来做实际的读写操作。如在 Reactor 中实现读：注册读就绪事件和相应的事件处理器、事件分发器等待事件、事件到来，激活分发器，分发器调用事件对应的处理器、事件处理器完成实际的读操作，处理读到的数据，注册新的事件，然后返还控制权。
 
 
 # 1193.NIO 的组成？
@@ -505,7 +505,7 @@ Selector 在 Linux 的实现类是 EPollSelectorImpl，委托给 EPollArrayWrapp
 
 fdToKey 有时会变得非常大，因为注册到 Selector 上的 Channel 非常多（百万连接）；过期或失效的 Channel 没有及时关闭。fdToKey 总是串行读取的，而读取是在 select 方法中进行的，该方法是非线程安全的。
 
-Pipe：两个线程之间的单向数据连接，数据会被写到 sink 通道，从 source 通道读取NIO 的服务端建立过程：Selector.open()：打开一个 Selector；ServerSocketChannel.open()：创建服务端的 Channel；bind()：绑定到某个端口上。并配置非阻塞模式；register()：注册Channel 和关注的事件到 Selector 上；select()轮询拿到已经就绪的事件*
+Pipe：两个线程之间的单向数据连接，数据会被写到 sink 通道，从 source 通道读取NIO 的服务端建立过程：Selector.open()：打开一个 Selector；ServerSocketChannel.open()：创建服务端的 Channel；bind()：绑定到某个端口上。并配置非阻塞模式；register()：注册Channel 和关注的事件到 Selector 上；select()轮询拿到已经就绪的事件
 
 
 # 1194.Netty 的特点？
@@ -513,7 +513,7 @@ Pipe：两个线程之间的单向数据连接，数据会被写到 sink 通道�
 > 原文：[https://zwmst.com/5690.html](https://zwmst.com/5690.html)
 
 一个高性能、异步事件驱动的 NIO 框架，它提供了对 TCP、UDP 和文件传输的支持使用更高效的 socket 底层，对 epoll 空轮询引起的 cpu 占用飙升在内部进行了处理，避免了直接使用 NIO 的陷阱，简化了 NIO 的处理方式。
-采用多种 decoder/encoder 支持，对 TCP 粘包/分包进行自动化处理可使用接受/处理线程池，提高连接效率，对重连、心跳检测的简单支持可配置 IO 线程数、TCP 参数， TCP 接收和发送缓冲区使用直接内存代替堆内存，通过内存池的方式循环利用 ByteBuf通过引用计数器及时申请释放不再引用的对象，降低了 GC 频率使用单线程串行化的方式，高效的 Reactor 线程模型大量使用了 volitale、使用了 CAS 和原子类、线程安全类的使用、读写锁的使用*
+采用多种 decoder/encoder 支持，对 TCP 粘包/分包进行自动化处理可使用接受/处理线程池，提高连接效率，对重连、心跳检测的简单支持可配置 IO 线程数、TCP 参数， TCP 接收和发送缓冲区使用直接内存代替堆内存，通过内存池的方式循环利用 ByteBuf通过引用计数器及时申请释放不再引用的对象，降低了 GC 频率使用单线程串行化的方式，高效的 Reactor 线程模型大量使用了 volitale、使用了 CAS 和原子类、线程安全类的使用、读写锁的使用
 
 
 # 1195.Netty 的线程模型？
@@ -524,7 +524,7 @@ Netty 通过 Reactor 模型基于多路复用器接收并处理用户请求，�
 单线程模型：所有 I/O 操作都由一个线程完成，即多路复用、事件分发和处理都是在一个Reactor 线程上完成的。既要接收客户端的连接请求,向服务端发起连接，又要发送/读取请求或应答/响应消息。一个 NIO 线程同时处理成百上千的链路，性能上无法支撑，速度慢，若线程进入死循环，整个程序不可用，对于高负载、大并发的应用场景不合适。
 多线程模型：有一个 NIO 线程（Acceptor） 只负责监听服务端，接收客户端的 TCP 连接请求；NIO 线程池负责网络 IO 的操作，即消息的读取、解码、编码和发送；1 个 NIO 线程可以同时处理 N 条链路，但是 1 个链路只对应 1 个 NIO 线程，这是为了防止发生并发操作问题。但在并发百万客户端连接或需要安全认证时，一个 Acceptor 线程可能会存在性
 能不足问题。
-主从多线程模型：Acceptor 线程用于绑定监听端口，接收客户端连接，将 SocketChannel从主线程池的 Reactor 线程的多路复用器上移除，重新注册到 Sub 线程池的线程上，用于处理 I/O 的读写等操作，从而保证 mainReactor 只负责接入认证、握手等操作；*
+主从多线程模型：Acceptor 线程用于绑定监听端口，接收客户端连接，将 SocketChannel从主线程池的 Reactor 线程的多路复用器上移除，重新注册到 Sub 线程池的线程上，用于处理 I/O 的读写等操作，从而保证 mainReactor 只负责接入认证、握手等操作；
 
 
 # 1196.TCP 粘包/拆包的原因及解决方法？
@@ -539,7 +539,7 @@ TCP 粘包/分包的原因：
 消息定长：FixedLengthFrameDecoder 类
 包尾增加特殊字符分割：行分隔符类：LineBasedFrameDecoder 或自定义分隔符类 ：
 DelimiterBasedFrameDecoder
-将消息分为消息头和消息体：LengthFieldBasedFrameDecoder 类。分为有头部的拆包与粘包、长度字段在前且有头部的拆包与粘包、多扩展头部的拆包与粘包。*
+将消息分为消息头和消息体：LengthFieldBasedFrameDecoder 类。分为有头部的拆包与粘包、长度字段在前且有头部的拆包与粘包、多扩展头部的拆包与粘包。
 
 
 # 1197.了解哪几种序列化协议？
@@ -570,7 +570,7 @@ protostuff 基于 protobuf 协议，但不需要配置 proto 文件，直接导�
 
 Hessian 采用二进制协议的轻量级 remoting onhttp 工具
 
-kryo 基于 protobuf 协议，只支持 java 语言,需要注册（Registration），然后序列化（Output），反序列化（Input）*
+kryo 基于 protobuf 协议，只支持 java 语言,需要注册（Registration），然后序列化（Output），反序列化（Input）
 
 
 # 1198.如何选择序列化协议？
@@ -608,7 +608,7 @@ UserProto.User.newBuilder();builder.build()；
 ```
 
 Netty 中的使用：ProtobufVarint32FrameDecoder 是用于处理半包消息的解码类；
-ProtobufDecoder(UserProto.User.getDefaultInstance())这是创建的 UserProto.java 文件中的解码类；ProtobufVarint32LengthFieldPrepender 对 protobuf 协议的消息头上加上一个长度为32 的整形字段，用于标志这个消息的长度的类；ProtobufEncoder 是编码类将 StringBuilder 转换为 ByteBuf 类型：copiedBuffer()方法*
+ProtobufDecoder(UserProto.User.getDefaultInstance())这是创建的 UserProto.java 文件中的解码类；ProtobufVarint32LengthFieldPrepender 对 protobuf 协议的消息头上加上一个长度为32 的整形字段，用于标志这个消息的长度的类；ProtobufEncoder 是编码类将 StringBuilder 转换为 ByteBuf 类型：copiedBuffer()方法
 
 
 # 1199.Netty 的零拷贝实现？
@@ -625,7 +625,7 @@ CompositeByteBuf 类可以将多个 ByteBuf 合并为一个逻辑上的 ByteBuf,
 
 Selector BUG：若 Selector 的轮询结果为空，也没有 wakeup 或新消息处理，则发生空轮询，CPU 使用率 100%，
 
-Netty 的解决办法：对 Selector 的 select 操作周期进行统计，每完成一次空的 select 操作进行一次计数，若在某个周期内连续发生 N 次空轮询，则触发了 epoll 死循环 bug。重建Selector，判断是否是其他线程发起的重建请求，若不是则将原 SocketChannel 从旧的Selector 上去除注册，重新注册到新的 Selector 上，并将原来的 Selector 关闭。*
+Netty 的解决办法：对 Selector 的 select 操作周期进行统计，每完成一次空的 select 操作进行一次计数，若在某个周期内连续发生 N 次空轮询，则触发了 epoll 死循环 bug。重建Selector，判断是否是其他线程发起的重建请求，若不是则将原 SocketChannel 从旧的Selector 上去除注册，重新注册到新的 Selector 上，并将原来的 Selector 关闭。
 
 
 # 1200.Netty 的高性能表现在哪些方面？
@@ -644,7 +644,7 @@ Netty 安全性：支持的安全协议：SSL V2 和 V3，TLS，SSL 单向认证
 
 TCP 参数配置：SO_RCVBUF 和 SO_SNDBUF：通常建议值为 128K 或者 256K；
 
-SO_TCPNODELAY：NAGLE 算法通过将缓冲区内的小封包自动相连，组成较大的封包，阻止大量小封包的发送阻塞网络，从而提高网络应用效率。但是对于时延敏感的应用场景需要关闭该优化算法；*
+SO_TCPNODELAY：NAGLE 算法通过将缓冲区内的小封包自动相连，组成较大的封包，阻止大量小封包的发送阻塞网络，从而提高网络应用效率。但是对于时延敏感的应用场景需要关闭该优化算法；
 
 
 # 1201.NIOEventLoopGroup 源码？
@@ -669,11 +669,11 @@ Outbound 事件都是请求事件, 发起者是 Channel，处理者是 unsafe，
 
 内存管理机制，首先会预申请一大块内存 Arena，Arena 由许多 Chunk 组成，而每个 Chunk默认由 2048 个 page 组成。Chunk 通过 AVL 树的形式组织 Page，每个叶子节点表示一个Page，而中间节点表示内存区域，节点自己记录它在整个 Arena 中的偏移地址。当区域被分配出去后，中间节点上的标记位会被标记，这样就表示这个中间节点以下的所有节点都已被分配了。大于 8k 的内存分配在 poolChunkList 中，而 PoolSubpage 用于分配小于 8k 的内存，它会把一个 page 分割成多段，进行内存分配。
 
-ByteBuf 的特点：支持自动扩容（4M），保证 put 方法不会抛出异常、通过内置的复合缓冲类型，实现零拷贝（zero-copy）；不需要调用 flip()来切换读/写模式，读取和写入索引分开；方法链；引用计数基于 AtomicIntegerFieldUpdater 用于内存回收；PooledByteBuf 采用二叉树来实现一个内存池，集中管理内存的分配和释放，不用每次使用都新建一个缓冲区对象。UnpooledHeapByteBuf 每次都会新建一个缓冲区对象*
+ByteBuf 的特点：支持自动扩容（4M），保证 put 方法不会抛出异常、通过内置的复合缓冲类型，实现零拷贝（zero-copy）；不需要调用 flip()来切换读/写模式，读取和写入索引分开；方法链；引用计数基于 AtomicIntegerFieldUpdater 用于内存回收；PooledByteBuf 采用二叉树来实现一个内存池，集中管理内存的分配和释放，不用每次使用都新建一个缓冲区对象。UnpooledHeapByteBuf 每次都会新建一个缓冲区对象
 
 
 # 1207.请列举 Nginx 服务器的最佳用途。
 
 > 原文：[https://zwmst.com/5720.html](https://zwmst.com/5720.html)
 
-   * ***[  ](https://zwmst.com/5720.html)  Nginx 服务器的最佳用法是在网络上部署动态 HTTP 内容，使用 SCGI、WSGI 应用程序服务器、用于脚本的 FastCGI 处理程序。它还可以作为负载均衡器。**
+   * ***[  ](https://zwmst.com/5720.html)  Nginx 服务器的最佳用法是在网络上部署动态 HTTP 内容，使用 SCGI、WSGI 应用程序服务器、用于脚本的 FastCGI 处理程序。它还可以作为负载均衡器。

@@ -9,14 +9,14 @@ date: 0001-01-01 00:00:00
 
 > 原文：[https://zwmst.com/1451.html](https://zwmst.com/1451.html)
 
-queue就是来源于数据结构的FIFO队列。而Topic是个抽象的概念，每个Topic底层对应N个 queue，而数据也真实存在queue上的。*
+queue就是来源于数据结构的FIFO队列。而Topic是个抽象的概念，每个Topic底层对应N个 queue，而数据也真实存在queue上的。
 
 
 # RocketMQ Broker中的消息被消费后会立即删除吗？
 
 > 原文：[https://zwmst.com/1453.html](https://zwmst.com/1453.html)
 
-不会，每条消息都会持久化到CommitLog中，每个Consumer连接到Broker后会维持消费进 度信息，当有消息消费后只是当前Consumer的消费进度（CommitLog的offset）更新了。*
+不会，每条消息都会持久化到CommitLog中，每个Consumer连接到Broker后会维持消费进 度信息，当有消息消费后只是当前Consumer的消费进度（CommitLog的offset）更新了。
 
 
 # RocketMQ消费模式有几种？
@@ -31,7 +31,7 @@ queue就是来源于数据结构的FIFO队列。而Topic是个抽象的概念，
 
 广播消费
 
-消息将对一 个Consumer Group 下的各个 Consumer 实例都消费一遍。即即使这些 Consumer 属于同一个Consumer Group ，消息也会被 Consumer Group 中的每个 Consumer 都消费一次。*
+消息将对一 个Consumer Group 下的各个 Consumer 实例都消费一遍。即即使这些 Consumer 属于同一个Consumer Group ，消息也会被 Consumer Group 中的每个 Consumer 都消费一次。
 
 
 # 消费消息是push还是pull？
@@ -40,7 +40,7 @@ queue就是来源于数据结构的FIFO队列。而Topic是个抽象的概念，
 
 RocketMQ没有真正意义的push，都是pull，虽然有push类，但实际底层实现采用的是长轮 询机制，即拉取方式。
 
-broker端属性 longPollingEnable 标记是否开启长轮询。默认开启。*
+broker端属性 longPollingEnable 标记是否开启长轮询。默认开启。
 
 
 # broker如何处理拉取请求的？
@@ -67,7 +67,7 @@ PullRequestHoldService 来Hold连接，每个5s执行一次检查pullRequestTabl
 
 挂起consumer的请求，即不断开连接，也不返回数据
 
-使用consumer的offset*
+使用consumer的offset
 
 
 # RocketMQ如何做负载均衡？
@@ -104,7 +104,7 @@ SelectMessageQueueByRandom SelectMessageQueueByMachineRoom 没有实现
 
 其他负载均衡算法
 
-平均分配策略(默认)(AllocateMessageQueueAveragely) 环形分配策略 (AllocateMessageQueueAveragelyByCircle) 手动配置分配策略 (AllocateMessageQueueByConfig) 机房分配策略 (AllocateMessageQueueByMachineRoom) 一致性哈希分配策略 (AllocateMessageQueueConsistentHash) 靠近机房策略(AllocateMachineRoomNearby)*
+平均分配策略(默认)(AllocateMessageQueueAveragely) 环形分配策略 (AllocateMessageQueueAveragelyByCircle) 手动配置分配策略 (AllocateMessageQueueByConfig) 机房分配策略 (AllocateMessageQueueByMachineRoom) 一致性哈希分配策略 (AllocateMessageQueueConsistentHash) 靠近机房策略(AllocateMachineRoomNearby)
 
 
 # 消息重复消费如何解决？
@@ -137,7 +137,7 @@ SelectMessageQueueByRandom SelectMessageQueueByMachineRoom 没有实现
 
 3）Redis
 
-分布式锁搞起来。*
+分布式锁搞起来。
 
 
 # 如何让RocketMQ保证消息的顺序消费？
@@ -146,7 +146,7 @@ SelectMessageQueueByRandom SelectMessageQueueByMachineRoom 没有实现
 
 首先多个queue只能保证单个queue里的顺序，queue是典型的FIFO，天然顺序。多个queue 同时消费是无法绝对保证消息的有序性的。所以总结如下：
 
-同一topic，同一个QUEUE，发消息的时候一个线程去发送消息，消费的时候 一个线程去消费 一个queue里的消息。*
+同一topic，同一个QUEUE，发消息的时候一个线程去发送消息，消费的时候 一个线程去消费 一个queue里的消息。
 
 
 # RocketMQ如何保证消息不丢失？
@@ -179,7 +179,7 @@ flushDiskType = SYNC_FLUSH
 
 3）Consumer端如何保证消息不丢失
 
-完全消费正常后在进行手动ack确认。*
+完全消费正常后在进行手动ack确认。
 
 
 # rocketMQ的消息堆积如何处理
@@ -188,7 +188,7 @@ flushDiskType = SYNC_FLUSH
 
 首先要找到是什么原因导致的消息堆积，是Producer太多了，Consumer太少了导致的还是说 其他情况，总之先定位问题。
 
-然后看下消息消费速度是否正常，正常的话，可以通过上线更多consumer临时解决消息堆积 问题。*
+然后看下消息消费速度是否正常，正常的话，可以通过上线更多consumer临时解决消息堆积 问题。
 
 
 # RocketMQ在分布式事务支持这块机制的底层原理?
@@ -207,7 +207,7 @@ Half Message：预处理消息，当broker收到此类消息后，会存储到RM
 
 超时：如果超过回查次数，默认回滚消息。
 
-也就是他并未真正进入Topic的queue，而是用了临时queue来放所谓的half message，等提 交事务后才会真正的将half message转移到topic下的queue。*
+也就是他并未真正进入Topic的queue，而是用了临时queue来放所谓的half message，等提 交事务后才会真正的将half message转移到topic下的queue。
 
 
 # 如果让你来动手实现一个分布式消息中间件，整体架构你会如何设计实现?
@@ -222,7 +222,7 @@ Half Message：预处理消息，当broker收到此类消息后，会存储到RM
 
 数据0丢失的考虑
 
-服务端部署简单、client端使用简单*
+服务端部署简单、client端使用简单
 
 
 # 高吞吐量下如何优化生产者和消费者的性能?
@@ -243,7 +243,7 @@ Half Message：预处理消息，当broker收到此类消息后，会存储到RM
 
 jvm调优
 
-多线程与cpu调优 Page Cache*
+多线程与cpu调优 Page Cache
 
 
 # 再说说RocketMQ 是如何保证数据的高容错性的?
@@ -258,11 +258,11 @@ jvm调优
 
 如果上述情况失败，则随机选择一个进行发送
 
-在发送消息的时候会记录一下调用的时间与是否报错，根据该时间去预测broker的可用时间*
+在发送消息的时候会记录一下调用的时间与是否报错，根据该时间去预测broker的可用时间
 
 
 # 任何一台Broker突然宕机了怎么办？
 
 > 原文：[https://zwmst.com/1479.html](https://zwmst.com/1479.html)
 
-Broker主从架构以及多副本策略。Master收到消息后会同步给Slave，这样一条消息就不止一 份了，Master宕机了还有slave中的消息可用，保证了MQ的可靠性和高可用性。而且Rocket MQ4.5.0开始就支持了Dlegder模式，基于raft的，做到了真正意义的HA。*
+Broker主从架构以及多副本策略。Master收到消息后会同步给Slave，这样一条消息就不止一 份了，Master宕机了还有slave中的消息可用，保证了MQ的可靠性和高可用性。而且Rocket MQ4.5.0开始就支持了Dlegder模式，基于raft的，做到了真正意义的HA。
