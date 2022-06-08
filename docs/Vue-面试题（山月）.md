@@ -5,6 +5,129 @@ date: 0001-01-01 00:00:00
 
 # Vue 面试题（山月）
 
+# 当新入职一家公司时，如何快速搭建开发环境并让应用跑起来
+
+> 原文：[https://q.shanyue.tech/fe/vue/9.html](https://q.shanyue.tech/fe/vue/9.html)
+
+Issue
+
+欢迎在 Gtihub Issue 中回答此问题: [Issue 9(opens new window)](https://github.com/shfshanyue/Daily-Question/issues/9)
+
+Author
+
+回答者: [shfshanyue(opens new window)](https://github.com/shfshanyue)
+
+新人入职新上手项目，如何把它跑起来，这是所有人都会碰到的问题：所有人都是从新手开始的。
+
+有可能你会脱口而出：`npm run dev/npm start`，但实际工作中，处处藏坑，往往没这么简单。
+
+1.  查看是否有 `CI/CD`，如果有跟着 `CI/CD` 部署的脚本跑命令
+2.  查看是否有 `dockerfile`，如果有跟着 `dockerfile` 跑命令
+3.  查看 npm scripts 中是否有 dev/start，尝试 `npm run dev/npm start`
+4.  查看是否有文档，如果有跟着文档走。为啥要把文档放到最后一个？原因你懂的
+
+但即便是十分谨慎，也有可能遇到以下几个叫苦不迭、浪费了一下午时间的坑:
+
+1.  前端有可能在**本地环境启动时需要依赖前端构建时所产生的文件**，所以有时需要**先正常部署一遍，再试着按照本地环境启动 (即需要先 `npm run build` 一下，再 `npm run dev/npm start`)**。(比如，一次我们的项目 npm run dev 时需要 webpack DllPlugin 构建后的东西）
+2.  别忘了设置环境变量或者配置文件 (.env/consul/k8s-configmap)
+
+因此，设置一个少的 script，可以很好地避免后人踩坑，更重要的是，可以避免后人骂你，
+
+此时可设置 script hooks，如 `prepare`、`postinstall` 自动执行脚本，来完善该项目的基础设施
+
+```
+{
+  "scripts": {
+    "start": "npm run dev",
+    "config": "node assets && node config",
+    "build": "webpack",
+    // 设置一个钩子，在 npm install 后自动执行，此处有可能不是必须的
+    "prepare": "npm run build",
+    "dev": "webpack-dev-server --inline --progress"
+  }
+} 
+```
+
+## npm run dev 与 npm start 的区别
+
+对于一个**纯生成静态页面打包**的前端项目而言，它们是没有多少区别的：生产环境的部署只依赖于构建生成的资源，更不依赖 npm scripts。可见 [如何部署前端项目(opens new window)](https://shanyue.tech/frontend-engineering/docker.html)。
+
+使用 `create-react-app` 生成的项目，它的 npm script 中只有 `npm start`
+
+```
+{
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+} 
+```
+
+使用 `vuepress` 生成的项目，它的 npm script 中只有 `npm run dev`
+
+```
+{
+  "dev": "vuepress dev",
+  "build": "vuepress build"
+} 
+```
+
+在一个**面向服务端**的项目中，如 `next`、`nuxt` 与 `nest`。dev 与 start 的区别趋于明显，一个为生产环境，一个为开发环境
+
+*   dev: 在开发环境启动项目，一般带有 watch 选项，监听文件变化而重启服务，此时会耗费大量的 CPU 性能，不宜放在生产环境
+*   start: 在生产环境启动项目
+
+在 `nest` 项目中进行配置
+
+```
+{
+  "start": "nest start",
+  "dev": "nest start --watch"
+} 
+```
+
+Author
+
+回答者: [xwxgjs(opens new window)](https://github.com/xwxgjs)
+
+我的意见和楼上相反，应该先大概看一遍文档…… 文档中会描述本地环境的配置方法
+
+```
+查看是否有 CI/CD，如果有跟着 CI/CD 部署的脚本跑命令
+查看是否有 dockerfile，如果有跟着 dockerfile 跑命令
+查看 npm scripts 中是否有 dev/start，尝试 npm run dev/npm start 
+```
+
+大部分公司的开发环境都是本地环境，所以什么 CI/CD、Docker 可以先放到一边
+
+npm run dev/npm start 这个是一般的约定，但不是所有的项目都是这样。所以需要先看 package.json 中的 script 来确定
+
+### npm run dev 和 npm start 的区别？
+
+1.  npm start 是 npm run start 的别名，支持 prestart 和 poststart 钩子
+
+Author
+
+回答者: [linlai163(opens new window)](https://github.com/linlai163)
+
+> 我的意见和楼上相反，应该先大概看一遍文档…… 文档中会描述本地环境的配置方法
+> 
+> ```
+> 查看是否有 CI/CD，如果有跟着 CI/CD 部署的脚本跑命令
+> 查看是否有 dockerfile，如果有跟着 dockerfile 跑命令
+> 查看 npm scripts 中是否有 dev/start，尝试 npm run dev/npm start 
+> ```
+> 
+> 大部分公司的开发环境都是本地环境，所以什么 CI/CD、Docker 可以先放到一边
+> 
+> npm run dev/npm start 这个是一般的约定，但不是所有的项目都是这样。所以需要先看 package.json 中的 script 来确定
+> 
+> ### npm run dev 和 npm start 的区别？
+> 
+> 1.  npm start 是 npm run start 的别名，支持 prestart 和 poststart 钩子
+
+你是真没吃过文档的亏。。。管他什么公司，文档都有坑。
+
 # vue3.0 中为什么要使用 Proxy，它相比以前的实现方式有什么改进
 
 > 原文：[https://q.shanyue.tech/fe/vue/12.html](https://q.shanyue.tech/fe/vue/12.html)
