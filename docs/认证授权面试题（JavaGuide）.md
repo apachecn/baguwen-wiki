@@ -5,15 +5,9 @@ date: 0001-01-01 00:00:00
 
 # 认证授权面试题（JavaGuide）
 
-* * *
-
-# 六 认证授权
-
 > 作者：Guide哥。
 > 
 > **介绍:** Github 70k Star 项目 **[JavaGuide](https://github.com/Snailclimb/JavaGuide)**（公众号同名） 作者。每周都会在公众号更新一些自己原创干货。公众号后台回复“1”领取Java工程师必备学习资料+面试突击pdf。
-
-## 6.1 认证授权面试题总结
 
 ### 6.1.1 认证 (Authentication) 和授权 (Authorization)的区别是什么？
 

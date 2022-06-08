@@ -5,15 +5,9 @@ date: 0001-01-01 00:00:00
 
 # Java 基础面试题（JavaGuide）
 
-* * *
-
-# 二 Java基础+集合+多线程+JVM
-
 > 作者：Guide哥。
 > 
 > **介绍:** Github 70k Star 项目 **[JavaGuide](https://github.com/Snailclimb/JavaGuide)**（公众号同名） 作者。每周都会在公众号更新一些自己原创干货。公众号后台回复“1”领取Java工程师必备学习资料+面试突击pdf。
-
-## 2.1 Java基础
 
 ### 1\. 面向对象和面向过程的区别
 
