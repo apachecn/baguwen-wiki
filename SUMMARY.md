@@ -48,7 +48,6 @@
     +   [Shiro 面试题（爪哇程序员）](docs/Shiro-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [ZooKeeper 面试题（爪哇程序员）](docs/ZooKeeper-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [分布式面试题（爪哇程序员）](docs/%E5%88%86%E5%B8%83%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
-    +   [微服务面试题（JavaGuide）](docs/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88JavaGuide%EF%BC%89.md)
     +   [微服务面试题（山月）](docs/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E5%B1%B1%E6%9C%88%EF%BC%89.md)
     +   [微服务面试题（爪哇程序员）](docs/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [消息队列面试题（爪哇程序员）](docs/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
