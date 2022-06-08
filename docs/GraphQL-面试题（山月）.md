@@ -5,6 +5,14 @@ date: 0001-01-01 00:00:00
 
 # GraphQL 面试题（山月）
 
+# 简述一下 graphql，它的引进有什么好处
+
+> 原文：[https://q.shanyue.tech/server/graphql/52.html](https://q.shanyue.tech/server/graphql/52.html)
+
+Issue
+
+欢迎在 Gtihub Issue 中回答此问题: [Issue 52(opens new window)](https://github.com/shfshanyue/Daily-Question/issues/52)
+
 # graphql 的引进有什么风险，以及性能问题
 
 > 原文：[https://q.shanyue.tech/server/graphql/53.html](https://q.shanyue.tech/server/graphql/53.html)

@@ -210,13 +210,3 @@ void print() {
   puts("hello, world");
 } 
 ```
-
-# GraphQL
-
-# 简述一下 graphql，它的引进有什么好处
-
-> 原文：[https://q.shanyue.tech/server/graphql/52.html](https://q.shanyue.tech/server/graphql/52.html)
-
-Issue
-
-欢迎在 Gtihub Issue 中回答此问题: [Issue 52(opens new window)](https://github.com/shfshanyue/Daily-Question/issues/52)
