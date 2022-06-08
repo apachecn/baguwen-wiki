@@ -1,4 +1,9 @@
-# typescript
+<!--yml
+category: 前端
+date: 0001-01-01 00:00:00
+-->
+
+# TypeScript 面试题（山月）
 
 # 在 Typescript 中如何实现类型标记 Pick 与 Omit
 

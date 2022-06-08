@@ -1,3 +1,10 @@
+<!--yml
+category: 前端
+date: 0001-01-01 00:00:00
+-->
+
+# Vue 面试题（山月）
+
 # vue3.0 中为什么要使用 Proxy，它相比以前的实现方式有什么改进
 
 > 原文：[https://q.shanyue.tech/fe/vue/12.html](https://q.shanyue.tech/fe/vue/12.html)

@@ -1,3 +1,10 @@
+<!--yml
+category: 前端
+date: 0001-01-01 00:00:00
+-->
+
+# React 面试题（山月）
+
 # react 如何使用 render prop component 请求数据
 
 > 原文：[https://q.shanyue.tech/fe/react/68.html](https://q.shanyue.tech/fe/react/68.html)
