@@ -1,4 +1,9 @@
-# MySQL
+<!--yml
+category: MySQL
+date: 0001-01-01 00:00:00
+-->
+
+# MySQL 面试题（JavaGuide）
 
 * * *
 

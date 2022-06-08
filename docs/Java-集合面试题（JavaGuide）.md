@@ -1,4 +1,9 @@
-# Java集合
+<!--yml
+category: Java
+date: 0001-01-01 00:00:00
+-->
+
+# Java 集合面试题（JavaGuide）
 
 ## 2.2 Java集合
 
