@@ -1,3 +1,10 @@
+<!--yml
+category: 数据库
+date: 0001-01-01 00:00:00
+-->
+
+# GraphQL 面试题（山月）
+
 # graphql 的引进有什么风险，以及性能问题
 
 > 原文：[https://q.shanyue.tech/server/graphql/53.html](https://q.shanyue.tech/server/graphql/53.html)

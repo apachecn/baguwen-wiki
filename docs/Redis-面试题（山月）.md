@@ -1,4 +1,9 @@
-# redis
+<!--yml
+category: Redis
+date: 0001-01-01 00:00:00
+-->
+
+# Redis 面试题（山月）
 
 # 如何实现一个分布式锁
 
