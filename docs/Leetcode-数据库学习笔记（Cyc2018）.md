@@ -1,4 +1,9 @@
-# Leetcode-Database 题解
+<!--yml
+category: 数据库
+date: 0001-01-01 00:00:00
+-->
+
+# Leetcode 数据库学习笔记（Cyc2018）
 
 *   [595\. Big Countries](#595-big-countries)
 *   [627\. Swap Salary](#627-swap-salary)

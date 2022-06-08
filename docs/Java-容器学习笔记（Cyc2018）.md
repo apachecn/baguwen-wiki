@@ -1,4 +1,9 @@
-# Java 容器
+<!--yml
+category: Java
+date: 0001-01-01 00:00:00
+-->
+
+# Java 容器学习笔记（Cyc2018）
 
 *   [一、概览](#一概览)
     *   [Collection](#collection)

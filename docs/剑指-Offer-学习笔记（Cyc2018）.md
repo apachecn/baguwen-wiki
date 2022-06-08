@@ -1,4 +1,9 @@
-# 剑指 Offer 题解
+<!--yml
+category: 数据结构与算法
+date: 0001-01-01 00:00:00
+-->
+
+# 剑指 Offer 学习笔记（Cyc2018）
 
 *   [1\. 前言](#1-前言)
 *   [2\. 实现 Singleton](#2-实现-singleton)
