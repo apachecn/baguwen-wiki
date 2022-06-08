@@ -79,13 +79,13 @@
     +   [Java 多线程面试题（JavaGuide）](docs/Java-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88JavaGuide%EF%BC%89.md)
     +   [Java 容器学习笔记（Cyc2018）](docs/Java-%E5%AE%B9%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Cyc2018%EF%BC%89.md)
     +   [Java 并发学习笔记（Cyc2018）](docs/Java-%E5%B9%B6%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Cyc2018%EF%BC%89.md)
+    +   [Java 多线程面试题（爪哇程序员）](docs/Java-%E5%B9%B6%E5%8F%91%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [Java 虚拟机学习笔记（Cyc2018）](docs/Java-%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88Cyc2018%EF%BC%89.md)
     +   [Java 虚拟机面试题（InterviewTop）](docs/Java-%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88InterviewTop%EF%BC%89.md)
     +   [Java 虚拟机面试题（JavaGuide）](docs/Java-%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88JavaGuide%EF%BC%89.md)
     +   [Java 虚拟机面试题（爪哇程序员）](docs/Java-%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [Java 集合面试题（JavaGuide）](docs/Java-%E9%9B%86%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88JavaGuide%EF%BC%89.md)
     +   [Java 集合面试题（爪哇程序员）](docs/Java-%E9%9B%86%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
-    +   [Java 高并发面试题（爪哇程序员）](docs/Java-%E9%AB%98%E5%B9%B6%E5%8F%91%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [Java8 面试题（爪哇程序员）](docs/Java8-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [Maven 面试题（爪哇程序员）](docs/Maven-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [Servlet 面试题（爪哇程序员）](docs/Servlet-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
@@ -125,9 +125,6 @@
     +   [开放面试题（山月）](docs/%E5%BC%80%E6%94%BE%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E5%B1%B1%E6%9C%88%EF%BC%89.md)
     +   [正则表达式面试题（山月）](docs/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E5%B1%B1%E6%9C%88%EF%BC%89.md)
     +   [爬虫面试题（山月）](docs/%E7%88%AC%E8%99%AB%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E5%B1%B1%E6%9C%88%EF%BC%89.md)
-+   并发
-    +   [多线程面试题（爪哇程序员）](docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
-    +   [并发编程面试题（爪哇程序员）](docs/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
 +   编译原理
     +   [编译原理面试题（爪哇程序员）](docs/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
 +   设计模式
