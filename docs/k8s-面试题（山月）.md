@@ -1,4 +1,9 @@
-# k8s
+<!--yml
+category: DevOps
+date: 0001-01-01 00:00:00
+-->
+
+# k8s 面试题（山月）
 
 # helm v3 中为什么要弃用 tiller
 
