@@ -5,23 +5,6 @@ date: 0001-01-01 00:00:00
 
 # Java 容器学习笔记（Cyc2018）
 
-*   [一、概览](#一概览)
-    *   [Collection](#collection)
-    *   [Map](#map)
-*   [二、容器中的设计模式](#二容器中的设计模式)
-    *   [迭代器模式](#迭代器模式)
-    *   [适配器模式](#适配器模式)
-*   [三、源码分析](#三源码分析)
-    *   [ArrayList](#arraylist)
-    *   [Vector](#vector)
-    *   [CopyOnWriteArrayList](#copyonwritearraylist)
-    *   [LinkedList](#linkedlist)
-    *   [HashMap](#hashmap)
-    *   [ConcurrentHashMap](#concurrenthashmap)
-    *   [LinkedHashMap](#linkedhashmap)
-    *   [WeekHashMap](#weekhashmap)
-*   [附录](#附录)
-*   [参考资料](#参考资料)
 
 # 一、概览
 
