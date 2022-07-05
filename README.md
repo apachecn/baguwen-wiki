@@ -7,6 +7,7 @@
 * [在线阅读](https://bgww.apachecn.org)
 * [在线阅读（Gitee）](https://apachecn.gitee.io/doc-template/)
 * [ApacheCN 学习资源](http://docs.apachecn.org/)
+* [ApacheCN 翻译校对兼职群 713436582](https://jq.qq.com/?_wv=1027&k=VSNtgpjb)
 
 ## 贡献指南
 
