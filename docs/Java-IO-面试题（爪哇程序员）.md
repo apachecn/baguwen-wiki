@@ -13,7 +13,7 @@ date: 0001-01-01 00:00:00
 
 （2）按照实现 功能分：节点流（可以从或向一个特定的地方（节点）读写数据。如 FileReader）和处理流 （是对一个已存在的流的连接和封装，通过所封装的流的功能调用实现数据读写。如 BufferedReader。处理流的构造方法总是要带一个其他的流对象做参数。一个流对象经过其 他流的多次包装，称为流的链接）；
 
-（3）按照处理数据的单位： 字节流和字符流。字节流继 承于 InputStream 和 OutputStrea，字符流继承于InputStreamReader 和 OutputStreamWriter 。
+（3）按照处理数据的单位： 字节流和字符流。字节流继 承于 InputStream 和 OutputStream，字符流继承于InputStreamReader 和 OutputStreamWriter 。
 
 # 什么是 java序列化？
 
