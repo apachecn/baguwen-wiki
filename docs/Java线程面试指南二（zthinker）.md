@@ -3,7 +3,7 @@ category: Java
 date: 2022-11-19 13:21:49
 -->
 
-# Java线程面试指南二 - 分布式编程
+# Java线程面试指南二（zthinker）
 
 > 来源：[https://zthinker.com/archives/java-thread-interview-2](https://zthinker.com/archives/java-thread-interview-2)
 

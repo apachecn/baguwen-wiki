@@ -3,7 +3,7 @@ category: Java
 date: 2022-11-19 13:21:31
 -->
 
-# Java内存管理面试指南一 - 分布式编程
+# Java内存管理面试指南一（zthinker）
 
 > 来源：[https://zthinker.com/archives/java-memory-interview-1](https://zthinker.com/archives/java-memory-interview-1)
 

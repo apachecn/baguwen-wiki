@@ -3,7 +3,7 @@ category: 数据库
 date: 2022-11-19 13:21:51
 -->
 
-# redis面试指南一 - 分布式编程
+# redis面试指南一（zthinker）
 
 > 来源：[https://zthinker.com/archives/redis-interview-1](https://zthinker.com/archives/redis-interview-1)
 

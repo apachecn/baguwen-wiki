@@ -3,7 +3,7 @@ category: Java
 date: 2022-11-19 13:21:41
 -->
 
-# Java基础面试指南三 - 分布式编程
+# Java基础面试指南三（zthinker）
 
 > 来源：[https://zthinker.com/archives/java-basic-interview-3](https://zthinker.com/archives/java-basic-interview-3)
 

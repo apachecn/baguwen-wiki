@@ -3,7 +3,7 @@ category: 微服务
 date: 2022-11-19 13:22:02
 -->
 
-# 微服务面试指南一 - 分布式编程
+# 微服务面试指南一（zthinker）
 
 > 来源：[https://zthinker.com/archives/microservice-interview-1](https://zthinker.com/archives/microservice-interview-1)
 
