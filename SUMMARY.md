@@ -50,6 +50,7 @@
     +   [Serverless 面试题（山月）](docs/Serverless-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E5%B1%B1%E6%9C%88%EF%BC%89.md)
     +   [Shiro 面试题（爪哇程序员）](docs/Shiro-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [ZooKeeper 面试题（爪哇程序员）](docs/ZooKeeper-%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
+    +   [分布式系统19种设计模式（荣耀典藏版）](docs/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F19%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E8%8D%A3%E8%80%80%E5%85%B8%E8%97%8F%E7%89%88%EF%BC%89.md)
     +   [分布式面试题（爪哇程序员）](docs/%E5%88%86%E5%B8%83%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E7%88%AA%E5%93%87%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%89.md)
     +   [微服务最重要的10个设计模式](docs/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%8410%E4%B8%AA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
     +   [微服务面试指南一（zthinker）](docs/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97%EF%BC%88zthinker%EF%BC%89.md)
